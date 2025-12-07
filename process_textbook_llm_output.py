@@ -4,18 +4,18 @@ import argparse
 import csv
 import json
 import logging
-# import re
-import regex as re # 'better' unicode support, allows for `\p{Script_Extensions=Arabic}`
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
 
+# import re
+import regex as re  # 'better' unicode support, allows for `\p{Script_Extensions=Arabic}`
+
 from tex_utils import tex_cleanup_text, tex_remove_arabic_marks
 
 # Quran data for validation (114 chapters/suras)
-QURAN_CHAPTERS = {
-    1: 7,  # Al-Fatihah
+QURAN_CHAPTERS = {1: 7,  # Al-Fatihah
     2: 286,  # Al-Baqarah
     3: 200,  # Ali 'Imran
     4: 176,  # An-Nisa
@@ -131,7 +131,7 @@ QURAN_CHAPTERS = {
     114: 6,  # An-Nas
 }
 
-    # @formatter:off # fmt: off
+# @formatter:off # fmt: off
 NUMBER_WORDS_TO_INTEGERS = {
     "one": 1,
     "two": 2,
@@ -416,7 +416,7 @@ class TextbookProcessor:
                 arabic_words.append(part)
                 i += 1
                 # The next part might be transliteration (lowercase, non-Arabic)
-                if self.current_lesson <= 5: # the textbook only has transliterations for lesson 1 through 5
+                if self.current_lesson <= 5:  # the textbook only has transliterations for lesson 1 through 5
                     if i < len(parts) and not is_arabic_text(parts[i]) and parts[i][0].islower():
                         transliterations.append(parts[i])
                         i += 1
@@ -431,12 +431,11 @@ class TextbookProcessor:
 
         # Assign to columns based on count
         col1 = arabic_words[0] if len(arabic_words) > 0 else ""
-        col2 = "" # fallback
-        col3 = "" # fallback
+        col2 = ""  # fallback
+        col3 = ""  # fallback
         if len(self.vocabulary_headers) == 2:
             if len(arabic_words) > 1:
-                col3 = arabic_words[1]
-            # TODO error if vocab headers len = 2 but len(arabic_words) > 2?
+                col3 = arabic_words[1]  # TODO error if vocab headers len = 2 but len(arabic_words) > 2?
         elif len(self.vocabulary_headers) == 3:
             if len(arabic_words) > 1:
                 col2 = arabic_words[1]
