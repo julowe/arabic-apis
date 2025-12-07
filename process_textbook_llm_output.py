@@ -4,13 +4,12 @@ import argparse
 import csv
 import json
 import logging
-import re
+# import re
+import regex as re # 'better' unicode support, allows for `\p{Script_Extensions=Arabic}`
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional, Tuple
-
-from pandas.io.sas.sas_constants import sas_datetime_formats
 
 from tex_utils import tex_cleanup_text, tex_remove_arabic_marks
 
@@ -132,8 +131,163 @@ QURAN_CHAPTERS = {
     114: 6,  # An-Nas
 }
 
-CHARSET_ARABIC = sas_datetime_formats
-CHARSET_ARABIC_ALL = "[\u0600–\u06FF\u0750–\u077F\u0870–\u089F\u08A0–\u08FF\uFB50–\uFDFF\uFE70–\uFEFF\u10E60–\u10E7F\u10EC0-\u10EFF\u1EC70–\u1ECBF\u1ED00–\u1ED4F\u1EE00–\u1EEFF]"
+    # @formatter:off # fmt: off
+NUMBER_WORDS_TO_INTEGERS = {
+    "one": 1,
+    "two": 2,
+    "three": 3,
+    "four": 4,
+    "five": 5,
+    "six": 6,
+    "seven": 7,
+    "eight": 8,
+    "nine": 9,
+    "ten": 10,
+    "eleven": 11,
+    "twelve": 12,
+    "thirteen": 13,
+    "fourteen": 14,
+    "fifteen": 15,
+    "sixteen": 16,
+    "seventeen": 17,
+    "eighteen": 18,
+    "nineteen": 19,
+    "twenty": 20,
+    "twenty-one": 21,
+    "twenty-two": 22,
+    "twenty-three": 23,
+    "twenty-four": 24,
+    "twenty-five": 25,
+    "twenty-six": 26,
+    "twenty-seven": 27,
+    "twenty-eight": 28,
+    "twenty-nine": 29,
+    "thirty": 30,
+    "thirty-one": 31,
+    "thirty-two": 32,
+    "thirty-three": 33,
+    "thirty-four": 34,
+    "thirty-five": 35,
+    "thirty-six": 36,
+    "thirty-seven": 37,
+    "thirty-eight": 38,
+    "thirty-nine": 39,
+    "forty": 40,
+}
+# @formatter:on # fmt: on
+
+# CHARSET_ARABIC = r"[\u0600-\u06FF]"
+# CHARSET_ARABIC_ALL = r"[\u0600–\u06ff\u0750–\u077f\u0870–\u089f\u08a0–\u08ff\ufb50–\ufdff\ufe70–\ufeff]"
+# below did not work
+# CHARSET_ARABIC_ALL = r"[\u0600–\u06ff\u0750–\u077f\u0870–\u089f\u08a0–\u08ff\ufb50–\ufdff\ufe70–\ufeff\u10e60–\u10e7F\u10ec0-\u10efF\u1ec70–\u1ecbF\u1ed00–\u1ed4F\u1ee00–\u1eefF]"
+
+CHARSET_ARABIC = r"\p{Script=Arabic}"
+CHARSET_ARABIC_ALL = r"\p{Script_Extensions=Arabic}"
+
+
+def construct_section_match_pattern(section_type: str) -> str:
+    """Construct a regex pattern to detect the start of a section (Vocabulary or Exercise)"""
+
+    temp_pattern = r""
+    for key in NUMBER_WORDS_TO_INTEGERS:
+        temp_pattern += key.upper() + "|"
+
+    if section_type == "vocabulary":
+        return r"^VOCABULARY\s+(" + temp_pattern + r"\d+)$"
+    elif section_type == "exercise":
+        return r"^EXERCISE\s+(" + temp_pattern + r"\d+)$"
+    else:
+        return r"FAILED TO DETECT SECTION TYPE"  # TODO make an actual error here...
+
+
+def convert_written_number(word: str) -> int:
+    """Convert written numbers to integers"""
+
+    word_lower = word.lower()
+    if word_lower in NUMBER_WORDS_TO_INTEGERS:
+        return NUMBER_WORDS_TO_INTEGERS[word_lower]
+
+    # Try to parse as integer
+    try:
+        return int(word)
+    except ValueError:
+        return 0
+
+
+def is_arabic_text(text: str) -> bool:
+    """Check if text contains Arabic characters"""
+
+    return bool(re.search(r"\p{Script_Extensions=Arabic}", text))
+
+
+def validate_quran_reference(surah: int, ayah: int) -> Tuple[bool, str]:
+    """Validate Quran reference and return validation status and warning message"""
+
+    if surah < 1 or surah > 114:
+        return False, f"Chapter {surah} is invalid (valid range: 1-114)"
+
+    if ayah < 1 or ayah > QURAN_CHAPTERS[surah]:
+        return False, f"Verse {ayah} is invalid for chapter {surah} (valid range: 1-{QURAN_CHAPTERS[surah]})",
+
+    return True, ""
+
+
+def write_tex_header() -> List[str]:
+    """Generate LaTeX document header"""
+
+    # @formatter:off # fmt: off
+    return [
+        r"\documentclass[a4paper, notitlepage, openany, DIV = 14]{scrbook}",
+        r"\usepackage[x11names]{xcolor}",
+        r"\usepackage{hyperref}",
+        r"\hypersetup{",
+        r"    colorlinks=true,",
+        r"    linktoc=all,",
+        r"    linkcolor=Blue4,",
+        r"}",
+        r"\usepackage{longtable}",
+        r"\usepackage{booktabs}",
+        r"\usepackage{array}",
+        r"",
+        r"\usepackage{polyglossia}",
+        r"\setmainlanguage{english}",
+        r"\setotherlanguage{arabic}",
+        r"\setmainfont{Charis}",
+        r"\newfontfamily\arabicfont[Script=Arabic]{Noto Naskh Arabic}",
+        r"\newfontfamily\arabicfonttt[Script=Arabic]{Noto Kufi Arabic}",
+        r"\newfontfamily\symbolfont{Symbola}",
+        r"\newcommand{\ar}[1]{{\textarabic{#1}}}",
+        r"\newcommand{\arpar}[1]{",
+        r"\begin{Arabic}{\Large #1}",
+        r"\end{Arabic}}",
+        r"",
+        r"\setcounter{secnumdepth}{2}",
+        r"",
+        r"\title{Arabic Textbook (LLM Processed)}",
+        r"\author{Processed from OCR output}",
+        r"",
+        r"\begin{document}",
+        r"\maketitle",
+        r"\tableofcontents",
+        r"\clearpage",
+        r"",
+    ]
+    # @formatter:on # fmt: on
+
+
+def format_arabic_for_tex(text: str) -> str:
+    """Format Arabic text appropriately for LaTeX"""
+
+    if not is_arabic_text(text):
+        return tex_cleanup_text(text)
+
+    # If it's a short phrase (< 50 chars), use inline Arabic
+    if len(text) < 50:
+        return f"\\ar{{{tex_cleanup_text(text)}}}"
+    else:
+        # For longer text, use paragraph Arabic
+        return f"\\arpar{{\n{tex_remove_arabic_marks(text)}\n}}"
+
 
 class TextbookProcessor:
     def __init__(self, output_prefix: str = "textbook-llm"):
@@ -162,70 +316,11 @@ class TextbookProcessor:
         self.table_rows = []
         self.original_table_text = []
 
-    def convert_written_number(self, word: str) -> int:
-        """Convert written numbers to integers"""
-        number_words = {
-            "One": 1,
-            "Two": 2,
-            "Three": 3,
-            "Four": 4,
-            "Five": 5,
-            "Six": 6,
-            "Seven": 7,
-            "Eight": 8,
-            "Nine": 9,
-            "Ten": 10,
-            "Eleven": 11,
-            "Twelve": 12,
-            "Thirteen": 13,
-            "Fourteen": 14,
-            "Fifteen": 15,
-            "Sixteen": 16,
-            "Seventeen": 17,
-            "Eighteen": 18,
-            "Nineteen": 19,
-            "Twenty": 20,
-            "Twenty-One": 21,
-            "Twenty-Two": 22,
-            "Twenty-Three": 23,
-            "Twenty-Four": 24,
-            "Twenty-Five": 25,
-            "Twenty-Six": 26,
-            "Twenty-Seven": 27,
-            "Twenty-Eight": 28,
-            "Twenty-Nine": 29,
-            "Thirty": 30,
-            "Thirty-One": 31,
-            "Thirty-Two": 32,
-            "Thirty-Three": 33,
-            "Thirty-Four": 34,
-            "Thirty-Five": 35,
-            "Thirty-Six": 36,
-            "Thirty-Seven": 37,
-            "Thirty-Eight": 38,
-            "Thirty-Nine": 39,
-            "Forty": 40,
-        }
-
-        word_lower = word.lower()
-        if word_lower in number_words:
-            return number_words[word_lower]
-
-        # Try to parse as integer
-        try:
-            return int(word)
-        except ValueError:
-            return 0
-
-    def is_arabic_text(self, text: str) -> bool:
-        """Check if text contains Arabic characters"""
-        return bool(re.search(CHARSET_ARABIC_ALL, text))
-
     def extract_arabic_words(self, text: str, page_num: int):
-        """Extract individual Arabic words from text and track them"""
+        """Extract individual Arabic words from the text and track them"""
+
         # Find all Arabic words (sequences of Arabic characters)
-        # arabic_words = re.findall(r"[\u0600-\u06FF]+", text)
-        arabic_words = re.findall(CHARSET_ARABIC_ALL + r"+", text)
+        arabic_words = re.findall(r"\p{Script_Extensions=Arabic}+", text)
 
         for word in arabic_words:
             # Clean up the word (remove diacritics for counting)
@@ -234,21 +329,9 @@ class TextbookProcessor:
                 self.arabic_words[clean_word]["count"] += 1
                 self.arabic_words[clean_word]["pages"].add(page_num)
 
-    def validate_quran_reference(self, surah: int, ayah: int) -> Tuple[bool, str]:
-        """Validate Quran reference and return validation status and warning message"""
-        if surah < 1 or surah > 114:
-            return False, f"Chapter {surah} is invalid (valid range: 1-114)"
-
-        if ayah < 1 or ayah > QURAN_CHAPTERS[surah]:
-            return (
-                False,
-                f"Verse {ayah} is invalid for chapter {surah} (valid range: 1-{QURAN_CHAPTERS[surah]})",
-            )
-
-        return True, ""
-
     def parse_metadata_line(self, line: str) -> Optional[int]:
         """Parse metadata line to extract page number"""
+
         # Pattern: ### START FILE 10, Extracted Page 112
         match = re.match(r"### START FILE \d+, Extracted Page (\d+)", line)
         if match:
@@ -257,43 +340,38 @@ class TextbookProcessor:
         # Alternative pattern without page number
         match = re.match(r"### START FILE \d+, Extracted Page\s*$", line)
         if match:
-            return self.current_page + 1  # Increment from last known page
+            return self.current_page + 1  # Increment from the last-known page
 
         return None
 
     def detect_lesson_start(self, line: str) -> Optional[Tuple[int, str]]:
         """Detect lesson start and extract lesson number and header"""
-        # Pattern: "Lesson NUMBER" followed by header on next lines
-        match = re.match(r"^Lesson\s+(\d+)", line, re.IGNORECASE)
+
+        # Pattern: ## CHAPTER 12
+        match = re.match(r"## CHAPTER (\d{1,2})", line)
         if match:
-            lesson_num = int(match.group(1))
-            return lesson_num, line.strip()
+            return int(match.group(1)), line.strip()
         return None
 
     def detect_vocabulary_section(self, line: str) -> Optional[int]:
         """Detect vocabulary section start and return lesson number"""
-        match = re.match(
-            r"^VOCABULARY\s+(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|ELEVEN|TWELVE|THIRTEEN|FOURTEEN|FIFTEEN|SIXTEEN|SEVENTEEN|EIGHTEEN|NINETEEN|TWENTY|\d+)",
-            line,
-            re.IGNORECASE,
-        )
+
+        match = re.match(construct_section_match_pattern("vocabulary"), line, re.IGNORECASE, )
         if match:
-            return self.convert_written_number(match.group(1))
+            return convert_written_number(match.group(1))
         return None
 
     def detect_exercise_section(self, line: str) -> Optional[int]:
         """Detect exercise section start and return lesson number"""
-        match = re.match(
-            r"^EXERCISE\s+(ONE|TWO|THREE|FOUR|FIVE|SIX|SEVEN|EIGHT|NINE|TEN|ELEVEN|TWELVE|THIRTEEN|FOURTEEN|FIFTEEN|SIXTEEN|SEVENTEEN|EIGHTEEN|NINETEEN|TWENTY|\d+)",
-            line,
-            re.IGNORECASE,
-        )
+
+        match = re.match(construct_section_match_pattern("exercise"), line, re.IGNORECASE, )
         if match:
-            return self.convert_written_number(match.group(1))
+            return convert_written_number(match.group(1))
         return None
 
     def parse_vocabulary_headers(self, line: str) -> Optional[List[str]]:
         """Parse vocabulary table headers"""
+
         line = line.strip()
 
         # Check for verb headers
@@ -308,28 +386,17 @@ class TextbookProcessor:
 
         return None
 
-    def parse_table_row(self, line: str) -> Optional[List[str]]:
-        """Parse a table row, detecting column separators"""
-        line = line.strip()
-        if not line:
-            return None
-
-        # Split by multiple spaces or tabs (common table separators)
-        columns = re.split(r"\s{2,}|\t+", line)
-        columns = [col.strip() for col in columns if col.strip()]
-
-        return columns if len(columns) > 1 else None
-
     def parse_vocabulary_line(self, line: str) -> Optional[Dict[str, Any]]:
         """Parse a vocabulary line that contains Arabic words and English translations"""
+
         line = line.strip()
-        if not line or not self.is_arabic_text(line):
+        if not line or not is_arabic_text(line):
             return None
 
-        # Pattern for vocabulary: Arabic transliteration [Arabic transliteration] English
+        # Pattern for early chapter's vocabulary: Arabic transliteration [Arabic transliteration] English
         # Example: "اَللهُ Allāhu God" or "إِلٰهٌ ilāhun آلِهَةٌ ālihatun a god"
 
-        # Split into parts and identify Arabic vs transliteration vs English
+        # Split into parts and identify Arabic vs. transliteration vs. English
         parts = line.split()
         if len(parts) < 2:
             return None
@@ -338,69 +405,57 @@ class TextbookProcessor:
         transliterations = []
         english_parts = []
 
+        # TODO: parse out verb form (number) if present
+        # e.g. 252,38,إِطَّلَعَ,يَطَّلِعُ,إِطِّلَاعًا,₈ to study,,verb   and 261,39,وَدَّعَ,يُوَدِّعُ,تَوْدِيع,{2} to bid farewell to,,verb
         i = 0
         while i < len(parts):
             part = parts[i]
 
-            if self.is_arabic_text(part):
+            if is_arabic_text(part):
                 # This is Arabic
                 arabic_words.append(part)
                 i += 1
                 # The next part might be transliteration (lowercase, non-Arabic)
-                if (
-                    i < len(parts)
-                    and not self.is_arabic_text(parts[i])
-                    and parts[i][0].islower()
-                ):
-                    transliterations.append(parts[i])
-                    i += 1
+                if self.current_lesson <= 5: # the textbook only has transliterations for lesson 1 through 5
+                    if i < len(parts) and not is_arabic_text(parts[i]) and parts[i][0].islower():
+                        transliterations.append(parts[i])
+                        i += 1
             else:
-                # Check if this starts English (uppercase) or is continuation
-                if part[0].isupper() or english_parts or part in ["a", "an", "the"]:
-                    english_parts.append(part)
+                english_parts.append(part)
                 i += 1
 
         english_text = " ".join(english_parts) if english_parts else ""
-
-        # If no clear English found but we have transliterations,
-        # the last transliteration might be English
-        if not english_text and transliterations:
-            # Check if last transliteration looks like English
-            last_trans = transliterations[-1]
-            if any(c.isupper() for c in last_trans) or last_trans in [
-                "god",
-                "book",
-                "day",
-                "mercy",
-            ]:
-                english_text = transliterations.pop()
 
         if not arabic_words:
             return None
 
         # Assign to columns based on count
         col1 = arabic_words[0] if len(arabic_words) > 0 else ""
-        col2 = arabic_words[1] if len(arabic_words) > 1 else ""
-        col3 = arabic_words[2] if len(arabic_words) > 2 else ""
+        col2 = "" # fallback
+        col3 = "" # fallback
+        if len(self.vocabulary_headers) == 2:
+            if len(arabic_words) > 1:
+                col3 = arabic_words[1]
+            # TODO error if vocab headers len = 2 but len(arabic_words) > 2?
+        elif len(self.vocabulary_headers) == 3:
+            if len(arabic_words) > 1:
+                col2 = arabic_words[1]
+            if len(arabic_words) > 2:
+                col3 = arabic_words[2]
 
-        return {
-            "page_number": self.current_page,
-            "lesson_number": self.current_lesson,
-            "column1": col1,
-            "column2": col2,
-            "column3": col3,
-            "english_translations": english_text,
-            "verb_form": "",
-            "part_of_speech": self.current_vocab_type,
-            "raw_line": line,  # Keep original for debugging
-        }
+        return {"page_number": self.current_page, "lesson_number": self.current_lesson, "column1": col1,
+                "column2": col2, "column3": col3, "english_translations": english_text, "verb_form": "",
+                "part_of_speech": self.current_vocab_type, "raw_line": line,  # Keep original for debugging
+                }
 
     def parse_exercise_line(self, line: str) -> Optional[Dict[str, Any]]:
         """Parse an exercise line to extract number, Arabic text, and Quran reference"""
+
         line = line.strip()
 
         # Look for exercise number at start
-        exercise_match = re.match(r"^(\d+)\.?\s*(.*)", line)
+        # exercise_match = re.match(r"^(\d+)\.?\s*(.*)", line)
+        exercise_match = re.match(r"^(\d+)\.\s*(.*" + CHARSET_ARABIC_ALL + r".*)", line)
         if not exercise_match:
             return None
 
@@ -420,26 +475,20 @@ class TextbookProcessor:
             quran_ref = f"{surah}:{ayah}"
 
             # Validate reference
-            is_valid, validation_msg = self.validate_quran_reference(surah, ayah)
+            is_valid, validation_msg = validate_quran_reference(surah, ayah)
             if not is_valid:
                 warning = validation_msg
 
             # Remove reference from text
             remaining_text = re.sub(r"\[\d+:\d+\]", "", remaining_text).strip()
 
-        return {
-            "page_number": self.current_page,
-            "lesson_number": self.current_lesson,
-            "exercise_number": exercise_num,
-            "arabic_text": remaining_text,
-            "surah": surah,
-            "ayah": ayah,
-            "quranic_reference": quran_ref,
-            "validation_warning": warning,
-        }
+        return {"page_number": self.current_page, "lesson_number": self.current_lesson, "exercise_number": exercise_num,
+                "arabic_text": remaining_text, "surah": surah, "ayah": ayah, "quranic_reference": quran_ref,
+                "validation_warning": warning, }
 
     def convert_markdown_to_tex(self, line: str) -> str:
-        """Convert markdown formatting to LaTeX"""
+        """Convert Markdown formatting to LaTeX"""
+
         # Bold: **text** or __text__ -> \textbf{text}
         line = re.sub(r"\*\*(.*?)\*\*", r"\\textbf{\1}", line)
         line = re.sub(r"__(.*?)__", r"\\textbf{\1}", line)
@@ -453,64 +502,14 @@ class TextbookProcessor:
 
         return line
 
-    def format_arabic_for_tex(self, text: str) -> str:
-        """Format Arabic text appropriately for LaTeX"""
-        if not self.is_arabic_text(text):
-            return tex_cleanup_text(text)
-
-        # If it's a short phrase (< 50 chars), use inline Arabic
-        if len(text) < 50:
-            return f"\\ar{{{tex_cleanup_text(text)}}}"
-        else:
-            # For longer text, use paragraph Arabic
-            return f"\\arpar{{\n{tex_remove_arabic_marks(text)}\n}}"
-
-    def write_tex_header(self) -> List[str]:
-        """Generate LaTeX document header"""
-        return [
-            r"\documentclass[a4paper, notitlepage, openany, DIV = 14]{scrbook}",
-            r"\usepackage[x11names]{xcolor}",
-            r"\usepackage{hyperref}",
-            r"\hypersetup{",
-            r"    colorlinks=true,",
-            r"    linktoc=all,",
-            r"    linkcolor=Blue4,",
-            r"}",
-            r"\usepackage{longtable}",
-            r"\usepackage{booktabs}",
-            r"\usepackage{array}",
-            r"",
-            r"\usepackage{polyglossia}",
-            r"\setmainlanguage{english}",
-            r"\setotherlanguage{arabic}",
-            r"\setmainfont{Charis}",
-            r"\newfontfamily\arabicfont[Script=Arabic]{Noto Naskh Arabic}",
-            r"\newfontfamily\arabicfonttt[Script=Arabic]{Noto Kufi Arabic}",
-            r"\newfontfamily\symbolfont{Symbola}",
-            r"\newcommand{\ar}[1]{{\textarabic{#1}}}",
-            r"\newcommand{\arpar}[1]{",
-            r"\begin{Arabic}{\Large #1}",
-            r"\end{Arabic}}",
-            r"",
-            r"\setcounter{secnumdepth}{2}",
-            r"",
-            r"\title{Arabic Textbook (LLM Processed)}",
-            r"\author{Processed from OCR output}",
-            r"",
-            r"\begin{document}",
-            r"\maketitle",
-            r"\tableofcontents",
-            r"\clearpage",
-            r"",
-        ]
-
     def process_file(self, input_file: Path):
         """Main file processing logic"""
+
         with open(input_file, "r", encoding="utf-8") as f:
             lines = f.readlines()
 
-        # Start with LaTeX header
-        self.tex_content = self.write_tex_header()
+        # Start with the LaTeX header
+        self.tex_content = write_tex_header()
 
         i = 0
         while i < len(lines):
@@ -529,9 +528,7 @@ class TextbookProcessor:
                 self.current_lesson, self.lesson_header = lesson_info
 
                 # Add chapter heading
-                self.tex_content.append(
-                    f"\\chapter{{{tex_cleanup_text(self.lesson_header)}}}"
-                )
+                self.tex_content.append(f"\\chapter{{{tex_cleanup_text(self.lesson_header)}}}")
                 self.tex_content.append("")
 
                 # Reset section states
@@ -541,31 +538,33 @@ class TextbookProcessor:
                 i += 1
                 continue
 
-            # Check for vocabulary section
-            vocab_lesson = self.detect_vocabulary_section(line)
-            if vocab_lesson:
-                self.in_vocabulary_section = True
-                self.in_exercise_section = False
-                self.pending_vocabulary_entry = None  # Reset
-                if vocab_lesson != self.current_lesson:
-                    self.current_lesson = vocab_lesson
-                self.tex_content.append(f"\\section{{Vocabulary}}")
-                self.tex_content.append("")
-                i += 1
-                continue
+            # Check for the start of the vocabulary section
+            if not self.in_vocabulary_section and not self.in_exercise_section:
+                vocab_lesson = self.detect_vocabulary_section(line)
+                if vocab_lesson:
+                    self.in_vocabulary_section = True
+                    self.in_exercise_section = False
+                    self.pending_vocabulary_entry = None  # Reset
+                    if vocab_lesson != self.current_lesson:
+                        logging.warning("Vocab section number does not match Lesson number.")
+                    self.tex_content.append(f"\\section{{Vocabulary}}")
+                    self.tex_content.append("")
+                    i += 1
+                    continue
 
-            # Check for exercise section
-            exercise_lesson = self.detect_exercise_section(line)
-            if exercise_lesson:
-                self.in_exercise_section = True
-                self.in_vocabulary_section = False
-                self.pending_vocabulary_entry = None  # Reset
-                if exercise_lesson != self.current_lesson:
-                    self.current_lesson = exercise_lesson
-                self.tex_content.append(f"\\section{{Exercises}}")
-                self.tex_content.append("\\begin{{enumerate}}")
-                i += 1
-                continue
+            # Check for the start of the exercise section (which is always after the vocabulary section)
+            if self.in_vocabulary_section:
+                exercise_lesson = self.detect_exercise_section(line)
+                if exercise_lesson:
+                    self.in_exercise_section = True
+                    self.in_vocabulary_section = False
+                    self.pending_vocabulary_entry = None  # Reset
+                    if exercise_lesson != self.current_lesson:
+                        logging.warning("Exercise section number does not match Lesson number.")
+                    self.tex_content.append(f"\\section{{Exercises}}")
+                    self.tex_content.append("\\begin{{enumerate}}")
+                    i += 1
+                    continue
 
             # Process vocabulary headers
             if self.in_vocabulary_section:
@@ -579,58 +578,6 @@ class TextbookProcessor:
                 # Parse vocabulary lines (lines with Arabic text)
                 vocab_entry = self.parse_vocabulary_line(line)
                 if vocab_entry:
-                    # Check if this completes a pending entry
-                    if (
-                        self.pending_vocabulary_entry
-                        and not vocab_entry["english_translations"]
-                    ):
-                        # This line might be a continuation, skip it
-                        i += 1
-                        continue
-
-                    self.vocabulary_data.append(vocab_entry)
-                    self.pending_vocabulary_entry = vocab_entry
-                    i += 1
-                    continue
-
-                # Check if this line continues a previous vocabulary entry
-                if (
-                    self.pending_vocabulary_entry
-                    and line.strip()
-                    and not self.is_arabic_text(line)
-                    and not line.strip().isupper()
-                ):
-
-                    # This looks like a continuation line (e.g., "ment, book")
-                    if (
-                        self.pending_vocabulary_entry["english_translations"]
-                        == "(translation on next line)"
-                    ):
-                        self.pending_vocabulary_entry["english_translations"] = (
-                            line.strip()
-                        )
-                    else:
-                        self.pending_vocabulary_entry["english_translations"] += (
-                            " " + line.strip()
-                        )
-                    i += 1
-                    continue
-
-            # Process table rows in vocabulary section (fallback for table format)
-            if self.in_vocabulary_section and self.vocabulary_headers:
-                columns = self.parse_table_row(line)
-                if columns and len(columns) >= 2:
-                    # Use the new vocabulary parsing for table rows too
-                    vocab_entry = {
-                        "page_number": self.current_page,
-                        "lesson_number": self.current_lesson,
-                        "column1": columns[0] if len(columns) > 0 else "",
-                        "column2": columns[1] if len(columns) > 1 else "",
-                        "column3": columns[2] if len(columns) > 2 else "",
-                        "english_translations": columns[-1] if columns else "",
-                        "verb_form": "",
-                        "part_of_speech": self.current_vocab_type,
-                    }
                     self.vocabulary_data.append(vocab_entry)
                     i += 1
                     continue
@@ -644,25 +591,17 @@ class TextbookProcessor:
                     # Add to TeX with warning if invalid reference
                     warning_comment = ""
                     if exercise_data["validation_warning"]:
-                        warning_comment = (
-                            f" % WARNING: {exercise_data['validation_warning']}"
-                        )
+                        warning_comment = f" % WARNING: {exercise_data['validation_warning']}"
 
-                    self.tex_content.append(
-                        f"\\item {self.format_arabic_for_tex(exercise_data['arabic_text'])}"
-                        f" [{exercise_data['quranic_reference']}]{warning_comment}"
-                    )
+                    # TODO fix this overcomplication
+                    self.tex_content.append(f"\\item {format_arabic_for_tex(exercise_data['arabic_text'])}"
+                                            f" [{exercise_data['quranic_reference']}]{warning_comment}")
                     i += 1
                     continue
 
                 # Check if we're leaving the exercise section
-                if (
-                    line.strip()
-                    and not re.match(r"^\d+\.", line.strip())
-                    and not line.startswith("###")
-                    and not self.is_arabic_text(line)
-                    and len(line.strip()) > 10
-                ):  # Probably a new section
+                if (line.strip() and not re.match(r"^\d+\.", line.strip()) and not line.startswith(
+                        "###") and not is_arabic_text(line) and len(line.strip()) > 10):  # Probably a new section
                     self.tex_content.append("\\end{enumerate}")
                     self.in_exercise_section = False
 
@@ -671,15 +610,17 @@ class TextbookProcessor:
                 # Extract Arabic words for tracking
                 self.extract_arabic_words(line, self.current_page)
 
-                # Convert markdown to TeX
+                # Convert Markdown to TeX
                 tex_line = self.convert_markdown_to_tex(line)
 
                 # Handle Arabic text
-                if self.is_arabic_text(line):
-                    tex_line = self.format_arabic_for_tex(line)
+                # FIXME: check what in line is actually Arabic text and wrap the word(s)
+                if is_arabic_text(line):
+                    tex_line = format_arabic_for_tex(line)
                 else:
                     tex_line = tex_cleanup_text(tex_line)
 
+                # TODO fix this up
                 # Handle headings
                 if line.startswith("#"):
                     level = len(line) - len(line.lstrip("#"))
@@ -692,9 +633,7 @@ class TextbookProcessor:
                     elif level == 3:
                         tex_line = f"\\subsection{{{tex_cleanup_text(heading_text)}}}"
                     else:
-                        tex_line = (
-                            f"\\subsubsection{{{tex_cleanup_text(heading_text)}}}"
-                        )
+                        tex_line = f"\\subsubsection{{{tex_cleanup_text(heading_text)}}}"
 
                 self.tex_content.append(tex_line)
                 if not tex_line.startswith("\\"):
@@ -707,13 +646,14 @@ class TextbookProcessor:
 
     def write_outputs(self):
         """Write all output files"""
+
         timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M")
 
         # Write TeX file
         tex_file = f"{self.output_prefix}.tex"
         with open(tex_file, "w", encoding="utf-8") as f:
             f.write("\n".join(self.tex_content))
-        print(f"TeX file written to: {tex_file}")
+        logging.info(f"TeX file written to: {tex_file}")
 
         # Write Arabic words CSV
         words_csv = f"{self.output_prefix}-arabic-words.csv"
@@ -724,94 +664,50 @@ class TextbookProcessor:
             for word, data in sorted(self.arabic_words.items()):
                 pages = ", ".join(map(str, sorted(data["pages"])))
                 writer.writerow([word, data["count"], pages])
-        print(
-            f"Arabic words CSV written to: {words_csv} ({len(self.arabic_words)} words)"
-        )
+        logging.info(f"Arabic words CSV written to: {words_csv} ({len(self.arabic_words)} words)")
 
         # Write vocabulary CSV
         vocab_csv = f"{self.output_prefix}-vocabulary.csv"
         with open(vocab_csv, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(
-                [
-                    "Page Number",
-                    "Lesson Number",
-                    "Column 1",
-                    "Column 2",
-                    "Column 3",
-                    "English Translations",
-                    "Verb Form",
-                    "Part of Speech",
-                ]
-            )
+            writer.writerow(["Page Number", "Lesson Number", "Column 1", "Column 2", "Column 3", "English Translations",
+                             "Verb Form", "Part of Speech", ])
 
             for entry in self.vocabulary_data:
                 writer.writerow(
-                    [
-                        entry["page_number"],
-                        entry["lesson_number"],
-                        entry["column1"],
-                        entry["column2"],
-                        entry["column3"],
-                        entry["english_translations"],
-                        entry["verb_form"],
-                        entry["part_of_speech"],
-                    ]
-                )
-        print(f"Vocabulary CSV written to: {vocab_csv}")
+                    [entry["page_number"], entry["lesson_number"], entry["column1"], entry["column2"], entry["column3"],
+                     entry["english_translations"], entry["verb_form"], entry["part_of_speech"], ])
+        logging.info(f"Vocabulary CSV written to: {vocab_csv}")
 
         # Write exercises CSV
         exercises_csv = f"{self.output_prefix}-exercises.csv"
         with open(exercises_csv, "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(
-                [
-                    "Page Number",
-                    "Lesson Number",
-                    "Exercise Number",
-                    "Arabic Text",
-                    "Quran Chapter/Surah",
-                    "Quran Verse/Ayah",
-                    "Warning",
-                ]
-            )
+            writer.writerow(["Page Number", "Lesson Number", "Exercise Number", "Arabic Text", "Quran Chapter/Surah",
+                             "Quran Verse/Ayah", "Warning", ])
 
             for entry in self.exercises_data:
                 writer.writerow(
-                    [
-                        entry["page_number"],
-                        entry["lesson_number"],
-                        entry["exercise_number"],
-                        entry["arabic_text"],
-                        entry["surah"],
-                        entry["ayah"],
-                        entry["validation_warning"],
-                    ]
-                )
-        print(f"Exercises CSV written to: {exercises_csv}")
+                    [entry["page_number"], entry["lesson_number"], entry["exercise_number"], entry["arabic_text"],
+                     entry["surah"], entry["ayah"], entry["validation_warning"], ])
+        logging.info(f"Exercises CSV written to: {exercises_csv}")
 
-        # Write JSON file compatible with arabic-textbook-to-tex-file.py
+        # Write the JSON file compatible with arabic-textbook-to-tex-file.py
         self.write_json_output(timestamp)
 
     def write_json_output(self, timestamp: str):
-        """Write JSON output compatible with existing textbook processor"""
-        # Convert vocabulary data to expected format
+        """Write JSON output compatible with the existing textbook processor"""
+
+        # Convert vocabulary data to the expected format
         vocabulary_json = []
         for entry in self.vocabulary_data:
             if entry["part_of_speech"] == "verb":
-                arabic_words = {
-                    "perfect": entry["column1"],
-                    "imperfect": entry["column2"],
-                    "verbal-noun": entry["column3"],
-                }
+                arabic_words = {"perfect": entry["column1"], "imperfect": entry["column2"],
+                                "verbal-noun": entry["column3"], }
             else:
-                arabic_words = {
-                    "singular": entry["column1"],
-                    "dual": entry["column2"],
-                    "plural": entry["column3"],
-                }
+                arabic_words = {"singular": entry["column1"], "dual": entry["column2"], "plural": entry["column3"], }
 
-            # Extract sort letter from first non-empty Arabic word
+            # Extract sort letter from the first non-empty Arabic word
             sort_word = entry["column1"] or entry["column2"] or entry["column3"]
             sort_letter = sort_word[0] if sort_word else ""
 
@@ -822,77 +718,47 @@ class TextbookProcessor:
                 for meaning in english_meanings.split(","):
                     meaning = meaning.strip()
                     if meaning:
-                        definitions.append(
-                            {
-                                "english_definition": meaning,
-                                "source_name": "textbook_llm_ocr",
-                                "english_sort_letter": (
-                                    meaning[0].upper() if meaning else ""
-                                ),
-                                "english_sort_start_index": 0,
-                            }
-                        )
+                        definitions.append({"english_definition": meaning, "source_name": "textbook_llm_ocr",
+                                            "english_sort_letter": (meaning[0].upper() if meaning else ""),
+                                            "english_sort_start_index": 0, })
 
-            vocab_entry = {
-                "chapter_vocab": entry["lesson_number"],
-                "part_of_speech": entry["part_of_speech"],
-                "arabic_words": arabic_words,
-                "arabic_sort_letter": sort_letter,
-                "arabic_sort_start_index": 0,
-                "english_meanings": english_meanings,
-                "english_meanings_sort_letter": (
-                    english_meanings[0].upper() if english_meanings else ""
-                ),
-                "english_meanings_sort_start_index": 0,
-                "source_name": "textbook_llm_ocr",
-                "definitions": definitions,
-            }
+            vocab_entry = {"chapter_vocab": entry["lesson_number"], "part_of_speech": entry["part_of_speech"],
+                           "arabic_words": arabic_words, "arabic_sort_letter": sort_letter,
+                           "arabic_sort_start_index": 0, "english_meanings": english_meanings,
+                           "english_meanings_sort_letter": (english_meanings[0].upper() if english_meanings else ""),
+                           "english_meanings_sort_start_index": 0, "source_name": "textbook_llm_ocr",
+                           "definitions": definitions, }
 
             vocabulary_json.append(vocab_entry)
 
         # Convert exercises data to expected format
         exercises_json = []
         for entry in self.exercises_data:
-            exercise_entry = {
-                "exercise_text": entry["arabic_text"],
-                "exercise_chapter": entry["lesson_number"],
-                "exercise_number": entry["exercise_number"],
-                "quranic_reference": entry["quranic_reference"],
-                "surah": entry["surah"],
-                "ayah": entry["ayah"],
-                "quranic_sources": [],
-                "validation_warning": entry["validation_warning"],
-            }
+            exercise_entry = {"exercise_text": entry["arabic_text"], "exercise_chapter": entry["lesson_number"],
+                              "exercise_number": entry["exercise_number"],
+                              "quranic_reference": entry["quranic_reference"], "surah": entry["surah"],
+                              "ayah": entry["ayah"], "quranic_sources": [],
+                              "validation_warning": entry["validation_warning"], }
 
             exercises_json.append(exercise_entry)
 
-        # Create complete JSON structure
-        json_data = {
-            "lesson": {
-                "source": f"LLM OCR processed on {timestamp}",
-                "processing_date": timestamp,
-            },
-            "vocabulary": vocabulary_json,
-            "exercises": exercises_json,
-        }
+        # Create a complete JSON structure
+        json_data = {"lesson": {"source": f"LLM OCR processed on {timestamp}", "processing_date": timestamp, },
+                     "vocabulary": vocabulary_json, "exercises": exercises_json, }
 
         # Write JSON file
         json_file = f"arabic-textbook-llm-{timestamp.replace(':', '')}.json"
         with open(json_file, "w", encoding="utf-8") as f:
             json.dump(json_data, f, ensure_ascii=False, indent=2)
 
-        print(f"JSON file written to: {json_file}")
+        logging.info(f"JSON file written to: {json_file}")
 
 
 def main():
     parser = argparse.ArgumentParser(description="Process LLM OCR textbook output")
     parser.add_argument("input_file", help="Input markdown file from LLM OCR")
-    parser.add_argument(
-        "-o",
-        "--output-prefix",
-        default="textbook-llm",
-        help="Output file prefix (default: textbook-llm)",
-    )
+    parser.add_argument("-o", "--output-prefix", default="textbook-llm",
+                        help="Output file prefix (default: textbook-llm)", )
     parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
 
     args = parser.parse_args()
@@ -903,14 +769,14 @@ def main():
 
     input_path = Path(args.input_file)
     if not input_path.exists():
-        print(f"Error: Input file {input_path} does not exist")
+        logging.critical(f"Input file {input_path} does not exist. EXITING.")
         return 1
 
     processor = TextbookProcessor(args.output_prefix)
     processor.process_file(input_path)
     processor.write_outputs()
 
-    print("Processing completed successfully!")
+    logging.info("Processing completed successfully!")
     return 0
 
 
