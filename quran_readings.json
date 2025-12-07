@@ -1,0 +1,533 @@
+[
+  {
+    "session_number": 2,
+    "readings": [
+      {
+        "chapter": 2,
+        "verse": [
+          255,
+          257
+        ]
+      },
+      {
+        "chapter": 2,
+        "verse": [
+          285
+        ]
+      },
+      {
+        "chapter": 4,
+        "verse": [
+          163,
+          166
+        ]
+      },
+      {
+        "chapter": 14,
+        "verse": [
+          31,
+          41
+        ]
+      },
+      {
+        "chapter": 26,
+        "verse": [
+          69,
+          104
+        ]
+      },
+      {
+        "chapter": 6,
+        "verse": [
+          74,
+          82
+        ]
+      },
+      {
+        "chapter": 21,
+        "verse": [
+          51,
+          73
+        ]
+      },
+      {
+        "chapter": 37,
+        "verse": [
+          83,
+          113
+        ]
+      },
+      {
+        "chapter": 43,
+        "verse": [
+          26,
+          31
+        ]
+      },
+      {
+        "chapter": 3,
+        "verse": [
+          65,
+          68
+        ]
+      },
+      {
+        "chapter": 2,
+        "verse": [
+          124,
+          141
+        ]
+      },
+      {
+        "chapter": 51,
+        "verse": [
+          24,
+          37
+        ]
+      },
+      {
+        "chapter": 29,
+        "verse": [
+          16,
+          35
+        ]
+      },
+      {
+        "chapter": 2,
+        "verse": [
+          258,
+          260
+        ]
+      },
+      {
+        "chapter": 37,
+        "verse": [
+          133,
+          138
+        ]
+      },
+      {
+        "chapter": 27,
+        "verse": [
+          54,
+          58
+        ]
+      },
+      {
+        "chapter": 12,
+        "verse": []
+      }
+    ]
+  },
+  {
+    "session_number": 3,
+    "readings": [
+      {
+        "chapter": 3,
+        "verse": [
+          69,
+          83
+        ]
+      },
+      {
+        "chapter": 72,
+        "verse": []
+      }
+    ]
+  },
+  {
+    "session_number": 4,
+    "readings": [
+      {
+        "chapter": 53,
+        "verse": []
+      },
+      {
+        "chapter": 14,
+        "verse": [
+          1,
+          4
+        ]
+      },
+      {
+        "chapter": 10,
+        "verse": [
+          37,
+          70
+        ]
+      },
+      {
+        "chapter": 74,
+        "verse": []
+      },
+      {
+        "chapter": 41,
+        "verse": []
+      },
+      {
+        "chapter": 68,
+        "verse": [
+          1,
+          32
+        ]
+      },
+      {
+        "chapter": 18,
+        "verse": [
+          1,
+          26
+        ]
+      },
+      {
+        "chapter": 18,
+        "verse": [
+          83,
+          99
+        ]
+      },
+      {
+        "chapter": 17,
+        "verse": [
+          78,
+          100
+        ]
+      },
+      {
+        "chapter": 25,
+        "verse": [
+          1,
+          29
+        ]
+      },
+      {
+        "chapter": 13,
+        "verse": [
+          30,
+          33
+        ]
+      },
+      {
+        "chapter": 34,
+        "verse": [
+          43,
+          50
+        ]
+      },
+      {
+        "chapter": 17,
+        "verse": [
+          105,
+          111
+        ]
+      }
+    ]
+  },
+  {
+    "session_number": 5,
+    "readings": [
+      {
+        "chapter": 55,
+        "verse": [
+          1,
+          30
+        ]
+      },
+      {
+        "chapter": 17,
+        "verse": [
+          45,
+          54
+        ]
+      },
+      {
+        "chapter": 19,
+        "verse": []
+      },
+      {
+        "chapter": 20,
+        "verse": []
+      },
+      {
+        "chapter": 21,
+        "verse": []
+      },
+      {
+        "chapter": 26,
+        "verse": [
+          141,
+          159
+        ]
+      },
+      {
+        "chapter": 43,
+        "verse": []
+      },
+      {
+        "chapter": 22,
+        "verse": [
+          52,
+          57
+        ]
+      },
+      {
+        "chapter": 44,
+        "verse": []
+      }
+    ]
+  },
+  {
+    "session_number": 6,
+    "readings": [
+      {
+        "chapter": 28,
+        "verse": [
+          44,
+          56
+        ]
+      },
+      {
+        "chapter": 5,
+        "verse": [
+          11,
+          84
+        ]
+      },
+      {
+        "chapter": 16,
+        "verse": [
+          98,
+          105
+        ]
+      },
+      {
+        "chapter": 6,
+        "verse": [
+          4,
+          10
+        ]
+      },
+      {
+        "chapter": 17,
+        "verse": [
+          58,
+          72
+        ]
+      },
+      {
+        "chapter": 17,
+        "verse": [
+          1
+        ]
+      },
+      {
+        "chapter": 15,
+        "verse": [
+          85,
+          99
+        ]
+      },
+      {
+        "chapter": 2,
+        "verse": [
+          275,
+          281
+        ]
+      },
+      {
+        "chapter": 38,
+        "verse": [
+          1,
+          11
+        ]
+      },
+      {
+        "chapter": 46,
+        "verse": [
+          28,
+          30
+        ]
+      }
+    ]
+  },
+  {
+    "session_number": 7,
+    "readings": [
+      {
+        "chapter": 60,
+        "verse": []
+      },
+      {
+        "chapter": 22,
+        "verse": [
+          38,
+          51
+        ]
+      },
+      {
+        "chapter": 2,
+        "verse": [
+          190,
+          195
+        ]
+      },
+      {
+        "chapter": 2,
+        "verse": [
+          216,
+          218
+        ]
+      },
+      {
+        "chapter": 8,
+        "verse": []
+      },
+      {
+        "chapter": 39,
+        "verse": [
+          41,
+          75
+        ]
+      },
+      {
+        "chapter": 36,
+        "verse": []
+      },
+      {
+        "chapter": 52,
+        "verse": [
+          29,
+          49
+        ]
+      },
+      {
+        "chapter": 34,
+        "verse": [
+          22,
+          42
+        ]
+      }
+    ]
+  },
+  {
+    "session_number": 8,
+    "readings": [
+      {
+        "chapter": 63,
+        "verse": []
+      },
+      {
+        "chapter": 2,
+        "verse": [
+          1,
+          171
+        ]
+      },
+      {
+        "chapter": 3,
+        "verse": [
+          1,
+          188
+        ]
+      },
+      {
+        "chapter": 4,
+        "verse": [
+          36,
+          57
+        ]
+      }
+    ]
+  },
+  {
+    "session_number": 9,
+    "readings": []
+  },
+  {
+    "session_number": 10,
+    "readings": []
+  },
+  {
+    "session_number": 11,
+    "readings": [
+      {
+        "chapter": 59,
+        "verse": []
+      },
+      {
+        "chapter": 4,
+        "verse": [
+          101,
+          113
+        ]
+      },
+      {
+        "chapter": 24,
+        "verse": []
+      },
+      {
+        "chapter": 33,
+        "verse": []
+      }
+    ]
+  },
+  {
+    "session_number": 12,
+    "readings": [
+      {
+        "chapter": 48,
+        "verse": []
+      },
+      {
+        "chapter": 49,
+        "verse": []
+      }
+    ]
+  },
+  {
+    "session_number": 13,
+    "readings": [
+      {
+        "chapter": 17,
+        "verse": [
+          78,
+          89
+        ]
+      },
+      {
+        "chapter": 7,
+        "verse": [
+          127,
+          157
+        ]
+      }
+    ]
+  },
+  {
+    "session_number": 14,
+    "readings": [
+      {
+        "chapter": 9,
+        "verse": []
+      }
+    ]
+  },
+  {
+    "session_number": 15,
+    "readings": [
+      {
+        "chapter": 5,
+        "verse": [
+          1,
+          3
+        ]
+      },
+      {
+        "chapter": 4,
+        "verse": [
+          69,
+          70
+        ]
+      }
+    ]
+  }
+]
