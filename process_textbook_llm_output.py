@@ -772,11 +772,11 @@ class TextbookProcessor:
 
         timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M")
 
-        # Write TeX file
-        tex_file = f"{self.output_prefix}.tex"
-        with open(tex_file, "w", encoding="utf-8") as f:
-            f.write("\n".join(self.tex_content))
-        logging.info(f"TeX file written to: {tex_file}")
+        # # Write TeX file
+        # tex_file = f"{self.output_prefix}.tex"
+        # with open(tex_file, "w", encoding="utf-8") as f:
+        #     f.write("\n".join(self.tex_content))
+        # logging.info(f"TeX file written to: {tex_file}")
 
         # Write Arabic words CSV
         words_csv = f"{self.output_prefix}-arabic-words.csv"
