@@ -405,7 +405,6 @@ class TextbookProcessor:
         ## Split into parts and identify Arabic vs. transliteration vs. English
         verb_form_number = ""  # to fill in column as empty for nouns, or for verbs without the verb form number specified
 
-
         ## Parse out verb form (number) if present, should always be enclosed by braces after editing the output file
         # hmm though I guess could just assume any number in a vocab row is a verb form??
         if self.current_vocab_type == "verb":
@@ -424,10 +423,12 @@ class TextbookProcessor:
         match_plural = re.search(pattern_plural, line)
         # index_line_pl = line.find("(pl.)")
 
-        # Keep words separate by slash together
-        # Remove spaces around slash and replace them later
-        pattern_slash_spaces = r"\s*\/\s*"
-        line = re.sub(pattern_slash_spaces, "/", line)
+        # pattern to find a slash when combining words later
+        # pattern_slash_spaces = r"\s*/\s*" # this doesn't work... I'm too tired to figure out why
+        pattern_slash_spaces = r"/"
+        # # hmm this works, but I don't actually need to find ` / `...
+        # if line.find(" / ") != -1:
+        #     logging.debug(f"Found slash in vocabulary line: {line}")
 
         parts = line.split()
         if len(parts) < 2:  # there should be at least on arabic word and one english word
@@ -437,11 +438,10 @@ class TextbookProcessor:
         transliterations = []
         english_parts = []
 
-        # go throught split parts of line, use while loop so I can process successive elements when needed (e.g. transliterations)
+        # go through split parts of the line. Use a while loop so I can process successive elements when needed (e.g. transliterations)
         i = 0
         while i < len(parts):
             part = parts[i]
-            part_with_slash_spaces = re.sub(pattern_slash_spaces, " / ", part)  # does nothing if no slashses
 
             if contains_arabic_text(part):
                 # ok so it contains arabic text
@@ -459,8 +459,20 @@ class TextbookProcessor:
                         # maybe it is some note "from this word..." or e.g. vocab 11: نَظَرَ يَنْظُرُ نَظَرٌ to look at (إِلَىٰ), into (فِي)
                         english_parts.append(part)
 
+                # ok, increment to the next part
                 i += 1
-                # we just had some arabic, the next part might be a transliteration (lowercase, non-Arabic charset)
+
+                # look for slash right after arabic text to combine it easier
+                if i < len(parts) and re.match(pattern_slash_spaces, parts[i]):
+                    arabic_words[-1] += " " + parts[i]  # add a space for readability
+                    i += 1
+                    # we should also have some arabic to join after the slash, but test
+                    if i < len(parts):
+                        if contains_arabic_text(part):
+                            arabic_words[-1] += " " + parts[i]
+                            i += 1
+
+                # we just had some arabic the next part might be a transliteration (lowercase, non-Arabic charset)
                 if self.current_lesson <= 5:  # the textbook only has transliterations for lesson 1 through 5
                     if i < len(parts) and not contains_arabic_text(parts[i]) and parts[i][0].islower():
                         transliterations.append(parts[i])
@@ -468,6 +480,10 @@ class TextbookProcessor:
             else:
                 english_parts.append(part)
                 i += 1
+                # look for slash right after english text to combine it easier
+                if i < len(parts) and re.match(pattern_slash_spaces, parts[i]):
+                    english_parts[-1] += " " + parts[i]  # add a space for readability
+                    i += 1
 
         if english_parts:
             english_text = " ".join(english_parts)
@@ -483,7 +499,7 @@ class TextbookProcessor:
         # Col2: Dual / Imperf.
         # Col3: Plural / Verbal N.
 
-        if len(arabic_words) > 3:
+        if self.current_vocab_type != "idiom" and len(arabic_words) > 3:
             # ugh what happened with this then?
             logging.warning(f"More than 3 Arabic words in vocabulary line: {line}")
             # shunt to english part?
@@ -524,7 +540,7 @@ class TextbookProcessor:
                     # then assign to the plural column
                     if index_line_sng == -1 and match_plural:
                         logging.debug(
-                            f"Plural abbreviation found on line without singular abbreviation, moving it to Plural columng: {line}")
+                            f"Plural abbreviation found on line without singular abbreviation, moving it to Plural column: {line}")
                         col1 = ""
                         col3 = arabic_words[0]  # the `else` was already done above as a default.
                 elif len(arabic_words) > 1:
@@ -540,7 +556,7 @@ class TextbookProcessor:
                     # then assign to the plural column
                     if index_line_sng == -1 and match_plural:
                         logging.debug(
-                            f"Plural abbreviation found on line without singular abbreviation, moving it to Plural columng: {line}")
+                            f"Plural abbreviation found on line without singular abbreviation, moving it to Plural column: {line}")
                         col1 = ""
                         col3 = arabic_words[0]  # the `else` was already done above as a default.
                 if len(arabic_words) > 1:
