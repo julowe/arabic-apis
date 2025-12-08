@@ -62,11 +62,11 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 27,3,مَكَّةُ,,,Mecca,,noun
 27,3,فَقِيرٌ,,فُقَرَاءُ,poor,,noun
 27,3,أَسْوَدُ,,سُودٌ,black,,noun
-27,3,سَوْدَاءُ,,,(f.),,noun
+27,3,سَوْدَاءُ,,,(f.) black,,noun
 27,3,أَبْيَضُ,,بِيضٌ,white,,noun
-27,3,بَيْضَاءُ,,,(f.),,noun
+27,3,بَيْضَاءُ,,,(f.) white,,noun
 27,3,عَالٍ,,,"‘ālin high, lofty",,noun
-28,3,عَالِيَةٌ,,,‘āliyatun (f.),,noun
+28,3,عَالِيَةٌ,,,"‘āliyatun (f.) high, lofty",,noun
 28,3,لَطِيفٌ,,,gentle,,noun
 28,3,جَاهِلٌ,,جَاهِلُونَ,ignorant,,noun
 32,4,نَارٌ,,نِيرَانٌ,"(f.) fire, Hell",,noun
@@ -126,7 +126,7 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 42,6,قَبْلَ,,,before,,noun
 42,6,بَعْدَ,,,after,,noun
 47,7,الرَّحْمَٰنُ,,,the Merciful,,noun
-47,7,الْعَالَمِينَ,,,(gen. pl. only) created beings,,noun
+47,7,,,الْعَالَمِينَ,(gen. pl. only) created beings,,noun
 47,7,شَفَا,,,"lip, rim, edge",,noun
 47,7,حُفْرَةٌ,,,pit,,noun
 47,7,أَبٌ,,آبَاءٌ,father,,noun
@@ -212,7 +212,7 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 67,10,بَشَرٌ,,,"human being (s.); men, human beings (pl.)",,noun
 67,10,سُوءٌ,,,"evil, wrong",,noun
 67,10,شَهِيدٌ,,شُهَدَاءُ,witness,,noun
-67,10,قَوْلٌ,,أَقْوَالٌ,"saying, words",,noun
+67,10,قَوْلٌ,,أَقْوَالٌ / [أَقَاوِيلُ],"saying, words",,noun
 67,10,مَقَامٌ,,,station,,noun
 67,10,مُلْكٌ,,,"sovereignty, kingdom",,noun
 67,10,عِلْمٌ,,عُلُومٌ,knowledge,,noun
@@ -228,7 +228,7 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 67,10,إِلَّا,,,except,,noun
 72,11,حَفِظَ,يَحْفَظُ,حِفْظٌ,"to guard, preserve, keep",,verb
 72,11,فَتَحَ,يَفْتَحُ,فَتْحٌ,to open,,verb
-72,11,نَظَرَ,يَنْظُرُ,نَظَرٌ,to look at into,,verb
+72,11,نَظَرَ,يَنْظُرُ,نَظَرٌ,"to look at (إِلَىٰ), into (فِي)",,verb
 72,11,إِثْمٌ,,,sin,,noun
 72,11,أَجَلٌ,,,term,,noun
 72,11,ثَمَرَةٌ,,ثَمَرَاتٌ,fruit,,noun
@@ -239,7 +239,7 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 73,11,مَغْفِرَةٌ,,,forgiveness,,noun
 73,11,مَكَانٌ,,أَمْكِنَةٌ,"place, side",,noun
 73,11,لَيْلٌ,,لَيَالٍ,"night, night time",,noun
-73,11,مَرَّةٌ,,مَرَّاتٌ,"/ time, occasion",,noun
+73,11,مَرَّةٌ,,مَرَّاتٌ / مِرَارٌ,"time, occasion",,noun
 73,11,مَوْتٌ,,,death,,noun
 73,11,نَهَارٌ,,,"day, daytime",,noun
 73,11,طَعَامٌ,,,food,,noun
@@ -249,7 +249,7 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 73,11,مُسْتَطَرٌ,,,inscribed,,noun
 73,11,صَغِيرٌ,,,small,,noun
 73,11,قَدِيرٌ,,,having power over,,noun
-73,11,فَوْقَ,,,"above, over",,noun
+73,11,فَوْقَ,,,"above, over (sometimes used as a synonym for *ʿalā*, ‘on’.)",,noun
 78,12,كَانَ,يَكُونُ,كَوْنٌ,to be,,verb
 78,12,قَالَ,يَقُولُ,قَوْلٌ,to say,,verb
 78,12,سَكَتَ,يَسْكُتُ,سُكُوتٌ,to abate; (+*ʿan*) to leave,,verb
@@ -284,7 +284,7 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 84,13,سَاحِرٌ,,,"magician, sorcerer",,noun
 84,13,بُرْهَانٌ,,,proof,,noun
 84,13,مَجْمَعٌ,,,"meeting, meeting-place, confluence",,noun
-84,13,عَيْنٌ,,عُيُونٌ^A,(f.) spring,,noun
+84,13,عَيْنٌ,,عُيُونٌ,"(f.) spring (When عَيْنٌ has the sense of ‘eye’, its Qurʾānic plural is أَعْيُنٌ)",,noun
 84,13,جَنَّةٌ,,,"obstacle, partition, veil",,noun
 84,13,شَرِيكٌ,,شُرَكَاءُ,"partner, associate",,noun
 84,13,زَرْعٌ,,,cultivation; green crops,,noun
@@ -292,7 +292,6 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 84,13,رُمَّانٌ,,,pomegranates,,noun
 84,13,مَبْسُوطٌ,,,"spread, extended",,noun
 84,13,فِئَةٌ,,,"party, group",,noun
-84,13,عَيْنٌ,,أَعْيُنٌ.,"^A When has the sense of ‘eye’, its Qurʾānic plural is",,noun
 91,14,حِجَّةٌ,,حِجَجٌ,year,,noun
 91,14,عَامٌ,,أَعْوَامٌ,year,,noun
 91,14,شَهْرٌ,,شُهُورٌ/أَشْهُرٌ,month,,noun
@@ -301,33 +300,33 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 92,14,مِسْكِينٌ,,مَسَاكِينُ,"poor, destitute",,noun
 92,14,جَلْدَةٌ,,,"lash, stripe",,noun
 92,14,عَجِيفٌ,,عِجَافٌ,thin,,noun
-96,15,أَخَّرَ,يُؤَخِّرُ,تَأْخِيرٌ,{2} to defer,,verb
-96,15,عَلَّمَ,يُعَلِّمُ,تَعْلِيمٌ,{2} to teach,,verb
-96,15,قَدَّمَ,يُقَدِّمُ,تَقْدِيمٌ,"{2} to send forward, to",,verb
-96,15,كَذَّبَ,يُكَذِّبُ,تَكْذِيبٌ,"{2} to deny, give the lie to",,verb
-96,15,جَادَلَ,يُجَادِلُ,جِدَالٌ,"{3} to dispute, contend",,verb
-96,15,جَاهَدَ,يُجَاهِدُ,جِهَادٌ,{3} to strive,,verb
-96,15,قَاتَلَ,يُقَاتِلُ,قِتَالٌ,"{3} to fight, confound",,verb
-96,15,أَرْسَلَ,يُرْسِلُ,إِرْسَالٌ,{4} to send,,verb
-96,15,أَنْزَلَ,يُنْزِلُ,إِنْزَالٌ,{4} to send down,,verb
-96,15,أَهْلَكَ,يُهْلِكُ,إِهْلَاكٌ,{4} to destroy,,verb
-96,15,تَذَكَّرَ,يَتَذَكَّرُ,تَذَكُّرٌ,"{5} to remember, bear in",,verb
-96,15,تَوَكَّلَ,يَتَوَكَّلُ,تَوَكُّلٌ,{5} to put one's trust in,,verb
-96,15,تَعَاوَنَ,يَتَعَاوَنُ,تَعَاوُنٌ,"{6} to co-operate, help",,verb
-96,15,اِنْقَلَبَ,يَنْقَلِبُ,اِنْقِلَابٌ,"{7} return, be overturned",,verb
-97,15,اِتَّبَعَ,يَتَّبِعُ,اِتِّبَاعٌ,{8} to follow,,verb
-97,15,اِخْتَلَفَ,يَخْتَلِفُ,اِخْتِلَافٌ,"{8} to vary, differ",,verb
-97,15,اِسْتَغْفَرَ,يَسْتَغْفِرُ,اِسْتِغْفَارٌ,{10} to seek forgiveness,,verb
-97,15,اِسْتَكْبَرَ,يَسْتَكْبِرُ,اِسْتِكْبَارٌ,"{10} to be haughty, insolent, proud",,verb
+96,15,أَخَّرَ,يُؤَخِّرُ,تَأْخِيرٌ,to defer,2,verb
+96,15,عَلَّمَ,يُعَلِّمُ,تَعْلِيمٌ,to teach,2,verb
+96,15,قَدَّمَ,يُقَدِّمُ,تَقْدِيمٌ,"to send forward, to bring forward",2,verb
+96,15,كَذَّبَ,يُكَذِّبُ,تَكْذِيبٌ,"to deny, give the lie to",2,verb
+96,15,جَادَلَ,يُجَادِلُ,جِدَالٌ,"to dispute, contend with",3,verb
+96,15,جَاهَدَ,يُجَاهِدُ,جِهَادٌ,to strive,3,verb
+96,15,قَاتَلَ,يُقَاتِلُ,قِتَالٌ,"to fight, confound",3,verb
+96,15,أَرْسَلَ,يُرْسِلُ,إِرْسَالٌ,to send,4,verb
+96,15,أَنْزَلَ,يُنْزِلُ,إِنْزَالٌ,to send down,4,verb
+96,15,أَهْلَكَ,يُهْلِكُ,إِهْلَاكٌ,to destroy,4,verb
+96,15,تَذَكَّرَ,يَتَذَكَّرُ,تَذَكُّرٌ,"to remember, bear in mind",5,verb
+96,15,تَوَكَّلَ,يَتَوَكَّلُ,تَوَكُّلٌ,to put one's trust in (*ʿalā*),5,verb
+96,15,تَعَاوَنَ,يَتَعَاوَنُ,تَعَاوُنٌ,"to co-operate, help one another",6,verb
+96,15,اِنْقَلَبَ,يَنْقَلِبُ,اِنْقِلَابٌ,"return, be overturned",7,verb
+97,15,اِتَّبَعَ,يَتَّبِعُ,اِتِّبَاعٌ,to follow,8,verb
+97,15,اِخْتَلَفَ,يَخْتَلِفُ,اِخْتِلَافٌ,"to vary, differ",8,verb
+97,15,اِسْتَغْفَرَ,يَسْتَغْفِرُ,اِسْتِغْفَارٌ,to seek forgiveness,10,verb
+97,15,اِسْتَكْبَرَ,يَسْتَكْبِرُ,اِسْتِكْبَارٌ,"to be haughty, insolent, proud",10,verb
 97,15,دِينٌ,,أَدْيَانٌ,religion,,noun
 97,15,سَاعَةٌ,,سَاعَاتٌ,hour,,noun
 97,15,مَاءٌ,,مِيَاهٌ,water,,noun
-102,16,أَبْصَرَ,يُبْصِرُ,إِبْصَارٌ,"{4} (+bi-) to see, observe",,verb
-102,16,دَبَّرَ,يُدَبِّرُ,تَدْبِيرٌ,"{2} to manage, arrange",,verb
-102,16,كَلَّمَ,يُكَلِّمُ,تَكْلِيمٌ,"{2} to speak to, address",,verb
+102,16,أَبْصَرَ,يُبْصِرُ,إِبْصَارٌ,"(*+bi-*) to see, observe",4,verb
+102,16,دَبَّرَ,يُدَبِّرُ,تَدْبِيرٌ,"to manage, arrange",2,verb
+102,16,كَلَّمَ,يُكَلِّمُ,تَكْلِيمٌ,"to speak to, address",2,verb
 102,16,حِكْمَةٌ,,,wisdom,,noun
-102,16,زَكَاةٌ,,زَكَوٰةٌ,/ alms,,noun
-103,16,صَلَاةٌ,,صَلَوٰةٌ,/ prayer,,noun
+102,16,زَكَاةٌ / زَكَوٰةٌ,,,alms,,noun
+103,16,صَلَاةٌ / صَلَوٰةٌ,,صَلَوَاتٌ,prayer,,noun
 103,16,عَرْشٌ,,,throne,,noun
 103,16,فَرِيقٌ,,,"party, company",,noun
 103,16,قَدَمٌ,,أَقْدَامٌ,(f.) foot,,noun
@@ -339,14 +338,14 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 109,17,قَسَمَ,يَقْسِمُ,قَسْمٌ,to divide,,verb
 109,17,عَقَلَ,يَعْقِلُ,عَقْلٌ,to understand,,verb
 109,17,عَجِلَ,يَعْجِلُ,عَجَلٌ,to hasten to,,verb
-109,17,إِسْتَعْجَلَ,يَسْتَعْجِلُ,إِسْتِعْجَالٌ,"10 to hasten, seek to hasten",,verb
+109,17,إِسْتَعْجَلَ,يَسْتَعْجِلُ,إِسْتِعْجَالٌ,"to hasten, seek to hasten",10,verb
 109,17,كَفَرَ,يَكْفُرُ,كُفْرٌ,"to deny, not to believe in, to be an unbeliever",,verb
 109,17,لَبِسَ,يَلْبِسُ,لَبْسٌ,to confound,,verb
-109,17,أَجْمَعَ,يَجْمَعُ,إِجْمَاعٌ,4 to make hear,,verb
-109,17,بَشَّرَ,يُبَشِّرُ,تَبْشِيرٌ,2 to bring good news/tidings,,verb
-109,17,تَبَيَّنَ,يَتَبَيَّنُ,تَبَيُّنٌ,"5 to become clear, be made clear",,verb
-109,17,أَنْفَقَ,يُنْفِقُ,إِنْفَاقٌ,4 to spend,,verb
-109,17,خُسْرَانٌ,,,"loss, ruin",,noun
+109,17,أَجْمَعَ,يَجْمَعُ,إِجْمَاعٌ,to make hear,4,verb
+109,17,بَشَّرَ,يُبَشِّرُ,تَبْشِيرٌ,to bring good news/tidings,2,verb
+109,17,تَبَيَّنَ,يَتَبَيَّنُ,تَبَيُّنٌ,"to become clear, be made clear",5,verb
+109,17,أَنْفَقَ,يُنْفِقُ,إِنْفَاقٌ,to spend,4,verb
+109,17,خُسْرَانٌ,,,"loss, ruin [from *khasira* 'to lose']",,noun
 109,17,حُكْمٌ,,,judgement,,noun
 109,17,ذِكْرَى,,,"remembrance, reminder",,noun
 110,17,مَفَرٌّ,,,refuge,,noun
@@ -356,7 +355,7 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 110,17,يَمِينٌ,,أَيْمَانٌ,"right, right hand; oath",,noun
 110,17,قَلْبٌ,,قُلُوبٌ,heart,,noun
 110,17,صُورَةٌ,,صُوَرٌ,form,,noun
-110,17,أَصَمُّ,,صَمَّاءُ,(f.) deaf,,noun
+110,17,أَصَمُّ(f.) / صَمَّاءُ,,صُمٌّ,deaf,,noun
 110,17,خَالِصٌ,,,pure,,noun
 110,17,بَاطِلٌ,,,false,,noun
 118,18,حَسِبَ,يَحْسَبُ,مَحْسَبَةٌ,"to think, reckon",,verb
@@ -366,18 +365,18 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 118,18,عَجَزَ,يَعْجِزُ,عَجْزٌ,to be unable,,verb
 118,18,نَزَغَ,يَنْزَغُ,نَزْغٌ,"to cause strife, dissension",,verb
 118,18,نَفِدَ,يَنْفَدُ,نَفَادٌ,to be exhausted,,verb
-118,18,حَرَّمَ,يُحَرِّمُ,تَحْرِيمٌ,"2 to forbid, prohibit",,verb
-118,18,نَزَّلَ,يُنَزِّلُ,تَنْزِيلٌ,2 to send down,,verb
-118,18,أَنْذَرَ,يُنْذِرُ,إِنْذَارٌ,4 to warn,,verb
-118,18,تَابَعَ,يُتَابِعُ,مُتَابَعَةٌ,3 to do allegiance to,,verb
-118,18,أَدْخَلَ,يُدْخِلُ,إِدْخَالٌ,4 to cause to enter,,verb
+118,18,حَرَّمَ,يُحَرِّمُ,تَحْرِيمٌ,"to forbid, prohibit",2,verb
+118,18,نَزَّلَ,يُنَزِّلُ,تَنْزِيلٌ,to send down,2,verb
+118,18,أَنْذَرَ,يُنْذِرُ,إِنْذَارٌ,to warn,4,verb
+118,18,تَابَعَ,يُتَابِعُ,مُتَابَعَةٌ,to do allegiance to,3,verb
+118,18,أَدْخَلَ,يُدْخِلُ,إِدْخَالٌ,to cause to enter,4,verb
 118,18,ذَبَحَ,يُذَبِّحُ,ذَبْحٌ,to sacrifice,,verb
-118,18,أَسْخَطَ,يُسْخِطُ,إِسْخَاطٌ,4 to vex,,verb
-118,18,أَشْرَكَ,يُشْرِكُ,إِشْرَاكٌ,4 to ascribe partners to,,verb
-118,18,تَصَدَّقَ,يَتَصَدَّقُ,تَصَدُّقٌ,5 to give alms,,verb
+118,18,أَسْخَطَ,يُسْخِطُ,إِسْخَاطٌ,to vex,4,verb
+118,18,أَشْرَكَ,يُشْرِكُ,إِشْرَاكٌ,to ascribe partners to,4,verb
+118,18,تَصَدَّقَ,يَتَصَدَّقُ,تَصَدُّقٌ,to give alms,5,verb
 118,18,بَقَرَةٌ,,,cow,,noun
 119,18,جَزَاءُ,,,recompense,,noun
-119,18,خَطِيئَةٌ,,خَطِيئَاتٌ,/ sin,,noun
+119,18,خَطِيئَةٌ,,خَطِيئَاتٌ / خَطَايَا,sin,,noun
 119,18,عِجْلٌ,,,calf,,noun
 119,18,عَاقِبَةٌ,,,"end, consequence",,noun
 119,18,لَحْمٌ,,,flesh,,noun
@@ -387,10 +386,10 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 119,18,غُرَابٌ,,,crow,,noun
 124,19,جَمَعَ,يَجْمَعُ,جَمْعٌ,"to gather, collect",,verb
 124,19,غَفَلَ,يَغْفِلُ,غَفْلَةٌ,"to be heedless, forget",,verb
-124,19,خَادَعَ,يُخَادِعُ,خِدَاعٌ,3 to try to deceive,,verb
-124,19,أَحْسَنَ,يُحْسِنُ,إِحْسَانٌ,4 to do good,,verb
-124,19,أَفْلَحَ,يُفْلِحُ,إِفْلَاحٌ,4 to prosper,,verb
-124,19,أَخْلَصَ,يُخْلِصُ,إِخْلَاصٌ,4 to be sincere,,verb
+124,19,خَادَعَ,يُخَادِعُ,خِدَاعٌ,to try to deceive,3,verb
+124,19,أَحْسَنَ,يُحْسِنُ,إِحْسَانٌ,to do good,4,verb
+124,19,أَفْلَحَ,يُفْلِحُ,إِفْلَاحٌ,to prosper,4,verb
+124,19,أَخْلَصَ,يُخْلِصُ,إِخْلَاصٌ,to be sincere,4,verb
 124,19,تُرَابٌ,,,"earth, dust",,noun
 124,19,زِلْزِلَةٌ,,,earthquake,,noun
 124,19,فَتًى,,,old man,,noun
@@ -417,19 +416,19 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 130,20,سَعَةٌ,,,wealth,,noun
 136,21,رَكَضَ,يَرْكُضُ,رَكْضٌ,to run,,verb
 136,21,صَعِدَ,يَصْعَدُ,صُعُودٌ,to ascend,,verb
-136,21,زَيَّنَ,يُزَيِّنُ,تَزْيِينٌ,2 to cause to seem good,,verb
-136,21,وَاعَدَ,يُوَاعِدُ,مُوَاعَدَةٌ,3 to make an agreement with,,verb
-136,21,عَاهَدَ,يُعَاهِدُ,مُعَاهَدَةٌ,3 to make a covenant with,,verb
-136,21,أَسْلَمَ,يُسْلِمُ,إِسْلاَمٌ,4 to submit,,verb
-136,21,أَخْطَأَ,يُخْطِئُ,إِخْطَاءً,4 to make a mistake,,verb
-136,21,أَغْرَقَ,يُغْرِقُ,إِغْرَاقٌ,4 to drown,,verb
-136,21,أَعْرَضَ,يُعْرِضُ,إِعْرَاضٌ,4 to turn away,,verb
-136,21,انفَطَرَ,يَنفَطِرُ,انفِطَارٌ,7 to be split,,verb
-136,21,أَنقَذَ,يُنقِذُ,إِنقَاذٌ,4 to save,,verb
+136,21,زَيَّنَ,يُزَيِّنُ,تَزْيِينٌ,to cause to seem good,2,verb
+136,21,وَاعَدَ,يُوَاعِدُ,مُوَاعَدَةٌ,to make an agreement with,3,verb
+136,21,عَاهَدَ,يُعَاهِدُ,مُعَاهَدَةٌ,to make a covenant with,3,verb
+136,21,أَسْلَمَ,يُسْلِمُ,إِسْلاَمٌ,to submit,4,verb
+136,21,أَخْطَأَ,يُخْطِئُ,إِخْطَاءً,to make a mistake,4,verb
+136,21,أَغْرَقَ,يُغْرِقُ,إِغْرَاقٌ,to drown,4,verb
+136,21,أَعْرَضَ,يُعْرِضُ,إِعْرَاضٌ,to turn away,4,verb
+136,21,انفَطَرَ,يَنفَطِرُ,انفِطَارٌ,to be split,7,verb
+136,21,أَنقَذَ,يُنقِذُ,إِنقَاذٌ,to save,4,verb
 136,21,مَثْوًى,,,lodging,,noun
 136,21,جِنٌّ,,,Jinn,,noun
 136,21,حِزْبٌ,,أَحْزَابٌ,party,,noun
-136,21,ذُرِّيَّةٌ,,,"seed, offspring, de",,noun
+136,21,ذُرِّيَّةٌ,,,"seed, offspring, descendants",,noun
 136,21,غَمْرَةٌ,,غَمَرَاتٌ,pang,,noun
 136,21,قَبْرٌ,,قُبُورٌ,grave,,noun
 137,21,الْغَيْبُ,,,the unseen,,noun
@@ -438,28 +437,28 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 137,21,قَاعِدٌ,,قُعُودٌ,seated,,noun
 137,21,مِصْرُ,,,Egypt,,noun
 137,21,بِغَيْرِ,,,without,,noun
-141,22,آثَرَ,يُؤْثِرُ,إِيثَارٌ,4 to prefer,,verb
+141,22,آثَرَ,يُؤْثِرُ,إِيثَارٌ,to prefer,4,verb
 141,22,أَذِنَ,يَأْذَنُ,إِذْنٌ,"to permit, allow",,verb
-141,22,اسْتَأْذَنَ,يَسْتَأْذِنُ,اسْتِئْذَانٌ,10 to seek permission,,verb
-141,22,أَمِنَ,يَأْمَنُ,أَمْنٌ,to be secure; to trust,,verb
-141,22,آمَنَ,يُؤْمِنُ,إِيمَانٌ,4 to believe,,verb
-141,22,آنَسَ,يُؤْنِسُ,إِينَاسٌ,"4 to see, perceive",,verb
-141,22,تَسَاءَلَ,يَتَسَاءَلُ,تَسَاؤُلٌ,6 to ask one another,,verb
+141,22,اسْتَأْذَنَ,يَسْتَأْذِنُ,اسْتِئْذَانٌ,to seek permission,10,verb
+141,22,أَمِنَ,يَأْمَنُ,أَمْنٌ,to be secure; to trust in,,verb
+141,22,آمَنَ,يُؤْمِنُ,إِيمَانٌ,to believe,4,verb
+141,22,آنَسَ,يُؤْنِسُ,إِينَاسٌ,"to see, perceive",4,verb
+141,22,تَسَاءَلَ,يَتَسَاءَلُ,تَسَاؤُلٌ,to ask one another,6,verb
 141,22,قَرَأَ,يَقْرَأُ,قُرْآنٌ,to recite,,verb
-141,22,نَبَّأَ,يُنَبِّئُ,تَنْبِئَةٌ,"2 to inform, tell",,verb
-141,22,أَنبَأَ,يُنبِئُ,إِنبَاءٌ,"4 to inform, tell",,verb
-141,22,أَنشَأَ,يُنشِئُ,إِنشَاءً,"4 to raise, create, pro",,verb
+141,22,نَبَّأَ,يُنَبِّئُ,تَنْبِئَةٌ,"to inform, tell",2,verb
+141,22,أَنبَأَ,يُنبِئُ,إِنبَاءٌ,"to inform, tell",4,verb
+141,22,أَنشَأَ,يُنشِئُ,إِنشَاءً,"to raise, create, produce, grow",4,verb
 142,22,بَرِئَ,يَبْرَأُ,بَرْءٌ,to leave,,verb
-142,22,أَقْبَلَ,يُقْبِلُ,إِقْبَالٌ,4 to advance,,verb
+142,22,أَقْبَلَ,يُقْبِلُ,إِقْبَالٌ,to advance,4,verb
 142,22,كَما,,,like (conjunction),,verb
 142,22,مِثْلُ,,,like (preposition),,verb
 147,23,حَبِطَ,يَحْبَطُ,حُبُوطٌ,to be useless,,verb
-147,23,سَخَّرَ,يُسَخِّرُ,تَسْخِيرٌ,2 to subject,,verb
-147,23,مَتَّعَ,يُمَتِّعُ,تَمْتِيعٌ,2 to let enjoy; make provision for,,verb
-148,23,أَقْرَضَ,يُقْرِضُ,قَرْضٌ,"4 to lend, make a loan",,verb
-148,23,أَنْعَمَ,يُنْعِمُ,إِنْعَامٌ,"4 to bless, be gracious",,verb
-148,23,تَفَرَّقَ,يَتَفَرَّقُ,تَفَرُّقٌ,5 to be divided,,verb
-148,23,تَبَارَكَ,يَتَبَارَكُ,تَبَارُكٌ,6 to be blessed,,verb
+147,23,سَخَّرَ,يُسَخِّرُ,تَسْخِيرٌ,to subject,2,verb
+147,23,مَتَّعَ,يُمَتِّعُ,تَمْتِيعٌ,to let enjoy; make provision for,2,verb
+148,23,أَقْرَضَ,يُقْرِضُ,قَرْضٌ,"to lend, make a loan",4,verb
+148,23,أَنْعَمَ,يُنْعِمُ,إِنْعَامٌ,"to bless, be gracious",4,verb
+148,23,تَفَرَّقَ,يَتَفَرَّقُ,تَفَرُّقٌ,to be divided,5,verb
+148,23,تَبَارَكَ,يَتَبَارَكُ,تَبَارُكٌ,to be blessed,6,verb
 148,23,أَصْلٌ,,أُصُولٌ,root,,noun
 148,23,بَأْسٌ,,,might,,noun
 148,23,تَابُوتٌ,,,ark,,noun
@@ -485,16 +484,16 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 152,24,وَضَعَ,يَضَعُ,وَضْعٌ,to put down,,verb
 153,24,وَعَظَ,يَعِظُ,عِظَةٌ/وَعْظٌ,"to exhort, admonish",,verb
 153,24,وَهَبَ,يَهَبُ,هِبَةٌ,to give,,verb
-153,24,اتَّخَذَ,يَتَّخِذُ,اتِّخَاذٌ,"8 to take, adopt",,verb
+153,24,اتَّخَذَ,يَتَّخِذُ,اتِّخَاذٌ,"to take, adopt",8,verb
 153,24,يَئِسَ,يَيْأَسُ,يَأْسٌ,to despair,,verb
-153,24,أَيْقَنَ,يُوقِنُ,إِيقَانٌ,4 to be certain,,verb
+153,24,أَيْقَنَ,يُوقِنُ,إِيقَانٌ,to be certain,4,verb
 153,24,بَطَلَ,يَبْطُلُ,بَطَلٌ,to be worthless,,verb
 153,24,صَنَمٌ,,أَصْنَامٌ,idol,,noun
 153,24,فَرْدٌ,,أَفْرَادٌ,"individual, alone",,noun
 153,24,وَازِرَةٌ,,,soul bearing a burden,,noun
 153,24,مِيزَانٌ,,مَوَازِينُ,balance,,noun
 159,25,عَمَرَ,يَعْمُرُ,عَمْرٌ,"to build, build up",,verb
-159,25,اسْتَمَعَ,يَسْتَمِعُ,اسْتِمَاعٌ,8 to listen to,,verb
+159,25,اسْتَمَعَ,يَسْتَمِعُ,اسْتِمَاعٌ,to listen to,8,verb
 159,25,أُفُقٌ,,آفَاقٌ,horizon,,noun
 159,25,بَرٌّ,,أَبْرَارٌ,"pious, god-fearing",,noun
 159,25,بَطْشٌ,,,might,,noun
@@ -511,38 +510,39 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 159,25,تَقْوِيمٌ,,,form,,noun
 159,25,مَقِيلٌ,,,noon resting-place,,noun
 159,25,أَبْقَى,,,more lasting,,noun
-160,25,حَقِيقٌ],,أَحَقُّ,[from more deserving,,noun
-160,25,دَانٍ],,أَدْنَى,"[from / (f.) lowest, nearest",,noun
-160,25,رَذِيلٌ],,أَرْذَلُ,[from worst,,noun
-160,25,زَكِيٌّ],,أَزْكَى,[from purer,,noun
-160,25,سَافِلٌ],,أَسْفَلُ,[from lower,,noun
-160,25,قَصِيٌّ],,أَقْصَى,"[from / (f.) further, furthest",,noun
-160,25,كَرِيمٌ],,أَكْرَمُ,[from nobler,,noun
+160,25,أَحَقُّ,,,more deserving [from حَقِيقٌ],,noun
+160,25,أَدْنَى / (f.),,,"lowest, nearest [from دَانٍ]",,noun
+160,25,أَرْذَلُ,,,worst [from رَذِيلٌ],,noun
+160,25,أَزْكَى,,,purer [from زَكِيٌّ],,noun
+160,25,أَسْفَلُ,,,lower [from سَافِلٌ],,noun
+160,25,أَقْصَى / (f.),,,"further, furthest [from قَصِيٌّ]",,noun
+160,25,أَكْرَمُ,,,nobler [from كَرِيمٌ],,noun
 160,25,الْوُثْقَى,,,firmest,,noun
-160,25,تَقِيٌّ],,أَتْقَى,[from more pious,,noun
+160,25,أَتْقَى,,,more pious [from تَقِيٌّ],,noun
 160,25,أَوْلَى,,,nearer,,noun
 160,25,أَوْهَنُ,,,frailest,,noun
 160,25,خَيْرٌ,,,"good, better, best",,noun
 160,25,شَرٌّ,,,"bad, worse, worst",,noun
-164,26,أَحَبَّ,يُحِبُّ,مَحَبّ,{4} to love,,verb
-164,26,حَاجَّ,يُحَاجُّ,حِجَاج,{3} to argue about (*fī*),,verb
-164,26,أَحَلَّ,يُحِلُّ,إِحْلَال,"{4} to make lawful, permit",,verb
+164,26,أَحَبَّ,يُحِبُّ,مَحَبّ,to love,4,verb
+164,26,حَاجَّ,يُحَاجُّ,حِجَاج,to argue about (*fī*),3,verb
+164,26,أَحَلَّ,يُحِلُّ,إِحْلَال,"to make lawful, permit",4,verb
 164,26,رَدَّ,يَرُدُّ,رَدّ,"to return, restore",,verb
 164,26,صَدَّ,يَصُدُّ,صَدّ,to block,,verb
 164,26,ضَرَّ,يَضُرُّ,ضَرّ,to harm,,verb
-164,26,اِضْطَرَّ,يَضْطَرُّ,اِضْطِرَار,"{8} to force, compel",,verb
+164,26,اِضْطَرَّ,يَضْطَرُّ,اِضْطِرَار,"to force, compel",8,verb
 164,26,ضَلَّ,يَضِلُّ,ضَلَال,"to stray, err",,verb
-164,26,أَضَلَّ,يُضِلُّ,إِضْلَال,{4} to cause to stray,,verb
+164,26,أَضَلَّ,يُضِلُّ,إِضْلَال,to cause to stray,4,verb
 164,26,ظَنَّ,يَظُنُّ,ظَنّ,to think,,verb
 164,26,عَدَّ,يَعُدُّ,عَدّ,to count,,verb
-164,26,أَعَدَّ,يُعِدُّ,إِعْدَاد,"{4} to prepare, make ready",,verb
+164,26,أَعَدَّ,يُعِدُّ,إِعْدَاد,"to prepare, make ready",4,verb
 164,26,قَصَّ,يَقُصُّ,قَصَص,to tell,,verb
 164,26,مَرَّ,يَمُرُّ,مَرّ,to pass,,verb
 164,26,مَسَّ,يَمَسُّ,مَسّ,to touch,,verb
 164,26,نَفَعَ,يَنْفَعُ,نَفْع,to benefit,,verb
 165,26,بَيْع,,,trading,,noun
-165,26,رِبًا,,الرِّبَوَا),(with article usury,,noun
-165,26,أَشْرَار,,,evil men (pl.),,noun
+165,26,رِبًا,,,usury,,noun
+165,26,الرِّبَوَا,,,usury (with article),,noun
+165,26,,,أَشْرَار,evil men (pl.),,noun
 165,26,أَنْبَاء,,نَبَأ,news,,noun
 165,26,أَلِيم,,,painful,,noun
 169,27,سَجَدَ,يَسْجُدُ,سُجُود,to prostrate oneself,,verb
@@ -550,9 +550,9 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 169,27,سَقَطَ,يَسْقُطُ,سُقُوط,to fall,,verb
 169,27,عَبَدَ,يَعْبُدُ,عِبَادَة,"to serve, worship",,verb
 169,27,غَفَرَ,يَغْفِرُ,مَغْفِرَة,to forgive,,verb
-169,27,نَزَّلَ,يُنَزِّلُ,تَنْزِيل,{5} to descend,,verb
+169,27,نَزَّلَ,يُنَزِّلُ,تَنْزِيل,to descend,5,verb
 169,27,هَلَكَ,يَهْلِكُ,هَلَاك,to perish,,verb
-169,27,وَضَعَ,يَضَعُ,وَضْع,to give birth to,,verb
+169,27,وَضَعَ,يَضَعُ,وَضْع,to give birth to (sentence 21),,verb
 169,27,إِفْك,,,lie,,noun
 169,27,أُنْثَى,,إِنَاث,(f.) female,,noun
 170,27,بَشِير,,,bringer of good tidings,,noun
@@ -570,40 +570,40 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 177,28,زَادَ,يَزِيدُ,زِيَادَة,to increase,,verb
 177,28,شَاءَ,يَشَاءُ,,to wish,,verb
 177,28,سَاءَ,يَسُوءُ,سُوء,to be bad,,verb
-177,28,أَرَادَ,يُرِيدُ,إِرَادَة,{4} to want,,verb
-177,28,أَطَاعَ,يُطِيعُ,إِطَاعَة,{4} to obey,,verb
-177,28,اِسْتَطَاعَ,يَسْتَطِيعُ,اِسْتِطَاعَة,{10} A to be able,,verb
+177,28,أَرَادَ,يُرِيدُ,إِرَادَة,to want,4,verb
+177,28,أَطَاعَ,يُطِيعُ,إِطَاعَة,to obey,4,verb
+177,28,اِسْتَطَاعَ,يَسْتَطِيعُ,اِسْتِطَاعَة,"to be able (This verb—exceptionally—sometimes drops the *tāʾ* of the 10ᵗʰ form prefix, producing *isṭāʿa, yasṭīʿ*, and *tasṭiʿ*.)",10,verb
 177,28,قَامَ,يَقُومُ,قِيَام,"to stand, rise",,verb
-177,28,أَقَامَ,يُقِيمُ,إِقَامَة,"{4} to perform, uphold",,verb
-177,28,مَاتَ,يَمُوتُ,مَوْت,{B} to die,,verb
+177,28,أَقَامَ,يُقِيمُ,إِقَامَة / (إِقَام),"to perform, uphold",4,verb
+177,28,مَاتَ,يَمُوتُ,مَوْت,"to die (Though *māta* has a *wāw* as its middle radical, the contracted forms of the Perfect normally have a *kasra: mittu* etc.)",,verb
 177,28,ذَاقَ,يَذُوقُ,ذَوْق,to taste,,verb
-178,28,أَحَاطَ,يُحِيطُ,إِحَاطَة,"{4} to surround, comprehend",,verb
-178,28,أَصَابَ,يُصِيبُ,إِصَابَة,"{4} to smite, befall",,verb
-178,28,اِسْتَجَابَ,يَسْتَجِيبُ,جَوَاب,{10} to answer,,verb
-178,28,أَجَابَ,يُجِيبُ,جَوَاب,{4} to answer,,verb
-178,28,صَرَفَ,يَصْرِفُ,صَرْف,"to turn, turn away",,verb
-178,28,أَبْدَلَ,يُبْدِلُ,إِبْدَال,{4} to give in exchange,,verb
+178,28,أَحَاطَ,يُحِيطُ,إِحَاطَة,"to surround, comprehend",4,verb
+178,28,أَصَابَ,يُصِيبُ,إِصَابَة,"to smite, befall",4,verb
+178,28,اِسْتَجَابَ,يَسْتَجِيبُ,جَوَاب,to answer,10,verb
+178,28,أَجَابَ,يُجِيبُ,جَوَاب,to answer,4,verb
+178,28,صَرَفَ,يَصْرِفُ,صَرْف,"to turn, turn away (trans.)",,verb
+178,28,أَبْدَلَ,يُبْدِلُ,إِبْدَال,to give in exchange,4,verb
 178,28,رَيْب,,,cold (noun),,verb
 178,28,بَيِّنَة,,,clear proof,,verb
 178,28,كَيْد,,,"plotting, wiles",,verb
 178,28,وَيْل,,,mischief,,verb
 178,28,وَزْن,,,weight,,verb
 178,28,بِالْأَمْسِ,,,yesterday,,verb
-182,29,سَارَعَ,يُسَارِعُ,سِرَاع,{3} to vie in; race,,verb
-182,29,أَبْلَغَ,يُبْلِغُ,إِبْلَاغ,{4} to convey,,verb
-182,29,أَكْثَرَ,يُكْثِرُ,إِكْثَار,"{4} to multiply, make much of",,verb
-182,29,اِعْتَذَرَ,يَعْتَذِرُ,اِعْتِذَار,{8} to make excuses,,verb
+182,29,سَارَعَ,يُسَارِعُ,سِرَاع,to vie in; race,3,verb
+182,29,أَبْلَغَ,يُبْلِغُ,إِبْلَاغ,to convey,4,verb
+182,29,أَكْثَرَ,يُكْثِرُ,إِكْثَار,"to multiply, make much of",4,verb
+182,29,اِعْتَذَرَ,يَعْتَذِرُ,اِعْتِذَار,to make excuses,8,verb
 182,29,فَطَرَ,يَفْطُرُ,فَطْر,to create,,verb
-183,29,رَهْط,,,kin; person,,verb
-183,29,صِدِّيق,,,truthful,,verb
-183,29,كَلِمَة,,,word,,verb
-183,29,لِبَاس,,,clothing; garment,,verb
-183,29,نَمْل,,,ants (collective),,verb
-183,29,رِسَالَة,,,"message, letter",,verb
-183,29,مَائِدَة,,,table,,verb
-183,29,أَبَدًا,,,ever,,verb
+183,29,رَهْط,,,kin; person,,noun
+183,29,صِدِّيق,,,truthful,,noun
+183,29,كَلِمَة,,,word,,noun
+183,29,لِبَاس,,,clothing; garment,,noun
+183,29,نَمْل,,,ants (collective),,noun
+183,29,رِسَالَة,,,"message, letter",,noun
+183,29,مَائِدَة,,,table,,noun
+183,29,أَبَدًا,,,ever,,noun
 191,30,أَتَى,يَأْتِي,إِتْيَان,to come,,verb
-191,30,آتَى,يُؤْتِي,إِيتَاء,{4} to give,,verb
+191,30,آتَى,يُؤْتِي,إِيتَاء,to give,4,verb
 191,30,رَأَى,يَرَى,رَأْي,to see,,verb
 191,30,جَزَى,يَجْزِي,جَزَاء,to requite,,verb
 191,30,دَعَا,يَدْعُو,دُعَاء,"to call, pray",,verb
@@ -615,51 +615,49 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 191,30,خَشِيَ,يَخْشَى,خَشْيَة,to fear,,verb
 191,30,لَقِيَ,يَلْقَى,لِقَاء,to meet,,verb
 191,30,نَسِيَ,يَنْسَى,نَسْي,to forget,,verb
-191,30,سَمَّى,يُسَمِّي,تَسْمِيَة,{2} to name,,verb
-191,30,صَلَّى,يُصَلِّي,صَلَاة,{2} to pray,,verb
-191,30,نَادَى,يُنَادِي,نِدَاء,{3} to call out to,,verb
-191,30,أَلْقَى,يُلْقِي,إِلْقَاء,{4} to throw,,verb
-191,30,أَعْطَى,يُعْطِي,إِعْطَاء,{4} to give,,verb
-191,30,أَوْفَى,يُوفِي,إِيفَاء,"{4} to fulfil, give in full",,verb
-191,30,تَوَلَّى,يَتَوَلَّى,تَوَلٍّ,{5} to turn away; to take on oneself,,verb
-192,30,اِتَّقَى,يَتَّقِي,اِتِّقَاء,"{8} to protect oneself, to be god-fearing",,verb
+191,30,سَمَّى,يُسَمِّي,تَسْمِيَة,to name,2,verb
+191,30,صَلَّى,يُصَلِّي,صَلَاة,to pray,2,verb
+191,30,نَادَى,يُنَادِي,نِدَاء,to call out to,3,verb
+191,30,أَلْقَى,يُلْقِي,إِلْقَاء,to throw,4,verb
+191,30,أَعْطَى,يُعْطِي,إِعْطَاء,to give,4,verb
+191,30,أَوْفَى,يُوفِي,إِيفَاء,"to fulfil, give in full",4,verb
+191,30,تَوَلَّى,يَتَوَلَّى,تَوَلٍّ,to turn away; to take on oneself,5,verb
+192,30,اِتَّقَى,يَتَّقِي,اِتِّقَاء,"to protect oneself, to be god-fearing",8,verb
 192,30,شَعَرَ,يَشْعُرُ,شُعُور,"to feel, perceive",,verb
-192,30,أَنْجَى,يُنْجِي,إِنْجَاء,{4} to rescue,,verb
+192,30,أَنْجَى,يُنْجِي,إِنْجَاء,to rescue,4,verb
 192,30,طِين,,,clay,,noun
 192,30,رُعْب,,,terror,,noun
 192,30,سُوق,,أَسْوَاق,(f.) market,,noun
 192,30,ثُمَّ,,,then,,noun
 192,30,بَغْتَةً,,,suddenly,,noun
-196,31,أَرَىٰ,يُرِى,,4 to show,,verb
-196,31,رَضِىَ,يَرْضَىٰ,رِضْوَانٌ,/ to be pleased with,,verb
-196,31,عَنْ),,,(+,,verb
-196,31,ٱبْتَغَىٰ,يَبْتَغِى,ٱبْتِغَآءً,8 to seek,,verb
+196,31,أَرَىٰ,يُرِى,,to show,4,verb
+196,31,رَضِىَ,يَرْضَىٰ,رِضْوَانٌ / مَرْضَاةٌ,to be pleased with (+ ʿan),,verb
+196,31,ٱبْتَغَىٰ,يَبْتَغِى,ٱبْتِغَآءً,to seek,8,verb
 196,31,كَفَىٰ,يَكْفِى,كِفَايَةً,to be sufficient,,verb
 196,31,زَوْجٌ,,أَزْوَٰجٌ,spouse,,noun
 196,31,صُحُفٌ,,,sheets,,noun
 196,31,كَلْبٌ,,كِلَابٌ,dog,,noun
 196,31,نَجْوَىٰ,,,secret conference,,noun
-196,31,كَفَىٰ,,بِٱللَّهِ,**Idioms** Note the construction *kafā bi-llāhi,,noun
+196,31,كَفَىٰ بِٱللَّهِ حَسِيبًا,,,Note the construction *kafā bi-llāhi ḥasīban* 'there is sufficiency in God as a reckoner' i.e. 'God is sufficient as a reckoner'. There are further examples in sentences 22 and 23 below.,,idiom
 202,32,بَدَأَ,يَبْدَأُ,بَدْءٌ,to begin,,verb
 202,32,رَزَقَ,يَرْزُقُ,رِزْقٌ,to give sustenance to,,verb
 202,32,سَرَقَ,يَسْرِقُ,سَرَقٌ,to steal,,verb
 202,32,هَجَرَ,يَهْجُرُ,هَجْرٌ,"to forsake, leave",,verb
-202,32,تَمَتَّعَ,يَتَمَتَّعُ,تَمَتُّعٌ,"5 to enjoy, enjoy oneself",,verb
+202,32,تَمَتَّعَ,يَتَمَتَّعُ,تَمَتُّعٌ,"to enjoy, enjoy oneself",5,verb
 202,32,سُورَةٌ,,سُوَرٌ,*sura*,,noun
 202,32,قِبْلَةٌ,,,"direction, *qibla*",,noun
 202,32,قُوَّةٌ,,قُوًى,"power, force",,noun
 202,32,كَيْلٌ,,,measure,,noun
 202,32,آلٌ,,,family,,noun
-207,33,غَضِبَ,يَغْضَبُ,غَضَبٌ,to be angry with,,verb
-207,33,عَلَىٰ),,,(+,,verb
-207,33,وَفَّىٰ,يُوَفِّى,تَوْفِيَةً,"2 to pay, repay",,verb
-207,33,تَوَفَّىٰ,يَتَوَفَّىٰ,تَوَفٍّ,5 to take,,verb
-207,33,أَوْحَىٰ,يُوحِى,إِيحَآءً,4 to inspire,,verb
+207,33,غَضِبَ,يَغْضَبُ,غَضَبٌ,to be angry with (+ ʿalā),,verb
+207,33,وَفَّىٰ,يُوَفِّى,تَوْفِيَةً,"to pay, repay",2,verb
+207,33,تَوَفَّىٰ,يَتَوَفَّىٰ,تَوَفٍّ,to take,5,verb
+207,33,أَوْحَىٰ,يُوحِى,إِيحَآءً,to inspire,4,verb
 207,33,نَفَخَ,يَنفُخُ,نَفْخٌ,to blow,,verb
-207,33,بَلَّغَ,يُبَلِّغُ,تَبْلِيغٌ,2 to convey,,verb
-207,33,اِسْتَهْزَأَ,يَسْتَهْزِئُ,اِسْتِهْزَآءٌ,10 to mock (+,,verb
-207,33,بَلَـٰغٌ,,,"message, conveyance",,verb
-207,33,صُورٌ,,,trumpet,,verb
+207,33,بَلَّغَ,يُبَلِّغُ,تَبْلِيغٌ,to convey,2,verb
+207,33,اِسْتَهْزَأَ,يَسْتَهْزِئُ,اِسْتِهْزَآءٌ,to mock (+ bi-),10,verb
+207,33,بَلَـٰغٌ,,,"message, conveyance",,noun
+207,33,صُورٌ,,,trumpet,,noun
 214,34,بَسَطَ,يَبْسُطُ,بَسْطٌ,"to spread,extend",,verb
 214,34,خَتَمَ,يَخْتِمُ,خَتْمٌ,to seal,,verb
 214,34,سَبَقَ,يَسْبِقُ,سَبْقٌ,to precede,,verb
@@ -670,8 +668,8 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 215,34,تَبَّ,يَتِبُّ,,"to wither, perish",,verb
 215,34,بَغَىٰ,يَبْغِى,بَغْىٌ,to outrage; to seek,,verb
 215,34,عَدَا,يَعْدُو,عَدْوٌ,"to transgress, turn away, run",,verb
-215,34,أَصْلَحَ,يُصْلِحُ,إِصْلَـٰحٌ,4 to put right,,verb
-215,34,أَعْجَزَ,يُعْجِزُ,إِعْجَازٌ,4 to frustrate,,verb
+215,34,أَصْلَحَ,يُصْلِحُ,إِصْلَـٰحٌ,to put right,4,verb
+215,34,أَعْجَزَ,يُعْجِزُ,إِعْجَازٌ,to frustrate,4,verb
 215,34,اِمْرُؤٌ,,,man,,noun
 215,34,حَكَمٌ,,,arbiter,,noun
 215,34,سَاقٌ,,سُوقٌ,(f.) leg,,noun
@@ -684,20 +682,20 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 215,34,سَرِيعٌ,,,"quick, swift",,noun
 215,34,غَلِيظٌ,,,"thick, rough, hard",,noun
 215,34,مَعْرُوشٌ,,,in trellises,,noun
-215,34,لَامَ],,مَلُومٌ,"[from blamed, blameworthy",,noun
+215,34,مَلُومٌ,,,"blamed, blameworthy [from امَلَمَلَامَ]",,noun
 215,34,مَمْنُونٌ,,,"broken, cut",,noun
 216,34,غَيْرُ,,,other than,,noun
 216,34,غَيْرَ,,,without,,noun
 223,35,تَلَا,يَتْلُوا,تِلَاوَةً,to recite,,verb
-223,35,خَرَّ,يَخِرُّ,خَرًّا,to fall,,verb
+223,35,خَرَّ,يَخِرُّ,خَرًّا,to fall FIXME TODO,,verb
 223,35,رَهِبَ,يَرْهَبُ,رَهْبَةً,"to fear, be in awe of",,verb
 223,35,كَادَ,يَكِيدُ,كَيْدًا,"to strive, plot, outwit",,verb
 223,35,مَالَ,يَمِيلُ,مَيْلًا,"to incline, lean, deviate",,verb
-223,35,أَصْبَحَ,يُصْبِحُ,إِصْبَاحًا,₄ to become; be in the morning,,verb
-223,35,آبَ,يَـُٔوبُ,إِيَابًا,₄ to come back to; repent,,verb
-223,35,تَرَاضَىٰ,يَتَرَاضَىٰ,تَرَاضٍ,₆ to agree with one another,,verb
-223,35,إِزْدَادَ,يَزْدَادُ,إِزْدِيَادًا,"₈ to increase, grow",,verb
-223,35,إِسْتَعَانَ,يَسْتَعِينُ,إِسْتِعَانَةً,₁₀ to ask for help,,verb
+223,35,أَصْبَحَ,يُصْبِحُ,إِصْبَاحًا,to become; be in the morning,4,verb
+223,35,آبَ,يَـُٔوبُ,إِيَابًا,to come back to; repent,4,verb
+223,35,تَرَاضَىٰ,يَتَرَاضَىٰ,تَرَاضٍ,to agree with one another,6,verb
+223,35,إِزْدَادَ,يَزْدَادُ,إِزْدِيَادًا,"to increase, grow",8,verb
+223,35,إِسْتَعَانَ,يَسْتَعِينُ,إِسْتِعَانَةً,to ask for help (+ acc.),10,verb
 224,35,حَنِيفٌ,,حُنَفَآءُ,of pure faith,,noun
 224,35,صَيْحَةٌ,,,cry,,noun
 224,35,عِزَّةٌ,,,"might, power",,noun
@@ -711,8 +709,8 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 224,35,سَاجِدٌ,,سُجَّدٌ,prostrating oneself,,noun
 224,35,مُغَاضِبٌ,,,angry,,noun
 224,35,لَا,,جَرَمَ,"undoubtedly, certainly",,noun
-224,35,طَابَ,,نَفْسًا,Idioms to be consoled,,noun
-224,35,قَرَّ,,عَيْنًا,to be pleased,,noun
+224,35,طَابَ نَفْسًا,,,to be consoled,,idiom
+224,35,قَرَّ عَيْنًا,,,to be pleased,,idiom
 236,36,رَتَعَ,يَرْتَعُ,رَتْعًا,to enjoy oneself,,verb
 236,36,سَعَىٰ,يَسْعَىٰ,سَعْيًا,"to strive, move, run",,verb
 236,36,سَلَبَ,يَسْلُبُ,سَلْبًا,to rob,,verb
@@ -720,18 +718,18 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 236,36,نَهَىٰ,يَنْهَىٰ,نَهْيًا,to forbid,,verb
 236,36,هَزَّ,يَهَزُّ,هَزًّا,to shake,,verb
 237,36,وَجِلَ,يَوْجَلُ,,to be in awe of,,verb
-237,36,كَفَرَ,يُكَفِّرُ,تَكْفِيرًا,"₂ to forgive, redeem",,verb
-237,36,سَاقَطَ,يُسَاقِطُ,مُسَاقَطَةً,"₃ to cause to fall, bring down",,verb
-237,36,ضَاعَفَ,يُضَاعِفُ,مُضَاعَفَةً,₃ to multiply,,verb
-237,36,أَنكَرَ,يُنكِرُ,إِنكَارًا,"₄ to deny, disapprove; not to know",,verb
-237,36,أَدْرَكَ,يُدْرِكُ,إِدْرَاكًا,₄ to overtake,,verb
-237,36,أَعَادَ,يُعِيدُ,إِعَادَةً,"₄ to repeat, return",,verb
-237,36,أَسَآءَ,يُسِيئُ,إِسَاءَةً,₄ to do wrong,,verb
-237,36,تَزَكَّىٰ,يَتَزَكَّىٰ,تَزَكٍّ,₅ to be purified,,verb
-237,36,إِلْتَقَطَ,يَلْتَقِطُ,إِلْتِقَاطًا,₈ to pick up,,verb
-237,36,إِسْتَأْخَرَ,يَسْتَأْخِرُ,إِسْتِئْخَارًا,₁₀ to postpone,,verb
-237,36,إِسْتَقْدَمَ,يَسْتَقْدِمُ,إِسْتِقْدَامًا,₁₀ to bring forward,,verb
-237,36,إِسْتَنقَذَ,يَسْتَنقِذُ,إِسْتِنقَاذًا,₁₀ to rescue,,verb
+237,36,كَفَرَ,يُكَفِّرُ,تَكْفِيرًا,"to forgive, redeem",2,verb
+237,36,سَاقَطَ,يُسَاقِطُ,مُسَاقَطَةً,"to cause to fall, bring down",3,verb
+237,36,ضَاعَفَ,يُضَاعِفُ,مُضَاعَفَةً,to multiply,3,verb
+237,36,أَنكَرَ,يُنكِرُ,إِنكَارًا,"to deny, disapprove; not to know",4,verb
+237,36,أَدْرَكَ,يُدْرِكُ,إِدْرَاكًا,to overtake,4,verb
+237,36,أَعَادَ,يُعِيدُ,إِعَادَةً,"to repeat, return (trans.)",4,verb
+237,36,أَسَآءَ,يُسِيئُ,إِسَاءَةً,to do wrong,4,verb
+237,36,تَزَكَّىٰ,يَتَزَكَّىٰ,تَزَكٍّ,to be purified,5,verb
+237,36,إِلْتَقَطَ,يَلْتَقِطُ,إِلْتِقَاطًا,to pick up,8,verb
+237,36,إِسْتَأْخَرَ,يَسْتَأْخِرُ,إِسْتِئْخَارًا,to postpone,10,verb
+237,36,إِسْتَقْدَمَ,يَسْتَقْدِمُ,إِسْتِقْدَامًا,to bring forward,10,verb
+237,36,إِسْتَنقَذَ,يَسْتَنقِذُ,إِسْتِنقَاذًا,to rescue,10,verb
 237,36,جُبٌّ,,,"pit, well",,noun
 237,36,جِذْعٌ,,,trunk of a palm-tree,,noun
 237,36,مَدْخَلٌ,,,place to enter,,noun
@@ -752,13 +750,13 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 244,37,كَبِرَ,يَكْبَرُ,كِبَر,to grow up,,verb
 244,37,كَرِهَ,يَكْرَهُ,كَرْه,"to be reluctant, hate",,verb
 244,37,مَادَ,يَمِيدُ,,to shake,,verb
-244,37,بَيَّنَ,يُبَيِّنُ,تِبْيَانًا,₂ to make clear,,verb
-244,37,أَشْرَفَ,يُشْرِفُ,إِشْرَافًا,₄ to be prodigal,,verb
-244,37,أَمْسَكَ,يُمْسِكُ,إِمْسَاكًا,"₄ to hold fast, withold",,verb
-244,37,تَفَكَّرَ,يَتَفَكَّرُ,تَفَكُّرًا,"₅ to think, reflect",,verb
-245,37,تَنَادَىٰ,يَتَنَادَىٰ,تَنَادٍ,₆ to call to one another,,verb
-245,37,إِيتَلَىٰ,يَأْتَلِى,إِيتِلَاءً,₈ to swear,,verb
-245,37,إِجْتَنَبَ,يَجْتَنِبُ,إِجْتِنَابًا,₈ to avoid,,verb
+244,37,بَيَّنَ,يُبَيِّنُ,تِبْيَانًا,to make clear,2,verb
+244,37,أَشْرَفَ,يُشْرِفُ,إِشْرَافًا,to be prodigal,4,verb
+244,37,أَمْسَكَ,يُمْسِكُ,إِمْسَاكًا,"to hold fast, withold",4,verb
+244,37,تَفَكَّرَ,يَتَفَكَّرُ,تَفَكُّرًا,"to think, reflect",5,verb
+245,37,تَنَادَىٰ,يَتَنَادَىٰ,تَنَادٍ,to call to one another,6,verb
+245,37,إِيتَلَىٰ,يَأْتَلِى,إِيتِلَاءً,to swear,8,verb
+245,37,إِجْتَنَبَ,يَجْتَنِبُ,إِجْتِنَابًا,to avoid,8,verb
 245,37,حِلَافٌ,,,accustomed to swear,,noun
 245,37,بِدَارٌ,,,"haste, anticipation",,noun
 245,37,حَرْثٌ,,,tillage,,noun
@@ -770,18 +768,18 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 245,37,أَعْمَىٰ,,عُمْىٌ,blind,,noun
 245,37,شَقِىٌّ,,أَشْقِيَآءُ,"unfortunate, wretched",,noun
 245,37,مَهِينٌ,,,contemptible,,noun
-245,37,أُولُو,,ٱلْقُرْبَىٰ,Idioms relations,,noun
-245,37,ضَرَبَ,,ٱلذِّكْرَ,to neglect,,noun
+245,37,أُولُو ٱلْقُرْبَىٰ,,,relations,,idiom
+245,37,ضَرَبَ ٱلذِّكْرَ صَفْحًا عَنْ,,,to neglect,,idiom
 252,38,فَقِهَ,يَفْقَهُ,فِقْهًا,to understand,,verb
-252,38,فَكِهَ,يَتَفَكَّهُ,تَفَكُّه,₅ to jest,,verb
+252,38,فَكِهَ,يَتَفَكَّهُ,تَفَكُّه,to jest,5,verb
 252,38,خَصَفَ,يَخْصِفُ,,to cover oneself,,verb
 252,38,خَطِفَ,يَخْطَفُ,خَطْفًا,to snatch,,verb
 252,38,عَرَجَ,يَعْرُجُ,,to mount,,verb
-252,38,قَلَبَ,يُقَلِّبُ,تَقْلِيبًا,"₂ to turn over, wring",,verb
-252,38,أَبَانَ,يُبِينُ,إِبَانَةً,₄ to make clear,,verb
-252,38,أَضَآءَ,يُضِيئُ,إِضَاءَةً,₄ to give light,,verb
-252,38,تَرَقَّبَ,يَتَرَقَّبُ,تَرَقُّب,₅ to be vigilant,,verb
-252,38,إِطَّلَعَ,يَطَّلِعُ,إِطِّلَاعًا,₈ to study,,verb
+252,38,قَلَبَ,يُقَلِّبُ,تَقْلِيبًا,"to turn over, wring",2,verb
+252,38,أَبَانَ,يُبِينُ,إِبَانَةً,to make clear,4,verb
+252,38,أَضَآءَ,يُضِيئُ,إِضَاءَةً,to give light,4,verb
+252,38,تَرَقَّبَ,يَتَرَقَّبُ,تَرَقُّب,to be vigilant,5,verb
+252,38,إِطَّلَعَ,يَطَّلِعُ,إِطِّلَاعًا,to study,8,verb
 252,38,بَرْقٌ,,,lightning,,noun
 252,38,زَيْتٌ,,,oil,,noun
 252,38,شَكٌّ,,شُكُوكٌ,doubt,,noun
@@ -803,14 +801,14 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 261,39,قَعَدَ,يَقْعُدُ,قُعُود,"to sit, lurk",,verb
 261,39,نَذَرَ,يَنْذُرُ,نَذْر,to vow,,verb
 261,39,غَاظَ,يَغِيظُ,غَيْظ,to enrage,,verb
-261,39,زَكَّى,يُزَكِّي,تَزْكِيَة,"{2} to purify, keep pure",,verb
-261,39,وَدَّعَ,يُوَدِّعُ,تَوْدِيع,{2} to bid farewell to,,verb
-261,39,أَقْسَمَ,يُقْسِمُ,إِقْسَام,{4} to swear,,verb
-261,39,أَنْجَى,يُنْجِي,إِنْجَاء,{4} to save,,verb
-261,39,أَنْسَى,يُنْسِي,إِنْسَاء,{4} to cause to forget,,verb
-261,39,اِنْتَقَمَ,يَنْتَقِمُ,اِنْتِقَام,{8} to take revenge on (+ *min*),,verb
-261,39,اِنْتَهَى,يَنْتَهِي,اِنْتِهَاء,"{8} to cease, desist",,verb
-261,39,اِسْتَخَفَّ,يَسْتَخِفُّ,اِسْتِخْفَاف,{10} to make unstable,,verb
+261,39,زَكَّى,يُزَكِّي,تَزْكِيَة,"to purify, keep pure",2,verb
+261,39,وَدَّعَ,يُوَدِّعُ,تَوْدِيع,to bid farewell to,2,verb
+261,39,أَقْسَمَ,يُقْسِمُ,إِقْسَام,to swear,4,verb
+261,39,أَنْجَى,يُنْجِي,إِنْجَاء,to save,4,verb
+261,39,أَنْسَى,يُنْسِي,إِنْسَاء,to cause to forget,4,verb
+261,39,اِنْتَقَمَ,يَنْتَقِمُ,اِنْتِقَام,to take revenge on (+ *min*),8,verb
+261,39,اِنْتَهَى,يَنْتَهِي,اِنْتِهَاء,"to cease, desist",8,verb
+261,39,اِسْتَخَفَّ,يَسْتَخِفُّ,اِسْتِخْفَاف,to make unstable,10,verb
 262,39,أَسَف,,,grief,,noun
 262,39,حَسْرَة,,,"sorrow, anguish",,noun
 262,39,صَوْم,,,fast,,noun
@@ -824,9 +822,9 @@ Page Number,Lesson Number,Column 1,Column 2,Column 3,English Translations,Verb F
 267,40,نَفَرَ,يَنْفِرُ,نَفْر,to go forth,,verb
 267,40,غَلَّ,يَغُلُّ,غُلُول,to deceive,,verb
 267,40,عَمَرَ,يَعْمُرُ,عُمْرَة,to visit,,verb
-267,40,أَطْلَعَ,يُطْلِعُ,إِطْلَاع,{4} to acquaint,,verb
-267,40,أَضَاعَ,يُضِيعُ,إِضَاعَة,{4} to cause to be wasted,,verb
-267,40,آذَى,يُؤْذِي,إِيذَاء,"{4} to hurt, vex",,verb
+267,40,أَطْلَعَ,يُطْلِعُ,إِطْلَاع,to acquaint,4,verb
+267,40,أَضَاعَ,يُضِيعُ,إِضَاعَة,to cause to be wasted,4,verb
+267,40,آذَى,يُؤْذِي,إِيذَاء,"to hurt, vex",4,verb
 267,40,اِشْتَرَى,يَشْتَرِي,شِرَاء,to buy,,verb
 267,40,مَأْوًى,,,shelter,,noun
 267,40,بَدَل,,,exchange,,noun
