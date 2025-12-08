@@ -16,120 +16,120 @@ from tex_utils import tex_cleanup_text, tex_remove_arabic_marks
 
 # Quran data for validation (114 chapters/suras)
 QURAN_CHAPTERS = {1: 7,  # Al-Fatihah
-    2: 286,  # Al-Baqarah
-    3: 200,  # Ali 'Imran
-    4: 176,  # An-Nisa
-    5: 120,  # Al-Ma'idah
-    6: 165,  # Al-An'am
-    7: 206,  # Al-A'raf
-    8: 75,  # Al-Anfal
-    9: 129,  # At-Tawbah
-    10: 109,  # Yunus
-    11: 123,  # Hud
-    12: 111,  # Yusuf
-    13: 43,  # Ar-Ra'd
-    14: 52,  # Ibrahim
-    15: 99,  # Al-Hijr
-    16: 128,  # An-Nahl
-    17: 111,  # Al-Isra
-    18: 110,  # Al-Kahf
-    19: 98,  # Maryam
-    20: 135,  # Ta-Ha
-    21: 112,  # Al-Anbiya
-    22: 78,  # Al-Hajj
-    23: 118,  # Al-Mu'minun
-    24: 64,  # An-Nur
-    25: 77,  # Al-Furqan
-    26: 227,  # Ash-Shu'ara
-    27: 93,  # An-Naml
-    28: 88,  # Al-Qasas
-    29: 69,  # Al-Ankabut
-    30: 60,  # Ar-Rum
-    31: 34,  # Luqman
-    32: 30,  # As-Sajdah
-    33: 73,  # Al-Ahzab
-    34: 54,  # Saba
-    35: 45,  # Fatir
-    36: 83,  # Ya-Sin
-    37: 182,  # As-Saffat
-    38: 88,  # Sad
-    39: 75,  # Az-Zumar
-    40: 85,  # Ghafir
-    41: 54,  # Fussilat
-    42: 53,  # Ash-Shura
-    43: 89,  # Az-Zukhruf
-    44: 59,  # Ad-Dukhan
-    45: 37,  # Al-Jathiyah
-    46: 35,  # Al-Ahqaf
-    47: 38,  # Muhammad
-    48: 29,  # Al-Fath
-    49: 18,  # Al-Hujurat
-    50: 45,  # Qaf
-    51: 60,  # Adh-Dhariyat
-    52: 49,  # At-Tur
-    53: 62,  # An-Najm
-    54: 55,  # Al-Qamar
-    55: 78,  # Ar-Rahman
-    56: 96,  # Al-Waqi'ah
-    57: 29,  # Al-Hadid
-    58: 22,  # Al-Mujadila
-    59: 24,  # Al-Hashr
-    60: 13,  # Al-Mumtahanah
-    61: 14,  # As-Saff
-    62: 11,  # Al-Jumu'ah
-    63: 11,  # Al-Munafiqun
-    64: 18,  # At-Taghabun
-    65: 12,  # At-Talaq
-    66: 12,  # At-Tahrim
-    67: 30,  # Al-Mulk
-    68: 52,  # Al-Qalam
-    69: 52,  # Al-Haqqah
-    70: 44,  # Al-Ma'arij
-    71: 28,  # Nuh
-    72: 28,  # Al-Jinn
-    73: 20,  # Al-Muzzammil
-    74: 56,  # Al-Muddaththir
-    75: 40,  # Al-Qiyamah
-    76: 31,  # Al-Insan
-    77: 50,  # Al-Mursalat
-    78: 40,  # An-Naba
-    79: 46,  # An-Nazi'at
-    80: 42,  # Abasa
-    81: 29,  # At-Takwir
-    82: 19,  # Al-Infitar
-    83: 36,  # Al-Mutaffifin
-    84: 25,  # Al-Inshiqaq
-    85: 22,  # Al-Buruj
-    86: 17,  # At-Tariq
-    87: 19,  # Al-A'la
-    88: 26,  # Al-Ghashiyah
-    89: 30,  # Al-Fajr
-    90: 20,  # Al-Balad
-    91: 15,  # Ash-Shams
-    92: 21,  # Al-Layl
-    93: 11,  # Ad-Duha
-    94: 8,  # Ash-Sharh
-    95: 8,  # At-Tin
-    96: 19,  # Al-Alaq
-    97: 5,  # Al-Qadr
-    98: 8,  # Al-Bayyinah
-    99: 8,  # Az-Zalzalah
-    100: 11,  # Al-Adiyat
-    101: 11,  # Al-Qari'ah
-    102: 8,  # At-Takathur
-    103: 3,  # Al-Asr
-    104: 9,  # Al-Humazah
-    105: 5,  # Al-Fil
-    106: 4,  # Quraysh
-    107: 7,  # Al-Ma'un
-    108: 3,  # Al-Kawthar
-    109: 6,  # Al-Kafirun
-    110: 3,  # An-Nasr
-    111: 5,  # Al-Masad
-    112: 4,  # Al-Ikhlas
-    113: 5,  # Al-Falaq
-    114: 6,  # An-Nas
-}
+                  2: 286,  # Al-Baqarah
+                  3: 200,  # Ali 'Imran
+                  4: 176,  # An-Nisa
+                  5: 120,  # Al-Ma'idah
+                  6: 165,  # Al-An'am
+                  7: 206,  # Al-A'raf
+                  8: 75,  # Al-Anfal
+                  9: 129,  # At-Tawbah
+                  10: 109,  # Yunus
+                  11: 123,  # Hud
+                  12: 111,  # Yusuf
+                  13: 43,  # Ar-Ra'd
+                  14: 52,  # Ibrahim
+                  15: 99,  # Al-Hijr
+                  16: 128,  # An-Nahl
+                  17: 111,  # Al-Isra
+                  18: 110,  # Al-Kahf
+                  19: 98,  # Maryam
+                  20: 135,  # Ta-Ha
+                  21: 112,  # Al-Anbiya
+                  22: 78,  # Al-Hajj
+                  23: 118,  # Al-Mu'minun
+                  24: 64,  # An-Nur
+                  25: 77,  # Al-Furqan
+                  26: 227,  # Ash-Shu'ara
+                  27: 93,  # An-Naml
+                  28: 88,  # Al-Qasas
+                  29: 69,  # Al-Ankabut
+                  30: 60,  # Ar-Rum
+                  31: 34,  # Luqman
+                  32: 30,  # As-Sajdah
+                  33: 73,  # Al-Ahzab
+                  34: 54,  # Saba
+                  35: 45,  # Fatir
+                  36: 83,  # Ya-Sin
+                  37: 182,  # As-Saffat
+                  38: 88,  # Sad
+                  39: 75,  # Az-Zumar
+                  40: 85,  # Ghafir
+                  41: 54,  # Fussilat
+                  42: 53,  # Ash-Shura
+                  43: 89,  # Az-Zukhruf
+                  44: 59,  # Ad-Dukhan
+                  45: 37,  # Al-Jathiyah
+                  46: 35,  # Al-Ahqaf
+                  47: 38,  # Muhammad
+                  48: 29,  # Al-Fath
+                  49: 18,  # Al-Hujurat
+                  50: 45,  # Qaf
+                  51: 60,  # Adh-Dhariyat
+                  52: 49,  # At-Tur
+                  53: 62,  # An-Najm
+                  54: 55,  # Al-Qamar
+                  55: 78,  # Ar-Rahman
+                  56: 96,  # Al-Waqi'ah
+                  57: 29,  # Al-Hadid
+                  58: 22,  # Al-Mujadila
+                  59: 24,  # Al-Hashr
+                  60: 13,  # Al-Mumtahanah
+                  61: 14,  # As-Saff
+                  62: 11,  # Al-Jumu'ah
+                  63: 11,  # Al-Munafiqun
+                  64: 18,  # At-Taghabun
+                  65: 12,  # At-Talaq
+                  66: 12,  # At-Tahrim
+                  67: 30,  # Al-Mulk
+                  68: 52,  # Al-Qalam
+                  69: 52,  # Al-Haqqah
+                  70: 44,  # Al-Ma'arij
+                  71: 28,  # Nuh
+                  72: 28,  # Al-Jinn
+                  73: 20,  # Al-Muzzammil
+                  74: 56,  # Al-Muddaththir
+                  75: 40,  # Al-Qiyamah
+                  76: 31,  # Al-Insan
+                  77: 50,  # Al-Mursalat
+                  78: 40,  # An-Naba
+                  79: 46,  # An-Nazi'at
+                  80: 42,  # Abasa
+                  81: 29,  # At-Takwir
+                  82: 19,  # Al-Infitar
+                  83: 36,  # Al-Mutaffifin
+                  84: 25,  # Al-Inshiqaq
+                  85: 22,  # Al-Buruj
+                  86: 17,  # At-Tariq
+                  87: 19,  # Al-A'la
+                  88: 26,  # Al-Ghashiyah
+                  89: 30,  # Al-Fajr
+                  90: 20,  # Al-Balad
+                  91: 15,  # Ash-Shams
+                  92: 21,  # Al-Layl
+                  93: 11,  # Ad-Duha
+                  94: 8,  # Ash-Sharh
+                  95: 8,  # At-Tin
+                  96: 19,  # Al-Alaq
+                  97: 5,  # Al-Qadr
+                  98: 8,  # Al-Bayyinah
+                  99: 8,  # Az-Zalzalah
+                  100: 11,  # Al-Adiyat
+                  101: 11,  # Al-Qari'ah
+                  102: 8,  # At-Takathur
+                  103: 3,  # Al-Asr
+                  104: 9,  # Al-Humazah
+                  105: 5,  # Al-Fil
+                  106: 4,  # Quraysh
+                  107: 7,  # Al-Ma'un
+                  108: 3,  # Al-Kawthar
+                  109: 6,  # Al-Kafirun
+                  110: 3,  # An-Nasr
+                  111: 5,  # Al-Masad
+                  112: 4,  # Al-Ikhlas
+                  113: 5,  # Al-Falaq
+                  114: 6,  # An-Nas
+                  }
 
 # @formatter:off # fmt: off
 NUMBER_WORDS_TO_INTEGERS = {
@@ -197,6 +197,7 @@ def construct_section_match_pattern(section_type: str) -> str:
     elif section_type == "exercise":
         return r"^EXERCISE\s+(" + temp_pattern + r"\d+)$"
     else:
+        logging.warning(f"Invalid section type: {section_type}")
         return r"FAILED TO DETECT SECTION TYPE"  # TODO make an actual error here...
 
 
@@ -214,7 +215,7 @@ def convert_written_number(word: str) -> int:
         return 0
 
 
-def is_arabic_text(text: str) -> bool:
+def contains_arabic_text(text: str) -> bool:
     """Check if text contains Arabic characters"""
 
     return bool(re.search(r"\p{Script_Extensions=Arabic}", text))
@@ -278,7 +279,7 @@ def write_tex_header() -> List[str]:
 def format_arabic_for_tex(text: str) -> str:
     """Format Arabic text appropriately for LaTeX"""
 
-    if not is_arabic_text(text):
+    if not contains_arabic_text(text):
         return tex_cleanup_text(text)
 
     # If it's a short phrase (< 50 chars), use inline Arabic
@@ -383,6 +384,11 @@ class TextbookProcessor:
             return ["SINGULAR", "DUAL", "PLURAL"]
         elif re.search(r"SINGULAR.*PLURAL", line, re.IGNORECASE):
             return ["SINGULAR", "PLURAL"]
+        elif re.search(r"SINGULAR", line, re.IGNORECASE):
+            return ["SINGULAR"]
+
+        if re.search(r"Idioms", line, re.IGNORECASE):
+            return ["Idioms"]
 
         return None
 
@@ -390,61 +396,169 @@ class TextbookProcessor:
         """Parse a vocabulary line that contains Arabic words and English translations"""
 
         line = line.strip()
-        if not line or not is_arabic_text(line):
+        if not line or not contains_arabic_text(line):
             return None
 
         # Pattern for early chapter's vocabulary: Arabic transliteration [Arabic transliteration] English
         # Example: "اَللهُ Allāhu God" or "إِلٰهٌ ilāhun آلِهَةٌ ālihatun a god"
 
-        # Split into parts and identify Arabic vs. transliteration vs. English
+        ## Split into parts and identify Arabic vs. transliteration vs. English
+        verb_form_number = ""  # to fill in column as empty for nouns, or for verbs without the verb form number specified
+
+
+        ## Parse out verb form (number) if present, should always be enclosed by braces after editing the output file
+        # hmm though I guess could just assume any number in a vocab row is a verb form??
+        if self.current_vocab_type == "verb":
+            # Remove verb form number if present, can be anywhere in line
+            verb_form_number = ""
+            pattern_verb_form = r"\s*\{(\d{1,2})\}\s*"  # e.g. `{2}` or `{10}`
+            verb_form_match = re.search(pattern_verb_form, line)
+            if verb_form_match:
+                verb_form_number = verb_form_match.group(1)
+                line = re.sub(pattern_verb_form, " ", line)
+
+        # oooof there are so many odd variations, just split on spaces and then deal with
+        # find things that change how we process
+        index_line_sng = line.find("(s.)")
+        pattern_plural = r"\(.*\s?pl\.\s?.*\)"
+        match_plural = re.search(pattern_plural, line)
+        # index_line_pl = line.find("(pl.)")
+
+        # Keep words separate by slash together
+        # Remove spaces around slash and replace them later
+        pattern_slash_spaces = r"\s*\/\s*"
+        line = re.sub(pattern_slash_spaces, "/", line)
+
         parts = line.split()
-        if len(parts) < 2:
+        if len(parts) < 2:  # there should be at least on arabic word and one english word
             return None
 
         arabic_words = []
         transliterations = []
         english_parts = []
 
-        # TODO: parse out verb form (number) if present
-        # e.g. 252,38,إِطَّلَعَ,يَطَّلِعُ,إِطِّلَاعًا,₈ to study,,verb   and 261,39,وَدَّعَ,يُوَدِّعُ,تَوْدِيع,{2} to bid farewell to,,verb
+        # go throught split parts of line, use while loop so I can process successive elements when needed (e.g. transliterations)
         i = 0
         while i < len(parts):
             part = parts[i]
+            part_with_slash_spaces = re.sub(pattern_slash_spaces, " / ", part)  # does nothing if no slashses
 
-            if is_arabic_text(part):
-                # This is Arabic
-                arabic_words.append(part)
+            if contains_arabic_text(part):
+                # ok so it contains arabic text
+                if not english_parts:
+                    # haven't hit any english words yet, so should be one fo the main 3 columns of vocab
+                    arabic_words.append(part)
+                else:
+                    # ok we already hit some english, but that could include the random gender parentheticals
+                    if len(english_parts) < 2:
+                        # only one english part, let's call it fine
+                        arabic_words.append(part)
+                    elif self.current_vocab_type == "idiom":
+                        arabic_words.append(part)
+                    else:
+                        # maybe it is some note "from this word..." or e.g. vocab 11: نَظَرَ يَنْظُرُ نَظَرٌ to look at (إِلَىٰ), into (فِي)
+                        english_parts.append(part)
+
                 i += 1
-                # The next part might be transliteration (lowercase, non-Arabic)
+                # we just had some arabic, the next part might be a transliteration (lowercase, non-Arabic charset)
                 if self.current_lesson <= 5:  # the textbook only has transliterations for lesson 1 through 5
-                    if i < len(parts) and not is_arabic_text(parts[i]) and parts[i][0].islower():
+                    if i < len(parts) and not contains_arabic_text(parts[i]) and parts[i][0].islower():
                         transliterations.append(parts[i])
                         i += 1
             else:
                 english_parts.append(part)
                 i += 1
 
-        english_text = " ".join(english_parts) if english_parts else ""
+        if english_parts:
+            english_text = " ".join(english_parts)
+        else:
+            english_text = ""
+            logging.warning(f"No English text found in vocabulary line: {line}")
 
         if not arabic_words:
             return None
 
-        # Assign to columns based on count
+        # Now we assign parts to columns based on count
+        # Col1: Sing. / Perf.
+        # Col2: Dual / Imperf.
+        # Col3: Plural / Verbal N.
+
+        if len(arabic_words) > 3:
+            # ugh what happened with this then?
+            logging.warning(f"More than 3 Arabic words in vocabulary line: {line}")
+            # shunt to english part?
+            english_text += ";; " + " ".join(arabic_words[3:])  # remember zero indexed ha
+
+        # Assign default guesses
         col1 = arabic_words[0] if len(arabic_words) > 0 else ""
         col2 = ""  # fallback
         col3 = ""  # fallback
-        if len(self.vocabulary_headers) == 2:
-            if len(arabic_words) > 1:
-                col3 = arabic_words[1]  # TODO error if vocab headers len = 2 but len(arabic_words) > 2?
-        elif len(self.vocabulary_headers) == 3:
-            if len(arabic_words) > 1:
-                col2 = arabic_words[1]
-            if len(arabic_words) > 2:
-                col3 = arabic_words[2]
+        if self.current_vocab_type == "verb":
+            # Verb forms are always 3 columns
+            col1 = arabic_words[0] if len(arabic_words) > 0 else ""
+            col2 = arabic_words[1] if len(arabic_words) > 1 else ""
+            col3 = arabic_words[2] if len(arabic_words) > 2 else ""
+        elif self.current_vocab_type == "noun":
+            if len(self.vocabulary_headers) == 1:  # Vocabulary for 25 switches to just one header 'singular' on page 160, ugh
+                if self.vocabulary_headers[0] == "SINGULAR":
+                    col1 = arabic_words[0] if len(arabic_words) > 0 else ""
+                    col2 = ""  # fallback
+                    col3 = ""  # fallback
+                elif self.vocabulary_headers[0] == "DUAL":
+                    col1 = ""  # fallback
+                    col2 = arabic_words[0] if len(arabic_words) > 0 else ""
+                    col3 = ""  # fallback
+                elif self.vocabulary_headers[0] == "PLURAL":
+                    col1 = ""  # fallback
+                    col2 = ""  # fallback
+                    col3 = arabic_words[0] if len(arabic_words) > 0 else ""
+                else:
+                    logging.warning(f"Unexpected vocabulary header: {self.vocabulary_headers[0]}")
+                    col1 = ""  # fallback
+                    col2 = ""  # fallback
+                    col3 = ""  # fallback
+            elif len(self.vocabulary_headers) == 2:
+                # handle the occasional vocab line that only has the plural form
+                if len(arabic_words) == 1:
+                    # Check if (pl.) was on the line, (s.) was NOT, and only one column of arabic text,
+                    # then assign to the plural column
+                    if index_line_sng == -1 and match_plural:
+                        logging.debug(
+                            f"Plural abbreviation found on line without singular abbreviation, moving it to Plural columng: {line}")
+                        col1 = ""
+                        col3 = arabic_words[0]  # the `else` was already done above as a default.
+                elif len(arabic_words) > 1:
+                    col3 = arabic_words[1]
+                    if len(arabic_words) > 2:
+                        logging.warning(
+                            f"We have 2 Column headers, but the vocabulary line has more than 2 Arabic words: {line}")
+                        logging.warning("Shunting {} to English part.".format(" ".join(arabic_words[2:])))
+                        english_text += ";; " + " ".join(arabic_words[2:])
+            elif len(self.vocabulary_headers) == 3:
+                if len(arabic_words) == 1:
+                    # Check if (pl.) was on the line, (s.) was NOT, and only one column of arabic text,
+                    # then assign to the plural column
+                    if index_line_sng == -1 and match_plural:
+                        logging.debug(
+                            f"Plural abbreviation found on line without singular abbreviation, moving it to Plural columng: {line}")
+                        col1 = ""
+                        col3 = arabic_words[0]  # the `else` was already done above as a default.
+                if len(arabic_words) > 1:
+                    col2 = arabic_words[1]
+                if len(arabic_words) > 2:
+                    col3 = arabic_words[2]
+        elif self.current_vocab_type == "idiom":
+            col1 = " ".join(arabic_words) if len(arabic_words) > 0 else ""
+            col2 = ""  # fallback
+            col3 = ""  # fallback
+        else:
+            logging.warning(f"Unexpected vocabulary type ({self.current_vocab_type}) for line: {line}")
+            return None
 
         return {"page_number": self.current_page, "lesson_number": self.current_lesson, "column1": col1,
-                "column2": col2, "column3": col3, "english_translations": english_text, "verb_form": "",
-                "part_of_speech": self.current_vocab_type, "raw_line": line,  # Keep original for debugging
+                "column2": col2, "column3": col3, "english_translations": english_text, "verb_form": verb_form_number,
+                "part_of_speech": self.current_vocab_type, "transliterations": " ".join(transliterations),
+                "raw_line": line,  # Keep original for debugging
                 }
 
     def parse_exercise_line(self, line: str) -> Optional[Dict[str, Any]]:
@@ -567,10 +681,20 @@ class TextbookProcessor:
 
             # Process vocabulary headers
             if self.in_vocabulary_section:
+                if "Idioms" in line:
+                    logging.debug(f"Idioms section on page {self.current_page}")
                 headers = self.parse_vocabulary_headers(line)
                 if headers:
                     self.vocabulary_headers = headers
-                    self.current_vocab_type = "verb" if "PERFECT" in headers else "noun"
+                    if "PERFECT" in headers:
+                        self.current_vocab_type = "verb"
+                    elif "SINGULAR" in headers:
+                        self.current_vocab_type = "noun"
+                    elif "Idioms" in headers:
+                        self.current_vocab_type = "idiom"
+                    else:
+                        logging.warning(f"Unrecognized vocabulary headers: {headers}")
+                        self.current_vocab_type = "other"
                     i += 1
                     continue
 
@@ -600,7 +724,7 @@ class TextbookProcessor:
 
                 # Check if we're leaving the exercise section
                 if (line.strip() and not re.match(r"^\d+\.", line.strip()) and not line.startswith(
-                        "###") and not is_arabic_text(line) and len(line.strip()) > 10):  # Probably a new section
+                        "###") and not contains_arabic_text(line) and len(line.strip()) > 10):  # Probably a new section
                     self.tex_content.append("\\end{enumerate}")
                     self.in_exercise_section = False
 
@@ -614,7 +738,7 @@ class TextbookProcessor:
 
                 # Handle Arabic text
                 # FIXME: check what in line is actually Arabic text and wrap the word(s)
-                if is_arabic_text(line):
+                if contains_arabic_text(line):
                     tex_line = format_arabic_for_tex(line)
                 else:
                     tex_line = tex_cleanup_text(tex_line)

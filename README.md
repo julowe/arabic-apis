@@ -14,9 +14,11 @@ teach Arabic.
   specified APIs
 - `arabic-textbook-to-tex-file.py`: Converts either a CSV/TSV or ODS spreadsheet
   or a structured .json file into a formatted XeLaTeX document
-- `process_textbook_llm_output.py`: Converts the markdown formatted test from
-  the Optical Character Recognition (OCR) of textbook pages into structured json
-  file and a XeLaTeX document.
+  (Work In Progress)
+- `process_textbook_llm_output.py`: Converts the markdown formatted text from
+  the Optical Character Recognition (OCR) of textbook pages into CSV with " as
+  the string delimiter, structured json file and a XeLaTeX document.
+  (Work In Progress)
 
 There are some tests. Much of this was written or at least started by LLMs,
 mainly because I really should be reading these Lessons instead of coding...
