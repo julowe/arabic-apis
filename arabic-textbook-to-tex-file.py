@@ -24,6 +24,67 @@ from textbook_enrich import enrich_with_quran_api, write_json as save_json, read
 # load_dotenv()
 
 
+def export_ods_to_csv(ods_file_path, output_csv_path, filter_string=None):
+    """
+    Export ODS file to CSV, optionally filtering sheets by name.
+
+    Args:
+        ods_file_path: Path to the input ODS file
+        output_csv_path: Path to the output CSV file
+        filter_string: Optional string to filter sheet names (only sheets containing this string will be exported)
+    """
+    import csv
+
+    # Read ODS file
+    sheets = tb_read_ods(Path(ods_file_path))
+
+    # Filter sheets if filter_string is provided
+    if filter_string:
+        filtered_sheets = {name: rows for name, rows in sheets.items() if filter_string in name}
+        if not filtered_sheets:
+            print(f"Warning: No sheets found matching filter '{filter_string}'")
+            print(f"Available sheets: {', '.join(sheets.keys())}")
+            sys.exit(1)
+        sheets_to_export = filtered_sheets
+        print(f"Exporting {len(filtered_sheets)} sheet(s) matching filter '{filter_string}': {', '.join(filtered_sheets.keys())}")
+    else:
+        sheets_to_export = sheets
+        print(f"Exporting all {len(sheets)} sheet(s): {', '.join(sheets.keys())}")
+
+    # Write to CSV
+    with open(output_csv_path, 'w', encoding='utf-8', newline='') as csvfile:
+        writer = csv.writer(csvfile)
+
+        for sheet_name, rows in sheets_to_export.items():
+            # Write sheet name as a header row
+            writer.writerow([f"=== Sheet: {sheet_name} ==="])
+
+            # Get all unique column headers preserving original order
+            if rows:
+                # Use first row to establish column order, then add any additional columns from other rows
+                headers = list(rows[0].keys()) if rows else []
+
+                # Add any additional columns that appear in subsequent rows (preserve discovery order)
+                seen = set(headers)
+                for row in rows[1:]:
+                    for key in row.keys():
+                        if key not in seen:
+                            headers.append(key)
+                            seen.add(key)
+
+                # Write header row
+                writer.writerow(headers)
+
+                # Write data rows
+                for row in rows:
+                    writer.writerow([row.get(h, '') for h in headers])
+
+            # Add blank row between sheets
+            writer.writerow([])
+
+    print(f"Successfully exported to: {output_csv_path}")
+
+
 def get_access_token(url_base, client_id, client_secret):
     """Get an access token for Quran.com API via the shared quran_api module"""
     logging.debug(
@@ -370,12 +431,36 @@ def main():
     parser.add_argument('--no-api', action='store_true', help='Skip Quran API calls')
     parser.add_argument('--json-input', help='Existing JSON file to render (bypass ingestion and API)')
     parser.add_argument('-v', '--verbose', action='store_true', help='Verbose output')
+    parser.add_argument('--output-csv', action='store_true', help='Export ODS to CSV and exit (requires input_file to be an ODS file)')
+    parser.add_argument('--filter-sheetnames', type=str, help='Filter ODS sheets by name (only sheets containing this string will be exported)')
 
     args = parser.parse_args()
 
     # Setup logging
     log_level = logging.DEBUG if args.verbose else logging.WARNING
     logging.basicConfig(level=log_level, format='%(levelname)s: %(message)s')
+
+    # Handle CSV export mode
+    if args.output_csv:
+        if not args.input_file:
+            print("Error: input_file is required when using --output-csv")
+            sys.exit(1)
+
+        input_path = Path(args.input_file)
+        if not input_path.exists():
+            print(f"Error: Input file {input_path} does not exist")
+            sys.exit(1)
+
+        if input_path.suffix.lower() != '.ods':
+            print(f"Error: --output-csv requires an ODS input file, got {input_path.suffix}")
+            sys.exit(1)
+
+        # Generate output CSV filename
+        output_csv = input_path.with_suffix('.csv')
+
+        # Export and exit
+        export_ods_to_csv(input_path, output_csv, args.filter_sheetnames)
+        sys.exit(0)
 
     input_path = Path(args.input_file) if args.input_file else None
     if args.json_input:
