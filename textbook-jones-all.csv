@@ -358,13 +358,13 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 110,17,Vocabulary,أَصَمُّ(f.) / صَمَّاءُ,,صُمٌّ,deaf,,noun,,,,,
 110,17,Vocabulary,خَالِصٌ,,,pure,,noun,,,,,
 110,17,Vocabulary,بَاطِلٌ,,,false,,noun,,,,,
-118,18,Vocabulary,حَسِبَ,يَحْسَبُ,مَحْسَبَةٌ,"to think, reckon",,verb,,,,,
-118,18,Vocabulary,حَكَمَ,يَحْكُمُ,حُكْمٌ,"to judge, decide",,verb,,,,,
-118,18,Vocabulary,سَكَنَ,يَسْكُنُ,سُكُونٌ,"to dwell, be at rest",,verb,,,,,
-118,18,Vocabulary,طَمِعَ,يَطْمَعُ,طَمَعٌ,to desire,,verb,,,,,
-118,18,Vocabulary,عَجَزَ,يَعْجِزُ,عَجْزٌ,to be unable,,verb,,,,,
-118,18,Vocabulary,نَزَغَ,يَنْزَغُ,نَزْغٌ,"to cause strife, dissension",,verb,,,,,
-118,18,Vocabulary,نَفِدَ,يَنْفَدُ,نَفَادٌ,to be exhausted,,verb,,,,,
+118,18,Vocabulary,حَسِبَ,يَحْسَبُ,مَحْسِبَةٌ,"to think, reckon",,verb,,,,,checked
+118,18,Vocabulary,حَكَمَ,يَحْكُمُ,حُكْمٌ,"to judge, decide",,verb,,,,,checked
+118,18,Vocabulary,سَكَنَ,يَسْكُنُ,سُكُونٌ,"to dwell, be at rest",,verb,,,,,checked
+118,18,Vocabulary,طَمِعَ,يَطْمَعُ,طَمَعٌ,to desire,,verb,,,,,checked
+118,18,Vocabulary,عَجَزَ,يَعْجِزُ,عَجْزٌ,to be unable,,verb,,,,,checked
+118,18,Vocabulary,نَزَغَ,يَنْزَغُ,نَزْغٌ,"to cause strife, dissension",,verb,,,,,checked
+118,18,Vocabulary,نَفِدَ,يَنْفَدُ,نَفَادٌ,to be exhausted,,verb,,,,,checked
 118,18,Vocabulary,حَرَّمَ,يُحَرِّمُ,تَحْرِيمٌ,"to forbid, prohibit",2,verb,,,,,
 118,18,Vocabulary,نَزَّلَ,يُنَزِّلُ,تَنْزِيلٌ,to send down,2,verb,,,,,
 118,18,Vocabulary,أَنْذَرَ,يُنْذِرُ,إِنْذَارٌ,to warn,4,verb,,,,,
