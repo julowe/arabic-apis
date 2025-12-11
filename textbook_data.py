@@ -14,13 +14,78 @@ def read_csv(filepath: str | Path) -> list[dict[str, Any]]:
 
     The CSV is assumed to have a header row.
     """
+
+    # Hacky 'just make it work'
+    bool_found_exercise_only_headers = False
+    # mapping_exercise_columns_dict = {
+    #     "Page Number": "Page Number",
+    #     "Lesson Number": "Lesson #",
+    #     "Exercise Number": "Exercise #",
+    #     "Arabic Text": "Sing. / Perf.",
+    #     "Quran Chapter/Surah": "Sura",
+    #     "Quran Verse/Ayah": "Verse",
+    #     "Warning": "Warning",
+    # }
+    bool_found_vocab_only_headers = False
+    # mapping_vocab_columns_dict = {
+    #     "Page Number": "Page Number",
+    #     "Lesson Number": "Lesson #",
+    #     "Exercise Number": "Exercise #",
+    #     "Arabic Text": "Sing. / Perf.",
+    #     "Quran Chapter/Surah": "Sura",
+    #     "Quran Verse/Ayah": "Verse",
+    #     "Warning": "Warning",
+    # }
+    bool_found_all_only_headers = False
+    mapping_all_columns_dict = {
+        "Page Number": "Page Number",
+        "Lesson Number": "Lesson #",
+        # "Ex/Voc": "Ex/Voc",
+        # "Column 1": "Sing. / Perf.",
+        # "Column 2": "Dual / Imperf.",
+        # "Column 3": "Plural / Verbal N.",
+        "English Translations": "English",
+        # "Verb Form": "Verb Form",
+        # "Part of Speech": "Part of Speech",
+        "Exercise Number": "Exercise #",
+        # "Arabic Text": "Arabic Text",
+        "Quran Chapter/Surah": "Sura",
+        "Quran Verse/Ayah": "Verse",
+        # "Warning": "Warning",
+    }
+
     rows: list[dict[str, Any]] = []
     with open(filepath, newline="", encoding="utf-8") as fh:
         reader = csv.DictReader(fh)
+
+        if reader.fieldnames[3] == "Sing. / Perf.":
+            if reader.fieldnames[9] == "Exercise Number":
+                bool_found_all_only_headers = True
+            else:
+                bool_found_vocab_only_headers = True
+        elif reader.fieldnames[2] == "Exercise Number":
+            bool_found_exercise_only_headers = True
+            # row_type = "exercise"
+
+        # see if we have column headers we expect
+        for i in range(len(reader.fieldnames)):
+            if bool_found_exercise_only_headers or bool_found_vocab_only_headers or bool_found_all_only_headers:
+                if reader.fieldnames[i] in mapping_all_columns_dict:
+                    reader.fieldnames[i] = mapping_all_columns_dict[reader.fieldnames[i]]
+            else:
+                print("ERROR: unexpected header in CSV: {}".format(reader.fieldnames[i]))
+                exit(1)
+
         for row in reader:
             # Skip completely empty rows
             if not any(v for v in row.values()):
                 continue
+
+            if bool_found_exercise_only_headers:
+                row.update({"Ex/Voc": "Exercise"})
+            if bool_found_vocab_only_headers:
+                row.update({"Ex/Voc": "Vocabulary"})
+
             rows.append(row)
             # FIXME: correlate data with headers
     return rows
@@ -146,6 +211,10 @@ def remove_leading_parens(english_string: str) -> str:
     if english_string.startswith("("):  # so we don't catch `to (motion)` etc.
         index_close_paren = english_string.find(")")
         english_string = english_string[index_close_paren + 1:].strip()  # example: "(+ bi-) to see, observe"
+    elif english_string.startswith("["):  # so we don't catch `to (motion)` etc.
+        index_close_bracket = english_string.find("]")
+        english_string = english_string[1:].strip()
+        # TODO see if this is enough or can do better
 
     return english_string
 
@@ -253,9 +322,17 @@ def build_json_from_rows(rows: list[dict[str, Any]], lesson_meta: dict[str, Any]
             except (TypeError, ValueError):
                 qref = ""
 
+            exercise_string = ""
+            if "Arabic Text" in row:
+                exercise_string = str(row.get("Arabic Text"))
+            elif "Sing. / Perf." in row:
+                exercise_string = str(row.get("Sing. / Perf.", ""))
+            else:
+                print("ERROR: Could not find Arabic Text or Sing. / Perf. in row: {}".format(row))
+
             exercises.append(
                 {
-                    "exercise_text": str(row.get("Sing. / Perf.", "") or ""),
+                    "exercise_text": exercise_string,
                     "exercise_chapter": chapter_number,
                     "exercise_number": exercise_number,
                     "quranic_reference": qref,
@@ -330,6 +407,7 @@ def build_json_from_rows(rows: list[dict[str, Any]], lesson_meta: dict[str, Any]
                     {
                         "chapter_vocab": chapter_number,
                         "part_of_speech": "verb",
+                        "verb_form": str(row.get("Verb Form", "") or "").strip(),
                         "arabic_words": {
                             "perfect": string_col_1,
                             "imperfect": string_col_2,
