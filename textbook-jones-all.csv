@@ -29,11 +29,11 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 14,1,Vocabulary,أُولَى (f.),,,first,,noun,,,,,checked against textbook
 14,1,Vocabulary,آخَرُ,,آخَرُونَ,other,,noun,,,,,checked against textbook
 14,1,Vocabulary,أُخْرَىٰ (f.),,أُخَرُ,other,,noun,,,,,checked against textbook
-19,2,Vocabulary,رَجُلٌ,,رِجَالٌ,man,,noun,,,,,
-19,2,Vocabulary,سَمَاءٌ,,سَمَاوَاتٌ,"heaven, sky",,noun,,,,,
-19,2,Vocabulary,عَبْدٌ,,عِبَادٌ,"servant, slave",,noun,,,,,
-19,2,Vocabulary,قَرْنٌ,,قُرُونٌ,generation [horn],,noun,,,,,
-19,2,Vocabulary,قَرْيَةٌ,,قُرًى,"settlement, village",,noun,,,,,
+19,2,Vocabulary,رَجُلٌ,,رِجَالٌ,man,,noun,,,,,checked against textbook
+19,2,Vocabulary,سَمَاءٌ,,سَمَاوَاتٌ,"heaven, sky",,noun,,,,,checked against textbook
+19,2,Vocabulary,عَبْدٌ,,عِبَادٌ,"servant, slave",,noun,,,,,checked against textbook
+19,2,Vocabulary,قَرْنٌ,,قُرُونٌ,generation [horn],,noun,,,,,checked against textbook
+19,2,Vocabulary,قَرْيَةٌ,,قُرًى,"settlement, village",,noun,,,,,checked against textbook
 19,2,Vocabulary,قَوْمٌ,,أَقْوَامٌ,people,,noun,,,,,
 19,2,Vocabulary,مَنْفَعَةٌ,,مَنَافِعُ,benefit,,noun,,,,,
 19,2,Vocabulary,كَافِرٌ,,كَافِرُونَ,"unbeliever, ungrateful",,noun,,,,,
@@ -89,7 +89,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 33,4,Vocabulary,إِلَى,,,to (motion),,noun,,,,,
 33,4,Vocabulary,مَعَ,,,with,,noun,,,,,
 33,4,Vocabulary,بَيْنَ,,,"between, among",,noun,,,,,
-37,5,Vocabulary,إِبْنٌ,,أَبْنَاءُ / بَنُونَ,son,,noun,,,,,TODO no hamza under alif/kasrah in textbook; was one other file; what is correct?
+37,5,Vocabulary,اِبْنٌ,,أَبْنَاءٌ / بَنُونَ,son,,noun,,,,,checked against textbook
 37,5,Vocabulary,وَلِيٌّ,,أَوْلِيَاءُ,"friend, protector",,noun,,,,,
 37,5,Vocabulary,خَالِدٌ,,خَالِدُونَ,"remaining in, everlasting",,noun,,,,,
 37,5,Vocabulary,صَالِحٌ,,,righteous,,noun,,,,,
@@ -712,7 +712,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 216,34,Vocabulary,غَيْرُ,,,other than,,noun,,,,,
 216,34,Vocabulary,غَيْرَ,,,without,,noun,,,,,
 223,35,Vocabulary,تَلَا,يَتْلُوا,تِلَاوَةً,to recite,,verb,,,,,
-223,35,Vocabulary,خَرَّ,يَخِرُّ,خَرًّا,to fall,,verb,,,,,FIXME TODO
+223,35,Vocabulary,خَرَّ,يَخِرُّ,خَرٌّ,to fall,,verb,,,,,checked against textbook
 223,35,Vocabulary,رَهِبَ,يَرْهَبُ,رَهْبَةً,"to fear, be in awe of",,verb,,,,,
 223,35,Vocabulary,كَادَ,يَكِيدُ,كَيْدًا,"to strive, plot, outwit",,verb,,,,,
 223,35,Vocabulary,مَالَ,يَمِيلُ,مَيْلًا,"to incline, lean, deviate",,verb,,,,,
