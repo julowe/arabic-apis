@@ -137,14 +137,28 @@ def write_tex_header(fh):
 \begin{Arabic}{\Large #1}
 \end{Arabic}}
 
-\setcounter{secnumdepth}{2}
+%---------- headers and footers --------------
+\usepackage[automark]{scrlayer-scrpage}
+%-------- header
+\ihead{}            % empty header
+\chead{\headmark}   % central header with heading on level 1 (section)
+\ohead{}            % empty header
+%-------- footer
+\ifoot{DRAFT 2025-12-11}   % inner footer with a fixed text
+\cfoot{\hyperlink{toc}{Link back to: Table of Contents}}   % central footer
+\ofoot{\pagemark}   % outer footer with the page number
 
-\title{Arabic Textbook Exercises and Vocabulary}
+
+\title{A Supplementary Source for Jones's Arabic Qur’ān Textbook}
 \author{Generated from textbook data}
 
 \begin{document}
 \maketitle
-\tableofcontents
+
+\hypertarget{toc}{
+    \tableofcontents
+}
+
 \clearpage
 
 """
@@ -170,9 +184,7 @@ def write_exercises_by_chapter(fh, data_json):
     for chapter in sorted(chapters.keys()):
         chapter_exercises = sorted(chapters[chapter], key=lambda x: x.get('exercise_number', 0))
 
-        # TODO new page for each chapter? does it do that automatically for chapters?
-        #fh.write(f"\\section{{Chapter {chapter} Exercises}}\n\n")
-        fh.write(f"\\chapter{{Chapter {chapter} Exercises}}\n\n")
+        fh.write(f"\\addchap{{Chapter {chapter} Exercises}}\n\n")
         fh.write("\\begin{enumerate}\n")
 
         for exercise in chapter_exercises:
@@ -184,9 +196,8 @@ def write_exercises_by_chapter(fh, data_json):
             if not exercise_text.strip() and not quranic_ref:
                 continue
 
-            # TODO handle no exercises of ch 14? otherwise the number is off and it annoys me.
-            #  hmm or just remove numbering form front of sectio ha.
             fh.write("\\item ")
+            # FIXME [COMBINE] deal with english and arabic text here
             if exercise_text.strip():
                 fh.write(f"\\arL{{\n{tex_cleanup_text(exercise_text)}\n}}")
 
@@ -234,7 +245,7 @@ def write_exercises_by_chapter(fh, data_json):
                             if resource_name == print_context:
                                 context_string = f"\\textbf{{Context:}} "
                                 for context_line in exercise["context_lines"]:
-                                    if "quranic_sources" in context_line: # FIXME this is a hack for msitaken 0 index entries
+                                    if "quranic_sources" in context_line: # FIXME this is a hack for mistaken 0 index entries
                                         for line in context_line["quranic_sources"]:
                                             if "translation_resource_name" in line:
                                                 if line["translation_resource_name"] == print_context:
@@ -260,7 +271,7 @@ def write_glossary_arabic_sorted(fh, vocabulary):
     if not vocabulary:
         return
 
-    fh.write("\\section{Glossary - Arabic Alphabetical Order}\n\n")
+    fh.write("\\addchap{Glossary - Arabic Alphabetical Order}\n\n")
 
     # Group by Arabic sort letter
     grouped = {}
@@ -359,7 +370,7 @@ def write_glossary_english_sorted(fh, vocabulary):
     if not vocabulary:
         return
 
-    fh.write("\\section{Glossary - English Alphabetical Order}\n\n")
+    fh.write("\\addchap{Glossary - English Alphabetical Order}\n\n")
 
     # Create entries for each definition
     all_entries = []
@@ -478,7 +489,8 @@ def write_vocabulary_row(fh, entry, specific_definition=None):
     if part_of_speech == 'verb' and verb_form:
         english_tex += f" ({tex_cleanup_text(verb_form)})"
 
-    # FIXME sometimes english has arabic letters, go through and find them and \arL them. maybe \arl ?
+    # FIXME [COMBINE] sometimes english definition has arabic letters, go through and find them and \arL them. maybe \arl ?
+    # combine with solution to early chapter exercises having arabic text and the transliteration for exercise text
 
     chapter_tex = str(chapter_vocab) if chapter_vocab else ""
 
@@ -549,6 +561,7 @@ def main():
     # TODO: make this an argument and make it actually work?
     test_api = False
 
+    # TODO remove all this since already in quran api??
     if not args.no_api:
         try:
             if test_api:
@@ -628,6 +641,7 @@ def main():
         lesson = enriched_json.get('lesson', {})
         if lesson.get('name'):
             fh.write(f"\\section{{{tex_cleanup_text(str(lesson['name']))}}}\n\n")
+            # TODO huh what is this?
 
         # Write exercises grouped by chapter
         write_exercises_by_chapter(fh, enriched_json)
