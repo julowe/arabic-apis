@@ -326,6 +326,7 @@ class TextbookProcessor:
         for word in arabic_words:
             # Clean up the word (remove diacritics for counting)
             clean_word = tex_remove_arabic_marks(word)
+            # TODO prob do some logic here to match words a little bit??
             if clean_word:
                 self.arabic_words[clean_word]["count"] += 1
                 self.arabic_words[clean_word]["pages"].add(page_num)
@@ -472,6 +473,7 @@ class TextbookProcessor:
                             arabic_words[-1] += " " + parts[i]
                             i += 1
 
+                # TODO splits transliterations often, but not always
                 # we just had some arabic the next part might be a transliteration (lowercase, non-Arabic charset)
                 if self.current_lesson <= 5:  # the textbook only has transliterations for lesson 1 through 5
                     if i < len(parts) and not contains_arabic_text(parts[i]) and parts[i][0].islower():
@@ -614,6 +616,11 @@ class TextbookProcessor:
         return {"page_number": self.current_page, "lesson_number": self.current_lesson, "exercise_number": exercise_num,
                 "arabic_text": remaining_text, "surah": surah, "ayah": ayah, "quranic_reference": quran_ref,
                 "validation_warning": warning, }
+
+
+    def parse_exercise_key_line(self, line: str) -> Optional[Dict[str, Any]]:
+        # TODO make this actually parse the solutions section & lines
+        return None
 
     def convert_markdown_to_tex(self, line: str) -> str:
         """Convert Markdown formatting to LaTeX"""
