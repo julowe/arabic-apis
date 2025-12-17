@@ -1,5 +1,6 @@
 # Anki Model Definition: Other (fallback for demonstrative pronouns, particles, interrogatives, etc.)
 # Fields match columns from textbook-jones-vocabulary.csv
+# There should only be one Arabic column of text, but leaving other columns in case data gets entered there
 # Excludes Ex/Voc and Note/Warning
 # Arabic fields are marked for RTL display
 
@@ -17,10 +18,12 @@ fields:
   - name: english-translation
   - name: verb-form
   - name: part-of-speech
+  - name: triliteral-root
+  - name: usage-notes
 
 css: |
   .card {
-    font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif;
+    font-family: 'Noto Naskh Arabic', 'Noto Kufi Arabic', 'Amiri', 'Traditional Arabic', serif;
     font-size: 28px;
     text-align: center;
     color: black;
@@ -37,8 +40,8 @@ css: |
     font-size: 22px;
     margin-top: 15px;
   }
-  .pos-label {
-    font-size: 14px;
+  .grammar-label {
+    font-size: 16px;
     color: #6a4c93;
     font-style: italic;
     margin-top: 5px;
@@ -46,18 +49,17 @@ css: |
   table.forms-table {
     margin: 15px auto;
     border-collapse: collapse;
-    direction: rtl;
   }
   table.forms-table th {
     font-size: 14px;
     font-weight: normal;
     color: #666;
-    padding: 4px 12px;
+    padding: 4px 18px;
     border-bottom: 1px solid #ccc;
   }
   table.forms-table td {
     font-size: 28px;
-    padding: 8px 12px;
+    padding: 8px 18px;
     direction: rtl;
   }
   .meta {
@@ -73,21 +75,12 @@ templates:
       {{#arabic-word-singular}}
       <div class="arabic">{{arabic-word-singular}}</div>
       {{/arabic-word-singular}}
-      {{^arabic-word-singular}}
-        {{#arabic-word-dual}}
-        <div class="arabic">{{arabic-word-dual}}</div>
-        {{/arabic-word-dual}}
-        {{^arabic-word-dual}}
-          {{#arabic-word-plural}}
-          <div class="arabic">{{arabic-word-plural}}</div>
-          {{/arabic-word-plural}}
-        {{/arabic-word-dual}}
-      {{/arabic-word-singular}}
     afmt: |
       {{FrontSide}}
       <hr id="answer">
       <div class="english">{{english-translation}}</div>
-      <div class="pos-label">{{part-of-speech}}</div>
+      {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
+      <div class="grammar-label">{{part-of-speech}}</div>
       {{#arabic-word-dual}}
       <table class="forms-table">
         <tr>
@@ -121,7 +114,7 @@ templates:
       </div>
 
   # Card 2: Alternate form front (dual if not empty, and different from singular)
-  - name: "ATtQ Other: Alternate Form → Details"
+  - name: "ATtQ Other: Dual Form → Details"
     qfmt: |
       {{#arabic-word-dual}}
       <div class="arabic">{{arabic-word-dual}}</div>
@@ -130,7 +123,8 @@ templates:
       {{FrontSide}}
       <hr id="answer">
       <div class="english">{{english-translation}}</div>
-      <div class="pos-label">{{part-of-speech}}</div>
+      {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
+      <div class="grammar-label">{{part-of-speech}}</div>
       <table class="forms-table">
         <tr>
           {{#arabic-word-singular}}<th>Primary</th>{{/arabic-word-singular}}
@@ -157,7 +151,8 @@ templates:
       {{FrontSide}}
       <hr id="answer">
       <div class="english">{{english-translation}}</div>
-      <div class="pos-label">{{part-of-speech}}</div>
+      {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
+      <div class="grammar-label">{{part-of-speech}}</div>
       <table class="forms-table">
         <tr>
           {{#arabic-word-singular}}<th>Primary</th>{{/arabic-word-singular}}

@@ -16,6 +16,7 @@ fields:
   - name: english-text
   - name: quran-surah
   - name: quran-ayah
+  - name: usage-notes
 
 css: |
   .card {
@@ -66,6 +67,8 @@ css: |
   }
 
 # TODO add audio to back too? or does it show up on both sides?
+# TODO add link to quran.com? quranWbW? format:
+#   for: {{Expression}}, do: <a href="http://example.com/search?q={{Expression}}">check in dictionary</a>
 templates:
   - name: "ATtQ Exercise: Arabic → Details"
     qfmt: |

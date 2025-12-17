@@ -15,10 +15,12 @@ fields:
   - name: english-translation
   - name: verb-form
   - name: part-of-speech
+  - name: triliteral-root
+  - name: usage-notes
 
 css: |
   .card {
-    font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif;
+    font-family: 'Noto Naskh Arabic', 'Noto Kufi Arabic', 'Amiri', 'Traditional Arabic', serif;
     font-size: 28px;
     text-align: center;
     color: black;
@@ -26,21 +28,36 @@ css: |
     padding: 20px;
   }
   .arabic {
-    font-size: 48px;
+    font-size: 42px;
     direction: rtl;
     unicode-bidi: bidi-override;
     line-height: 1.8;
   }
   .english {
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 15px;
-    white-space: pre-wrap;
   }
-  .pos-label {
-    font-size: 14px;
-    color: #c2185b;
+  .grammar-label {
+    font-size: 16px;
+    color: #6a4c93;
     font-style: italic;
-    margin-top: 8px;
+    margin-top: 5px;
+  }
+  table.forms-table {
+    margin: 15px auto;
+    border-collapse: collapse;
+  }
+  table.forms-table th {
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+    padding: 4px 18px;
+    border-bottom: 1px solid #ccc;
+  }
+  table.forms-table td {
+    font-size: 28px;
+    padding: 8px 18px;
+    direction: rtl;
   }
   .meta {
     font-size: 14px;

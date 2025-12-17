@@ -26,8 +26,11 @@ name: "Arabic Jones - Noun"
 #  - [name: arabic-word-singular, rtl: true]
 
 # TODO add trilateral root field
-# TODO add specific mention of noun number (singular/dual/plural)
 # TODO set font and size in note model? or just leave in CSS so anki has another normal-ish font fallback?
+# TODO set font to percentage (and would it then inherit from anki settings?), or use viewport units?
+#    https://www.w3schools.com/css/css_font_size.asp
+# TODO add gender column to CSV and then to cards?
+
 # NOTE: anki-id is first so that Anki defaults to using it as the sort field
 fields:
   - name: anki-id
@@ -39,10 +42,12 @@ fields:
   - name: english-translation
   - name: verb-form
   - name: part-of-speech
+  - name: triliteral-root
+  - name: usage-notes
 
 css: |
   .card {
-    font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif;
+    font-family: 'Noto Naskh Arabic', 'Noto Kufi Arabic', 'Amiri', 'Traditional Arabic', serif;
     font-size: 28px;
     text-align: center;
     color: black;
@@ -59,25 +64,26 @@ css: |
     font-size: 22px;
     margin-top: 15px;
   }
-  .back-info {
+  .grammar-label {
     font-size: 16px;
-    margin-top: 20px;
+    color: #6a4c93;
+    font-style: italic;
+    margin-top: 5px;
   }
   table.forms-table {
     margin: 15px auto;
     border-collapse: collapse;
-    direction: rtl;
   }
   table.forms-table th {
     font-size: 14px;
     font-weight: normal;
     color: #666;
-    padding: 4px 12px;
+    padding: 4px 18px;
     border-bottom: 1px solid #ccc;
   }
   table.forms-table td {
     font-size: 28px;
-    padding: 8px 12px;
+    padding: 8px 18px;
     direction: rtl;
   }
   .meta {
@@ -97,6 +103,8 @@ templates:
       {{FrontSide}}
       <hr id="answer">
       <div class="english">{{english-translation}}</div>
+      {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
+      <div class="grammar-label">{{part-of-speech}}, singular</div>
       <table class="forms-table">
         <tr>
           {{#arabic-word-singular}}<th>Singular</th>{{/arabic-word-singular}}
@@ -110,7 +118,7 @@ templates:
         </tr>
       </table>
       <div class="meta">
-        {{part-of-speech}} | Lesson {{lesson-number}} | Page {{page-number}}
+        Lesson {{lesson-number}} | Page {{page-number}}
       </div>
 
   # Card 2: Dual form front (if not empty)
@@ -123,6 +131,8 @@ templates:
       {{FrontSide}}
       <hr id="answer">
       <div class="english">{{english-translation}}</div>
+      {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
+      <div class="grammar-label">{{part-of-speech}}, dual</div>
       <table class="forms-table">
         <tr>
           {{#arabic-word-singular}}<th>Singular</th>{{/arabic-word-singular}}
@@ -136,7 +146,7 @@ templates:
         </tr>
       </table>
       <div class="meta">
-        {{part-of-speech}} | Lesson {{lesson-number}} | Page {{page-number}}
+        Lesson {{lesson-number}} | Page {{page-number}}
       </div>
 
   # Card 3: Plural form front (if not empty)
@@ -149,6 +159,8 @@ templates:
       {{FrontSide}}
       <hr id="answer">
       <div class="english">{{english-translation}}</div>
+      {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
+      <div class="grammar-label">{{part-of-speech}}, plural</div>
       <table class="forms-table">
         <tr>
           {{#arabic-word-singular}}<th>Singular</th>{{/arabic-word-singular}}
@@ -162,6 +174,6 @@ templates:
         </tr>
       </table>
       <div class="meta">
-        {{part-of-speech}} | Lesson {{lesson-number}} | Page {{page-number}}
+        Lesson {{lesson-number}} | Page {{page-number}}
       </div>
 
