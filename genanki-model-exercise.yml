@@ -1,0 +1,93 @@
+# Anki Model Definition: Exercise
+# Fields match columns from textbook-jones-exercises.csv (excluding Ex/Voc and Note/Warning)
+# Arabic fields are marked for RTL display
+
+# Created ID with `import random; random.randrange(1 << 30, 1 << 31)` on 2025-12-16
+model_id: 1351566702
+name: "Arabic Jones - Exercise"
+
+fields:
+  - name: anki-id
+  - name: page-number
+  - name: lesson-number
+  - name: exercise-number
+  - {name: arabic-text, rtl: true }
+  - name: transliteration
+  - name: english-text
+  - name: quran-surah
+  - name: quran-ayah
+  - name: usage-notes
+
+css: |
+  .card {
+    font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 20px;
+  }
+  .arabic {
+    font-size: 36px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    line-height: 1.8;
+  }
+  .back-info {
+    font-size: 18px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .back-info table {
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+  .back-info td, .back-info th {
+    padding: 4px 10px;
+    border: 1px solid #ccc;
+  }
+  .transliteration {
+    font-style: italic;
+    font-size: 20px;
+  }
+  .english {
+    font-size: 20px;
+  }
+  .quran-ref {
+    font-size: 16px;
+    color: #666;
+  }
+  .audio-container {
+    margin: 10px 0;
+  }
+  .meta {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+
+# TODO add audio to back too? or does it show up on both sides?
+# TODO add link to quran.com? quranWbW? format:
+#   for: {{Expression}}, do: <a href="http://example.com/search?q={{Expression}}">check in dictionary</a>
+templates:
+  - name: "ATtQ Exercise: Arabic → Details"
+    qfmt: |
+      <div class="arabic">{{arabic-text}}</div>
+      {{#audio-front}}
+      <div class="audio-container">{{audio-front}}</div>
+      {{/audio-front}}
+    afmt: |
+      {{FrontSide}}
+      <hr id="answer">
+      <div class="back-info">
+        {{#transliteration}}
+        <div class="transliteration">{{transliteration}}</div>
+        {{/transliteration}}
+        <div class="english">{{english-text}}</div>
+        <div class="quran-ref">Quran {{quran-surah}}:{{quran-ayah}}</div>
+      
+        <div class="meta">
+          Lesson {{lesson-number}} | Page {{page-number}} | Exercise {{exercise-number}}
+        </div>
+      </div>
+

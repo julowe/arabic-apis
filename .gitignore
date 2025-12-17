@@ -2,6 +2,9 @@
 .idea/
 old_*/
 
+# ignore directory with audio or image files that are used to build decks
+media/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

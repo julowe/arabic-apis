@@ -1,0 +1,174 @@
+# Anki Deck Information for Arabic Through the Qur'an by Alan Jones
+# There is one main Anki deck, with a subdeck that contains only the vocabulary
+# OR the exercises, for each Lesson. So there are 80 subdecks total. I may
+# regret this later.
+
+# This file was mainly created to store the IDs of the decks, so they can be
+# recreated by this script and then used to update someone's existing decks.
+
+# This file created on 2025-12-17T02:34:16.831640
+
+maindeck:
+  name: Arabic Through the Qur'an
+  deck_id: 1299726740
+  subdecks:
+  - name: Arabic Through the Qur'an::Lesson 01 - Vocabulary
+    deck_id: 1344630370
+    type: vocabulary
+    lesson: 1
+  - name: Arabic Through the Qur'an::Lesson 02 - Vocabulary
+    deck_id: 2119504112
+    type: vocabulary
+    lesson: 2
+  - name: Arabic Through the Qur'an::Lesson 03 - Vocabulary
+    deck_id: 1935518118
+    type: vocabulary
+    lesson: 3
+  - name: Arabic Through the Qur'an::Lesson 04 - Vocabulary
+    deck_id: 1644342297
+    type: vocabulary
+    lesson: 4
+  - name: Arabic Through the Qur'an::Lesson 05 - Vocabulary
+    deck_id: 2021769804
+    type: vocabulary
+    lesson: 5
+  - name: Arabic Through the Qur'an::Lesson 06 - Vocabulary
+    deck_id: 1797018216
+    type: vocabulary
+    lesson: 6
+  - name: Arabic Through the Qur'an::Lesson 07 - Vocabulary
+    deck_id: 1776545359
+    type: vocabulary
+    lesson: 7
+  - name: Arabic Through the Qur'an::Lesson 08 - Vocabulary
+    deck_id: 1611775806
+    type: vocabulary
+    lesson: 8
+  - name: Arabic Through the Qur'an::Lesson 09 - Vocabulary
+    deck_id: 1172338278
+    type: vocabulary
+    lesson: 9
+  - name: Arabic Through the Qur'an::Lesson 10 - Vocabulary
+    deck_id: 1634723608
+    type: vocabulary
+    lesson: 10
+  - name: Arabic Through the Qur'an::Lesson 11 - Vocabulary
+    deck_id: 1968299463
+    type: vocabulary
+    lesson: 11
+  - name: Arabic Through the Qur'an::Lesson 12 - Vocabulary
+    deck_id: 1533041779
+    type: vocabulary
+    lesson: 12
+  - name: Arabic Through the Qur'an::Lesson 13 - Vocabulary
+    deck_id: 1743739773
+    type: vocabulary
+    lesson: 13
+  - name: Arabic Through the Qur'an::Lesson 14 - Vocabulary
+    deck_id: 1776235652
+    type: vocabulary
+    lesson: 14
+  - name: Arabic Through the Qur'an::Lesson 15 - Vocabulary
+    deck_id: 1100890496
+    type: vocabulary
+    lesson: 15
+  - name: Arabic Through the Qur'an::Lesson 16 - Vocabulary
+    deck_id: 1770086976
+    type: vocabulary
+    lesson: 16
+  - name: Arabic Through the Qur'an::Lesson 17 - Vocabulary
+    deck_id: 1549405402
+    type: vocabulary
+    lesson: 17
+  - name: Arabic Through the Qur'an::Lesson 18 - Vocabulary
+    deck_id: 1178028270
+    type: vocabulary
+    lesson: 18
+  - name: Arabic Through the Qur'an::Lesson 19 - Vocabulary
+    deck_id: 1220147315
+    type: vocabulary
+    lesson: 19
+  - name: Arabic Through the Qur'an::Lesson 20 - Vocabulary
+    deck_id: 1166518493
+    type: vocabulary
+    lesson: 20
+  - name: Arabic Through the Qur'an::Lesson 21 - Vocabulary
+    deck_id: 1420257302
+    type: vocabulary
+    lesson: 21
+  - name: Arabic Through the Qur'an::Lesson 22 - Vocabulary
+    deck_id: 1990219315
+    type: vocabulary
+    lesson: 22
+  - name: Arabic Through the Qur'an::Lesson 23 - Vocabulary
+    deck_id: 1787014927
+    type: vocabulary
+    lesson: 23
+  - name: Arabic Through the Qur'an::Lesson 24 - Vocabulary
+    deck_id: 2029449161
+    type: vocabulary
+    lesson: 24
+  - name: Arabic Through the Qur'an::Lesson 25 - Vocabulary
+    deck_id: 1472995719
+    type: vocabulary
+    lesson: 25
+  - name: Arabic Through the Qur'an::Lesson 26 - Vocabulary
+    deck_id: 1272552851
+    type: vocabulary
+    lesson: 26
+  - name: Arabic Through the Qur'an::Lesson 27 - Vocabulary
+    deck_id: 2074328031
+    type: vocabulary
+    lesson: 27
+  - name: Arabic Through the Qur'an::Lesson 28 - Vocabulary
+    deck_id: 1177237960
+    type: vocabulary
+    lesson: 28
+  - name: Arabic Through the Qur'an::Lesson 29 - Vocabulary
+    deck_id: 1641854816
+    type: vocabulary
+    lesson: 29
+  - name: Arabic Through the Qur'an::Lesson 30 - Vocabulary
+    deck_id: 1852070433
+    type: vocabulary
+    lesson: 30
+  - name: Arabic Through the Qur'an::Lesson 31 - Vocabulary
+    deck_id: 1996343395
+    type: vocabulary
+    lesson: 31
+  - name: Arabic Through the Qur'an::Lesson 32 - Vocabulary
+    deck_id: 1160336058
+    type: vocabulary
+    lesson: 32
+  - name: Arabic Through the Qur'an::Lesson 33 - Vocabulary
+    deck_id: 1338732315
+    type: vocabulary
+    lesson: 33
+  - name: Arabic Through the Qur'an::Lesson 34 - Vocabulary
+    deck_id: 1504555687
+    type: vocabulary
+    lesson: 34
+  - name: Arabic Through the Qur'an::Lesson 35 - Vocabulary
+    deck_id: 1345836766
+    type: vocabulary
+    lesson: 35
+  - name: Arabic Through the Qur'an::Lesson 36 - Vocabulary
+    deck_id: 1489787076
+    type: vocabulary
+    lesson: 36
+  - name: Arabic Through the Qur'an::Lesson 37 - Vocabulary
+    deck_id: 1236118711
+    type: vocabulary
+    lesson: 37
+  - name: Arabic Through the Qur'an::Lesson 38 - Vocabulary
+    deck_id: 1262636357
+    type: vocabulary
+    lesson: 38
+  - name: Arabic Through the Qur'an::Lesson 39 - Vocabulary
+    deck_id: 1356015592
+    type: vocabulary
+    lesson: 39
+  - name: Arabic Through the Qur'an::Lesson 40 - Vocabulary
+    deck_id: 1293202747
+    type: vocabulary
+    lesson: 40

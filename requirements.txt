@@ -4,3 +4,7 @@ python-dotenv
 tqdm
 openpyxl
 odfpy
+
+# reqs for arabic-textbook-to-flashcards.py
+genanki
+PyYAML
