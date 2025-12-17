@@ -1,0 +1,75 @@
+# Anki Model Definition: Particle (interrogative, conjunction, etc.)
+# For entries like هَلْ, أَ, مَا, مَنْ, etc.
+
+# Created ID with `import random; random.randrange(1 << 30, 1 << 31)` on 2025-12-16
+model_id: 1163337782
+name: "Arabic Jones - Particle"
+
+fields:
+  - name: anki-id
+  - name: page-number
+  - name: lesson-number
+  - {name: arabic-word-singular, rtl: true}
+  - {name: arabic-word-dual, rtl: true}
+  - {name: arabic-word-plural, rtl: true}
+  - name: english-translation
+  - name: verb-form
+  - name: part-of-speech
+
+css: |
+  .card {
+    font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif;
+    font-size: 28px;
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 20px;
+  }
+  .arabic {
+    font-size: 48px;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+    line-height: 1.8;
+  }
+  .english {
+    font-size: 20px;
+    margin-top: 15px;
+    white-space: pre-wrap;
+  }
+  .pos-label {
+    font-size: 14px;
+    color: #c2185b;
+    font-style: italic;
+    margin-top: 8px;
+  }
+  .meta {
+    font-size: 14px;
+    color: #888;
+    margin-top: 10px;
+  }
+
+templates:
+  - name: "ATtQ Particle: Arabic → Meaning"
+    qfmt: |
+      {{#arabic-word-singular}}
+      <div class="arabic">{{arabic-word-singular}}</div>
+      {{/arabic-word-singular}}
+      {{^arabic-word-singular}}
+        {{#arabic-word-dual}}
+        <div class="arabic">{{arabic-word-dual}}</div>
+        {{/arabic-word-dual}}
+        {{^arabic-word-dual}}
+          {{#arabic-word-plural}}
+          <div class="arabic">{{arabic-word-plural}}</div>
+          {{/arabic-word-plural}}
+        {{/arabic-word-dual}}
+      {{/arabic-word-singular}}
+    afmt: |
+      {{FrontSide}}
+      <hr id="answer">
+      <div class="english">{{english-translation}}</div>
+      <div class="pos-label">{{part-of-speech}}</div>
+      <div class="meta">
+        Lesson {{lesson-number}} | Page {{page-number}}
+      </div>
+
