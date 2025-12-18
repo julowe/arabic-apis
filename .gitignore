@@ -5,6 +5,11 @@ old_*/
 # ignore directory with audio or image files that are used to build decks
 media/
 
+# Generated flashcard files (created by GitHub Actions)
+jones-deck.apkg
+jones-cards.csv
+release_notes.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

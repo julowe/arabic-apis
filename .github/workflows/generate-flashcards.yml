@@ -1,0 +1,105 @@
+name: Generate Flashcards and Create Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'textbook-jones-vocabulary.csv'
+      - 'textbook-jones-exercises.csv'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: Install dependencies
+        run: |
+          pip install genanki PyYAML
+      
+      - name: Get commit hashes of input files
+        id: get_commits
+        run: |
+          VOCAB_COMMIT=$(git log -1 --format="%H" -- textbook-jones-vocabulary.csv)
+          EXERCISES_COMMIT=$(git log -1 --format="%H" -- textbook-jones-exercises.csv)
+          echo "vocab_commit=$VOCAB_COMMIT" >> $GITHUB_OUTPUT
+          echo "exercises_commit=$EXERCISES_COMMIT" >> $GITHUB_OUTPUT
+          echo "vocab_short=$(echo $VOCAB_COMMIT | cut -c1-7)" >> $GITHUB_OUTPUT
+          echo "exercises_short=$(echo $EXERCISES_COMMIT | cut -c1-7)" >> $GITHUB_OUTPUT
+      
+      - name: Generate Anki deck
+        run: |
+          python3 arabic-textbook-to-flashcards.py \
+            --format anki \
+            --output jones-deck.apkg \
+            textbook-jones-vocabulary.csv \
+            textbook-jones-exercises.csv
+      
+      - name: Generate two-column CSV
+        run: |
+          python3 arabic-textbook-to-flashcards.py \
+            --format two_col_csv \
+            --output jones-cards.csv \
+            textbook-jones-vocabulary.csv \
+            textbook-jones-exercises.csv
+      
+      - name: Create release tag
+        id: create_tag
+        run: |
+          TIMESTAMP=$(date -u +"%Y%m%d-%H%M%S")
+          TAG_NAME="flashcards-$TIMESTAMP"
+          echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
+          echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
+      
+      - name: Create release notes
+        id: release_notes
+        run: |
+          cat << EOF > release_notes.md
+          ## Arabic Flashcards Release
+          
+          Generated on: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          
+          ### Input Files Used
+          
+          - **Vocabulary CSV**: [\`textbook-jones-vocabulary.csv\`](https://github.com/${{ github.repository }}/blob/${{ steps.get_commits.outputs.vocab_commit }}/textbook-jones-vocabulary.csv) (commit [${{ steps.get_commits.outputs.vocab_short }}](https://github.com/${{ github.repository }}/commit/${{ steps.get_commits.outputs.vocab_commit }}))
+          - **Exercises CSV**: [\`textbook-jones-exercises.csv\`](https://github.com/${{ github.repository }}/blob/${{ steps.get_commits.outputs.exercises_commit }}/textbook-jones-exercises.csv) (commit [${{ steps.get_commits.outputs.exercises_short }}](https://github.com/${{ github.repository }}/commit/${{ steps.get_commits.outputs.exercises_commit }}))
+          
+          ### Release Assets
+          
+          - **jones-deck.apkg** - Anki deck with all vocabulary and exercises
+          - **jones-cards.csv** - Two-column CSV format for import into other flashcard applications
+          
+          ### What's Included
+          
+          This release contains flashcards generated from the Jones Arabic textbook vocabulary and exercises. The Anki deck includes:
+          - Vocabulary items organized by lesson and part of speech
+          - Exercise items with Quranic references
+          - Multiple card templates for different word forms (singular/dual/plural for nouns, perfect/imperfect/verbal noun for verbs)
+          
+          The CSV file provides a simple two-column format (Front, Back) suitable for importing into various flashcard applications.
+          EOF
+      
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ steps.create_tag.outputs.tag_name }}
+          name: Flashcards ${{ steps.create_tag.outputs.timestamp }}
+          body_path: release_notes.md
+          files: |
+            jones-deck.apkg
+            jones-cards.csv
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
