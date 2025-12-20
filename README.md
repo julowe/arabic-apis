@@ -19,9 +19,65 @@ teach Arabic.
   the Optical Character Recognition (OCR) of textbook pages into CSV with " as
   the string delimiter, structured json file and a XeLaTeX document.
   (Work In Progress)
+- `arabic-textbook-to-flashcards.py`: Converts textbook vocabulary and exercises
+  into flashcard formats (Anki .apkg or two-column CSV) for language learning
 
 There are some tests. Much of this was written or at least started by LLMs,
 mainly because I really should be reading these Lessons instead of coding...
+
+## Automated Flashcard Generation
+
+This repository includes a GitHub Action that automatically generates flashcard
+files whenever the source CSV files are updated on the main branch.
+
+Currently, the action only generates flashcards for the vocabulary file, as
+the exercises file is not proofread at all. Yet...
+
+### How It Works
+
+When either `textbook-jones-vocabulary.csv` or `textbook-jones-exercises.csv` is
+updated on the main branch, the workflow:
+
+1. Runs `arabic-textbook-to-flashcards.py` with multiple output formats
+    specified by `--format`:
+   - `anki`: to generate `attq-vocab-deck.apkg`
+   - `csv_min`: to generate `attq-vocab-deck-min.csv`
+   - `csv_med`: to generate `attq-vocab-deck-med.csv`
+   - `csv_max`: to generate `attq-vocab-deck-max.csv`
+2. Creates a new GitHub release with a timestamp tag (e.g., `flashcards-20231218-120000`)
+3. Uploads all generated files as release assets
+4. Includes permalinks to the exact commits of the input CSV files used
+
+### Downloading Flashcards
+
+To get the latest vocabulary flashcards:
+
+1. Visit the [Releases page](https://github.com/julowe/arabic-apis/releases)
+2. Download the latest release:
+   - **attq-vocab-deck.apkg** - Import into Anki for full featured flashcard experience
+   - **attq-vocab-deck-min.csv**, **attq-vocab-deck-med.csv**, **attq-vocab-deck-max.csv** - Import into other flashcard applications
+
+### Manual Generation
+
+You can also generate flashcards manually:
+
+```bash
+# Generate Anki deck
+python3 arabic-textbook-to-flashcards.py \
+  --format anki \
+  --output my-deck.apkg \
+  textbook-jones-vocabulary.csv \
+  textbook-jones-exercises.csv
+
+# Generate two-column CSV
+python3 arabic-textbook-to-flashcards.py \
+  --format csv_max \
+  --output my-cards.csv \
+  textbook-jones-vocabulary.csv \
+  textbook-jones-exercises.csv
+```
+
+See `python3 arabic-textbook-to-flashcards.py --help` for more options.
 
 ## Arabic Textbook to LaTeX Converter
 

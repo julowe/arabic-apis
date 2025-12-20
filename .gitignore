@@ -5,6 +5,21 @@ old_*/
 # ignore directory with audio or image files that are used to build decks
 media/
 
+# Generated flashcard files (created by GitHub Actions)
+attq-vocab-deck.apkg
+attq-vocab-deck-min.csv
+attq-vocab-deck-med.csv
+attq-vocab-deck-max.csv
+attq-exercises-deck.apkg
+attq-exercises-deck-min.csv
+attq-exercises-deck-med.csv
+attq-exercises-deck-max.csv
+attq-deck.apkg
+attq-deck-min.csv
+attq-deck-med.csv
+attq-deck-max.csv
+release_notes.md
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
