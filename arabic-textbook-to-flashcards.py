@@ -39,7 +39,6 @@ import os
 import re
 import sys
 from dataclasses import dataclass
-from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 try:
@@ -92,9 +91,9 @@ class VocabRow:
 # ----------------------------
 
 
-def _get_script_dir() -> Path:
+def _get_script_dir() -> str:
     """Return the directory where this script is located."""
-    return Path(__file__).parent.resolve()
+    return os.path.dirname(os.path.abspath(__file__))
 
 
 def _read_csv(path: str) -> Tuple[List[str], List[Dict[str, str]]]:
@@ -194,9 +193,11 @@ def _load_yaml_file(filename: str) -> Optional[Dict]:
 
     if yaml is None:
         return None
+
     script_dir = _get_script_dir()
-    path = script_dir / filename
-    if not path.exists():
+    path = os.path.join(script_dir, filename)
+
+    if not os.path.exists(path):
         return None
     with open(path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
