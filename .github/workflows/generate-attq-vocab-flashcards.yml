@@ -1,4 +1,4 @@
-name: Generate Flashcards and Create Release
+name: Generate ATtQ Vocab Flashcards and Create Release
 
 on:
   push:
@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - 'textbook-jones-vocabulary.csv'
-      - 'textbook-jones-exercises.csv'
 
 permissions:
   contents: write
@@ -35,27 +34,16 @@ jobs:
         id: get_commits
         run: |
           VOCAB_COMMIT=$(git log -1 --format="%H" -- textbook-jones-vocabulary.csv)
-          EXERCISES_COMMIT=$(git log -1 --format="%H" -- textbook-jones-exercises.csv)
           echo "vocab_commit=$VOCAB_COMMIT" >> $GITHUB_OUTPUT
-          echo "exercises_commit=$EXERCISES_COMMIT" >> $GITHUB_OUTPUT
           echo "vocab_short=$(echo $VOCAB_COMMIT | cut -c1-7)" >> $GITHUB_OUTPUT
-          echo "exercises_short=$(echo $EXERCISES_COMMIT | cut -c1-7)" >> $GITHUB_OUTPUT
       
-      - name: Generate Anki deck
+      - name: Generate Vocabulary Anki deck, csv_min, csv_med, csv_max
         run: |
           python3 arabic-textbook-to-flashcards.py \
-            --format anki \
-            --output jones-deck.apkg \
-            textbook-jones-vocabulary.csv \
-            textbook-jones-exercises.csv
-      
-      - name: Generate two-column CSV
-        run: |
-          python3 arabic-textbook-to-flashcards.py \
-            --format two_col_csv \
-            --output jones-cards.csv \
-            textbook-jones-vocabulary.csv \
-            textbook-jones-exercises.csv
+            --format anki csv_min csv_med csv_max \
+            --output attq-vocab-deck.apkg \
+            --deck-name "Arabic Through the Qur'an" \
+            textbook-jones-vocabulary.csv
       
       - name: Create release tag
         id: create_tag
@@ -69,25 +57,29 @@ jobs:
         id: release_notes
         run: |
           cat << EOF > release_notes.md
-          ## Arabic Flashcards Release
+          ## Arabic Vocab Flashcards Release
           
           Generated on: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
           
           ### Input Files Used
           
-          - **Vocabulary CSV**: [\`textbook-jones-vocabulary.csv\`](https://github.com/${{ github.repository }}/blob/${{ steps.get_commits.outputs.vocab_commit }}/textbook-jones-vocabulary.csv) (commit [${{ steps.get_commits.outputs.vocab_short }}](https://github.com/${{ github.repository }}/commit/${{ steps.get_commits.outputs.vocab_commit }}))
-          - **Exercises CSV**: [\`textbook-jones-exercises.csv\`](https://github.com/${{ github.repository }}/blob/${{ steps.get_commits.outputs.exercises_commit }}/textbook-jones-exercises.csv) (commit [${{ steps.get_commits.outputs.exercises_short }}](https://github.com/${{ github.repository }}/commit/${{ steps.get_commits.outputs.exercises_commit }}))
-          
+          - **Vocabulary CSV**: 
+          [\`textbook-jones-vocabulary.csv\`](https://github.com/${{ github.repository }}/blob/${{ steps.get_commits.outputs.vocab_commit }}/textbook-jones-vocabulary.csv) 
+          (commit [${{ steps.get_commits.outputs.vocab_short }}](https://github.com/${{ github.repository }}/commit/${{ steps.get_commits.outputs.vocab_commit }}))
+
           ### Release Assets
           
-          - **jones-deck.apkg** - Anki deck with all vocabulary and exercises
-          - **jones-cards.csv** - Two-column CSV format for import into other flashcard applications
-          
+          - **attq-vocab-deck.apkg** - Anki deck with all vocabulary and exercises
+          - The following two-column CSV format for import into other flashcard applications:
+            - **attq-vocab-deck-min.csv** - the arabic word is in the first column. The english translation is in the second column.
+            - **attq-vocab-deck-med.csv** - the arabic word is in the first column. The english translation and the part of speech are in the second column.
+            - **attq-vocab-deck-max.csv** - the arabic word is in the first column.  The english translation, the part of speech, the page number, lesson number, the verb form (if provided), the triliteral root, and any usage notes concatenated together are in the second column.
+
           ### What's Included
           
-          This release contains flashcards generated from the Jones Arabic textbook vocabulary and exercises. The Anki deck includes:
+          This release contains flashcards generated from the vocabulary in "Arabic Through the Qur'an" by Alan Jones. 
+          The Anki deck includes:
           - Vocabulary items organized by lesson and part of speech
-          - Exercise items with Quranic references
           - Multiple card templates for different word forms (singular/dual/plural for nouns, perfect/imperfect/verbal noun for verbs)
           
           The CSV file provides a simple two-column format (Front, Back) suitable for importing into various flashcard applications.
@@ -97,10 +89,12 @@ jobs:
         uses: softprops/action-gh-release@e7a8f85e1c67a31e6ed99a94b41bd0b71bbee6b8  # v2.2.0
         with:
           tag_name: ${{ steps.create_tag.outputs.tag_name }}
-          name: Flashcards ${{ steps.create_tag.outputs.timestamp }}
+          name: Arabic Through the Qur'an Vocab Flashcards ${{ steps.create_tag.outputs.timestamp }}
           body_path: release_notes.md
           files: |
-            jones-deck.apkg
-            jones-cards.csv
+            attq-vocab-deck.apkg
+            attq-vocab-deck-min.csv
+            attq-vocab-deck-med.csv
+            attq-vocab-deck-max.csv
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
