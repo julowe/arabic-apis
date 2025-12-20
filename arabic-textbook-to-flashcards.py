@@ -648,11 +648,29 @@ def _add_anki_notes(
             yaml.dump(new_deck_info, f, sort_keys=False)
 
 
-def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) -> None:
+def build_anki_deck(
+    input_paths: List[str],
+    deck_name: str,
+    output_filepath: str,
+) -> None:
     """Build an Anki deck from input CSV files and save to .apkg file."""
 
     _ensure_genanki_available()
     _ensure_yaml_available()
+
+    # Check if we have just a filename/relative path, or full path
+    if os.path.isabs(output_filepath):
+        output_path, output_filename = os.path.split(output_filepath)
+    else:
+        # output_path = os.path.split(os.getcwd())[-1]
+        output_path = _get_script_dir()
+        output_filename = os.path.basename(output_filepath)
+
+    # Parse out parts of the output path
+    output_filestem, output_extension = os.path.splitext(output_filepath)
+
+    if output_extension != ".apkg":
+        output_filepath = os.path.join(output_path, output_filestem + ".apkg")
 
     # TODO make deck_info file an input argument. ugh lots of hardcoded things...
     stub_use_yaml_file = True
@@ -731,8 +749,8 @@ def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) ->
     if media:
         pkg.media_files = media
 
-    pkg.write_to_file(output_path)
-    print(f"Wrote Anki deck: {output_path}\n")
+    pkg.write_to_file(output_filepath)
+    print(f"Wrote Anki deck: {output_filepath}\n")
     # TODO can this deck be tested without fully launching Anki? See: https://faqs.ankiweb.net/running-from-python.html
 
 
@@ -741,12 +759,19 @@ def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) ->
 # ----------------------------
 
 
-def build_two_column_csv(input_paths: List[str], output_path: str) -> None:
+def build_two_column_csv(
+    input_paths: List[str],
+    output_columns_front_iterate: List[str],
+    output_columns_front: List[str],
+    output_columns_back: List[str],
+    output_filepath: str,
+) -> None:
     """
     Emit a simple two-column CSV: Front,Back.
     - Exercises: Front=Arabic Text, Back=English Text (fallback to Transliteration if English missing).
     - Vocabulary: For each row, prefer Singular front; else Dual; else Plural. Back=English Translations.
     """
+
     out_rows: List[Tuple[str, str]] = []
 
     for path in input_paths:
@@ -768,26 +793,74 @@ def build_two_column_csv(input_paths: List[str], output_path: str) -> None:
         elif _is_vocab(headers):
             for r in rows:
                 vr = _map_vocab_row(r)
-                front = (
-                    vr.arabic_word_singular
-                    or vr.arabic_word_dual
-                    or vr.arabic_word_plural
-                )
-                back = vr.english_translation
-                if front and back:
-                    out_rows.append((front, back))
+
+                # Build front of card by going through front iterate columns
+                for card_front in output_columns_front_iterate:
+                    front = getattr(vr, card_front)
+
+                    # Don't make this output_row/card if there isn't an Arabic word
+                    if not front:
+                        continue
+
+                    # Now also get any other columns for the front of the card
+                    values = [
+                        getattr(vr, col)
+                        for col in output_columns_front
+                        if getattr(vr, col)
+                    ]
+                    front += "; ".join(values)
+
+                    # Make back of card
+                    back = ""
+
+                    # Break out how we make the back of card so we can add some field descriptors
+                    for col in output_columns_back:
+                        # check if we should add the front of the card to the back as well
+                        if col == "CARD_FRONT":
+                            back += front + "; "
+                        else:
+                            temp_val = getattr(vr, col)
+                            if temp_val:
+                                # if the string has contents, append a semicolon and a space
+                                prepend_string = "; " if back else ""
+
+                                if col == "triliteral_root":
+                                    back += prepend_string + "Root: " + getattr(vr, col)
+                                elif col == "verb_form":
+                                    back += (
+                                        prepend_string
+                                        + "Verb Form: "
+                                        + getattr(vr, col)
+                                    )
+                                elif col == "usage_notes":
+                                    back += (
+                                        prepend_string
+                                        + "Usage Notes: "
+                                        + getattr(vr, col)
+                                    )
+                                elif col == "page_number":
+                                    back += prepend_string + "Pg. " + getattr(vr, col)
+                                elif col == "lesson_number":
+                                    back += (
+                                        prepend_string + "Lesson " + getattr(vr, col)
+                                    )
+                                else:
+                                    back += prepend_string + getattr(vr, col)
+
+                    if front and back:
+                        out_rows.append((front, back))
         else:
             sys.stderr.write(
                 f"Warning: Could not determine CSV type for '{path}'. Skipping.\n"
             )
 
-    with open(output_path, "w", newline="", encoding="utf-8") as f:
+    with open(output_filepath, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["Front", "Back"])
         for front, back in out_rows:
             writer.writerow([front, back])
 
-    sys.stdout.write(f"Wrote CSV file: {output_path} ({len(out_rows)} cards)\n")
+    sys.stdout.write(f"Wrote CSV file: {output_filepath} ({len(out_rows)} cards)\n")
 
 
 # ----------------------------
@@ -826,10 +899,10 @@ Examples:
   # Create Anki deck from both CSV files (default)
   %(prog)s textbook-jones-exercises.csv textbook-jones-vocabulary.csv
 
-  # Create simple CSV for import to flashcard apps
-  %(prog)s --format two_col_csv textbook-jones-vocabulary.csv -o vocab.csv
+  # Create minimal CSV for import to flashcard apps
+  %(prog)s --format csv_min textbook-jones-vocabulary.csv -o vocab.csv
 
-  # Specify custom deck name and output
+  # Specify custom deck name and output, using all .csv files in current directory as input
   %(prog)s --deck-name "My Arabic Deck" -o my-deck.apkg *.csv
 """,
     )
@@ -840,20 +913,41 @@ Examples:
     )
     p.add_argument(
         "--format",
-        choices=["anki", "two_col_csv"],
-        default="anki",
-        help="Output format: 'anki' (default) for .apkg, 'two_col_csv' for simple two-column CSV",
+        choices=["anki", "csv_min", "csv_med", "csv_max"],
+        nargs="*",
+        default="[anki]",
+        # action='append',
+        help="Output formats:"
+        "'anki' (default) will output a .apkg file for use,"
+        " with Anki."
+        "'csv_min' will output a comma-seperated values (CSV) file with the"
+        " arabic word in the first column, and the english translation in the"
+        " second column."
+        "'csv_med' will output a CSV with the arabic word in the first column,"
+        " and the arabic word, the english translation, and the part of speech"
+        " in the second."
+        "'csv_max' will output a CSV with the arabic word in the first column,"
+        " and the english translation, the Part of Speech details, the page"
+        " number, lesson number, the verb form (if provided), the triliteral"
+        " root, and any usage notes concatenated together in the second column.",
     )
     p.add_argument(
         "--deck-name",
-        default="Arabic Through the Qur'an – Jones",
-        help="Anki deck name (only used with anki format)",
+        default="Arabic Through the Qur'an",
+        help="Anki deck name (only used with anki format)."
+        " Defaults to 'Arabic Through the Qur'an'.",
     )
     p.add_argument(
         "--output",
         "-o",
         default=None,
-        help="Output file path (.apkg for anki, .csv for two_col_csv). Defaults to jones-deck.apkg or jones-cards.csv",
+        help="Output file path (.apkg for anki, .csv for two_col_csv)."
+        " Defaults to attq-deck.apkg or attq-cards.csv."
+        " If you select more than one output, the base filename will"
+        " be appended with '-min', '-med', or '-max' depending on the CSV"
+        " format selected."
+        " You may specify the output path where the file has an extension of"
+        " .csv or .apkg, the script will use the appropriate extensions.",
     )
     return p.parse_args(argv)
 
@@ -865,6 +959,58 @@ def main(argv: Optional[List[str]] = None) -> int:
     # Validate inputs and separate CSV from JSON
     csv_inputs: List[str] = []
     json_inputs: List[str] = []
+
+    # hardcode for now(TM)
+    # TODO move to a genanki-config-arabic-through-the-quran.yml file,
+    #  which will have this info and... more? the column header to variable mapping?
+    csv_output_columns = {
+        "csv_min": {
+            "output_format": "csv_min",
+            "output_filename_append": "-min",
+            "output_columns_front_iterate": [
+                "arabic_word_singular",
+                "arabic_word_dual",
+                "arabic_word_plural",
+            ],
+            "output_columns_front": [],
+            "output_columns_back": ["english_translation"],
+        },
+        "csv_med": {
+            "output_format": "csv_med",
+            "output_filename_append": "-med",
+            "output_columns_front_iterate": [
+                "arabic_word_singular",
+                "arabic_word_dual",
+                "arabic_word_plural",
+            ],
+            "output_columns_front": [],
+            "output_columns_back": [
+                "CARD_FRONT",
+                "english_translation",
+                "part_of_speech",
+            ],
+        },
+        "csv_max": {
+            "output_format": "csv_max",
+            "output_filename_append": "-max",
+            "output_columns_front_iterate": [
+                "arabic_word_singular",
+                "arabic_word_dual",
+                "arabic_word_plural",
+            ],
+            "output_columns_front": [],
+            "output_columns_back": [
+                "CARD_FRONT",
+                "english_translation",
+                "part_of_speech",
+                "triliteral_root",
+                "verb_form",
+                "usage_notes",
+                "page_number",
+                "lesson_number",
+            ],
+        },
+    }
 
     for path in args.inputs:
         if not os.path.exists(path):
@@ -891,13 +1037,54 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     # Set default output path if not specified
     if not args.output:
-        args.output = "jones-deck.apkg" if args.format == "anki" else "jones-cards.csv"
+        # FIXME: ok so this doesn't break the script, but it doesn't really work
+        if args.format == "anki":
+            args.output = "attq-deck.apkg"
+        else:
+            args.output = "attq-cards.csv"
 
-    # Build output
-    if args.format == "anki":
-        build_anki_deck(csv_inputs, deck_name=args.deck_name, output_path=args.output)
-    else:
-        build_two_column_csv(csv_inputs, output_path=args.output)
+    # Validate output path exists and is writable
+    output_dir, output_filename = os.path.split(args.output)
+
+    # check if full path or relative path
+    if not os.path.isabs(output_filename):
+        output_dir = _get_script_dir()
+
+    if output_dir and not os.path.exists(output_dir):
+        sys.stderr.write(f"ERROR: output directory does not exist: {output_dir}\n")
+        return 2
+    if not os.access(output_dir, os.W_OK):
+        sys.stderr.write(f"ERROR: output directory is not writable: {output_dir}\n")
+        return 2
+
+    # Build output(s)
+    for output_format in args.format:
+        if output_format == "anki":
+            build_anki_deck(
+                input_paths=csv_inputs,
+                deck_name=args.deck_name,
+                output_filepath=args.output,
+            )
+        elif output_format in csv_output_columns:
+            temp_filename = (
+                os.path.splitext(output_filename)[0]
+                + csv_output_columns[output_format]["output_filename_append"]
+                + ".csv"
+            )
+            output_csv_filepath = os.path.join(output_dir, temp_filename)
+            build_two_column_csv(
+                input_paths=csv_inputs,
+                output_columns_front_iterate=csv_output_columns[output_format][
+                    "output_columns_front_iterate"
+                ],
+                output_columns_front=csv_output_columns[output_format][
+                    "output_columns_front"
+                ],
+                output_columns_back=csv_output_columns[output_format][
+                    "output_columns_back"
+                ],
+                output_filepath=output_csv_filepath,
+            )
 
     # TODO update repo readme with usage instructions and file descriptions
 
