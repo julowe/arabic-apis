@@ -39,7 +39,6 @@ import os
 import re
 import sys
 from dataclasses import dataclass
-from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
 try:
@@ -92,14 +91,14 @@ class VocabRow:
 # ----------------------------
 
 
-def _get_script_dir() -> Path:
+def _get_script_dir() -> str:
     """Return the directory where this script is located."""
-    return Path(__file__).parent.resolve()
+    return os.path.dirname(os.path.abspath(__file__))
 
 
 def _read_csv(path: str) -> Tuple[List[str], List[Dict[str, str]]]:
     """Read a CSV file and return headers and rows as a list of dicts."""
-    with open(path, newline='', encoding='utf-8') as f:
+    with open(path, newline="", encoding="utf-8") as f:
         reader = csv.DictReader(f)
         rows = [dict(r) for r in reader]
         headers = reader.fieldnames or []
@@ -108,13 +107,23 @@ def _read_csv(path: str) -> Tuple[List[str], List[Dict[str, str]]]:
 
 def _is_exercise(headers: List[str]) -> bool:
     """Check if CSV headers indicate an exercise file."""
-    required_exercise_headers = {"Exercise Number", "Arabic Text", "Quran Chapter/Surah", "Quran Verse/Ayah"}
+    required_exercise_headers = {
+        "Exercise Number",
+        "Arabic Text",
+        "Quran Chapter/Surah",
+        "Quran Verse/Ayah",
+    }
     return required_exercise_headers.issubset(set(headers))
 
 
 def _is_vocab(headers: List[str]) -> bool:
     """Check if CSV headers indicate a vocabulary file."""
-    required_vocab_headers = {"Sing. / Perf.", "Dual / Imperf.", "Plural / Verbal N.", "English Translations"}
+    required_vocab_headers = {
+        "Sing. / Perf.",
+        "Dual / Imperf.",
+        "Plural / Verbal N.",
+        "English Translations",
+    }
     return required_vocab_headers.issubset(set(headers))
 
 
@@ -124,14 +133,19 @@ def _pad_anki_id_parts(anki_id: str) -> str:
     if len(anki_id_parts[0]) == 1:
         anki_id_parts[0] = anki_id_parts[0].zfill(2)
     elif len(anki_id_parts[0]) > 2:
-        sys.stderr.write("Warning: Anki_ID first part longer than 2 digits, unexpected format. Sort will not work well\n")
+        sys.stderr.write(
+            "Warning: Anki_ID first part longer than 2 digits, unexpected format. Sort will not work well\n"
+        )
 
     if len(anki_id_parts[2]) == 1:
         anki_id_parts[2] = anki_id_parts[2].zfill(2)
     elif len(anki_id_parts[2]) > 2:
-        sys.stderr.write("Warning: Anki_ID third part longer than 2 digits, unexpected format. Sort will not work well\n")
+        sys.stderr.write(
+            "Warning: Anki_ID third part longer than 2 digits, unexpected format. Sort will not work well\n"
+        )
 
     return "-".join(anki_id_parts)
+
 
 def _map_exercise_row(row: Dict[str, str]) -> ExerciseRow:
     """Map a CSV row dict to ExerciseRow dataclass."""
@@ -179,15 +193,17 @@ def _load_yaml_file(filename: str) -> Optional[Dict]:
 
     if yaml is None:
         return None
+
     script_dir = _get_script_dir()
-    path = script_dir / filename
-    if not path.exists():
+    path = os.path.join(script_dir, filename)
+
+    if not os.path.exists(path):
         return None
-    with open(path, 'r', encoding='utf-8') as f:
+    with open(path, "r", encoding="utf-8") as f:
         return yaml.safe_load(f)
 
 
-def _make_model_from_yaml(model_dict: Dict) -> 'genanki.Model':
+def _make_model_from_yaml(model_dict: Dict) -> "genanki.Model":
     """Create a genanki.Model from a loaded YAML dict."""
     return genanki.Model(
         model_id=int(model_dict["model_id"]),
@@ -211,7 +227,9 @@ def _normalize_pos(pos: str) -> str:
         return "demonstrative"
     if "idiom" in pos_lower:
         return "idiom"
-    if any(kw in pos_lower for kw in ["particle", "interrogative", "conjunction", "adverb"]):
+    if any(
+        kw in pos_lower for kw in ["particle", "interrogative", "conjunction", "adverb"]
+    ):
         return "particle"
     return "other"
 
@@ -333,7 +351,7 @@ def _get_audio_tag(audio_file: Optional[str]) -> str:
 # ----------------------------
 
 
-def _build_exercise_note_model() -> Optional['genanki.Model']:
+def _build_exercise_note_model() -> Optional["genanki.Model"]:
     """Build the exercise note model from YAML."""
 
     model = _load_yaml_file("genanki-model-exercise.yml")
@@ -342,7 +360,7 @@ def _build_exercise_note_model() -> Optional['genanki.Model']:
     return None
 
 
-def _build_vocab_note_model_for(pos: str) -> Optional['genanki.Model']:
+def _build_vocab_note_model_for(pos: str) -> Optional["genanki.Model"]:
     """Build a vocabulary note model for the given POS from YAML."""
 
     pos_key = _normalize_pos(pos)
@@ -397,18 +415,17 @@ def _vocab_note_fields(vr: VocabRow) -> List[str]:
 def _sanitize_tag(s: str) -> str:
     """Sanitize a string for use as an Anki tag."""
     # Replace spaces and special chars with underscores
-    return re.sub(r'[^\w-]', '_', s.strip().lower())
+    return re.sub(r"[^\w-]", "_", s.strip().lower())
 
 
 def subdeck_create_or_get(
-        subdecks_dict: Dict[str, 'genanki.Deck'],
-        lesson_key: str,
-        root_deck_name: str,
-        subdeck_type: str,
-        created_subdecks: bool,
-) -> tuple['genanki.Deck', bool]:
+    subdecks_dict: Dict[str, "genanki.Deck"],
+    lesson_key: str,
+    root_deck_name: str,
+    subdeck_type: str,
+    created_subdecks: bool,
+) -> tuple["genanki.Deck", bool]:
     """Get or create a subdeck for the given lesson key."""
-
 
     if lesson_key in subdecks_dict:
         # don't change the value of created_subdecks here,
@@ -422,7 +439,9 @@ def subdeck_create_or_get(
         #  but that is an assumption from the textbook's chapter numbering. will break with other keys.
         #  or at least not sort well
         # the `::` tells Anki that the following string is the subdeck name for the root deck whose name is before the `::`
-        subdeck_name = f"{root_deck_name}::Lesson {lesson_key.zfill(2)} - {subdeck_type}"
+        subdeck_name = (
+            f"{root_deck_name}::Lesson {lesson_key.zfill(2)} - {subdeck_type}"
+        )
         subdeck = genanki.Deck(
             deck_id=random.randrange(1 << 30, 1 << 31),
             name=subdeck_name,
@@ -436,12 +455,12 @@ def subdeck_create_or_get(
 
 
 def _add_anki_notes(
-        deck: 'genanki.Deck',
-        media: List[str],
-        input_paths: List[str],
-        generate_subdecks: bool,
-        subdecks_exercises: Dict[str, genanki.Deck],
-        subdecks_vocab: Dict[str, genanki.Deck],
+    deck: "genanki.Deck",
+    media: List[str],
+    input_paths: List[str],
+    generate_subdecks: bool,
+    subdecks_exercises: Dict[str, genanki.Deck],
+    subdecks_vocab: Dict[str, genanki.Deck],
 ) -> None:
     """Process input CSV files and add notes to the Anki deck."""
     _ensure_genanki_available()
@@ -449,7 +468,7 @@ def _add_anki_notes(
 
     # Create the exercise model here, as there is only one type of model for exercises
     ex_model = _build_exercise_note_model()
-    vocab_model_cache: Dict[str, 'genanki.Model'] = {}
+    vocab_model_cache: Dict[str, "genanki.Model"] = {}
 
     # Keep track of if we make new subdecks, and thus need to update the deck_info file
     generated_new_subdecks = False
@@ -457,7 +476,7 @@ def _add_anki_notes(
     for path in input_paths:
         headers, rows = _read_csv(path)
 
-        if _is_exercise(headers): # Process exercise file
+        if _is_exercise(headers):  # Process exercise file
             if not ex_model:
                 ex_model = _build_exercise_note_model()
                 if not ex_model:
@@ -469,7 +488,9 @@ def _add_anki_notes(
             for row in rows:
                 er = _map_exercise_row(row)
                 if not er.anki_id:
-                    sys.stderr.write(f"Warning: Skipping exercise without Anki_ID: {er.arabic_text[:30]}...\n")
+                    sys.stderr.write(
+                        f"Warning: Skipping exercise without Anki_ID: {er.arabic_text[:30]}...\n"
+                    )
                     continue
 
                 if generate_subdecks:
@@ -481,9 +502,9 @@ def _add_anki_notes(
                         lesson_string,
                         deck.name,
                         "Exercises",
-                        generated_new_subdecks
+                        generated_new_subdecks,
                     )
-                else: # don't generate subdecks, use main deck
+                else:  # don't generate subdecks, use main deck
                     deck_to_add_note_to = deck
 
                 # Create the note with GUID from Anki_ID column
@@ -524,7 +545,9 @@ def _add_anki_notes(
                         lesson_string = int(lesson_string)
                     except (ValueError, TypeError):
                         lesson_string = "unknown"
-                        print("Warning: Non-integer lesson number found, using 'unknown' as lesson string.")
+                        print(
+                            "Warning: Non-integer lesson number found, using 'unknown' as lesson string."
+                        )
 
                     # check if a subdeck for this lesson's vocab exists, or if not, create it
                     deck_to_add_note_to, generated_new_subdecks = subdeck_create_or_get(
@@ -532,7 +555,7 @@ def _add_anki_notes(
                         lesson_string,
                         deck.name,
                         "Vocabulary",
-                        generated_new_subdecks
+                        generated_new_subdecks,
                     )
                 else:  # don't generate subdecks, use main deck
                     deck_to_add_note_to = deck
@@ -562,12 +585,17 @@ def _add_anki_notes(
                         f"page:{vr.page_number}",
                         f"pos:{_sanitize_tag(vr.part_of_speech) or 'other'}",
                         "type:vocabulary",
+                        # "arabic",
+                        # "_sanitize_tag(vr.part_of_speech)", #add if blank, no - logic? or jsut 'other'?
+                        # "root:{vr.triliteral_root}", # TODO sanitize root?
                         # TODO add other tags? https://deepwiki.com/kerrickstaley/genanki/8-advanced-topics#tag-validation-and-management
                     ],
                 )
                 deck_to_add_note_to.add_note(note)
         else:
-            sys.stderr.write(f"Warning: Could not determine CSV type for '{path}'. Skipping.\n")
+            sys.stderr.write(
+                f"Warning: Could not determine CSV type for '{path}'. Skipping.\n"
+            )
 
     if generated_new_subdecks:
         # Write deck_info to yaml file for use in future runs/updating this deck
@@ -579,7 +607,7 @@ def _add_anki_notes(
                 entry = {
                     "name": s_deck.name,
                     "deck_id": s_deck.deck_id,
-                    "type": type_str
+                    "type": type_str,
                 }
                 try:
                     entry["lesson"] = int(l_key)
@@ -591,13 +619,15 @@ def _add_anki_notes(
         _process_subdecks(subdecks_exercises, "exercises")
 
         # Sort by lesson then type (vocabulary first)
-        new_subdecks_list.sort(key=lambda x: (x.get("lesson", 9999), 0 if x["type"] == "vocabulary" else 1))
+        new_subdecks_list.sort(
+            key=lambda x: (x.get("lesson", 9999), 0 if x["type"] == "vocabulary" else 1)
+        )
 
         new_deck_info = {
             "maindeck": {
                 "name": deck.name,
                 "deck_id": deck.deck_id,
-                "subdecks": new_subdecks_list
+                "subdecks": new_subdecks_list,
             }
         }
 
@@ -618,11 +648,29 @@ def _add_anki_notes(
             yaml.dump(new_deck_info, f, sort_keys=False)
 
 
-def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) -> None:
+def build_anki_deck(
+    input_paths: List[str],
+    deck_name: str,
+    output_filepath: str,
+) -> None:
     """Build an Anki deck from input CSV files and save to .apkg file."""
 
     _ensure_genanki_available()
     _ensure_yaml_available()
+
+    # Check if we have just a filename/relative path, or full path
+    if os.path.isabs(output_filepath):
+        output_path, output_filename = os.path.split(output_filepath)
+    else:
+        # output_path = os.path.split(os.getcwd())[-1]
+        output_path = _get_script_dir()
+        output_filename = os.path.basename(output_filepath)
+
+    # Parse out parts of the output path
+    output_filestem, output_extension = os.path.splitext(output_filepath)
+
+    if output_extension != ".apkg":
+        output_filepath = os.path.join(output_path, output_filestem + ".apkg")
 
     # TODO make deck_info file an input argument. ugh lots of hardcoded things...
     stub_use_yaml_file = True
@@ -631,9 +679,9 @@ def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) ->
     subdecks_exercises: Dict[str, genanki.Deck] = {}
     subdecks_vocab: Dict[str, genanki.Deck] = {}
 
-    create_subdecks = True # TODO make CLI arg
+    create_subdecks = True  # TODO make CLI arg
     # TODO modularize this better, how we group entries into subdecks
-    subdeck_col_grouping = 'lesson' # what column/key to look at in the input files to decide which subdeck to put a note in
+    subdeck_col_grouping = "lesson"  # what column/key to look at in the input files to decide which subdeck to put a note in
 
     if stub_use_yaml_file:
         # Load in yaml file with deck (and possibly subdeck) info
@@ -672,8 +720,10 @@ def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) ->
                     }
                 )
             else:
-                sys.stderr.write(f"Warning: Unknown subdeck type in genanki-deck-info.yml: {subdeck}\n")
-    else: # no yaml file or existing deck info, make a new top level deck here, then subdecks made in _add_anki_notes
+                sys.stderr.write(
+                    f"Warning: Unknown subdeck type in genanki-deck-info.yml: {subdeck}\n"
+                )
+    else:  # no yaml file or existing deck info, make a new top level deck here, then subdecks made in _add_anki_notes
         import random
 
         # Create the Anki deck. This deck_ID (and those of any created subdecks, if enabled) will be random on the first run,
@@ -684,7 +734,9 @@ def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) ->
         )
 
     media: List[str] = []
-    _add_anki_notes(deck, media, input_paths, create_subdecks, subdecks_exercises, subdecks_vocab)
+    _add_anki_notes(
+        deck, media, input_paths, create_subdecks, subdecks_exercises, subdecks_vocab
+    )
 
     subdeck_list = []
     for lesson_key, sd in subdecks_vocab.items():
@@ -697,8 +749,8 @@ def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) ->
     if media:
         pkg.media_files = media
 
-    pkg.write_to_file(output_path)
-    print(f"Wrote Anki deck: {output_path}\n")
+    pkg.write_to_file(output_filepath)
+    print(f"Wrote Anki deck: {output_filepath}\n")
     # TODO can this deck be tested without fully launching Anki? See: https://faqs.ankiweb.net/running-from-python.html
 
 
@@ -707,12 +759,19 @@ def build_anki_deck(input_paths: List[str], deck_name: str, output_path: str) ->
 # ----------------------------
 
 
-def build_two_column_csv(input_paths: List[str], output_path: str) -> None:
+def build_two_column_csv(
+    input_paths: List[str],
+    output_columns_front_iterate: List[str],
+    output_columns_front: List[str],
+    output_columns_back: List[str],
+    output_filepath: str,
+) -> None:
     """
     Emit a simple two-column CSV: Front,Back.
     - Exercises: Front=Arabic Text, Back=English Text (fallback to Transliteration if English missing).
     - Vocabulary: For each row, prefer Singular front; else Dual; else Plural. Back=English Translations.
     """
+
     out_rows: List[Tuple[str, str]] = []
 
     for path in input_paths:
@@ -726,26 +785,82 @@ def build_two_column_csv(input_paths: List[str], output_path: str) -> None:
                 if front:
                     # Include Quran reference in back if available
                     if er.quran_surah and er.quran_ayah:
-                        back = f"{back} (Quran {er.quran_surah}:{er.quran_ayah})".strip()
+                        back = (
+                            f"{back} (Quran {er.quran_surah}:{er.quran_ayah})".strip()
+                        )
                     out_rows.append((front, back))
 
         elif _is_vocab(headers):
             for r in rows:
                 vr = _map_vocab_row(r)
-                front = vr.arabic_word_singular or vr.arabic_word_dual or vr.arabic_word_plural
-                back = vr.english_translation
-                if front and back:
-                    out_rows.append((front, back))
-        else:
-            sys.stderr.write(f"Warning: Could not determine CSV type for '{path}'. Skipping.\n")
 
-    with open(output_path, 'w', newline='', encoding='utf-8') as f:
+                # Build front of card by going through front iterate columns
+                for card_front in output_columns_front_iterate:
+                    front = getattr(vr, card_front)
+
+                    # Don't make this output_row/card if there isn't an Arabic word
+                    if not front:
+                        continue
+
+                    # Now also get any other columns for the front of the card
+                    values = [
+                        getattr(vr, col)
+                        for col in output_columns_front
+                        if getattr(vr, col)
+                    ]
+                    front += "; ".join(values)
+
+                    # Make back of card
+                    back = ""
+
+                    # Break out how we make the back of card so we can add some field descriptors
+                    for col in output_columns_back:
+                        # check if we should add the front of the card to the back as well
+                        if col == "CARD_FRONT":
+                            back += front + "; "
+                        else:
+                            temp_val = getattr(vr, col)
+                            if temp_val:
+                                # if the string has contents, append a semicolon and a space
+                                prepend_string = "; " if back else ""
+
+                                if col == "triliteral_root":
+                                    back += prepend_string + "Root: " + getattr(vr, col)
+                                elif col == "verb_form":
+                                    back += (
+                                        prepend_string
+                                        + "Verb Form: "
+                                        + getattr(vr, col)
+                                    )
+                                elif col == "usage_notes":
+                                    back += (
+                                        prepend_string
+                                        + "Usage Notes: "
+                                        + getattr(vr, col)
+                                    )
+                                elif col == "page_number":
+                                    back += prepend_string + "Pg. " + getattr(vr, col)
+                                elif col == "lesson_number":
+                                    back += (
+                                        prepend_string + "Lesson " + getattr(vr, col)
+                                    )
+                                else:
+                                    back += prepend_string + getattr(vr, col)
+
+                    if front and back:
+                        out_rows.append((front, back))
+        else:
+            sys.stderr.write(
+                f"Warning: Could not determine CSV type for '{path}'. Skipping.\n"
+            )
+
+    with open(output_filepath, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow(["Front", "Back"])
         for front, back in out_rows:
             writer.writerow([front, back])
 
-    sys.stdout.write(f"Wrote CSV file: {output_path} ({len(out_rows)} cards)\n")
+    sys.stdout.write(f"Wrote CSV file: {output_filepath} ({len(out_rows)} cards)\n")
 
 
 # ----------------------------
@@ -784,10 +899,10 @@ Examples:
   # Create Anki deck from both CSV files (default)
   %(prog)s textbook-jones-exercises.csv textbook-jones-vocabulary.csv
 
-  # Create simple CSV for import to flashcard apps
-  %(prog)s --format two_col_csv textbook-jones-vocabulary.csv -o vocab.csv
+  # Create minimal CSV for import to flashcard apps
+  %(prog)s --format csv_min textbook-jones-vocabulary.csv -o vocab.csv
 
-  # Specify custom deck name and output
+  # Specify custom deck name and output, using all .csv files in current directory as input
   %(prog)s --deck-name "My Arabic Deck" -o my-deck.apkg *.csv
 """,
     )
@@ -798,19 +913,41 @@ Examples:
     )
     p.add_argument(
         "--format",
-        choices=["anki", "two_col_csv"],
-        default="anki",
-        help="Output format: 'anki' (default) for .apkg, 'two_col_csv' for simple two-column CSV",
+        choices=["anki", "csv_min", "csv_med", "csv_max"],
+        nargs="*",
+        default="[anki]",
+        # action='append',
+        help="Output formats:"
+        "'anki' (default) will output a .apkg file for use,"
+        " with Anki."
+        "'csv_min' will output a comma-seperated values (CSV) file with the"
+        " arabic word in the first column, and the english translation in the"
+        " second column."
+        "'csv_med' will output a CSV with the arabic word in the first column,"
+        " and the arabic word, the english translation, and the part of speech"
+        " in the second."
+        "'csv_max' will output a CSV with the arabic word in the first column,"
+        " and the english translation, the Part of Speech details, the page"
+        " number, lesson number, the verb form (if provided), the triliteral"
+        " root, and any usage notes concatenated together in the second column.",
     )
     p.add_argument(
         "--deck-name",
-        default="Arabic Through the Qur'an – Jones",
-        help="Anki deck name (only used with anki format)",
+        default="Arabic Through the Qur'an",
+        help="Anki deck name (only used with anki format)."
+        " Defaults to 'Arabic Through the Qur'an'.",
     )
     p.add_argument(
-        "--output", "-o",
+        "--output",
+        "-o",
         default=None,
-        help="Output file path (.apkg for anki, .csv for two_col_csv). Defaults to jones-deck.apkg or jones-cards.csv",
+        help="Output file path (.apkg for anki, .csv for two_col_csv)."
+        " Defaults to attq-deck.apkg or attq-cards.csv."
+        " If you select more than one output, the base filename will"
+        " be appended with '-min', '-med', or '-max' depending on the CSV"
+        " format selected."
+        " You may specify the output path where the file has an extension of"
+        " .csv or .apkg, the script will use the appropriate extensions.",
     )
     return p.parse_args(argv)
 
@@ -822,6 +959,58 @@ def main(argv: Optional[List[str]] = None) -> int:
     # Validate inputs and separate CSV from JSON
     csv_inputs: List[str] = []
     json_inputs: List[str] = []
+
+    # hardcode for now(TM)
+    # TODO move to a genanki-config-arabic-through-the-quran.yml file,
+    #  which will have this info and... more? the column header to variable mapping?
+    csv_output_columns = {
+        "csv_min": {
+            "output_format": "csv_min",
+            "output_filename_append": "-min",
+            "output_columns_front_iterate": [
+                "arabic_word_singular",
+                "arabic_word_dual",
+                "arabic_word_plural",
+            ],
+            "output_columns_front": [],
+            "output_columns_back": ["english_translation"],
+        },
+        "csv_med": {
+            "output_format": "csv_med",
+            "output_filename_append": "-med",
+            "output_columns_front_iterate": [
+                "arabic_word_singular",
+                "arabic_word_dual",
+                "arabic_word_plural",
+            ],
+            "output_columns_front": [],
+            "output_columns_back": [
+                "CARD_FRONT",
+                "english_translation",
+                "part_of_speech",
+            ],
+        },
+        "csv_max": {
+            "output_format": "csv_max",
+            "output_filename_append": "-max",
+            "output_columns_front_iterate": [
+                "arabic_word_singular",
+                "arabic_word_dual",
+                "arabic_word_plural",
+            ],
+            "output_columns_front": [],
+            "output_columns_back": [
+                "CARD_FRONT",
+                "english_translation",
+                "part_of_speech",
+                "triliteral_root",
+                "verb_form",
+                "usage_notes",
+                "page_number",
+                "lesson_number",
+            ],
+        },
+    }
 
     for path in args.inputs:
         if not os.path.exists(path):
@@ -838,7 +1027,9 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     # Warn about JSON inputs (stubbed)
     for json_path in json_inputs:
-        sys.stderr.write(f"NOTE: JSON inputs are not implemented yet and will be ignored: {json_path}\n")
+        sys.stderr.write(
+            f"NOTE: JSON inputs are not implemented yet and will be ignored: {json_path}\n"
+        )
 
     if not csv_inputs:
         sys.stderr.write("ERROR: no usable CSV inputs provided.\n")
@@ -846,17 +1037,59 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     # Set default output path if not specified
     if not args.output:
-        args.output = "jones-deck.apkg" if args.format == "anki" else "jones-cards.csv"
+        # FIXME: ok so this doesn't break the script, but it doesn't really work
+        if args.format == "anki":
+            args.output = "attq-deck.apkg"
+        else:
+            args.output = "attq-cards.csv"
 
-    # Build output
-    if args.format == "anki":
-        build_anki_deck(csv_inputs, deck_name=args.deck_name, output_path=args.output)
-    else:
-        build_two_column_csv(csv_inputs, output_path=args.output)
+    # Validate output path exists and is writable
+    output_dir, output_filename = os.path.split(args.output)
+
+    # check if full path or relative path
+    if not os.path.isabs(output_filename):
+        output_dir = _get_script_dir()
+
+    if output_dir and not os.path.exists(output_dir):
+        sys.stderr.write(f"ERROR: output directory does not exist: {output_dir}\n")
+        return 2
+    if not os.access(output_dir, os.W_OK):
+        sys.stderr.write(f"ERROR: output directory is not writable: {output_dir}\n")
+        return 2
+
+    # Build output(s)
+    for output_format in args.format:
+        if output_format == "anki":
+            build_anki_deck(
+                input_paths=csv_inputs,
+                deck_name=args.deck_name,
+                output_filepath=args.output,
+            )
+        elif output_format in csv_output_columns:
+            temp_filename = (
+                os.path.splitext(output_filename)[0]
+                + csv_output_columns[output_format]["output_filename_append"]
+                + ".csv"
+            )
+            output_csv_filepath = os.path.join(output_dir, temp_filename)
+            build_two_column_csv(
+                input_paths=csv_inputs,
+                output_columns_front_iterate=csv_output_columns[output_format][
+                    "output_columns_front_iterate"
+                ],
+                output_columns_front=csv_output_columns[output_format][
+                    "output_columns_front"
+                ],
+                output_columns_back=csv_output_columns[output_format][
+                    "output_columns_back"
+                ],
+                output_filepath=output_csv_filepath,
+            )
+
+    # TODO update repo readme with usage instructions and file descriptions
 
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
