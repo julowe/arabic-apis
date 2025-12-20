@@ -30,26 +30,32 @@ mainly because I really should be reading these Lessons instead of coding...
 This repository includes a GitHub Action that automatically generates flashcard
 files whenever the source CSV files are updated on the main branch.
 
+Currently, the action only generates flashcards for the vocabulary file, as
+the exercises file is not proofread at all. Yet...
+
 ### How It Works
 
 When either `textbook-jones-vocabulary.csv` or `textbook-jones-exercises.csv` is
 updated on the main branch, the workflow:
 
-1. Runs `arabic-textbook-to-flashcards.py` twice:
-   - Once with `--format anki` to generate `jones-deck.apkg`
-   - Once with `--format two_col_csv` to generate `jones-cards.csv`
+1. Runs `arabic-textbook-to-flashcards.py` with multiple output formats
+    specified by `--format`:
+   - `anki`: to generate `attq-vocab-deck.apkg`
+   - `csv_min`: to generate `attq-vocab-deck-min.csv`
+   - `csv_med`: to generate `attq-vocab-deck-med.csv`
+   - `csv_max`: to generate `attq-vocab-deck-max.csv`
 2. Creates a new GitHub release with a timestamp tag (e.g., `flashcards-20231218-120000`)
-3. Uploads both generated files as release assets
+3. Uploads all generated files as release assets
 4. Includes permalinks to the exact commits of the input CSV files used
 
 ### Downloading Flashcards
 
-To get the latest flashcards:
+To get the latest vocabulary flashcards:
 
 1. Visit the [Releases page](https://github.com/julowe/arabic-apis/releases)
 2. Download the latest release:
-   - **jones-deck.apkg** - Import into Anki for full featured flashcard experience
-   - **jones-cards.csv** - Import into other flashcard applications
+   - **attq-vocab-deck.apkg** - Import into Anki for full featured flashcard experience
+   - **attq-vocab-deck-min.csv**, **attq-vocab-deck-med.csv**, **attq-vocab-deck-max.csv** - Import into other flashcard applications
 
 ### Manual Generation
 
@@ -65,7 +71,7 @@ python3 arabic-textbook-to-flashcards.py \
 
 # Generate two-column CSV
 python3 arabic-textbook-to-flashcards.py \
-  --format two_col_csv \
+  --format csv_max \
   --output my-cards.csv \
   textbook-jones-vocabulary.csv \
   textbook-jones-exercises.csv
