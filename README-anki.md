@@ -35,7 +35,7 @@ mostly study cards on my phone's browser with their free website.
 ## Importing the Deck
 
 Once you have installed Anki and downloaded the
-[.apkg file from this repository](https://github.com/julowe/arabic-apis/releases/latest):
+[attq-vocab-deck.apkg file from the latest release in this repository](https://github.com/julowe/arabic-apis/releases/latest):
 
 1. Open Anki on your desktop or mobile device.
 2. Select **File \> Import** (or tap **Import** on mobile).
