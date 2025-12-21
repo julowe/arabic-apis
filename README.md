@@ -27,6 +27,10 @@ mainly because I really should be reading these Lessons instead of coding...
 
 ## Automated Flashcard Generation
 
+Please see [How to Install Anki and import a Deck](README-anki.md) to get started.
+The rest of this section covers how the files are created and other technical
+details.
+
 This repository includes a GitHub Action that automatically generates flashcard
 files whenever the source CSV files are updated on the main branch.
 
