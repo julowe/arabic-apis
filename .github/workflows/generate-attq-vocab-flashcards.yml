@@ -49,7 +49,7 @@ jobs:
         id: create_tag
         run: |
           TIMESTAMP=$(date -u +"%Y%m%d-%H%M%S")
-          TAG_NAME="flashcards-$TIMESTAMP"
+          TAG_NAME="attq-flashcards-$TIMESTAMP"
           echo "tag_name=$TAG_NAME" >> $GITHUB_OUTPUT
           echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
       
