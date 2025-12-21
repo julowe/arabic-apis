@@ -5,6 +5,17 @@ This repository creates an
 with the vocabulary and exercises from each Lesson in the textbook "Arabic
 Through the Quran".
 
+The 'front' of each flashcard has just the arabic word.
+The 'back' of each flashcard will have the arabic word from the 'front' of 
+the card, a horizontal line, and then the english translation and much 
+more information.
+Below are examples of the 'back' of a noun and a verb flashcard: 
+
+![Noun card example](anki-example-noun.png)
+![Verb card example](anki-example-verb.png)
+
+
+
 (Ok, right now the flashcards are only of the vocabulary, because the exercises
 have a bunch of errors that I need to correct first.
 Oh, and I've only checked up to Lesson 17 of the vocabulary so far.)
@@ -26,7 +37,7 @@ synchronize your progress if you sign up for a free account at
 However, you need to use a desktop or mobile app to initially import the deck.
 
 Applications for desktop and mobile phones are available, most of them are free.
-See [Anki's Download page](https://apps.ankiweb.net) for links.
+See [Anki's Download page](https://apps.ankiweb.net/#downloads) for links.
 The iOS application is the only paid one, and it is $25, but others have said
 it is worth it.
 I have yet to try it - I just use the desktop app to import decks and then
