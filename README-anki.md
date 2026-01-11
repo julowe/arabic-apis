@@ -5,16 +5,14 @@ This repository creates an
 with the vocabulary and exercises from each Lesson in the textbook "Arabic
 Through the Quran".
 
-The 'front' of each flashcard has just the arabic word.
-The 'back' of each flashcard will have the arabic word from the 'front' of 
-the card, a horizontal line, and then the english translation and much 
+The 'front' of each flashcard has just the Arabic word.
+The 'back' of each flashcard will have the Arabic word from the 'front' of
+the card, a horizontal line, and then the English translation and much
 more information.
-Below are examples of the 'back' of a noun and a verb flashcard: 
+Below are examples of the 'back' of a noun and a verb flashcard:
 
 ![Noun card example](anki-example-noun.png)
 ![Verb card example](anki-example-verb.png)
-
-
 
 (Ok, right now the flashcards are only of the vocabulary, because the exercises
 have a bunch of errors that I need to correct first.
