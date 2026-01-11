@@ -409,7 +409,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 119,18,Vocabulary,وَسَطٌ,,,middle,,noun,,18-v-25,,
 119,18,Vocabulary,غُرَابٌ,,,crow,,noun,,18-v-26,,
 124,19,Vocabulary,جَمَعَ,يَجْمَعُ,جَمْعٌ,"to gather, collect",,verb,,19-v-1,,
-124,19,Vocabulary,غَفَلَ,يَغْفِلُ,غَفْلَةٌ,"to be heedless, forget",,verb,,19-v-2,,
+124,19,Vocabulary,غَفَلَ,يَغْفُلُ,غَفْلَةٌ,"to be heedless, forget",,verb,,19-v-2,,checked against textbook
 124,19,Vocabulary,خَادَعَ,يُخَادِعُ,خِدَاعٌ,to try to deceive,3,verb,,19-v-3,,
 124,19,Vocabulary,أَحْسَنَ,يُحْسِنُ,إِحْسَانٌ,to do good,4,verb,,19-v-4,,
 124,19,Vocabulary,أَفْلَحَ,يُفْلِحُ,إِفْلَاحٌ,to prosper,4,verb,,19-v-5,,
@@ -424,7 +424,8 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 125,19,Vocabulary,نَعَمٌ,,أَنْعَامٌ,"animal, beast",,noun,,19-v-14,,
 125,19,Vocabulary,يُسْرٌ,,,ease,,noun,,19-v-15,,
 125,19,Vocabulary,سَقِيمٌ,,,"sick, ill",,noun,,19-v-16,,
-125,19,Vocabulary,أَصْفَرُ,,صَفْرَاءُ,(f.) yellow,,noun,,19-v-17,,
+125,19,Vocabulary,أَصْفَرُ,,صُفْرٌ,yellow,,noun,,19-v-17,,checked against textbook
+125,19,Vocabulary,,,صَفْرَاءُ,(f.) yellow,,noun,,19-v-17.2,,checked against textbook
 125,19,Vocabulary,مُنَافِقٌ,,,hypocrite,,noun,,19-v-18,,
 125,19,Vocabulary,وَهَّابٌ,,,forgiving,,noun,,19-v-19,,
 125,19,Vocabulary,بَشِيرٌ,,,bearer of good news/tidings,,noun,,19-v-20,,
