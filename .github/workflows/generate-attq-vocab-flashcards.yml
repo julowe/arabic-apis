@@ -7,6 +7,13 @@ on:
     paths:
       - 'textbook-jones-vocabulary.csv'
 
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'textbook-jones-vocabulary.csv'
+
+
 permissions:
   contents: write
 
@@ -46,6 +53,7 @@ jobs:
             textbook-jones-vocabulary.csv
       
       - name: Create release tag
+        if: github.event_name != 'pull_request'
         id: create_tag
         run: |
           TIMESTAMP=$(date -u +"%Y%m%d-%H%M%S")
@@ -54,6 +62,7 @@ jobs:
           echo "timestamp=$TIMESTAMP" >> $GITHUB_OUTPUT
       
       - name: Create release notes
+        if: github.event_name != 'pull_request'
         id: release_notes
         run: |
           cat << EOF > release_notes.md
@@ -86,6 +95,7 @@ jobs:
           EOF
       
       - name: Create GitHub Release
+        if: github.event_name != 'pull_request'
         uses: softprops/action-gh-release@e7a8f85e1c67a31e6ed99a94b41bd0b71bbee6b8  # v2.2.0
         with:
           tag_name: ${{ steps.create_tag.outputs.tag_name }}
