@@ -610,12 +610,12 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 178,28,Vocabulary,أَجَابَ,,,to answer,,,4,verb,,28-v-17,,
 178,28,Vocabulary,صَرَفَ,يَصْرِفُ,صَرْفٌ,"to turn, turn away","turns, turns away",turning away,,verb,,28-v-18,,
 178,28,Vocabulary,أَبْدَلَ,يُبْدِلُ,إِبْدَالٌ,to give in exchange,gives in exchange,giving in exchange,4,verb,,28-v-19,,
-178,28,Vocabulary,رَيْب,,,cold (noun),,,,verb,,28-v-20,,
-178,28,Vocabulary,بَيِّنَةٌ,,,clear proof,,,,verb,,28-v-21,,
-178,28,Vocabulary,كَيْدٌ,,,"plotting, wiles",,,,verb,,28-v-22,,
-178,28,Vocabulary,وَبَالٌ,,,mischief,,,,verb,,28-v-23,,
-178,28,Vocabulary,وِزْنٌ,,,weight,,,,verb,,28-v-24,,
-178,28,Vocabulary,بِالْأَمْسِ,,,yesterday,,,,verb,,28-v-25,,
+178,28,Vocabulary,بَرْدٌ,,,cold (noun),,,,noun,,28-v-20,,checked against textbook
+178,28,Vocabulary,بَيِّنَةٌ,,,clear proof,,,,noun,,28-v-21,,TODO kasra to fatha?
+178,28,Vocabulary,كَيْدٌ,,,"plotting, wiles",,,,noun,,28-v-22,,checked against textbook
+178,28,Vocabulary,وَبَالٌ,,,mischief,,,,noun,,28-v-23,,checked against textbook
+178,28,Vocabulary,وِزْنٌ,,,weight,,,,noun,,28-v-24,,checked against textbook
+178,28,Vocabulary,بِالْأَمْسِ,,,yesterday,,,,noun,,28-v-25,,TODO wasla?
 182,29,Vocabulary,سَارَعَ,يُسَارِعُ,مُسَارَعَةٌ,"to vie in, race","vies in, races","vying in, racing",3,verb,,29-v-1,,
 182,29,Vocabulary,أَبْلَغَ,يُبْلِغُ,إِبْلَاغٌ,to convey,conveys,conveying,4,verb,,29-v-2,,
 182,29,Vocabulary,أَكْثَرَ,يُكْثِرُ,إِكْثَارٌ,"to multiply, make much of","multiplies, makes much of","multiplying, making much of",4,verb,,29-v-3,,
