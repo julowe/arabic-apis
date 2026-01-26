@@ -79,7 +79,9 @@ class VocabRow:
     arabic_word_singular: str
     arabic_word_dual: str
     arabic_word_plural: str
-    english_translation: str
+    english_translation_singular: str
+    english_translation_dual: str
+    english_translation_plural: str
     verb_form: str
     part_of_speech: str
     triliteral_root: str
@@ -122,7 +124,7 @@ def _is_vocab(headers: List[str]) -> bool:
         "Sing. / Perf.",
         "Dual / Imperf.",
         "Plural / Verbal N.",
-        "English Translations",
+        "English Translations Singular Perfect",
     }
     return required_vocab_headers.issubset(set(headers))
 
@@ -139,10 +141,23 @@ def _pad_anki_id_parts(anki_id: str) -> str:
 
     if len(anki_id_parts[2]) == 1:
         anki_id_parts[2] = anki_id_parts[2].zfill(2)
-    elif len(anki_id_parts[2]) > 2:
-        sys.stderr.write(
-            "Warning: Anki_ID third part longer than 2 digits, unexpected format. Sort will not work well\n"
-        )
+    else:
+        # Validate format: either 2-digit integer (e.g. "12") or 2.1 format float (e.g. "14.3")
+        third_part = anki_id_parts[2]
+        valid_format = False
+
+        if re.match(r'^\d{2}$', third_part):
+            # Valid 2-digit integer like "12"
+            valid_format = True
+        elif re.match(r'^\d{2}\.\d$', third_part):
+            # Valid float like "14.3" (2 digits, decimal, 1 digit)
+            valid_format = True
+
+        if not valid_format:
+            sys.stderr.write(
+                f"Warning: Anki_ID third part '{third_part}' has unexpected format. "
+                "Expected 2-digit integer (e.g. '12') or float (e.g. '14.3'). Sort may not work well.\n"
+            )
 
     return "-".join(anki_id_parts)
 
@@ -180,7 +195,9 @@ def _map_vocab_row(row: Dict[str, str]) -> VocabRow:
         arabic_word_singular=(row.get("Sing. / Perf.") or "").strip(),
         arabic_word_dual=(row.get("Dual / Imperf.") or "").strip(),
         arabic_word_plural=(row.get("Plural / Verbal N.") or "").strip(),
-        english_translation=(row.get("English Translations") or "").strip(),
+        english_translation_singular=(row.get("English Translations Singular Perfect") or "").strip(),
+        english_translation_dual=(row.get("English Translations Dual Imperfect") or "").strip(),
+        english_translation_plural=(row.get("English Translations Plural Verbal Noun") or "").strip(),
         verb_form=(row.get("Verb Form") or "").strip(),
         part_of_speech=(row.get("Part of Speech") or "").strip(),
         triliteral_root=(row.get("Triliteral Root") or "").strip(),
@@ -404,7 +421,9 @@ def _vocab_note_fields(vr: VocabRow) -> List[str]:
         vr.arabic_word_singular,
         vr.arabic_word_dual,
         vr.arabic_word_plural,
-        vr.english_translation,
+        vr.english_translation_singular,
+        vr.english_translation_dual,
+        vr.english_translation_plural,
         vr.verb_form,
         vr.part_of_speech,
         vr.triliteral_root,
@@ -915,7 +934,7 @@ Examples:
         "--format",
         choices=["anki", "csv_min", "csv_med", "csv_max"],
         nargs="*",
-        default="[anki]",
+        default=["anki"],
         # action='append',
         help="Output formats:"
         "'anki' (default) will output a .apkg file for use,"
@@ -973,7 +992,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 "arabic_word_plural",
             ],
             "output_columns_front": [],
-            "output_columns_back": ["english_translation"],
+            "output_columns_back": ["english_translation_singular"],
         },
         "csv_med": {
             "output_format": "csv_med",
@@ -986,7 +1005,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             "output_columns_front": [],
             "output_columns_back": [
                 "CARD_FRONT",
-                "english_translation",
+                "english_translation_singular",
                 "part_of_speech",
             ],
         },
@@ -1001,7 +1020,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             "output_columns_front": [],
             "output_columns_back": [
                 "CARD_FRONT",
-                "english_translation",
+                "english_translation_singular",
                 "part_of_speech",
                 "triliteral_root",
                 "verb_form",
@@ -1037,8 +1056,8 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     # Set default output path if not specified
     if not args.output:
-        # FIXME: ok so this doesn't break the script, but it doesn't really work
-        if args.format == "anki":
+        # Check if anki format is in the list (or is the only format)
+        if "anki" in args.format:
             args.output = "attq-deck.apkg"
         else:
             args.output = "attq-cards.csv"
