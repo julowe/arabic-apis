@@ -16,7 +16,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 13,1,Vocabulary,يَوْمٌ,,أَيَّامٌ,day,,days,,noun,,1-v-15,,checked against textbook
 13,1,Vocabulary,أَمِينٌ,,,"faithful, secure",,,,noun,,1-v-16,,checked against textbook
 13,1,Vocabulary,آخِرٌ,,,"last, [next]",,,,noun,,1-v-17,,checked against textbook
-13,1,Vocabulary,شَدِيدٌ,,,"strong, severe",,,,noun,,1-v-18,,checked against textbook
+13,1,Vocabulary,شَدِيدٌ,,شِدَادٌ,"strong, severe",,,,noun,,1-v-18,,checked against textbook
 13,1,Vocabulary,عَزِيزٌ,,,mighty,,,,noun,,1-v-19,,checked against textbook
 14,1,Vocabulary,عَظِيمٌ,,عِظَامٌ,"great, mighty",,"great, mighty",,noun,,1-v-20,,checked against textbook
 14,1,Vocabulary,قَوِيٌّ,,قُوِيٌّ,strong,,strong,,noun,,1-v-21,,checked against textbook
@@ -46,13 +46,14 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 19,2,Vocabulary,يَهُودِيٌّ,,يَهُودٌ,"Jew, Jewish",,Jews,,noun,,2-v-15,,checked against textbook
 20,2,Vocabulary,سَنَةٌ,,سِنُونَ,year,,years,,noun,,2-v-16,,checked against textbook
 20,2,Vocabulary,فَاكِهَةٌ,,فَوَاكِهُ,fruit,,fruits,,noun,,2-v-17,,checked against textbook
-20,2,Vocabulary,كَثِيرٌ,,,much,,,,noun,,2-v-18,,checked against textbook
+20,2,Vocabulary,كَثِيرٌ,,كَثِيرُونَ,many,,many,,noun,,2-v-18,,checked against textbook
+20,2,Vocabulary,,,كَثِيرٌ,,,"many, much",,noun,,2-v-18.2,,checked against textbook
 20,2,Vocabulary,تَوَّابٌ,,تَوَّابُونَ,relenting,,repenting,,noun,,2-v-19,,checked against textbook
 20,2,Vocabulary,مُكْرَمٌ,,مُكْرَمُونَ,honoured,,honoured,,noun,,2-v-20,,checked against textbook
 27,3,Vocabulary,جَنَّةٌ,,جَنَّاتٌ,garden,,gardens,,noun,,3-v-1,,
 27,3,Vocabulary,جَارِيَةٌ,,جَوَارٍ,"ship, young woman",,"ships, young women",,noun,,3-v-2,,
 27,3,Vocabulary,حَقٌّ,,حُقُوقٌ,truth; true,,,,noun,,3-v-3,,
-27,3,Vocabulary,فِتْنَةٌ,,,"tempting, afflicting, stirring up",,,,noun,,3-v-4,,
+27,3,Vocabulary,فِتْنَةٌ,,فِتَنٌ,"affliction, temptation; tempting, afflicting, stirring up",,"afflictions, temptations",,noun,,3-v-4,,
 27,3,Vocabulary,بُشْرَى,,,good tidings,,,,noun,,3-v-5,,
 27,3,Vocabulary,ٱلدُّنْيَا,,,world,,,,noun,,3-v-6,,checked against textbook
 27,3,Vocabulary,وَادٍ,,,valley,,,,noun,,3-v-7,,
@@ -73,7 +74,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 32,4,Vocabulary,صَدَقَةٌ,,صَدَقَاتٌ,alm,,alms,,noun,,4-v-2,,
 32,4,Vocabulary,عُرْفٌ,,أَعْرَافٌ,"crest, ridge, height",,"crests, ridges, heights",,noun,,4-v-3,,
 32,4,Vocabulary,سَبِيلٌ,,سُبُلٌ,"way, road, path",,"ways, roads, paths",,noun,,4-v-4,,
-32,4,Vocabulary,سَفَرٌ,,,journey,,,,noun,,4-v-5,,
+32,4,Vocabulary,سَفَرٌ,,أَسْفَارٌ,journey,,journeys,,noun,,4-v-5,,checked against textbook
 32,4,Vocabulary,ضَلَالٌ,,,"straying, error",,,,noun,,4-v-6,,
 32,4,Vocabulary,فَسَادٌ,,,"mischief, corruption",,,,noun,,4-v-7,,
 32,4,Vocabulary,حَمْدٌ,,,praise,,,,noun,,4-v-8,,
@@ -83,8 +84,8 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 32,4,Vocabulary,صَابِرٌ,,,"patient, steadfast",,,,noun,,4-v-12,,
 33,4,Vocabulary,مِنْ,,,"from, of",,,,preposition,,4-v-13,,checked against textbook
 33,4,Vocabulary,فِي,,,"in, concerning",,,,preposition,,4-v-14,,checked against textbook
-33,4,Vocabulary,لِ,,,"to, for",,,,preposition,,4-v-15,(Note that this entry uses the initial form ﻟ instead of the isolated form ل to indicate it is prefixed/connected to the word),checked against textbook
-33,4,Vocabulary,بِ,,,"in, at, by",,,,preposition,,4-v-16,(Note that this entry uses the initial form ﺑ instead of the isolated form ب to indicate it is prefixed/connected to the word),checked against textbook
+33,4,Vocabulary,ﻟِ-,,,"to, for",,,,preposition,,4-v-15,(Note that this entry uses the initial form ﻟ instead of the isolated form ل to indicate it is prefixed/connected to the word),checked against textbook
+33,4,Vocabulary,ﺑِ-,,,"in, at, by",,,,preposition,,4-v-16,(Note that this entry uses the initial form ﺑ instead of the isolated form ب to indicate it is prefixed/connected to the word),checked against textbook
 33,4,Vocabulary,عَلَى,,,"on, against",,,,preposition,,4-v-17,,checked against textbook
 33,4,Vocabulary,إِلَى,,,to (motion),,,,preposition,,4-v-18,,checked against textbook
 33,4,Vocabulary,مَعَ,,,with,,,,preposition,,4-v-19,,checked against textbook
@@ -106,10 +107,10 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 39,6,Vocabulary,هٰذِهِ,,,"This, These (f.)",,,,demonstrative pronoun/adjective,,6-v-2,,checked against textbook
 39,6,Vocabulary,ذٰلِكَ,,أُولَائِكَ,That,,Those,,demonstrative pronoun/adjective,,6-v-3,,checked against textbook
 39,6,Vocabulary,تِلْكَ,,,"That, Those (f.)",,,,demonstrative pronoun/adjective,,6-v-4,,checked against textbook
-41,6,Vocabulary,مِلَّةٌ,,مِلَلٌ,community,,communities,,noun,,6-v-5,,checked against textbook
+41,6,Vocabulary,أُمَّةٌ,,أُمَمٌ,community,,communities,,noun,,6-v-5,,checked against textbook
 41,6,Vocabulary,إِبْنَةٌ,,بَنَاتٌ,daughter,,daughters,,noun,,6-v-6,,checked against textbook
 41,6,Vocabulary,شَيْءٌ,,أَشْيَاءُ,thing,,things,,noun,,6-v-7,,checked against textbook
-41,6,Vocabulary,مُسْتَقَرٌّ,,,abode,,,,noun,,6-v-8,,checked against textbook
+41,6,Vocabulary,دَارٌ,,دُورٌ / دِيَارٌ,abode (f.),,abodes,,noun,,6-v-8,,checked against textbook
 41,6,Vocabulary,حِزْبٌ,,أَحْزَابٌ,party,,parties,,noun,,6-v-9,,checked against textbook
 41,6,Vocabulary,أَثَرٌ,,آثَارٌ,"track, effect",,"tracks, effects",,noun,,6-v-10,,checked against textbook
 41,6,Vocabulary,لِسَانٌ,,,tongue,,,,noun,,6-v-11,,checked against textbook
@@ -140,7 +141,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 47,7,Vocabulary,ٱمْرَأَةٌ,,نِسَاءٌ / نِسْوَةٌ,woman,,women,,noun,,7-v-8,,checked against textbook
 47,7,Vocabulary,أَمْرٌ,,أُمُورٌ,"affair, matter, command",,"affairs, matters, commands",,noun,,7-v-9,,checked against textbook
 47,7,Vocabulary,إِنْسَانٌ,,اَلنَّاسُ,man; people,,,,noun,,7-v-10,,checked against textbook
-47,7,Vocabulary,ذُو,,,possessor of,,,,noun,,7-v-11,,
+47,7,Vocabulary,ذُو,,أُولُو,possessor of,,possessors of,,noun,,7-v-11,,checked against textbook
 47,7,Vocabulary,ٱسْمٌ,,أَسْمَاءٌ,name,,names,,noun,,7-v-12,,checked against textbook
 47,7,Vocabulary,,,أَلْبَابٌ,"hearts, intellects",,,,noun,,7-v-13,,checked against textbook
 47,7,Vocabulary,بَصَرٌ,,أَبْصَارٌ,"sight, eye",,"sights, eyes",,noun,,7-v-14,,
@@ -179,7 +180,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 55,8,Vocabulary,مَطْلَعٌ,,,rising-place,,,,noun,,8-v-26,,
 55,8,Vocabulary,مَغْرِبٌ,,,setting-place,,,,noun,,8-v-27,,
 55,8,Vocabulary,بَرٌّ,,,land,,,,noun,,8-v-28,,
-55,8,Vocabulary,بَحْرٌ,,,sea,,,,noun,,8-v-29,,
+55,8,Vocabulary,بَحْرٌ,,بِحَارٌ,sea,,seas,,noun,,8-v-29,,checked against textbook
 55,8,Vocabulary,حِمْلٌ,,,load,,,,noun,,8-v-30,,checked against textbook
 55,8,Vocabulary,يَوْمُ ٱلْبَعْثِ,,,Day of Resurrection,,,,noun,,8-v-31,,checked against textbook
 55,8,Vocabulary,ٱلزَّبُورُ,,,the Psalms,,,,noun,,8-v-32,,checked against textbook
