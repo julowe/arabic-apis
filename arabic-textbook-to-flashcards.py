@@ -141,10 +141,23 @@ def _pad_anki_id_parts(anki_id: str) -> str:
 
     if len(anki_id_parts[2]) == 1:
         anki_id_parts[2] = anki_id_parts[2].zfill(2)
-    elif len(anki_id_parts[2]) > 2:
-        sys.stderr.write(
-            "Warning: Anki_ID third part longer than 2 digits, unexpected format. Sort will not work well\n"
-        )
+    else:
+        # Validate format: either 2-digit integer (e.g. "12") or 2.1 format float (e.g. "14.3")
+        third_part = anki_id_parts[2]
+        valid_format = False
+
+        if re.match(r'^\d{2}$', third_part):
+            # Valid 2-digit integer like "12"
+            valid_format = True
+        elif re.match(r'^\d{2}\.\d$', third_part):
+            # Valid float like "14.3" (2 digits, decimal, 1 digit)
+            valid_format = True
+
+        if not valid_format:
+            sys.stderr.write(
+                f"Warning: Anki_ID third part '{third_part}' has unexpected format. "
+                "Expected 2-digit integer (e.g. '12') or float (e.g. '14.3'). Sort may not work well.\n"
+            )
 
     return "-".join(anki_id_parts)
 
