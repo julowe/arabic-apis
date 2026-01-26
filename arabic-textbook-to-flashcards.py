@@ -934,7 +934,7 @@ Examples:
         "--format",
         choices=["anki", "csv_min", "csv_med", "csv_max"],
         nargs="*",
-        default="[anki]",
+        default=["anki"],
         # action='append',
         help="Output formats:"
         "'anki' (default) will output a .apkg file for use,"
@@ -1056,8 +1056,8 @@ def main(argv: Optional[List[str]] = None) -> int:
 
     # Set default output path if not specified
     if not args.output:
-        # FIXME: ok so this doesn't break the script, but it doesn't really work
-        if args.format == "anki":
+        # Check if anki format is in the list (or is the only format)
+        if "anki" in args.format:
             args.output = "attq-deck.apkg"
         else:
             args.output = "attq-cards.csv"
