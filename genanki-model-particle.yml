@@ -12,7 +12,9 @@ fields:
   - {name: arabic-word-singular, rtl: true}
   - {name: arabic-word-dual, rtl: true}
   - {name: arabic-word-plural, rtl: true}
-  - name: english-translation
+  - name: english-translation-singular
+  - name: english-translation-dual
+  - name: english-translation-plural
   - name: verb-form
   - name: part-of-speech
   - name: triliteral-root
@@ -84,8 +86,8 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation}}</div>
-      <div class="pos-label">{{part-of-speech}}</div>
+      <div class="english">{{english-translation-singular}}</div>
+      <div class="grammar-label">{{part-of-speech}}</div>
       <div class="meta">
         Lesson {{lesson-number}} | Page {{page-number}}
       </div>

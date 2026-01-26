@@ -16,7 +16,9 @@ fields:
   - {name: arabic-verb-perfect, rtl: true }
   - {name: arabic-verb-imperfect, rtl: true }
   - {name: arabic-verbal-noun, rtl: true }
-  - name: english-translation
+  - name: english-translation-singular
+  - name: english-translation-dual
+  - name: english-translation-plural
   - name: verb-form
   - name: part-of-speech
   - name: triliteral-root
@@ -85,7 +87,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation}}</div>
+      <div class="english">{{english-translation-singular}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">
         {{part-of-speech}}, perfect
@@ -118,7 +120,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation}}</div>
+      <div class="english">{{#english-translation-dual}}{{english-translation-dual}}{{/english-translation-dual}}{{^english-translation-dual}}{{english-translation-singular}}{{/english-translation-dual}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">
         {{part-of-speech}}, imperfect
@@ -151,7 +153,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation}}</div>
+      <div class="english">{{#english-translation-plural}}{{english-translation-plural}}{{/english-translation-plural}}{{^english-translation-plural}}{{english-translation-singular}}{{/english-translation-plural}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">
         {{part-of-speech}}, verbal noun
