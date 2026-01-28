@@ -87,6 +87,7 @@ css: |
 
 templates:
   - name: "ATtQ Idiom: Arabic → Meaning"
+    id: 2134280703
     qfmt: |
       {{#arabic-word-singular}}
       <div class="arabic">{{arabic-word-singular}}</div>

@@ -90,6 +90,7 @@ css: |
 
 templates:
   - name: "ATtQ Particle: Arabic → Meaning"
+    id: 1712220879
     qfmt: |
       {{#arabic-word-singular}}
       <div class="arabic">{{arabic-word-singular}}</div>

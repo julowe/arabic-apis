@@ -90,6 +90,7 @@ css: |
 
 templates:
   - name: "ATtQ Demonstrative: Singular → Details"
+    id: 1777414076
     qfmt: |
       {{#arabic-word-singular}}
       <div class="arabic">{{arabic-word-singular}}</div>
@@ -117,6 +118,7 @@ templates:
       </div>
 
   - name: "ATtQ Demonstrative: Plural → Details"
+    id: 1105752522
     qfmt: |
       {{#arabic-word-plural}}
       <div class="arabic">{{arabic-word-plural}}</div>

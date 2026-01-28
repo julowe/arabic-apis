@@ -113,6 +113,7 @@ css: |
 templates:
   # Card 1: Singular form front (if not empty)
   - name: "ATtQ Noun: Singular → Details"
+    id: 2106595487
     qfmt: |
       {{#arabic-word-singular}}
       <div class="arabic">{{arabic-word-singular}}</div>
@@ -141,6 +142,7 @@ templates:
 
   # Card 2: Dual form front (if not empty)
   - name: "ATtQ Noun: Dual → Details"
+    id: 1582627838
     qfmt: |
       {{#arabic-word-dual}}
       <div class="arabic">{{arabic-word-dual}}</div>
@@ -169,6 +171,7 @@ templates:
 
   # Card 3: Plural form front (if not empty)
   - name: "ATtQ Noun: Plural → Details"
+    id: 2008325733
     qfmt: |
       {{#arabic-word-plural}}
       <div class="arabic">{{arabic-word-plural}}</div>

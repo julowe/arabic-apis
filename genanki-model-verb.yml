@@ -100,6 +100,7 @@ css: |
 templates:
   # Card 1: Perfect tense front (if not empty)
   - name: "ATtQ Verb: Perfect → Details"
+    id: 1736420239
     qfmt: |
       {{#arabic-verb-perfect}}
       <div class="arabic">{{arabic-verb-perfect}}</div>
@@ -133,6 +134,7 @@ templates:
 
   # Card 2: Imperfect tense front (if not empty)
   - name: "ATtQ Verb: Imperfect → Details"
+    id: 1441483541
     qfmt: |
       {{#arabic-verb-imperfect}}
       <div class="arabic">{{arabic-verb-imperfect}}</div>
@@ -166,6 +168,7 @@ templates:
 
   # Card 3: Verbal noun front (if not empty)
   - name: "ATtQ Verb: Verbal Noun → Details"
+    id: 1742025240
     qfmt: |
       {{#arabic-verbal-noun}}
       <div class="arabic">{{arabic-verbal-noun}}</div>

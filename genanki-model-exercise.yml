@@ -88,6 +88,7 @@ css: |
 #   for: {{Expression}}, do: <a href="http://example.com/search?q={{Expression}}">check in dictionary</a>
 templates:
   - name: "ATtQ Exercise: Arabic → Details"
+    id: 1573362606
     qfmt: |
       <div class="arabic">{{arabic-text}}</div>
       {{#audio-front}}
