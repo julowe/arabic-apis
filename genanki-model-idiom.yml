@@ -9,18 +9,34 @@ name: "Arabic Jones - Idiom"
 #       but dual and plural fields are included just in case data gets entered there.
 fields:
   - name: anki-id
+    id: 2013202951
   - name: page-number
+    id: 1468558954
   - name: lesson-number
-  - {name: arabic-word-singular, rtl: true}
-  - {name: arabic-word-dual, rtl: true}
-  - {name: arabic-word-plural, rtl: true}
-  - name: english-translation-singular
+    id: 1764641704
+  - name: arabic-word-singular
+    rtl: true
+    id: 2064913842
+  - name: arabic-word-dual
+    rtl: true
+    id: 2002084382
+  - name: arabic-word-plural
+    rtl: true
+    id: 1207601098
+  - name: english-translation
+    id: 1803285551
   - name: english-translation-dual
+    id: 1265106894
   - name: english-translation-plural
+    id: 1861481045
   - name: verb-form
+    id: 1208475213
   - name: part-of-speech
+    id: 1693092864
   - name: triliteral-root
+    id: 1375021210
   - name: usage-notes
+    id: 2073549202
 
 css: |
   .card {
@@ -86,10 +102,9 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation-singular}}</div>
+      <div class="english">{{english-translation}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}</div>
       <div class="meta">
         Lesson {{lesson-number}} | Page {{page-number}}
       </div>
-

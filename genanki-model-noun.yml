@@ -34,18 +34,34 @@ name: "Arabic Jones - Noun"
 # NOTE: anki-id is first so that Anki defaults to using it as the sort field
 fields:
   - name: anki-id
+    id: 1228695332
   - name: page-number
+    id: 1712983032
   - name: lesson-number
-  - {name: arabic-word-singular, rtl: true}
-  - {name: arabic-word-dual, rtl: true}
-  - {name: arabic-word-plural, rtl: true}
-  - name: english-translation-singular
+    id: 1686847651
+  - name: arabic-word-singular
+    rtl: true
+    id: 1501661569
+  - name: arabic-word-dual
+    rtl: true
+    id: 2136575159
+  - name: arabic-word-plural
+    rtl: true
+    id: 1676232208
+  - name: english-translation
+    id: 1129041858
   - name: english-translation-dual
+    id: 1978548439
   - name: english-translation-plural
+    id: 1434682519
   - name: verb-form
+    id: 2124028107
   - name: part-of-speech
+    id: 1600635411
   - name: triliteral-root
+    id: 1455624241
   - name: usage-notes
+    id: 1642691299
 
 css: |
   .card {
@@ -104,7 +120,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation-singular}}</div>
+      <div class="english">{{english-translation}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}, singular</div>
       <table class="forms-table">
@@ -132,7 +148,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{#english-translation-dual}}{{english-translation-dual}}{{/english-translation-dual}}{{^english-translation-dual}}{{english-translation-singular}}{{/english-translation-dual}}</div>
+      <div class="english">{{#english-translation-dual}}{{english-translation-dual}}{{/english-translation-dual}}{{^english-translation-dual}}{{english-translation}}{{/english-translation-dual}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}, dual</div>
       <table class="forms-table">
@@ -160,7 +176,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{#english-translation-plural}}{{english-translation-plural}}{{/english-translation-plural}}{{^english-translation-plural}}{{english-translation-singular}}{{/english-translation-plural}}</div>
+      <div class="english">{{#english-translation-plural}}{{english-translation-plural}}{{/english-translation-plural}}{{^english-translation-plural}}{{english-translation}}{{/english-translation-plural}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}, plural</div>
       <table class="forms-table">
@@ -178,4 +194,3 @@ templates:
       <div class="meta">
         Lesson {{lesson-number}} | Page {{page-number}}
       </div>
-

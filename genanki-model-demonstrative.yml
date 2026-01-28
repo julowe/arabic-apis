@@ -7,18 +7,34 @@ name: "Arabic Jones - Demonstrative"
 
 fields:
   - name: anki-id
+    id: 2066970262
   - name: page-number
+    id: 1594343370
   - name: lesson-number
-  - {name: arabic-word-singular, rtl: true}
-  - {name: arabic-word-dual, rtl: true}
-  - {name: arabic-word-plural, rtl: true}
-  - name: english-translation-singular
+    id: 1412577010
+  - name: arabic-word-singular
+    rtl: true
+    id: 1665883120
+  - name: arabic-word-dual
+    rtl: true
+    id: 1995037549
+  - name: arabic-word-plural
+    rtl: true
+    id: 1901061012
+  - name: english-translation
+    id: 1749789326
   - name: english-translation-dual
+    id: 1800506534
   - name: english-translation-plural
+    id: 1485286182
   - name: verb-form
+    id: 1310186582
   - name: part-of-speech
+    id: 2017143640
   - name: triliteral-root
+    id: 1600822142
   - name: usage-notes
+    id: 1786119836
 
 css: |
   .card {
@@ -38,6 +54,11 @@ css: |
   .english {
     font-size: 22px;
     margin-top: 15px;
+  }
+  .notes {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: spx;
   }
   .grammar-label {
     font-size: 16px;
@@ -76,7 +97,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation-singular}}</div>
+      <div class="english">{{english-translation}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}, singular</div>
       <table class="forms-table">
@@ -103,7 +124,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{#english-translation-plural}}{{english-translation-plural}}{{/english-translation-plural}}{{^english-translation-plural}}{{english-translation-singular}}{{/english-translation-plural}}</div>
+      <div class="english">{{#english-translation-plural}}{{english-translation-plural}}{{/english-translation-plural}}{{^english-translation-plural}}{{english-translation}}{{/english-translation-plural}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}, plural</div>
       <table class="forms-table">
@@ -121,4 +142,3 @@ templates:
       <div class="meta">
         Lesson {{lesson-number}} | Page {{page-number}}
       </div>
-

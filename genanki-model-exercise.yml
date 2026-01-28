@@ -8,19 +8,30 @@ name: "Arabic Jones - Exercise"
 
 fields:
   - name: anki-id
+    id: 1536763050
   - name: page-number
+    id: 1835895167
   - name: lesson-number
+    id: 1880749454
   - name: exercise-number
-  - {name: arabic-text, rtl: true }
+    id: 1795431067
+  - name: arabic-text
+    rtl: true
+    id: 1120026294
   - name: transliteration
+    id: 1858420079
   - name: english-text
+    id: 1442916767
   - name: quran-surah
+    id: 1210284682
   - name: quran-ayah
+    id: 1402154580
   - name: usage-notes
+    id: 2047863627
 
 css: |
   .card {
-    font-family: 'Scheherazade New', 'Amiri', 'Traditional Arabic', serif;
+    font-family: 'Noto Naskh Arabic', 'Noto Kufi Arabic', 'Amiri', 'Traditional Arabic', serif;
     font-size: 28px;
     text-align: center;
     color: black;
@@ -28,10 +39,19 @@ css: |
     padding: 20px;
   }
   .arabic {
-    font-size: 36px;
+    font-size: 42px;
     direction: rtl;
     unicode-bidi: bidi-override;
     line-height: 1.8;
+  }
+  .english {
+    font-size: 22px;
+    margin-top: 15px;
+  }
+  .notes {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: spx;
   }
   .back-info {
     font-size: 18px;
@@ -48,9 +68,6 @@ css: |
   }
   .transliteration {
     font-style: italic;
-    font-size: 20px;
-  }
-  .english {
     font-size: 20px;
   }
   .quran-ref {
@@ -85,9 +102,8 @@ templates:
         {{/transliteration}}
         <div class="english">{{english-text}}</div>
         <div class="quran-ref">Quran {{quran-surah}}:{{quran-ayah}}</div>
-      
+
         <div class="meta">
           Lesson {{lesson-number}} | Page {{page-number}} | Exercise {{exercise-number}}
         </div>
       </div>
-

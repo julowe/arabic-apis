@@ -11,19 +11,34 @@ name: "Arabic Jones - Verb"
 
 fields:
   - name: anki-id
+    id: 1673261107
   - name: page-number
+    id: 2130746991
   - name: lesson-number
-  - {name: arabic-verb-perfect, rtl: true }
-  - {name: arabic-verb-imperfect, rtl: true }
-  - {name: arabic-verbal-noun, rtl: true }
-  - name: english-translation-singular
-  - name: english-translation-dual
-  - name: english-translation-plural
+    id: 2046223785
+  - name: arabic-verb-perfect
+    rtl: true
+    id: 1544007767
+  - name: arabic-verb-imperfect
+    rtl: true
+    id: 1095092961
+  - name: arabic-verbal-noun
+    rtl: true
+    id: 1505577947
+  - name: english-translation
+    id: 1661777478
+  - name: english-translation-imperfect
+    id: 2095683180
+  - name: english-translation-verbal-noun
+    id: 1389186876
   - name: verb-form
+    id: 1882507631
   - name: part-of-speech
+    id: 1540494434
   - name: triliteral-root
+    id: 1769346510
   - name: usage-notes
-
+    id: 1692077258
 
 css: |
   .card {
@@ -43,6 +58,11 @@ css: |
   .english {
     font-size: 22px;
     margin-top: 15px;
+  }
+  .notes {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: spx;
   }
   .grammar-label {
     font-size: 16px;
@@ -87,7 +107,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation-singular}}</div>
+      <div class="english">{{english-translation}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">
         {{part-of-speech}}, perfect
@@ -120,7 +140,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{#english-translation-dual}}{{english-translation-dual}}{{/english-translation-dual}}{{^english-translation-dual}}{{english-translation-singular}}{{/english-translation-dual}}</div>
+      <div class="english">{{#english-translation-imperfect}}{{english-translation-imperfect}}{{/english-translation-imperfect}}{{^english-translation-imperfect}}{{english-translation}}{{/english-translation-imperfect}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">
         {{part-of-speech}}, imperfect
@@ -153,7 +173,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{#english-translation-plural}}{{english-translation-plural}}{{/english-translation-plural}}{{^english-translation-plural}}{{english-translation-singular}}{{/english-translation-plural}}</div>
+      <div class="english">{{#english-translation-verbal-noun}}{{english-translation-verbal-noun}}{{/english-translation-verbal-noun}}{{^english-translation-verbal-noun}}{{english-translation}}{{/english-translation-verbal-noun}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">
         {{part-of-speech}}, verbal noun
@@ -176,4 +196,3 @@ templates:
       <div class="meta">
         Lesson {{lesson-number}} | Page {{page-number}}
       </div>
-

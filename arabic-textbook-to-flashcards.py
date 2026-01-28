@@ -493,6 +493,7 @@ def _add_anki_notes(
     generated_new_subdecks = False
 
     for path in input_paths:
+        # TODO: push this csv read out to main loop! and do same for csv output i assume
         headers, rows = _read_csv(path)
 
         if _is_exercise(headers):  # Process exercise file
@@ -1030,6 +1031,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             ],
         },
     }
+    # TODO: this iterate doesn't really work with the new english_translation_dual and _plural columns
 
     for path in args.inputs:
         if not os.path.exists(path):

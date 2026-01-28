@@ -10,18 +10,34 @@ name: "Arabic Jones - Other"
 
 fields:
   - name: anki-id
+    id: 1952061468
   - name: page-number
+    id: 1245588717
   - name: lesson-number
-  - {name: arabic-word-singular, rtl: true}
-  - {name: arabic-word-dual, rtl: true}
-  - {name: arabic-word-plural, rtl: true}
-  - name: english-translation-singular
+    id: 1598551283
+  - name: arabic-word-singular
+    rtl: true
+    id: 1080676285
+  - name: arabic-word-dual
+    rtl: true
+    id: 1185288089
+  - name: arabic-word-plural
+    rtl: true
+    id: 1992677703
+  - name: english-translation
+    id: 1332922466
   - name: english-translation-dual
+    id: 1114698024
   - name: english-translation-plural
+    id: 1474761085
   - name: verb-form
+    id: 1555392125
   - name: part-of-speech
+    id: 1329369710
   - name: triliteral-root
+    id: 1199862131
   - name: usage-notes
+    id: 1784753670
 
 css: |
   .card {
@@ -41,6 +57,11 @@ css: |
   .english {
     font-size: 22px;
     margin-top: 15px;
+  }
+  .notes {
+    font-size: 16px;
+    font-style: italic;
+    margin-top: spx;
   }
   .grammar-label {
     font-size: 16px;
@@ -80,7 +101,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{english-translation-singular}}</div>
+      <div class="english">{{english-translation}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}</div>
       {{#arabic-word-dual}}
@@ -124,7 +145,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{#english-translation-dual}}{{english-translation-dual}}{{/english-translation-dual}}{{^english-translation-dual}}{{english-translation-singular}}{{/english-translation-dual}}</div>
+      <div class="english">{{#english-translation-dual}}{{english-translation-dual}}{{/english-translation-dual}}{{^english-translation-dual}}{{english-translation}}{{/english-translation-dual}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}</div>
       <table class="forms-table">
@@ -152,7 +173,7 @@ templates:
     afmt: |
       {{FrontSide}}
       <hr id="answer">
-      <div class="english">{{#english-translation-plural}}{{english-translation-plural}}{{/english-translation-plural}}{{^english-translation-plural}}{{english-translation-singular}}{{/english-translation-plural}}</div>
+      <div class="english">{{#english-translation-plural}}{{english-translation-plural}}{{/english-translation-plural}}{{^english-translation-plural}}{{english-translation}}{{/english-translation-plural}}</div>
       {{#usage-notes}}<div class="notes">{{usage-notes}}</div>{{/usage-notes}}
       <div class="grammar-label">{{part-of-speech}}</div>
       <table class="forms-table">
@@ -170,4 +191,3 @@ templates:
       <div class="meta">
         Lesson {{lesson-number}} | Page {{page-number}}
       </div>
-
