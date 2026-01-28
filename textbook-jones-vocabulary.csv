@@ -113,8 +113,8 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 41,6,Vocabulary,دَارٌ,,دُورٌ / دِيَارٌ,abode (f.),,abodes,,noun,,6-v-8,,checked against textbook
 41,6,Vocabulary,حِزْبٌ,,أَحْزَابٌ,party,,parties,,noun,,6-v-9,,checked against textbook
 41,6,Vocabulary,أَثَرٌ,,آثَارٌ,"track, effect",,"tracks, effects",,noun,,6-v-10,,checked against textbook
-41,6,Vocabulary,لِسَانٌ,,,tongue,,,,noun,,6-v-11,,checked against textbook
-41,6,Vocabulary,نَاقَةٌ,,,she-camel,,,,noun,,6-v-12,,checked against textbook
+41,6,Vocabulary,لِسَانٌ,,أَلْسِنَةٌ,tongue,,tongues,,noun,,6-v-11,,checked against textbook
+41,6,Vocabulary,نَاقَةٌ,,إِبِلٌ,she-camel,,she-camels,,noun,,6-v-12,,checked against textbook
 41,6,Vocabulary,نَهْرٌ,,أَنْهَارٌ,river,,rivers,,noun,,6-v-13,,
 41,6,Vocabulary,فَضْلٌ,,,bounty,,,,noun,,6-v-14,,
 41,6,Vocabulary,سِحْرٌ,,,bewitching,,,,noun,,6-v-15,,
@@ -178,7 +178,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 55,8,Vocabulary,نُورٌ,,أَنْوَارٌ,light,,lights,,noun,,8-v-24,,
 55,8,Vocabulary,مَثَلٌ,,أَمْثَالٌ,"likeness, parallel",,"likenesses, parallels",,noun,,8-v-25,,checked against textbook
 55,8,Vocabulary,مَطْلَعٌ,,,rising-place,,,,noun,,8-v-26,,
-55,8,Vocabulary,مَغْرِبٌ,,,setting-place,,,,noun,,8-v-27,,
+55,8,Vocabulary,مَغْرِبٌ,,مَغَارِبُ,setting-place,,setting-places,,noun,,8-v-27,,
 55,8,Vocabulary,بَرٌّ,,,land,,,,noun,,8-v-28,,
 55,8,Vocabulary,بَحْرٌ,,بِحَارٌ,sea,,seas,,noun,,8-v-29,,checked against textbook
 55,8,Vocabulary,حِمْلٌ,,,load,,,,noun,,8-v-30,,checked against textbook
@@ -218,7 +218,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 67,10,Vocabulary,بَشَرٌ,,بَشَرٌ,human being,,"men, human beings",,noun,,10-v-11,,
 67,10,Vocabulary,سُوءٌ,,,badness,,,,noun,,10-v-12,,
 67,10,Vocabulary,شَهِيدٌ,,شُهَدَاءُ,witness,,witnesses,,noun,,10-v-13,,checked against textbook
-67,10,Vocabulary,قَوْلٌ,,,"saying, speech",,,,noun,,10-v-14,,checked against textbook
+67,10,Vocabulary,قَوْلٌ,,أَقْوَالٌ / [أَقَاوِيلُ],"saying, word, speech",,"sayings, words, speech",,noun,,10-v-14,,checked against textbook
 67,10,Vocabulary,مَقَامٌ,,,station,,,,noun,,10-v-15,,
 67,10,Vocabulary,مُلْكٌ,,,"sovereignty, kingdom",,,,noun,,10-v-16,,checked against textbook
 67,10,Vocabulary,عِلْمٌ,,عُلُومٌ,knowledge,,knowledge,,noun,,10-v-17,,
@@ -234,7 +234,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 67,10,Vocabulary,إِلَّا,,,except,,,,noun,,10-v-27,,
 72,11,Vocabulary,حَفِظَ,يَحْفَظُ,حِفْظٌ,"to guard, preserve, keep","guards, preserves, keeps","guarding, preserving, keeping",,verb,,11-v-1,,
 72,11,Vocabulary,فَتَحَ,يَفْتَحُ,فَتْحٌ,to open,opens,opening,,verb,,11-v-2,,
-72,11,Vocabulary,نَظَرَ,يَنْظُرُ,نَظَرٌ,"to look at, into","looks at, into","looking at, into",,verb,,11-v-3,,checked against textbook
+72,11,Vocabulary,نَظَرَ,يَنْظُرُ,نَظَرٌ,"to look at (with: 'ilā), into (with: fī)","looks at (with: 'ilā), into (with: fī)","looking at (with: 'ilā), into (with: fī)",,verb,,11-v-3,,checked against textbook
 72,11,Vocabulary,إِثْمٌ,,,sin,,,,noun,,11-v-4,,
 72,11,Vocabulary,أَجَلٌ,,,term,,,,noun,,11-v-5,,
 72,11,Vocabulary,ثَمَرَةٌ,,ثَمَرَاتٌ,fruit,,fruits,,noun,,11-v-6,,
@@ -285,7 +285,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 80,12,Vocabulary,إِبْرَاهِيمُ,,,Abraham,,,,noun,,12-v-27,,
 84,13,Vocabulary,أَكَلَ,يَأْكُلُ,أَكْلٌ,to eat,eats,eating,,verb,,13-v-1,,
 84,13,Vocabulary,سِجْنٌ,,,prison,,,,noun,,13-v-2,,
-84,13,Vocabulary,وَالِدٌ,,,father,,,,noun,,13-v-3,,
+84,13,Vocabulary,وَالِدٌ,,,"father; (dual) parents",,,,noun,,13-v-3,,
 84,13,Vocabulary,فَتًى,,فِتْيَةٌ,youth,,youths,,noun,,13-v-4,,
 84,13,Vocabulary,سَاحِرٌ,,,"magician, sorcerer",,,,noun,,13-v-5,,
 84,13,Vocabulary,بُرْهَانٌ,,,proof,,,,noun,,13-v-6,,
@@ -298,10 +298,10 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 84,13,Vocabulary,رُمَّانٌ,,,pomegranates,,,,noun,,13-v-13,,
 84,13,Vocabulary,مَبْسُوطٌ,,,"spread, extended",,,,noun,,13-v-14,,
 84,13,Vocabulary,فِئَةٌ,,,"party, group",,,,noun,,13-v-15,,
-91,14,Vocabulary,سَنَةٌ,,سِنُونَ,year,,years,,noun,,14-v-1,,checked against textbook
+91,14,Vocabulary,حِجَّةٌ,,حِجَجٌ,year,,years,,noun,,14-v-1,,checked against textbook
 91,14,Vocabulary,عَامٌ,,أَعْوَامٌ,year,,years,,noun,,14-v-2,,checked against textbook
-91,14,Vocabulary,شَهْرٌ,,شُهُورٌ,month,,months,,noun,,14-v-3,,checked against textbook
-91,14,Vocabulary,كَوْكَبٌ,,,star,,,,noun,,14-v-4,,checked against textbook
+91,14,Vocabulary,شَهْرٌ,,شُهُورٌ / أَشْهُرٌ,month,,months,,noun,,14-v-3,,checked against textbook
+91,14,Vocabulary,كَوْكَبٌ,,كَوَاكِبُ,star,,,,noun,,14-v-4,,checked against textbook
 91,14,Vocabulary,نَقِيبٌ,,نُقَبَاءُ,chief,,chiefs,,noun,,14-v-5,,checked against textbook
 92,14,Vocabulary,مِسْكِينٌ,,مَسَاكِينُ,"poor, destitute",,"poor, destitute",,noun,,14-v-6,,checked against textbook
 92,14,Vocabulary,جَلْدَةٌ,,,"lash, stripe",,,,noun,,14-v-7,,checked against textbook
@@ -332,7 +332,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 102,16,Vocabulary,كَلَّمَ,يُكَلِّمُ,تَكْلِيمٌ,"to speak to, address","speaks to, addresses","speaking to, addressing",2,verb,,16-v-3,,
 102,16,Vocabulary,حِكْمَةٌ,,,wisdom,,,,noun,,16-v-4,,checked against textbook
 102,16,Vocabulary,زَكَاةٌ / زَكَوٰةٌ,,,alms,,,,noun,,16-v-5,,checked against textbook
-103,16,Vocabulary,صَلَاةٌ,,,prayer,,,,noun,,16-v-6,,checked against textbook
+103,16,Vocabulary,صَلَاةٌ / صَلَوٰةٌ,,صَلَوَاتٌ,prayer,,,,noun,,16-v-6,,checked against textbook
 103,16,Vocabulary,عَرْشٌ,,,throne,,,,noun,,16-v-7,,
 103,16,Vocabulary,فَرِيقٌ,,,"party, company",,,,noun,,16-v-8,,
 103,16,Vocabulary,قَدَمٌ,,أَقْدَامٌ,foot (f.),,feet,,noun,,16-v-9,,checked against textbook
@@ -426,7 +426,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 125,19,Vocabulary,نَعَمٌ,,أَنْعَامٌ,"animal, beast",,"animals, beasts",,noun,,19-v-14,,
 125,19,Vocabulary,يُسْرٌ,,,ease,,,,noun,,19-v-15,,
 125,19,Vocabulary,سَقِيمٌ,,,"sick, ill",,,,noun,,19-v-16,,
-125,19,Vocabulary,أَصْفَرُ,,,yellow (m.),,,,noun,,19-v-17,,checked against textbook
+125,19,Vocabulary,أَصْفَرُ,,صُفْرٌ,yellow (m.),,yellow,,noun,,19-v-17,,checked against textbook
 125,19,Vocabulary,,,صَفْرَاءُ,(f.) yellow,,,,noun,,19-v-17.2,,checked against textbook
 125,19,Vocabulary,مُنَافِقٌ,,,hypocrite,,,,noun,,19-v-18,,
 125,19,Vocabulary,وَهَّابٌ,,,forgiving,,,,noun,,19-v-19,,
@@ -492,7 +492,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 148,23,Vocabulary,حَبٌّ,,حُبُوبٌ,grain,,grains,,noun,,23-v-11,,
 148,23,Vocabulary,حَجَرٌ,,حِجَارَةٌ,stone,,stones,,noun,,23-v-12,,
 148,23,Vocabulary,حَدِيدٌ,,,iron,,,,noun,,23-v-13,,
-148,23,Vocabulary,حِمَارٌ,,,donkey,,,,noun,,23-v-14,,
+148,23,Vocabulary,حِمَارٌ,,حَمِيرٌ,donkey,,donkeys,,noun,,23-v-14,,
 148,23,Vocabulary,خَضِرٌ,,,green crop,,,,noun,,23-v-15,,
 148,23,Vocabulary,رِجْسٌ,,,abomination,,,,noun,,23-v-16,,
 148,23,Vocabulary,رَيْبٌ,,,doubt,,,,noun,,23-v-17,,
@@ -538,16 +538,16 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 159,25,Vocabulary,مَقِيلٌ,,,noon resting-place,,,,noun,,25-v-17,,
 159,25,Vocabulary,أَبْقَى,,,more lasting,,,,noun,,25-v-18,,
 160,25,Vocabulary,أَحَقُّ,,,more deserving [from حَقِيقٌ],,,,noun,,25-v-19,,
-160,25,Vocabulary,أَدْنَى,,,"lowest, nearest (m.)",,,,noun,,25-v-20,,checked against textbook
+160,25,Vocabulary,أَدْنَى,,,"lowest, nearest (m.) [from دَانٍ]",,,,noun,,25-v-20,,checked against textbook
 160,25,Vocabulary,دُنْيََا,,,"lowest, nearest (f.) [from دَانٍ]",,,,noun,,25-v-21,,checked against textbook
-160,25,Vocabulary,أَرْذَلُ,,,worst,,,,noun,,25-v-22,,
-160,25,Vocabulary,أَزْكَى,,,purer,,,,noun,,25-v-23,,
-160,25,Vocabulary,أَسْفَلُ,,,lower,,,,noun,,25-v-24,,
+160,25,Vocabulary,أَرْذَلُ,,,worst [from رَذِيلٌ],,,,noun,,25-v-22,,
+160,25,Vocabulary,أَزْكَى,,,purer [from زَكِيٌّ],,,,noun,,25-v-23,,
+160,25,Vocabulary,أَسْفَلُ,,,lower [from سَافِلٌ],,,,noun,,25-v-24,,
 160,25,Vocabulary,أَقْصَى,,,"further, furthest (m.)",,,,noun,,25-v-25,,checked against textbook
 160,25,Vocabulary,قُصْوَى,,,"further, furthest (f.)",,,,noun,,25-v-26,,checked against textbook
-160,25,Vocabulary,أَكْرَمُ,,,nobler,,,,noun,,25-v-27,,
+160,25,Vocabulary,أَكْرَمُ,,,nobler [from كَرِيمٌ],,,,noun,,25-v-27,,
 160,25,Vocabulary,الْأَوْثَقُ,,,firmest,,,,noun,,25-v-28,,
-160,25,Vocabulary,أَتْقَى,,,more pious,,,,noun,,25-v-29,,
+160,25,Vocabulary,أَتْقَى,,,more pious [from تَقِيٌّ],,,,noun,,25-v-29,,
 160,25,Vocabulary,أَوْلَى,,,nearer,,,,noun,,25-v-30,,
 160,25,Vocabulary,أَوْهَنُ,,,frailest,,,,noun,,25-v-31,,
 160,25,Vocabulary,خَيْرٌ,,,"good, better, best",,,,noun,,25-v-32,,
@@ -603,7 +603,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 177,28,Vocabulary,أَطَاعَ,يُطِيعُ,إِطَاعَةٌ,to obey,obeys,obeying,4,verb,,28-v-8,,
 177,28,Vocabulary,اِسْتَطَاعَ,يَسْتَطِيعُ,اِسْتِطَاعَةٌ,to be able,is able,ability,10,verb,,28-v-9,"(This verb—exceptionally—sometimes drops the *tāʾ* of the 10ᵗʰ form prefix, producing *isṭāʿū, yasṭiʿ*, and *tasṭiʿ*.)",
 177,28,Vocabulary,قَامَ,يَقُومُ,قِيَامٌ,"to stand, rise","stands, rises","standing, rising",,verb,,28-v-10,,
-177,28,Vocabulary,أَقَامَ,يُقِيمُ,إِقَامَةٌ,"to perform, uphold","performs, upholds","performing, upholding",4,verb,,28-v-11,,
+177,28,Vocabulary,أَقَامَ,يُقِيمُ,(إِقَامَة) / إِقَامٌ,"to perform, uphold","performs, upholds","performing, upholding",4,verb,,28-v-11,,checked against textbook
 177,28,Vocabulary,مَاتَ,يَمُوتُ,مَوْتٌ,to die,dies,dying,,verb,,28-v-12,"(Though *māta* has a *wāw* as its middle radical, the contracted forms of the Perfect normally have a *kasra: mittu* etc.)",
 177,28,Vocabulary,ذَاقَ,يَذُوقُ,ذَوْقٌ,to taste,tastes,tasting,,verb,,28-v-13,,
 178,28,Vocabulary,أَحَاطَ,يُحِيطُ,إِحَاطَةٌ,"to surround, comprehend","surrounds, comprehends","surrounding, comprehending",4,verb,,28-v-14,,
@@ -737,7 +737,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 224,35,Vocabulary,حَقِيرٌ,,,"humble, lowly",,,,noun,,35-v-20,,
 224,35,Vocabulary,سَاجِدٌ,,سُجَّدٌ,prostrating oneself,,prostrating oneself,,noun,,35-v-21,,
 224,35,Vocabulary,غَاضِبٌ,,,angry,,,,noun,,35-v-22,,
-224,35,Vocabulary,لَا جَرَمَ,,,"undoubtedly, certainly",,,,noun,,35-v-23,,
+224,35,Vocabulary,لَا جَرَمَ,,,"undoubtedly, certainly",,,,noun,,35-v-23,,checked against textbook
 224,35,Vocabulary,طَابَ نَفْسًا,,,to be consoled,,,,idiom,,35-v-24,,
 224,35,Vocabulary,قَرَّ عَيْنًا,,,to be pleased,,,,idiom,,35-v-25,,
 236,36,Vocabulary,رَتَعَ,يَرْتَعُ,رَتْعٌ,to enjoy oneself,enjoys oneself,enjoying oneself,,verb,,36-v-1,,
@@ -763,7 +763,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 237,36,Vocabulary,جِذْعٌ,,,trunk of a palm-tree,,,,noun,,36-v-21,,
 237,36,Vocabulary,مَدْخَلٌ,,,place to enter,,,,noun,,36-v-22,,
 237,36,Vocabulary,ذُبَابٌ,,,fly,,,,noun,,36-v-23,,
-237,36,Vocabulary,أَذْقَانٌ,,,chins,,,,noun,,36-v-24,,
+237,36,Vocabulary,,,أَذْقَانٌ,,,chins,,noun,,36-v-24,,
 238,36,Vocabulary,مَرَدٌّ,,,turning back,,,,noun,,36-v-25,,
 238,36,Vocabulary,رُطَبٌ,,,"fresh, ripe dates",,,,noun,,36-v-26,,
 238,36,Vocabulary,نَصْرٌ,,,help,,,,noun,,36-v-27,,
@@ -789,9 +789,9 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 245,37,Vocabulary,خَلُوفٌ,,,accustomed to swear,,,,noun,,37-v-16,,
 245,37,Vocabulary,بِدَارٌ,,,"haste, anticipation",,,,noun,,37-v-17,,
 245,37,Vocabulary,حَرْثٌ,,,tillage,,,,noun,,37-v-18,,
-245,37,Vocabulary,رُؤْيَا,,,dream,,,,noun,,37-v-19,,
-245,37,Vocabulary,رَوَاسِي,,,firm mountains,,,,noun,,37-v-20,,
-245,37,Vocabulary,كِنَانٌ,,,coverings,,,,noun,,37-v-21,,
+245,37,Vocabulary,رُؤْيَا,,,dream (f.),,,,noun,,37-v-19,,
+245,37,Vocabulary,,,رَوَاسٍ,,,firm mountains,,noun,,37-v-20,,checked against textbook
+245,37,Vocabulary,كِنَانٌ,,أَكِنَّةٌ,coverings,,coverings,,noun,,37-v-21,,
 245,37,Vocabulary,نَحْلٌ,,,bees,,,,noun,,37-v-22,,
 245,37,Vocabulary,هَدٌّ,,,"crash, destruction",,,,noun,,37-v-23,,
 245,37,Vocabulary,أَعْمَى,,عُمْيٌ,blind,,blind,,noun,,37-v-24,,
@@ -845,7 +845,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 262,39,Vocabulary,نَاصِيَةٌ,,نَوَاصِي,forelock,,forelocks,,noun,,39-v-23,,
 262,39,Vocabulary,أَجْمَعُ,,,all,,,,noun,,39-v-24,,
 262,39,Vocabulary,صَاغِرٌ,,,humbled,,,,noun,,39-v-25,,
-262,39,Vocabulary,قَدِيمٌ,,,"old, ancient",,,,noun,,39-v-26,,
+262,39,Vocabulary,قَدِيمٌ,,قُدَمَاءُ,"old, ancient",,,,noun,,39-v-26,,checked against textbook
 262,39,Vocabulary,يَوْمَئِذٍ,,,on that day,,,,noun,,39-v-27,,
 267,40,Vocabulary,صَنَعَ,يَصْنَعُ,صُنْعٌ,"to make, work","makes, works","making, working",,verb,,40-v-1,,
 267,40,Vocabulary,نَفَرَ,يَنْفِرُ,نُفُورٌ,to go forth,goes forth,going forth,,verb,,40-v-2,,
@@ -860,7 +860,7 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 267,40,Vocabulary,ثَمَنٌ,,أَثْمَانٌ,"price, gain",,"prices, gains",,noun,,40-v-11,,
 267,40,Vocabulary,خِيَارَةٌ,,,choice,,,,noun,,40-v-12,,
 267,40,Vocabulary,مُرْتَفَقٌ,,,resting-place,,,,noun,,40-v-13,,
-267,40,Vocabulary,مَسْجِدٌ,,,"mosque, place of prayer",,,,noun,,40-v-14,,
+267,40,Vocabulary,مَسْجِدٌ,,مَسَاجِدُ,"mosque, place of prayer",,"mosques, places of prayer",,noun,,40-v-14,,checked against textbook
 267,40,Vocabulary,سُلْطَانٌ,,,"authority, power",,,,noun,,40-v-15,,
 267,40,Vocabulary,شَرَابٌ,,,drink,,,,noun,,40-v-16,,
 267,40,Vocabulary,مَصِيرٌ,,,"course, journey’s end",,,,noun,,40-v-17,,
