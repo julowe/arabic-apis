@@ -1108,6 +1108,7 @@ def main(argv: Optional[List[str]] = None) -> int:
             )
 
     # TODO update repo readme with usage instructions and file descriptions
+    # TODO add quranWbW links to exercise cards
 
     return 0
 
