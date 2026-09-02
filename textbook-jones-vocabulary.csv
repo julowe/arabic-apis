@@ -1,19 +1,19 @@
 Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.,English Translations Singular Perfect,English Translations Dual Imperfect,English Translations Plural Verbal Noun,Verb Form,Part of Speech,Triliteral Root,Anki_ID,Usage Notes etc,Proofread
 13,1,Vocabulary,اَللّٰهُ,,,God,,,,noun,,1-v-1,,checked against textbook
-13,1,Vocabulary,إِلٰهٌ,,آلِهَةٌ,a god,,,,noun,,1-v-2,,checked against textbook
-13,1,Vocabulary,أَجْرٌ,,أُجُورٌ,reward,,,,noun,,1-v-3,,checked against textbook
-13,1,Vocabulary,آيَةٌ,,آيَاتٌ,"sign, verse",,,,noun,,1-v-4,,checked against textbook
-13,1,Vocabulary,بَلَدٌ,,بِلَادٌ,town,,,,noun,,1-v-5,,checked against textbook
-13,1,Vocabulary,رَسُولٌ,,رُسُلٌ,messenger,,,,noun,,1-v-6,,checked against textbook
+13,1,Vocabulary,إِلٰهٌ,,آلِهَةٌ,a god,,gods,,noun,,1-v-2,,checked against textbook
+13,1,Vocabulary,أَجْرٌ,,أُجُورٌ,reward,,rewards,,noun,,1-v-3,,checked against textbook
+13,1,Vocabulary,آيَةٌ,,آيَاتٌ,"sign, verse",,"signs, verses",,noun,,1-v-4,,checked against textbook
+13,1,Vocabulary,بَلَدٌ,,بِلَادٌ,town,,towns,,noun,,1-v-5,,checked against textbook
+13,1,Vocabulary,رَسُولٌ,,رُسُلٌ,messenger,,messengers,,noun,,1-v-6,,checked against textbook
 13,1,Vocabulary,رَحْمَةٌ,,,mercy,,,,noun,,1-v-7,,checked against textbook
 13,1,Vocabulary,عَذَابٌ,,,punishment,,,,noun,,1-v-8,,checked against textbook
 13,1,Vocabulary,فَوْزٌ,,,victory,,,,noun,,1-v-9,,checked against textbook
 13,1,Vocabulary,قُرْآنٌ,,,"Qur’ān, recitation",,,,noun,,1-v-10,,checked against textbook
-13,1,Vocabulary,كِتَابٌ,,كُتُبٌ,"scripture, document, book",,,,noun,,1-v-11,,checked against textbook
-13,1,Vocabulary,خَلِيفَةٌ,,خُلَفَاءُ,"successor, viceroy, caliph",,,,noun,,1-v-12,,checked against textbook
-13,1,Vocabulary,أَرْضٌ (f.),,,earth,,,,noun,,1-v-13,,checked against textbook
-13,1,Vocabulary,أُمٌّ,,أُمَّهَاتٌ,mother,,,,noun,,1-v-14,,checked against textbook
-13,1,Vocabulary,يَوْمٌ,,أَيَّامٌ,day,,,,noun,,1-v-15,,checked against textbook
+13,1,Vocabulary,كِتَابٌ,,كُتُبٌ,"scripture, document, book",,"scriptures, documents, books",,noun,,1-v-11,,checked against textbook
+13,1,Vocabulary,خَلِيفَةٌ,,خُلَفَاءُ,"successor, viceroy, caliph",,"successors, viceroys, caliphs",,noun,,1-v-12,,checked against textbook
+13,1,Vocabulary,أَرْضٌ,,,earth (f.),,,,noun,,1-v-13,,checked against textbook
+13,1,Vocabulary,أُمٌّ,,أُمَّهَاتٌ,mother,,mothers,,noun,,1-v-14,,checked against textbook
+13,1,Vocabulary,يَوْمٌ,,أَيَّامٌ,day,,days,,noun,,1-v-15,,checked against textbook
 13,1,Vocabulary,أَمِينٌ,,,"faithful, secure",,,,noun,,1-v-16,,checked against textbook
 13,1,Vocabulary,آخِرٌ,,,"last, [next]",,,,noun,,1-v-17,,checked against textbook
 13,1,Vocabulary,شَدِيدٌ,,شِدَادٌ,"strong, severe",,,,noun,,1-v-18,,checked against textbook
@@ -21,102 +21,103 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 14,1,Vocabulary,عَظِيمٌ,,,"great, mighty",,,,noun,,1-v-20,,checked against textbook
 14,1,Vocabulary,قَوِيٌّ,,,strong,,,,noun,,1-v-21,,checked against textbook
 14,1,Vocabulary,كَبِيرٌ,,,"big, great",,,,noun,,1-v-22,,checked against textbook
-14,1,Vocabulary,كَرِيمٌ,,كِرَامٌ,"noble, generous",,,,noun,,1-v-23,,checked against textbook
+14,1,Vocabulary,كَرِيمٌ,,كِرَامٌ,"noble, generous",,"noble, generous",,noun,,1-v-23,,checked against textbook
 14,1,Vocabulary,مَجِيدٌ,,,glorious,,,,noun,,1-v-24,,checked against textbook
 14,1,Vocabulary,وَاسِعٌ,,,"wide, ample",,,,noun,,1-v-25,,checked against textbook
 14,1,Vocabulary,مُبِينٌ,,,clear,,,,noun,,1-v-26,,checked against textbook
-14,1,Vocabulary,أَوَّلُ,,أَوَّلُونَ,first,,,,noun,,1-v-27,,checked against textbook
-14,1,Vocabulary,أُولَى (f.),,,first,,,,noun,,1-v-28,,checked against textbook
-14,1,Vocabulary,آخَرُ,,آخَرُونَ,other,,,,noun,,1-v-29,,checked against textbook
-14,1,Vocabulary,أُخْرَى (f.),,أُخَرُ,other,,,,noun,,1-v-30,,checked against textbook
-19,2,Vocabulary,رَجُلٌ,,رِجَالٌ,man,,,,noun,,2-v-1,,checked against textbook
-19,2,Vocabulary,سَمَاءٌ,,سَمَاوَاتٌ,"heaven, sky",,,,noun,,2-v-2,,checked against textbook
-19,2,Vocabulary,عَبْدٌ,,عِبَادٌ,"servant, slave",,,,noun,,2-v-3,,checked against textbook
-19,2,Vocabulary,قَرْنٌ,,قُرُونٌ,generation [horn],,,,noun,,2-v-4,,checked against textbook
-19,2,Vocabulary,قَرْيَةٌ,,قُرًى,"settlement, village",,,,noun,,2-v-5,,checked against textbook
-19,2,Vocabulary,قَوْمٌ,,أَقْوَامٌ,people,,,,noun,,2-v-6,,checked against textbook
-19,2,Vocabulary,مَنْفَعَةٌ,,مَنَافِعُ,benefit,,,,noun,,2-v-7,,checked against textbook
-19,2,Vocabulary,كَافِرٌ,,كَافِرُونَ,"unbeliever, ungrateful",,,,noun,,2-v-8,,checked against textbook
-19,2,Vocabulary,مُؤْمِنٌ,,مُؤْمِنُونَ,believer,,,,noun,,2-v-9,,checked against textbook
-19,2,Vocabulary,ظَالِمٌ,,ظَالِمُونَ,wrongdoer,,,,noun,,2-v-10,,checked against textbook
+14,1,Vocabulary,أَوَّلُ,,أَوَّلُونَ,first,,first,,noun,,1-v-27,,checked against textbook
+14,1,Vocabulary,أُولَى,,,first (f.),,,,noun,,1-v-28,,checked against textbook
+14,1,Vocabulary,آخَرُ,,آخَرُونَ,other,,other,,noun,,1-v-29,,checked against textbook
+14,1,Vocabulary,أُخْرَى,,أُخَرُ,other (f.),,other (f.),,noun,,1-v-30,,checked against textbook
+19,2,Vocabulary,رَجُلٌ,,رِجَالٌ,man,,men,,noun,,2-v-1,,checked against textbook
+19,2,Vocabulary,سَمَاءٌ,,سَمَاوَاتٌ,"heaven, sky",,"heavens, skies",,noun,,2-v-2,,checked against textbook
+19,2,Vocabulary,عَبْدٌ,,عِبَادٌ,"servant, slave",,"servants, slaves",,noun,,2-v-3,,checked against textbook
+19,2,Vocabulary,قَرْنٌ,,قُرُونٌ,"generation, horn",,"generations, horns",,noun,,2-v-4,,checked against textbook
+19,2,Vocabulary,قَرْيَةٌ,,قُرًى,"settlement, village",,"settlements, villages",,noun,,2-v-5,,checked against textbook
+19,2,Vocabulary,قَوْمٌ,,أَقْوَامٌ,people,,peoples,,noun,,2-v-6,,checked against textbook
+19,2,Vocabulary,مَنْفَعَةٌ,,مَنَافِعُ,benefit,,benefits,,noun,,2-v-7,,checked against textbook
+19,2,Vocabulary,كَافِرٌ,,كَافِرُونَ,"unbeliever, ungrateful",,"unbelievers, ungrateful",,noun,,2-v-8,,checked against textbook
+19,2,Vocabulary,مُؤْمِنٌ,,مُؤْمِنُونَ,believer,,believers,,noun,,2-v-9,,checked against textbook
+19,2,Vocabulary,ظَالِمٌ,,ظَالِمُونَ,wrongdoer,,wrongdoers,,noun,,2-v-10,,checked against textbook
 19,2,Vocabulary,أَعْجَمِيٌّ,,أَعْجَمِيُّونَ,foreign,,,,noun,,2-v-11,,checked against textbook
 19,2,Vocabulary,عَرَبِيٌّ,,عَرَبٌ,"Arab, Arabic",,,,noun,,2-v-12,,checked against textbook
-19,2,Vocabulary,مُسْلِمٌ,,مُسْلِمُونَ,Muslim,,,,noun,,2-v-13,,checked against textbook
+19,2,Vocabulary,مُسْلِمٌ,,مُسْلِمُونَ,Muslim,,Muslims,,noun,,2-v-13,,checked against textbook
 19,2,Vocabulary,نَصْرَانِيٌّ,,نَصَارَى,Christian,,,,noun,,2-v-14,,checked against textbook
 19,2,Vocabulary,يَهُودِيٌّ,,يَهُودٌ,"Jew, Jewish",,,,noun,,2-v-15,,checked against textbook
-20,2,Vocabulary,سَنَةٌ,,سِنُونَ,year,,,,noun,,2-v-16,,checked against textbook
-20,2,Vocabulary,فَاكِهَةٌ,,فَوَاكِهُ,fruit,,,,noun,,2-v-17,,checked against textbook
-20,2,Vocabulary,كَثِيرٌ,,كَثِيرُونَ / كِثَارٌ,many,,,,noun,,2-v-18,,checked against textbook
-20,2,Vocabulary,تَوَّابٌ,,تَوَّابُونَ,"relenting (s.), repenting (pl.)",,,,noun,,2-v-19,,checked against textbook
-20,2,Vocabulary,مُكْرَمٌ,,مُكْرَمُونَ,honoured,,,,noun,,2-v-20,,checked against textbook
-27,3,Vocabulary,جَنَّةٌ,,جَنَّاتٌ,garden,,,,noun,,3-v-1,,
-27,3,Vocabulary,جَارِيَةٌ,,جَوَارٍ,"ship, young woman",,,,noun,,3-v-2,,
+20,2,Vocabulary,سَنَةٌ,,سِنُونَ,year,,years,,noun,,2-v-16,,checked against textbook
+20,2,Vocabulary,فَاكِهَةٌ,,فَوَاكِهُ,fruit,,fruits,,noun,,2-v-17,,checked against textbook
+20,2,Vocabulary,كَثِيرٌ,,كَثِيرُونَ,many,,many,,noun,,2-v-18,,checked against textbook
+20,2,Vocabulary,,,كِثَارٌ,,,"many, much",,noun,,2-v-18.2,,checked against textbook
+20,2,Vocabulary,تَوَّابٌ,,تَوَّابُونَ,relenting,,repenting,,noun,,2-v-19,,checked against textbook
+20,2,Vocabulary,مُكْرَمٌ,,مُكْرَمُونَ,honoured,,honoured,,noun,,2-v-20,,checked against textbook
+27,3,Vocabulary,جَنَّةٌ,,جَنَّاتٌ,garden,,gardens,,noun,,3-v-1,,
+27,3,Vocabulary,جَارِيَةٌ,,جَوَارٍ,"ship, young woman",,"ships, young women",,noun,,3-v-2,,
 27,3,Vocabulary,حَقٌّ,,حُقُوقٌ,truth; true,,,,noun,,3-v-3,,
-27,3,Vocabulary,فِتْنَةٌ,,فِتَنٌ,"affliction, temptation",,,,noun,,3-v-4,,
+27,3,Vocabulary,فِتْنَةٌ,,فِتَنٌ,"affliction, temptation; tempting, afflicting, stirring up",,"afflictions, temptations",,noun,,3-v-4,,
 27,3,Vocabulary,بُشْرَى,,,good tidings,,,,noun,,3-v-5,,
 27,3,Vocabulary,اَلدُّنْيَا,,,world,,,,noun,,3-v-6,,checked against textbook
 27,3,Vocabulary,وَادٍ,,,valley,,,,noun,,3-v-7,,
 27,3,Vocabulary,عَصًا,,,"stick, staff",,,,noun,,3-v-8,,
-27,3,Vocabulary,نَذِيرٌ,,نُذُرٌ,warner,,,,noun,,3-v-9,,
+27,3,Vocabulary,نَذِيرٌ,,نُذُرٌ,warner,,warners,,noun,,3-v-9,,
 27,3,Vocabulary,هُدًى,,,guidance,,,,noun,,3-v-10,,
 27,3,Vocabulary,مَكَّةُ,,,Mecca,,,,noun,,3-v-11,,
-27,3,Vocabulary,فَقِيرٌ,,فُقَرَاءُ,poor,,,,noun,,3-v-12,,
-27,3,Vocabulary,أَسْوَدُ,,سُودٌ,black,,,,noun,,3-v-13,,checked against textbook
-27,3,Vocabulary,سَوْدَاءُ,,,(f.) black,,,,noun,,3-v-14,,checked against textbook
-27,3,Vocabulary,أَبْيَضُ,,بِيضْ,white,,,,noun,,3-v-15,,checked against textbook
-27,3,Vocabulary,بَيْضَاءُ (f.),,,(f.) white,,,,noun,,3-v-16,,checked against textbook
+27,3,Vocabulary,فَقِيرٌ,,فُقَرَاءُ,poor,,poor,,noun,,3-v-12,,
+27,3,Vocabulary,أَسْوَدُ,,سُودٌ,black,,black,,noun,,3-v-13,,checked against textbook
+27,3,Vocabulary,سَوْدَاءُ,,,black (f.),,,,noun,,3-v-14,,checked against textbook
+27,3,Vocabulary,أَبْيَضُ,,بِيضْ,white,,white,,noun,,3-v-15,,checked against textbook
+27,3,Vocabulary,بَيْضَاءُ,,,white (f.),,,,noun,,3-v-16,,checked against textbook
 27,3,Vocabulary,عَالٍ,,,"high, lofty",,,,noun,,3-v-17,,checked against textbook
-28,3,Vocabulary,عَالِيَةٌ (f.),,,"high, lofty",,,,noun,,3-v-18,,checked against textbook
+28,3,Vocabulary,عَالِيَةٌ,,,"high, lofty (f.)",,,,noun,,3-v-18,,checked against textbook
 28,3,Vocabulary,لَطِيفٌ,,,gentle,,,,noun,,3-v-19,,
-28,3,Vocabulary,جَاهِلٌ,,جَاهِلُونَ,ignorant,,,,noun,,3-v-20,,checked against textbook
-32,4,Vocabulary,نَارٌ (f.),,نِيرَانٌ,"fire, Hell",,,,noun,,4-v-1,,
-32,4,Vocabulary,صَدَقَةٌ,,صَدَقَاتٌ,alms,,,,noun,,4-v-2,,
-32,4,Vocabulary,عُرْفٌ,,أَعْرَافٌ,"crest, ridge, height",,,,noun,,4-v-3,,
-32,4,Vocabulary,سَبِيلٌ (f.),,سُبُلٌ,"way, road, path",,,,noun,,4-v-4,,
-32,4,Vocabulary,سَفَرٌ,,أَسْفَارٌ,journey,,,,noun,,4-v-5,,
-32,4,Vocabulary,ضَلَالٌ,,,error,,,,noun,,4-v-6,,
-32,4,Vocabulary,فَسَادٌ,,,corruption,,,,noun,,4-v-7,,
+28,3,Vocabulary,جَاهِلٌ,,جَاهِلُونَ,ignorant,,ignorant,,noun,,3-v-20,,checked against textbook
+32,4,Vocabulary,نَارٌ,,نِيرَانٌ,"fire, Hell",,"fires, Hells",,noun,,4-v-1,,
+32,4,Vocabulary,صَدَقَةٌ,,صَدَقَاتٌ,alm,,alms,,noun,,4-v-2,,
+32,4,Vocabulary,عُرْفٌ,,أَعْرَافٌ,"crest, ridge, height",,"crests, ridges, heights",,noun,,4-v-3,,
+32,4,Vocabulary,سَبِيلٌ,,سُبُلٌ,"way, road, path",,"ways, roads, paths",,noun,,4-v-4,,
+32,4,Vocabulary,سَفَرٌ,,أَسْفَارٌ,journey,,journeys,,noun,,4-v-5,,checked against textbook
+32,4,Vocabulary,ضَلَالٌ,,,"straying, error",,,,noun,,4-v-6,,
+32,4,Vocabulary,فَسَادٌ,,,"mischief, corruption",,,,noun,,4-v-7,,
 32,4,Vocabulary,حَمْدٌ,,,praise,,,,noun,,4-v-8,,
-32,4,Vocabulary,أَهْلٌ,,أَهْلُونَ,"people, family, folk",,,,noun,,4-v-9,,
+32,4,Vocabulary,أَهْلٌ,,أَهْلُونَ,"people, family, folk",,"peoples, families, folks",,noun,,4-v-9,,
 32,4,Vocabulary,شَمْسٌ,,,sun,,,,noun,,4-v-10,,
 32,4,Vocabulary,رَحِيمٌ,,,compassionate,,,,noun,,4-v-11,,
 32,4,Vocabulary,صَابِرٌ,,,"patient, steadfast",,,,noun,,4-v-12,,
 33,4,Vocabulary,مِنْ,,,"from, of",,,,preposition,,4-v-13,,checked against textbook
 33,4,Vocabulary,فِي,,,"in, concerning",,,,preposition,,4-v-14,,checked against textbook
-33,4,Vocabulary,ﻟِ,,,"to, for",,,,preposition,,4-v-15,(Note that this entry uses the initial form ﻟ instead of the isolated form ل to indicate it is prefixed/connected to the word),checked against textbook
-33,4,Vocabulary,ﺑِ,,,"in, at, by",,,,preposition,,4-v-16,(Note that this entry uses the initial form ﺑ instead of the isolated form ب to indicate it is prefixed/connected to the word),checked against textbook
+33,4,Vocabulary,ﻟِ-,,,"to, for",,,,preposition,,4-v-15,(Note that this entry uses the initial form ﻟ instead of the isolated form ل to indicate it is prefixed/connected to the word),checked against textbook
+33,4,Vocabulary,ﺑِ-,,,"in, at, by",,,,preposition,,4-v-16,(Note that this entry uses the initial form ﺑ instead of the isolated form ب to indicate it is prefixed/connected to the word),checked against textbook
 33,4,Vocabulary,عَلَى,,,"on, against",,,,preposition,,4-v-17,,checked against textbook
 33,4,Vocabulary,إِلَى,,,to (motion),,,,preposition,,4-v-18,,checked against textbook
 33,4,Vocabulary,مَعَ,,,with,,,,preposition,,4-v-19,,checked against textbook
 33,4,Vocabulary,بَيْنَ,,,"between, among",,,,preposition,,4-v-20,,checked against textbook
-37,5,Vocabulary,اِبْنٌ,,أَبْنَاءٌ / بَنُونَ,son,,,,noun,,5-v-1,,checked against textbook
-37,5,Vocabulary,وَلِيٌّ,,أَوْلِيَاءُ,"friend, protector",,,,noun,,5-v-2,,
-37,5,Vocabulary,خَالِدٌ,,خَالِدُونَ,"remaining in, everlasting",,,,noun,,5-v-3,,
+37,5,Vocabulary,اِبْنٌ,,أَبْنَاءٌ / بَنُونَ,son,,sons,,noun,,5-v-1,,checked against textbook
+37,5,Vocabulary,وَلِيٌّ,,أَوْلِيَاءُ,"friend, protector",,"friends, protectors",,noun,,5-v-2,,
+37,5,Vocabulary,خَالِدٌ,,خَالِدُونَ,"remaining in, everlasting",,"remaining in, everlasting",,noun,,5-v-3,,
 37,5,Vocabulary,صَالِحٌ,,,righteous,,,,noun,,5-v-4,,
 37,5,Vocabulary,نِعْمَةٌ,,,"blessing, bounty",,,,noun,,5-v-5,,
-37,5,Vocabulary,أَخٌ,,إِخْوَانٌ / إِخْوَةٌ,brother,,,,noun,,5-v-6,,
-37,5,Vocabulary,رَبٌّ,,أَرْبَابٌ,lord,,,,noun,,5-v-7,,
-37,5,Vocabulary,عَمَلٌ,,أَعْمَالٌ,work,,,,noun,,5-v-8,,
+37,5,Vocabulary,أَخٌ,,إِخْوَانٌ / إِخْوَةٌ,brother,,brothers,,noun,,5-v-6,,
+37,5,Vocabulary,رَبٌّ,,أَرْبَابٌ,lord,,lords,,noun,,5-v-7,,
+37,5,Vocabulary,عَمَلٌ,,أَعْمَالٌ,work,,works,,noun,,5-v-8,,
 37,5,Vocabulary,حَسْبٌ,,,"sufficiency, reckoning",,,,noun,,5-v-9,,
 37,5,Vocabulary,قَرِيبٌ,,,near,,,,noun,,5-v-10,,
-37,5,Vocabulary,سَمِيعٌ,,,hearing (adjective),,,,noun,,5-v-11,,
+37,5,Vocabulary,سَمِيعٌ,,,hearing (adj.),,,,noun,,5-v-11,,
 37,5,Vocabulary,حَيَاةٌ,,,life,,,,noun,,5-v-12,,checked against textbook
-37,5,Vocabulary,حَيَوٰةٌ,,,life,,,,noun,,5-v-12,listed as 'also' under 'life' entry,checked against textbook
-39,6,Vocabulary,هٰذَا,,هٰؤُلَآءِ,"This, These",,,,demonstrative pronoun/adjective,,6-v-1,,checked against textbook
-39,6,Vocabulary,هٰذِهِ,,,"This (f.s.), these",,,,demonstrative pronoun/adjective,,6-v-2,,checked against textbook
-39,6,Vocabulary,ذٰلِكَ,,أُولَائِكَ,"That, Those",,,,demonstrative pronoun/adjective,,6-v-3,,checked against textbook
-39,6,Vocabulary,تِلْكَ,,,"That (f.s.), those",,,,demonstrative pronoun/adjective,,6-v-4,,checked against textbook
-41,6,Vocabulary,أُمَّةٌ,,أُمَمٌ,community,,,,noun,,6-v-5,,checked against textbook
-41,6,Vocabulary,اِبْنَةٌ,,بَنَاتٌ,daughter,,,,noun,,6-v-6,,checked against textbook
-41,6,Vocabulary,شَيْءٌ,,أَشْيَاءُ,thing,,,,noun,,6-v-7,,checked against textbook
-41,6,Vocabulary,دَارٌ (f.),,دُورٌ / دِيَارٌ,abode,,,,noun,,6-v-8,,checked against textbook
-41,6,Vocabulary,حِزْبٌ,,أَحْزَابٌ,party,,,,noun,,6-v-9,,checked against textbook
-41,6,Vocabulary,أَثَرٌ,,آثَارٌ,track; effect,,,,noun,,6-v-10,,checked against textbook
-41,6,Vocabulary,لِسَانٌ,,أَلْسِنَةٌ,tongue,,,,noun,,6-v-11,,checked against textbook
-41,6,Vocabulary,نَاقَةٌ,,إِبِلٌ,she-camel,,,,noun,,6-v-12,,checked against textbook
-41,6,Vocabulary,نَهْرٌ,,أَنْهَارٌ,river,,,,noun,,6-v-13,,
+37,5,Vocabulary,حَيَوٰةٌ,,,life,,,,noun,,5-v-12.2,listed as 'also' under 'life' entry,checked against textbook
+39,6,Vocabulary,هٰذَا,,هٰؤُلَآءِ,This,,These,,demonstrative pronoun/adjective,,6-v-1,,checked against textbook
+39,6,Vocabulary,هٰذِهِ,,,"This, These (f.)",,,,demonstrative pronoun/adjective,,6-v-2,,checked against textbook
+39,6,Vocabulary,ذٰلِكَ,,أُولَائِكَ,That,,Those,,demonstrative pronoun/adjective,,6-v-3,,checked against textbook
+39,6,Vocabulary,تِلْكَ,,,"That, Those (f.)",,,,demonstrative pronoun/adjective,,6-v-4,,checked against textbook
+41,6,Vocabulary,أُمَّةٌ,,أُمَمٌ,community,,communities,,noun,,6-v-5,,checked against textbook
+41,6,Vocabulary,اِبْنَةٌ,,بَنَاتٌ,daughter,,daughters,,noun,,6-v-6,,checked against textbook
+41,6,Vocabulary,شَيْءٌ,,أَشْيَاءُ,thing,,things,,noun,,6-v-7,,checked against textbook
+41,6,Vocabulary,دَارٌ,,دُورٌ / دِيَارٌ,abode (f.),,abodes,,noun,,6-v-8,,checked against textbook
+41,6,Vocabulary,حِزْبٌ,,أَحْزَابٌ,party,,parties,,noun,,6-v-9,,checked against textbook
+41,6,Vocabulary,أَثَرٌ,,آثَارٌ,"track, effect",,"tracks, effects",,noun,,6-v-10,,checked against textbook
+41,6,Vocabulary,لِسَانٌ,,أَلْسِنَةٌ,tongue,,tongues,,noun,,6-v-11,,checked against textbook
+41,6,Vocabulary,نَاقَةٌ,,إِبِلٌ,she-camel,,she-camels,,noun,,6-v-12,,checked against textbook
+41,6,Vocabulary,نَهْرٌ,,أَنْهَارٌ,river,,rivers,,noun,,6-v-13,,
 41,6,Vocabulary,فَضْلٌ,,,bounty,,,,noun,,6-v-14,,
-41,6,Vocabulary,سِحْرٌ,,,magic,,,,noun,,6-v-15,,
+41,6,Vocabulary,سِحْرٌ,,,magic,,,,noun,,6-v-15,,checked against textbook
 41,6,Vocabulary,صِرَاطٌ,,,"way, path",,,,noun,,6-v-16,,
 41,6,Vocabulary,قَمِيصٌ,,,shirt,,,,noun,,6-v-17,,
 41,6,Vocabulary,مُجْرِمٌ,,,sinner,,,,noun,,6-v-18,,checked against textbook
@@ -125,68 +126,68 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 41,6,Vocabulary,عَجِيبٌ,,,"amazing, strange, wonderful",,,,noun,,6-v-21,,
 41,6,Vocabulary,حَلَالٌ,,,permissible,,,,noun,,6-v-22,,
 41,6,Vocabulary,حَرَامٌ,,,"forbidden, sacred",,,,noun,,6-v-23,,
-41,6,Vocabulary,بَعِيدٌ,,,"far reaching, distant",,,,noun,,6-v-24,,
+41,6,Vocabulary,بَعِيدٌ,,,"far-reaching, distant",,,,noun,,6-v-24,,
 42,6,Vocabulary,يَسِيرٌ,,,easy,,,,noun,,6-v-25,,
 42,6,Vocabulary,عَسِيرٌ,,,difficult,,,,noun,,6-v-26,,
 42,6,Vocabulary,قَبْلَ,,,before,,,,noun,,6-v-27,,
 42,6,Vocabulary,بَعْدَ,,,after,,,,noun,,6-v-28,,
 47,7,Vocabulary,اَلرَّحْمٰنُ,,,the Merciful,,,,noun,,7-v-1,,checked against textbook
-47,7,Vocabulary,,,اَلْعَالَمِينَ,(gen. pl. only) created beings,,,,noun,,7-v-2,,checked against textbook
+47,7,Vocabulary,,,اَلْعَالَمِينَ,,,(gen. pl. only) created beings,,noun,,7-v-2,,checked against textbook
 47,7,Vocabulary,شَفًا,,,"lip, rim, edge",,,,noun,,7-v-3,,checked against textbook
 47,7,Vocabulary,حُفْرَةٌ,,,pit,,,,noun,,7-v-4,,
-47,7,Vocabulary,أَبٌ,,آبَاءٌ,father,,,,noun,,7-v-5,,
-47,7,Vocabulary,صَاحِبٌ,,أَصْحَابٌ,"companion, inhabitant",,,,noun,,7-v-6,,
+47,7,Vocabulary,أَبٌ,,آبَاءٌ,father,,fathers,,noun,,7-v-5,,
+47,7,Vocabulary,صَاحِبٌ,,أَصْحَابٌ,"companion, inhabitant",,"companions, inhabitants",,noun,,7-v-6,,
 47,7,Vocabulary,طَائِفَةٌ,,,"group, number, party",,,,noun,,7-v-7,,
 47,7,Vocabulary,اِمْرَأَةٌ,,نِسَاءٌ / نِسْوَةٌ,woman,,,,noun,,7-v-8,,checked against textbook
-47,7,Vocabulary,أَمْرٌ,,أُمُورٌ,"affair, matter, command",,,,noun,,7-v-9,,checked against textbook
-47,7,Vocabulary,إِنْسَانٌ,,اَلنَّاسُ,man; people (pl.),,,,noun,,7-v-10,,checked against textbook
-47,7,Vocabulary,ذُو,,أُولُو,possessor of,,,,noun,,7-v-11,,
-47,7,Vocabulary,اِسْمٌ,,أَسْمَاءٌ,name,,,,noun,,7-v-12,,checked against textbook
+47,7,Vocabulary,أَمْرٌ,,أُمُورٌ,"affair, matter, command",,"affairs, matters, commands",,noun,,7-v-9,,checked against textbook
+47,7,Vocabulary,إِنْسَانٌ,,اَلنَّاسُ,man,,people,,noun,,7-v-10,,checked against textbook
+47,7,Vocabulary,ذُو,,أُولُو,possessor of,,possessors of,,noun,,7-v-11,,checked against textbook
+47,7,Vocabulary,اِسْمٌ,,أَسْمَاءٌ,name,,names,,noun,,7-v-12,,checked against textbook
 47,7,Vocabulary,,,أَلْبَابٌ,"hearts, intellects",,,,noun,,7-v-13,,checked against textbook
-47,7,Vocabulary,بَصَرٌ,,أَبْصَارٌ,sight; eye,,,,noun,,7-v-14,,
-47,7,Vocabulary,يَدٌ (f.),,أَيْدٍ,hand,,,,noun,,7-v-15,,checked against textbook
-48,7,Vocabulary,عَدُوٌّ,,أَعْدَاءٌ,enemy,,,,noun,,7-v-16,,
-48,7,Vocabulary,شَيْطَانٌ,,شَيَاطِينُ,devil,,,,noun,,7-v-17,,
+47,7,Vocabulary,بَصَرٌ,,أَبْصَارٌ,"sight, eye",,"sights, eyes",,noun,,7-v-14,,
+47,7,Vocabulary,يَدٌ,,أَيْدٍ,hand,,hands,,noun,,7-v-15,,checked against textbook
+48,7,Vocabulary,عَدُوٌّ,,أَعْدَاءٌ,enemy,,enemies,,noun,,7-v-16,,
+48,7,Vocabulary,شَيْطَانٌ,,شَيَاطِينُ,devil,,devils,,noun,,7-v-17,,
 48,7,Vocabulary,سَوْءٌ,,,evil,,,,noun,,7-v-18,,checked against textbook
 48,7,Vocabulary,عَاقِبَةٌ,,,"end, consequence",,,,noun,,7-v-19,,
-48,7,Vocabulary,مَدِينَةٌ,,مُدُنٌ,city,,,,noun,,7-v-20,,
-48,7,Vocabulary,بَيْتٌ,,بُيُوتٌ,house,,,,noun,,7-v-21,,
+48,7,Vocabulary,مَدِينَةٌ,,مُدُنٌ,city,,cities,,noun,,7-v-20,,
+48,7,Vocabulary,بَيْتٌ,,بُيُوتٌ,house,,houses,,noun,,7-v-21,,
 53,8,Vocabulary,بَعَثَ,يَبْعَثُ,بَعْثٌ,"to send, raise",,,,verb,,8-v-1,,
 53,8,Vocabulary,بَلَغَ,يَبْلُغُ,بُلُوغٌ,to reach,,,,verb,,8-v-2,,
 53,8,Vocabulary,جَعَلَ,يَجْعَلُ,جَعْلٌ,"to make, assign, appoint",,,,verb,,8-v-3,,
 54,8,Vocabulary,حَمَلَ,يَحْمِلُ,حَمْلٌ,to carry,,,,verb,,8-v-4,,
-54,8,Vocabulary,خَلَقَ,يَخْلُقُ,خَلْقٌ,to create,,,,verb,,8-v-5,,
+54,8,Vocabulary,خَلَقَ,يَخْلُقُ,خَلْقٌ,to create,creates,creating,,verb,,8-v-5,,
 54,8,Vocabulary,دَخَلَ,يَدْخُلُ,دُخُولٌ,to enter,,,,verb,,8-v-6,,
 54,8,Vocabulary,ذَكَرَ,يَذْكُرُ,ذِكْرٌ,to mention,,,,verb,,8-v-7,,
 54,8,Vocabulary,ذَهَبَ,يَذْهَبُ,ذَهَابٌ,to go away,,,,verb,,8-v-8,,
 54,8,Vocabulary,سَمِعَ,يَسْمَعُ,سَمْعٌ,to hear,,,,verb,,8-v-9,,
 54,8,Vocabulary,شَرِبَ,يَشْرَبُ,شُرْبٌ,to drink,,,,verb,,8-v-10,,checked against textbook
-54,8,Vocabulary,شَهِدَ,يَشْهَدُ,شَهَادَةٌ,to witness,,,,verb,,8-v-11,,
+54,8,Vocabulary,شَهِدَ,يَشْهَدُ,شَهَادَةٌ,to witness,witnesses,witnessing,,verb,,8-v-11,,
 54,8,Vocabulary,ضَرَبَ,يَضْرِبُ,ضَرْبٌ,"to strike, coin, journey",,,,verb,,8-v-12,,checked against textbook
-54,8,Vocabulary,عَمِلَ,يَعْمَلُ,عَمَلٌ,"to do, work",,,,verb,,8-v-13,,
+54,8,Vocabulary,عَمِلَ,يَعْمَلُ,عَمَلٌ,"to do, work","does, works","doing, work",,verb,,8-v-13,,
 54,8,Vocabulary,كَتَبَ,يَكْتُبُ,كِتَابَةٌ,to write,,,,verb,,8-v-14,,
 54,8,Vocabulary,وَجَدَ,يَجِدُ,وُجُودٌ,to find,,,,verb,,8-v-15,,
 54,8,Vocabulary,وَعَدَ,يَعِدُ,وَعْدٌ,to promise,,,,verb,,8-v-16,,
 54,8,Vocabulary,رَجَعَ,يَرْجِعُ,رُجُوعٌ,to return,,,,verb,,8-v-17,,
 54,8,Vocabulary,ظَهَرَ,يَظْهَرُ,ظُهُورٌ,to appear,,,,verb,,8-v-18,,
-54,8,Vocabulary,كَرِهَ,يَكْرَهُ,كَرْهٌ,"to be reluctant, hate",,,,verb,,8-v-19,,checked against textbook
+54,8,Vocabulary,كَرِهَ,يَكْرَهُ,كَرْهٌ,"to be reluctant, hate","is reluctant, hates","reluctance, hatred",,verb,,8-v-19,,checked against textbook
 54,8,Vocabulary,لَبِثَ,يَلْبَثُ,لَبْثٌ,"to tarry, linger",,,,verb,,8-v-20,,
-54,8,Vocabulary,سَيِّئَةٌ,,سَيِّئَاتٌ,"evil, ill",,,,noun,,8-v-21,,
+54,8,Vocabulary,سَيِّئَةٌ,,سَيِّئَاتٌ,"evil, ill",,"evils, ills",,noun,,8-v-21,,
 54,8,Vocabulary,قَمَرٌ,,,moon,,,,noun,,8-v-22,,
 54,8,Vocabulary,ضِيَاءٌ,,,"light, illumination",,,,noun,,8-v-23,,
-55,8,Vocabulary,نُورٌ,,أَنْوَارٌ,light,,,,noun,,8-v-24,,
-55,8,Vocabulary,مَثَلٌ,,أَمْثَالٌ,"likeness, parallel",,,,noun,,8-v-25,,checked against textbook
+55,8,Vocabulary,نُورٌ,,أَنْوَارٌ,light,,lights,,noun,,8-v-24,,
+55,8,Vocabulary,مَثَلٌ,,أَمْثَالٌ,"likeness, parallel",,"likenesses, parallels",,noun,,8-v-25,,checked against textbook
 55,8,Vocabulary,مَطْلِعٌ,,,rising-place,,,,noun,,8-v-26,,
-55,8,Vocabulary,مَغْرِبٌ,,مَغَارِبُ,setting-place,,,,noun,,8-v-27,,
+55,8,Vocabulary,مَغْرِبٌ,,مَغَارِبُ,setting-place,,setting-places,,noun,,8-v-27,,
 55,8,Vocabulary,بَرٌّ,,,land,,,,noun,,8-v-28,,
-55,8,Vocabulary,بَحْرٌ,,بِحَارٌ,sea,,,,noun,,8-v-29,,
+55,8,Vocabulary,بَحْرٌ,,بِحَارٌ,sea,,seas,,noun,,8-v-29,,checked against textbook
 55,8,Vocabulary,حَمْلٌ,,,load,,,,noun,,8-v-30,,checked against textbook
 55,8,Vocabulary,يَوْمُ ٱلْبَعْثِ,,,Day of Resurrection,,,,noun,,8-v-31,,checked against textbook
 55,8,Vocabulary,اَلزَّبُورُ,,,the Psalms,,,,noun,,8-v-32,,checked against textbook
 55,8,Vocabulary,خَفِيفٌ,,,light (adj.),,,,noun,,8-v-33,,
 60,9,Vocabulary,أَخَذَ,يَأْخُذُ,أَخْذٌ,"to take, seize",,,,verb,,9-v-1,,checked against textbook
 60,9,Vocabulary,أَمَرَ,يَأْمُرُ,أَمْرٌ,to order,,,,verb,,9-v-2,,checked against textbook
-60,9,Vocabulary,تَبِعَ,يَتْبَعُ,تَبَعٌ,to follow,,,,verb,,9-v-3,,checked against textbook
+60,9,Vocabulary,تَبِعَ,يَتْبَعُ,تَبَعٌ,to follow,follows,following,,verb,,9-v-3,,checked against textbook
 60,9,Vocabulary,خَرَجَ,يَخْرُجُ,خُرُوجٌ,to go out,,,,verb,,9-v-4,,checked against textbook
 60,9,Vocabulary,رَفَعَ,يَرْفَعُ,رَفْعٌ,to raise,,,,verb,,9-v-5,,checked against textbook
 60,9,Vocabulary,سَأَلَ,يَسْأَلُ,سُؤَالٌ,to ask,,,,verb,,9-v-6,,checked against textbook
@@ -194,84 +195,84 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 60,9,Vocabulary,كَذَبَ,يَكْذِبُ,كِذْبٌ,to tell lies,,,,verb,,9-v-8,,checked against textbook
 60,9,Vocabulary,نَصَرَ,يَنْصُرُ,نَصْرٌ,to help,,,,verb,,9-v-9,,checked against textbook
 60,9,Vocabulary,عَلِمَ,يَعْلَمُ,عِلْمٌ,to know,,,,verb,,9-v-10,,checked against textbook
-60,9,Vocabulary,إِذْنٌ,,,permission,,,,noun,,9-v-11,,checked against textbook
-60,9,Vocabulary,نَهْرٌ,,أَنْهَارٌ,river,,,,noun,,9-v-12,,checked against textbook
-60,9,Vocabulary,ذَنْبٌ,,ذُنُوبٌ,sin,,,,noun,,9-v-13,,checked against textbook
+60,9,Vocabulary,إِذْنٌ,,,"permission, allowance",,,,noun,,9-v-11,,checked against textbook
+60,9,Vocabulary,نَهْرٌ,,أَنْهَارٌ,river,,rivers,,noun,,9-v-12,,checked against textbook
+60,9,Vocabulary,ذَنْبٌ,,ذُنُوبٌ,sin,,sins,,noun,,9-v-13,,checked against textbook
 60,9,Vocabulary,لَعْنَةٌ,,,curse,,,,noun,,9-v-14,,checked against textbook
 60,9,Vocabulary,سَلَامٌ,,,peace,,,,noun,,9-v-15,,checked against textbook
-60,9,Vocabulary,رِجْلٌ (f.),,أَرْجُلٌ,foot,,,,noun,,9-v-16,,checked against textbook
-60,9,Vocabulary,نَفْسٌ (f.),,أَنْفُسٌ,"soul, self",,,,noun,,9-v-17,,checked against textbook
-60,9,Vocabulary,وَلَدٌ,,أَوْلَادٌ,child,,,,noun,,9-v-18,,checked against textbook
+60,9,Vocabulary,رِجْلٌ,,أَرْجُلٌ,foot (f.),,feet,,noun,,9-v-16,,checked against textbook
+60,9,Vocabulary,نَفْسٌ,,أَنْفُسٌ,"soul, self (f.)",,"souls, selves",,noun,,9-v-17,,checked against textbook
+60,9,Vocabulary,وَلَدٌ,,أَوْلَادٌ,child,,children,,noun,,9-v-18,,checked against textbook
 61,9,Vocabulary,خِلَالَ,,,through,,,,noun,,9-v-19,,checked against textbook
 61,9,Vocabulary,عَنْ,,,away from; concerning,,,,noun,,9-v-20,,checked against textbook
-66,10,Vocabulary,تَرَكَ,يَتْرُكُ,تَرْكٌ,to leave,,,,verb,,10-v-1,,
-66,10,Vocabulary,ظَلَمَ,يَظْلِمُ,ظُلْمٌ,to do wrong,,,,verb,,10-v-2,,checked against textbook
-66,10,Vocabulary,كَسَبَ,يَكْسِبُ,كَسْبٌ,"to acquire, earn, gain",,,,verb,,10-v-3,,
-66,10,Vocabulary,عَمِلَ,يَعْمَلُ,عَمَلٌ,"to do, work",,,,verb,,10-v-4,,checked against textbook
-66,10,Vocabulary,فَرِحَ,يَفْرَحُ,فَرَحٌ,to rejoice in,,,,verb,,10-v-5,,
-66,10,Vocabulary,فَرَضَ,يَفْرِضُ,فَرْضٌ,"to assign, prescribe",,,,verb,,10-v-6,,checked against textbook
-66,10,Vocabulary,قَدِمَ,يَقْدَمُ,قُدُومٌ,"to come, advance on",,,,verb,,10-v-7,,checked against textbook
-66,10,Vocabulary,كَنَزَ,يَكْنُزُ,كَنْزٌ,to store,,,,verb,,10-v-8,,checked against textbook
-66,10,Vocabulary,مَنَعَ,يَمْنَعُ,مَنْعٌ,to prevent,,,,verb,,10-v-9,,
-66,10,Vocabulary,وَقَعَ,يَقَعُ,وُقُوعٌ,"to fall, come to pass",,,,verb,,10-v-10,,
-67,10,Vocabulary,بَشَرٌ,,,"human being (s.); men, human beings (pl.)",,,,noun,,10-v-11,,
+66,10,Vocabulary,تَرَكَ,يَتْرُكُ,تَرْكٌ,to leave,leaves,leaving,,verb,,10-v-1,,
+66,10,Vocabulary,ظَلَمَ,يَظْلِمُ,ظُلْمٌ,to do wrong,does wrong,doing wrong,,verb,,10-v-2,,checked against textbook
+66,10,Vocabulary,كَسَبَ,يَكْسِبُ,كَسْبٌ,"to acquire, earn, gain","acquires, earns, gains","acquiring, earning, gaining",,verb,,10-v-3,,
+66,10,Vocabulary,عَمِلَ,يَعْمَلُ,عَمَلٌ,"to do, work","does, works","doing, work",,verb,,10-v-4,,checked against textbook
+66,10,Vocabulary,فَرِحَ,يَفْرَحُ,فَرَحٌ,to rejoice in,rejoices in,rejoicing,,verb,,10-v-5,,
+66,10,Vocabulary,فَرَضَ,يَفْرِضُ,فَرْضٌ,"to assign, prescribe","assigns, prescribes","assigning, prescribing",,verb,,10-v-6,,checked against textbook
+66,10,Vocabulary,قَدِمَ,يَقْدَمُ,قُدُومٌ,"to come, advance on","comes, advances on","coming, advancing",,verb,,10-v-7,,checked against textbook
+66,10,Vocabulary,كَنَزَ,يَكْنُزُ,كَنْزٌ,to store,stores,storing,,verb,,10-v-8,,checked against textbook
+66,10,Vocabulary,مَنَعَ,يَمْنَعُ,مَنْعٌ,"to let enjoy, make provision for","lets enjoy, makes provision for","letting enjoy, making provision for",,verb,,10-v-9,,
+66,10,Vocabulary,وَقَعَ,يَقَعُ,وُقُوعٌ,"to fall, come to pass","falls, comes to pass","falling, coming to pass",,verb,,10-v-10,,
+67,10,Vocabulary,بَشَرٌ,,بَشَرٌ,human being,,"men, human beings",,noun,,10-v-11,no plural given in textbook,TODO: check single vs plural
 67,10,Vocabulary,سُوءٌ,,,"evil, wrong",,,,noun,,10-v-12,,
-67,10,Vocabulary,شَهِيدٌ,,شُهَدَاءُ,witness,,,,noun,,10-v-13,,checked against textbook
-67,10,Vocabulary,قَوْلٌ,,أَقْوَالٌ / [أَقَاوِيلُ],"saying, words",,,,noun,,10-v-14,,checked against textbook
+67,10,Vocabulary,شَهِيدٌ,,شُهَدَاءُ,witness,,witnesses,,noun,,10-v-13,,checked against textbook
+67,10,Vocabulary,قَوْلٌ,,أَقْوَالٌ / [أَقَاوِيلُ],"saying, word, speech",,"sayings, words, speech",,noun,,10-v-14,,checked against textbook
 67,10,Vocabulary,مَقَامٌ,,,station,,,,noun,,10-v-15,,
 67,10,Vocabulary,مُلْكٌ,,,"sovereignty, kingdom",,,,noun,,10-v-16,,checked against textbook
-67,10,Vocabulary,عِلْمٌ,,عُلُومٌ,knowledge,,,,noun,,10-v-17,,
-67,10,Vocabulary,نَاصِرٌ / نَصِيرٌ,,أَنْصَارٌ,helper,,,,noun,,10-v-18,,
+67,10,Vocabulary,عِلْمٌ,,عُلُومٌ,knowledge,,knowledge,,noun,,10-v-17,,
+67,10,Vocabulary,نَاصِرٌ / نَصِيرٌ,,أَنْصَارٌ,helper,,helpers,,noun,,10-v-18,,
 67,10,Vocabulary,نِصْفٌ,,,half,,,,noun,,10-v-19,,
-67,10,Vocabulary,خَيْرٌ,,,good,,,,noun,,10-v-20,,
+67,10,Vocabulary,خَيْرٌ,,,"good, better, best",,,,noun,,10-v-20,,
 67,10,Vocabulary,مَجْنُونٌ,,,possessed (by Jinn),,,,noun,,10-v-21,,
-67,10,Vocabulary,مَعْرُوفٌ,,,kindness; proper,,,,noun,,10-v-22,,checked against textbook
+67,10,Vocabulary,مَعْرُوفٌ,,,"kindness, proper",,,,noun,,10-v-22,,checked against textbook
 67,10,Vocabulary,مَعْلُومٌ,,,known,,,,noun,,10-v-23,,
-67,10,Vocabulary,مَيَّتٌ,,مَيَّتُونَ,dead,,,,noun,,10-v-24,,checked against textbook
+67,10,Vocabulary,مَيَّتٌ,,مَيَّتُونَ,dead,,dead,,noun,,10-v-24,,checked against textbook
 67,10,Vocabulary,خَلْفَ,,,behind,,,,noun,,10-v-25,,
-67,10,Vocabulary,عِنْدَ,,,"with, in the possession of",,,,noun,,10-v-26,,
+67,10,Vocabulary,عِنْدَ,,,"with, in the possession of",,,,noun,,10-v-26,,checked against textbook
 67,10,Vocabulary,إِلَّا,,,except,,,,noun,,10-v-27,,
-72,11,Vocabulary,حَفِظَ,يَحْفَظُ,حِفْظٌ,"to guard, preserve, keep",,,,verb,,11-v-1,,
-72,11,Vocabulary,فَتَحَ,يَفْتَحُ,فَتْحٌ,to open,,,,verb,,11-v-2,,
-72,11,Vocabulary,نَظَرَ,يَنْظُرُ,نَظَرٌ,"to look at (إِلَى), into (فِي)",,,,verb,,11-v-3,,checked against textbook
+72,11,Vocabulary,حَفِظَ,يَحْفَظُ,حِفْظٌ,"to guard, preserve, keep","guards, preserves, keeps","guarding, preserving, keeping",,verb,,11-v-1,,
+72,11,Vocabulary,فَتَحَ,يَفْتَحُ,فَتْحٌ,to open,opens,opening,,verb,,11-v-2,,
+72,11,Vocabulary,نَظَرَ,يَنْظُرُ,نَظَرٌ,"to look at (when used with: إِلَى / 'ilā), into (with: فِي / fī)","looks at (when used with: إِلَى / 'ilā), into (with: فِي / fī)","looking at (when used with: إِلَى / 'ilā), into (with: فِي / fī)",,verb,,11-v-3,,checked against textbook
 72,11,Vocabulary,إِثْمٌ,,,sin,,,,noun,,11-v-4,,
 72,11,Vocabulary,أَجَلٌ,,,term,,,,noun,,11-v-5,,
-72,11,Vocabulary,ثَمَرَةٌ,,ثَمَرَاتٌ,fruit,,,,noun,,11-v-6,,
-72,11,Vocabulary,حَفِيظٌ,,حَفَظَةٌ,guardian,,,,noun,,11-v-7,,
+72,11,Vocabulary,ثَمَرَةٌ,,ثَمَرَاتٌ,fruit,,fruits,,noun,,11-v-6,,
+72,11,Vocabulary,حَفِيظٌ,,حَفَظَةٌ,guardian,,guardians,,noun,,11-v-7,,
 72,11,Vocabulary,رَهِينٌ,,,"hostage, pledged",,,,noun,,11-v-8,,
-72,11,Vocabulary,سَيَّارَةٌ,,سَيَّارَاتٌ,caravan,,,,noun,,11-v-9,,
+72,11,Vocabulary,سَيَّارَةٌ,,سَيَّارَاتٌ,caravan,,caravans,,noun,,11-v-9,,
 73,11,Vocabulary,ظَنٌّ,,ظُنُونٌ,"thought, supposition, suspicion, conjecture",,,,noun,,11-v-10,,
 73,11,Vocabulary,مَغْفِرَةٌ,,,forgiveness,,,,noun,,11-v-11,,
-73,11,Vocabulary,مَكَانٌ,,أَمْكِنَةٌ,"place, side",,,,noun,,11-v-12,,
-73,11,Vocabulary,لَيْلٌ,,لَيَالٍ,"night, night time",,,,noun,,11-v-13,,
-73,11,Vocabulary,مَرَّةٌ,,مَرَّاتٌ / مِرَارٌ,"time, occasion",,,,noun,,11-v-14,,
+73,11,Vocabulary,مَكَانٌ,,أَمْكِنَةٌ,"place, side",,"places, sides",,noun,,11-v-12,,
+73,11,Vocabulary,لَيْلٌ,,لَيَالٍ,"night, night-time",,"nights, night-times",,noun,,11-v-13,,
+73,11,Vocabulary,مَرَّةٌ,,مَرَّاتٌ / مِرَارٌ,"time, occasion",,"times, occasions",,noun,,11-v-14,,
 73,11,Vocabulary,مَوْتٌ,,,death,,,,noun,,11-v-15,,
 73,11,Vocabulary,نَهَارٌ,,,"day, daytime",,,,noun,,11-v-16,,
 73,11,Vocabulary,طَعَامٌ,,,food,,,,noun,,11-v-17,,
-73,11,Vocabulary,نَبِيٌّ,,أَنْبِيَاءُ,prophet,,,,noun,,11-v-18,,
-73,11,Vocabulary,بَابٌ,,أَبْوَابٌ,"gate, door",,,,noun,,11-v-19,,
+73,11,Vocabulary,نَبِيٌّ,,أَنْبِيَاءُ,prophet,,prophets,,noun,,11-v-18,,
+73,11,Vocabulary,بَابٌ,,أَبْوَابٌ,"gate, door",,"gates, doors",,noun,,11-v-19,,
 73,11,Vocabulary,رَجِيمٌ,,,accursed,,,,noun,,11-v-20,,
 73,11,Vocabulary,مُسْتَطَرٌ,,,inscribed,,,,noun,,11-v-21,,
 73,11,Vocabulary,صَغِيرٌ,,,small,,,,noun,,11-v-22,,
 73,11,Vocabulary,قَدِيرٌ,,,having power over,,,,noun,,11-v-23,,
-73,11,Vocabulary,فَوْقَ,,,"above, over (sometimes used as a synonym for *ʿalā* / عَلَى, ‘on’.)",,,,noun,,11-v-24,,checked against textbook
-78,12,Vocabulary,كَانَ,يَكُونُ,كَوْنٌ,to be,,,,verb,,12-v-1,,
-78,12,Vocabulary,قَالَ,يَقُولُ,قَوْلٌ,to say,,,,verb,,12-v-2,,
-78,12,Vocabulary,سَكَتَ,يَسْكُتُ,سُكُوتٌ,to abate; (+*ʿan*) to leave,,,,verb,,12-v-3,,checked against textbook
-78,12,Vocabulary,مَلَكٌ,,مَلَائِكَةٌ,angel,,,,noun,,12-v-4,,
+73,11,Vocabulary,فَوْقَ,,,"above, over",,,,noun,,11-v-24,,checked against textbook
+78,12,Vocabulary,كَانَ,يَكُونُ,كَوْنٌ,to be,"is, becomes","being, becoming",,verb,,12-v-1,,
+78,12,Vocabulary,قَالَ,يَقُولُ,قَوْلٌ,to say,says,saying,,verb,,12-v-2,,
+78,12,Vocabulary,سَكَتَ,يَسْكُتُ,سُكُوتٌ,to abate; (+*ʿan*) to leave,abates; leaves (+ʿan),abating; leaving (+ʿan),,verb,,12-v-3,,checked against textbook
+78,12,Vocabulary,مَلَكٌ,,مَلَائِكَةٌ,angel,,angels,,noun,,12-v-4,,
 79,12,Vocabulary,حَرَجٌ,,,"trouble, difficulty",,,,noun,,12-v-5,,checked against textbook
 79,12,Vocabulary,أُسْوَةٌ,,,example,,,,noun,,12-v-6,,
-79,12,Vocabulary,بِضَاعَةٌ,,بِضَائِعُ,merchandise,,,,noun,,12-v-7,,checked against textbook
+79,12,Vocabulary,بِضَاعَةٌ,,بِضَائِعُ,merchandise,,merchandise,,noun,,12-v-7,,checked against textbook
 79,12,Vocabulary,رَقِيبٌ,,,watcher,,,,noun,,12-v-8,,
-79,12,Vocabulary,سَارِقٌ,,سَارِقُونَ,thief,,,,noun,,12-v-9,,
+79,12,Vocabulary,سَارِقٌ,,سَارِقُونَ,thief,,thieves,,noun,,12-v-9,,
 79,12,Vocabulary,عِبْرَةٌ,,,"lesson, warning",,,,noun,,12-v-10,,
 79,12,Vocabulary,عَجَبٌ,,,wonder,,,,noun,,12-v-11,,
 79,12,Vocabulary,غَضَبٌ,,,anger,,,,noun,,12-v-12,,
 79,12,Vocabulary,غَفْلَةٌ,,,heedlessness,,,,noun,,12-v-13,,checked against textbook
 79,12,Vocabulary,قَصَصٌ,,,story,,,,noun,,12-v-14,,
-79,12,Vocabulary,لَوْحٌ,,أَلْوَاحٌ,tablet,,,,noun,,12-v-15,,
-79,12,Vocabulary,مَتَاعٌ,,أَمْتِعَةٌ,"goods, baggage",,,,noun,,12-v-16,,
-79,12,Vocabulary,فَاحِشَةٌ,,فَوَاحِشُ,abomination,,,,noun,,12-v-17,,
+79,12,Vocabulary,لَوْحٌ,,أَلْوَاحٌ,tablet,,tablets,,noun,,12-v-15,,
+79,12,Vocabulary,مَتَاعٌ,,أَمْتِعَةٌ,"goods, baggage",,"goods, baggage",,noun,,12-v-16,,
+79,12,Vocabulary,فَاحِشَةٌ,,فَوَاحِشُ,abomination,,abominations,,noun,,12-v-17,,
 79,12,Vocabulary,هَشِيمٌ,,,"dry twigs, stubble",,,,noun,,12-v-18,,
 79,12,Vocabulary,بَصِيرٌ,,,"observant, seeing",,,,noun,,12-v-19,,
 79,12,Vocabulary,حَسَنٌ,,,"fine, good",,,,noun,,12-v-20,,
@@ -279,62 +280,62 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 79,12,Vocabulary,خَبِيرٌ,,,aware,,,,noun,,12-v-22,,
 79,12,Vocabulary,غَفُورٌ,,,forgiving,,,,noun,,12-v-23,,
 79,12,Vocabulary,مَفْعُولٌ,,,done,,,,noun,,12-v-24,,
-79,12,Vocabulary,مَرِيضٌ,,مَرْضَى,"ill, sick",,,,noun,,12-v-25,,checked against textbook
+79,12,Vocabulary,مَرِيضٌ,,مَرْضَى,"ill, sick",,"ill, sick",,noun,,12-v-25,,checked against textbook
 79,12,Vocabulary,مُوسَى,,,Moses,,,,noun,,12-v-26,,checked against textbook
 80,12,Vocabulary,إِبْرَاهِيمُ,,,Abraham,,,,noun,,12-v-27,,
-84,13,Vocabulary,أَكَلَ,يَأْكُلُ,أَكْلٌ,to eat,,,,verb,,13-v-1,,
+84,13,Vocabulary,أَكَلَ,يَأْكُلُ,أَكْلٌ,to eat,eats,eating,,verb,,13-v-1,,
 84,13,Vocabulary,سِجْنٌ,,,prison,,,,noun,,13-v-2,,
-84,13,Vocabulary,وَالِدٌ,,,father; (dual) parents,,,,noun,,13-v-3,,
-84,13,Vocabulary,فَتًى,,فِتْيَةٌ,youth,,,,noun,,13-v-4,,
+84,13,Vocabulary,وَالِدٌ,,,"father; (dual) parents",,,,noun,,13-v-3,,
+84,13,Vocabulary,فَتًى,,فِتْيَةٌ,youth,,youths,,noun,,13-v-4,,
 84,13,Vocabulary,سَاحِرٌ,,,"magician, sorcerer",,,,noun,,13-v-5,,
 84,13,Vocabulary,بُرْهَانٌ,,,proof,,,,noun,,13-v-6,,
 84,13,Vocabulary,مَجْمَعٌ,,,"meeting, meeting-place, confluence",,,,noun,,13-v-7,,
-84,13,Vocabulary,عَيْنٌ (f.),,عُيُونٌ,"spring (When عَيْنٌ has the sense of ‘eye’, its Qurʾānic plural is أَعْيُنٌ)",,,,noun,,13-v-8,,checked against textbook
+84,13,Vocabulary,عَيْنٌ,,عُيُونٌ,spring (f.),,springs,,noun,,13-v-8,"(When عَيْنٌ has the sense of ‘eye’, its Qurʾānic plural is أَعْيُنٌ)",checked against textbook
 84,13,Vocabulary,حِجَابٌ,,,"obstacle, partition, veil",,,,noun,,13-v-9,,checked against textbook
-84,13,Vocabulary,شَرِيكٌ,,شُرَكَاءُ,"partner, associate",,,,noun,,13-v-10,,
+84,13,Vocabulary,شَرِيكٌ,,شُرَكَاءُ,"partner, associate",,"partners, associates",,noun,,13-v-10,,
 84,13,Vocabulary,زَرْعٌ,,,cultivation; green crops,,,,noun,,13-v-11,,
 84,13,Vocabulary,نَخْلٌ,,,date-palms,,,,noun,,13-v-12,,
 84,13,Vocabulary,رُمَّانٌ,,,pomegranates,,,,noun,,13-v-13,,
 84,13,Vocabulary,مَبْسُوطٌ,,,"spread, extended",,,,noun,,13-v-14,,
 84,13,Vocabulary,فِئَةٌ,,,"party, group",,,,noun,,13-v-15,,
-91,14,Vocabulary,حِجَّةٌ,,حِجَجٌ,year,,,,noun,,14-v-1,,checked against textbook
-91,14,Vocabulary,عَامٌ,,أَعْوَامٌ,year,,,,noun,,14-v-2,,checked against textbook
-91,14,Vocabulary,شَهْرٌ,,شُهُورٌ / أَشْهُرٌ,month,,,,noun,,14-v-3,,checked against textbook
+91,14,Vocabulary,حِجَّةٌ,,حِجَجٌ,year,,years,,noun,,14-v-1,,checked against textbook
+91,14,Vocabulary,عَامٌ,,أَعْوَامٌ,year,,years,,noun,,14-v-2,,checked against textbook
+91,14,Vocabulary,شَهْرٌ,,شُهُورٌ / أَشْهُرٌ,month,,months,,noun,,14-v-3,,checked against textbook
 91,14,Vocabulary,كَوْكَبٌ,,كَوَاكِبُ,star,,,,noun,,14-v-4,,checked against textbook
-91,14,Vocabulary,نَقِيبٌ,,نُقَبَاءُ,chief,,,,noun,,14-v-5,,checked against textbook
-92,14,Vocabulary,مِسْكِينٌ,,مَسَاكِينُ,"poor, destitute",,,,noun,,14-v-6,,checked against textbook
+91,14,Vocabulary,نَقِيبٌ,,نُقَبَاءُ,chief,,chiefs,,noun,,14-v-5,,checked against textbook
+92,14,Vocabulary,مِسْكِينٌ,,مَسَاكِينُ,"poor, destitute",,"poor, destitute",,noun,,14-v-6,,checked against textbook
 92,14,Vocabulary,جَلْدَةٌ,,,"lash, stripe",,,,noun,,14-v-7,,checked against textbook
-92,14,Vocabulary,عَجِيفٌ,,عِجَافٌ,thin,,,,noun,,14-v-8,,checked against textbook
-96,15,Vocabulary,أَخَّرَ,يُؤَخَّرُ,تَأْخِيرٌ,to defer,,,2,verb,,15-v-1,,checked against textbook
-96,15,Vocabulary,عَلَّمَ,يُعَلِّمُ,تَعْلِيمٌ,to teach,,,2,verb,,15-v-2,,
-96,15,Vocabulary,قَدَّمَ,يُقَدِّمُ,تَقْدِيمٌ,"to send forward, to bring forward",,,2,verb,,15-v-3,,
-96,15,Vocabulary,كَذَّبَ,يُكَذِّبُ,تَكْذِيبٌ,"to deny, give the lie to",,,2,verb,,15-v-4,,
-96,15,Vocabulary,جَادَلَ,يُجَادِلُ,جِدَالٌ,"to dispute, contend with",,,3,verb,,15-v-5,,
-96,15,Vocabulary,جَاهَدَ,يُجَاهِدُ,جِهَادٌ,to strive,,,3,verb,,15-v-6,,
-96,15,Vocabulary,قَاتَلَ,يُقَاتِلُ,قِتَالٌ,"to fight, confound",,,3,verb,,15-v-7,,
-96,15,Vocabulary,أَرْسَلَ,يُرْسِلُ,إِرْسَالٌ,to send,,,4,verb,,15-v-8,,
-96,15,Vocabulary,أَنْزَلَ,يُنْزِلُ,إِنْزَالٌ,to send down,,,4,verb,,15-v-9,,
-96,15,Vocabulary,أَهْلَكَ,يُهْلِكُ,إِهْلَاكٌ,to destroy,,,4,verb,,15-v-10,,
-96,15,Vocabulary,تَذَكَّرَ,يَتَذَكَّرُ,تَذَكُّرٌ,"to remember, bear in mind",,,5,verb,,15-v-11,,
+92,14,Vocabulary,عَجِيفٌ,,عِجَافٌ,thin,,thin,,noun,,14-v-8,,checked against textbook
+96,15,Vocabulary,أَخَّرَ,يُؤَخَّرُ,تَأْخِيرٌ,to defer,defers,deferring,2,verb,,15-v-1,,checked against textbook
+96,15,Vocabulary,عَلَّمَ,يُعَلِّمُ,تَعْلِيمٌ,to teach,teaches,teaching,2,verb,,15-v-2,,
+96,15,Vocabulary,قَدَّمَ,يُقَدِّمُ,تَقْدِيمٌ,"to send forward, to bring forward","sends forward, brings forward","sending forward, bringing forward",2,verb,,15-v-3,,
+96,15,Vocabulary,كَذَّبَ,يُكَذِّبُ,تَكْذِيبٌ,"to deny, give the lie to","denies, gives the lie to","denying, giving the lie to",2,verb,,15-v-4,,
+96,15,Vocabulary,جَادَلَ,يُجَادِلُ,جِدَالٌ,"to dispute, contend with","disputes, contends with",contention,3,verb,,15-v-5,,
+96,15,Vocabulary,جَاهَدَ,يُجَاهِدُ,جِهَادٌ,to strive,strives,striving,3,verb,,15-v-6,,
+96,15,Vocabulary,قَاتَلَ,يُقَاتِلُ,قِتَالٌ,"to fight, confound","fights, confounds","fighting, confounding",3,verb,,15-v-7,,
+96,15,Vocabulary,أَرْسَلَ,يُرْسِلُ,إِرْسَالٌ,to send,sends,sending,4,verb,,15-v-8,,
+96,15,Vocabulary,أَنْزَلَ,يُنْزِلُ,إِنْزَالٌ,to send down,sends down,sending down,4,verb,,15-v-9,,
+96,15,Vocabulary,أَهْلَكَ,يُهْلِكُ,إِهْلَاكٌ,to destroy,destroys,destroying,4,verb,,15-v-10,,
+96,15,Vocabulary,تَذَكَّرَ,يَتَذَكَّرُ,تَذَكُّرٌ,"to remember, bear in mind","remembers, bears in mind","remembering, bearing in mind",5,verb,,15-v-11,,
 96,15,Vocabulary,تَوَكَّلَ,يَتَوَكَّلُ,تَوَكُّلٌ,to put one's trust in (*ʿalā*),,,5,verb,,15-v-12,,checked against textbook
-96,15,Vocabulary,تَعَاوَنَ,يَتَعَاوَنُ,تَعَاوُنٌ,"to co-operate, help one another",,,6,verb,,15-v-13,,checked against textbook
-96,15,Vocabulary,اِنْقَلَبَ,يَنْقَلِبُ,اِنْقِلَابٌ,"return, be overturned",,,7,verb,,15-v-14,,checked against textbook
-97,15,Vocabulary,اِتَّبَعَ,يَتَّبِعُ,اِتَّبَاعٌ,to follow,,,8,verb,,15-v-15,,checked against textbook
-97,15,Vocabulary,اِخْتَلَفَ,يَخْتَلِفُ,اِخْتِلَافٌ,"to vary, differ",,,8,verb,,15-v-16,,
-97,15,Vocabulary,اِسْتَغْفَرَ,يَسْتَغْفِرُ,اِسْتِغْفَارٌ,to seek forgiveness,,,10,verb,,15-v-17,,
-97,15,Vocabulary,اِسْتَكْبَرَ,يَسْتَكْبِرُ,اِسْتِكْبَارٌ,"to be haughty, insolent, proud",,,10,verb,,15-v-18,,
-97,15,Vocabulary,دِينٌ,,أَدْيَانٌ,religion,,,,noun,,15-v-19,,
-97,15,Vocabulary,سَاعَةٌ,,سَاعَاتٌ,hour,,,,noun,,15-v-20,,
-97,15,Vocabulary,مَاءٌ,,مِيَاهٌ,water,,,,noun,,15-v-21,,
-102,16,Vocabulary,أَبْصَرَ,يُبْصِرُ,إِبْصَارٌ,"(*+bi-*) to see, observe",,,4,verb,,16-v-1,,checked against textbook
-102,16,Vocabulary,دَبَّرَ,يُدَبِّرُ,تَدْبِيرٌ,"to manage, arrange",,,2,verb,,16-v-2,,
-102,16,Vocabulary,كَلَّمَ,يُكَلِّمُ,تَكْلِيمٌ,"to speak to, address",,,2,verb,,16-v-3,,
+96,15,Vocabulary,تَعَاوَنَ,يَتَعَاوَنُ,تَعَاوُنٌ,"to cooperate, help one another","cooperates, helps one another","cooperation, helping one another",6,verb,,15-v-13,,checked against textbook
+96,15,Vocabulary,اِنْقَلَبَ,يَنْقَلِبُ,اِنْقِلَابٌ,"to return, be overturned","returns, is overturned","returning, overturning",7,verb,,15-v-14,,checked against textbook
+97,15,Vocabulary,اِتَّبَعَ,يَتَّبِعُ,اِتَّبَاعٌ,to follow,follows,following,8,verb,,15-v-15,,checked against textbook
+97,15,Vocabulary,اِخْتَلَفَ,يَخْتَلِفُ,اِخْتِلَافٌ,"to vary, differ","varies, differs","varying, differing",8,verb,,15-v-16,,
+97,15,Vocabulary,اِسْتَغْفَرَ,يَسْتَغْفِرُ,اِسْتِغْفَارٌ,to seek forgiveness,seeks forgiveness,seeking forgiveness,10,verb,,15-v-17,,
+97,15,Vocabulary,اِسْتَكْبَرَ,يَسْتَكْبِرُ,اِسْتِكْبَارٌ,"to be haughty, insolent, proud","is haughty, insolent, proud","haughtiness, insolence, pride",10,verb,,15-v-18,,
+97,15,Vocabulary,دِينٌ,,أَدْيَانٌ,religion,,religions,,noun,,15-v-19,,
+97,15,Vocabulary,سَاعَةٌ,,سَاعَاتٌ,hour,,hours,,noun,,15-v-20,,
+97,15,Vocabulary,مَاءٌ,,مِيَاهٌ,water,,waters,,noun,,15-v-21,,
+102,16,Vocabulary,أَبْصَرَ,يُبْصِرُ,إِبْصَارٌ,"(*+bi-*) to see, observe","(*+bi-*) sees, observes","seeing, observing",4,verb,,16-v-1,,checked against textbook
+102,16,Vocabulary,دَبَّرَ,يُدَبِّرُ,تَدْبِيرٌ,"to manage, arrange","manages, arranges","managing, arranging",2,verb,,16-v-2,,
+102,16,Vocabulary,كَلَّمَ,يُكَلِّمُ,تَكْلِيمٌ,"to speak to, address","speaks to, addresses","speaking to, addressing",2,verb,,16-v-3,,
 102,16,Vocabulary,حِكْمَةٌ,,,wisdom,,,,noun,,16-v-4,,checked against textbook
 102,16,Vocabulary,زَكَاةٌ / زَكَوٰةٌ,,,alms,,,,noun,,16-v-5,,checked against textbook
 103,16,Vocabulary,صَلَاةٌ / صَلَوٰةٌ,,صَلَوَاتٌ,prayer,,,,noun,,16-v-6,,checked against textbook
 103,16,Vocabulary,عَرْشٌ,,,throne,,,,noun,,16-v-7,,
 103,16,Vocabulary,فَرِيقٌ,,,"party, company",,,,noun,,16-v-8,,
-103,16,Vocabulary,قَدَمٌ (f.),,أَقْدَامٌ,foot,,,,noun,,16-v-9,,checked against textbook
+103,16,Vocabulary,قَدَمٌ,,أَقْدَامٌ,foot (f.),,feet,,noun,,16-v-9,,checked against textbook
 103,16,Vocabulary,كَلَامٌ,,,"speech, words, word",,,,noun,,16-v-10,,
 103,16,Vocabulary,تَحْتَ,,,beneath,,,,noun,,16-v-11,,
 105,17,Vocabulary,هَلْ,,,[interrogative particle],,,,interrogative particle,,17-v-1,,checked against textbook
@@ -356,175 +357,176 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 107,17,Vocabulary,مَنْذَا ٱلَّذِي,,,'who is there who ... ?',,,,idiom,,17-v-17,,checked against textbook
 108,17,Vocabulary,كَمْ,,,'how many?',,,,interrogative,,17-v-18,,checked against textbook
 108,17,Vocabulary,أَيٌّ,,,'which?',,,,interrogative,,17-v-19,,checked against textbook
-109,17,Vocabulary,شَكَرَ,يَشْكُرُ,شُكْرٌ,"to thank, be thankful",,,,verb,,17-v-20,,
-109,17,Vocabulary,صَبَرَ,يَصْبِرُ,صَبْرٌ,"to be patient, endure",,,,verb,,17-v-21,,
-109,17,Vocabulary,صَدَقَ,يَصْدُقُ,صِدْقٌ,to tell the truth,,,,verb,,17-v-22,,
-109,17,Vocabulary,قَسَمَ,يَقْسِمُ,قِسْمٌ,to divide,,,,verb,,17-v-23,,checked against textbook
-109,17,Vocabulary,عَقَلَ,يَعْقِلُ,عَقْلٌ,to understand,,,,verb,,17-v-24,,
-109,17,Vocabulary,عَجِلَ,يَعْجَلُ,عَجَلٌ,to hasten to,,,,verb,,17-v-25,,checked against textbook
-109,17,Vocabulary,اِسْتَعْجَلَ,يَسْتَعْجِلُ,اِسْتِعْجَالٌ,"to hasten, seek to hasten",,,10,verb,,17-v-26,,checked against textbook
-109,17,Vocabulary,كَفَرَ,يَكْفُرُ,كُفْرٌ,"to deny, not to believe in, to be an unbeliever",,,,verb,,17-v-27,,checked against textbook
-109,17,Vocabulary,لَبَسَ,يَلْبِسُ,لَبْسٌ,to confound,,,,verb,,17-v-28,,checked against textbook
-109,17,Vocabulary,أَسْمَعَ,يُسْمِعُ,إِسْمَاعٌ,to make hear,,,4,verb,,17-v-29,,checked against textbook
-109,17,Vocabulary,بَشَّرَ,يُبَشَّرُ,تَبْشِيرٌ,to bring good news/tidings,,,2,verb,,17-v-30,,checked against textbook
+109,17,Vocabulary,شَكَرَ,يَشْكُرُ,شُكْرٌ,"to thank, be thankful","thanks, is thankful","thanks, thankfulness",,verb,,17-v-20,,
+109,17,Vocabulary,صَبَرَ,يَصْبِرُ,صَبْرٌ,"to be patient, endure","is patient, endures","patience, endurance",,verb,,17-v-21,,
+109,17,Vocabulary,صَدَقَ,يَصْدُقُ,صِدْقٌ,to tell the truth,tells the truth,truthfulness,,verb,,17-v-22,,
+109,17,Vocabulary,قَسَمَ,يَقْسِمُ,قِسْمٌ,to divide,divides,dividing; portion,,verb,,17-v-23,,checked against textbook
+109,17,Vocabulary,عَقَلَ,يَعْقِلُ,عَقْلٌ,to understand,understands,"understanding, intellect",,verb,,17-v-24,,
+109,17,Vocabulary,عَجِلَ,يَعْجَلُ,عَجَلٌ,to hasten to,hastens to,haste,,verb,,17-v-25,,checked against textbook
+109,17,Vocabulary,اِسْتَعْجَلَ,يَسْتَعْجِلُ,اِسْتِعْجَالٌ,"to hasten, seek to hasten","hastens, seeks to hasten","hastening, seeking to hasten",10,verb,,17-v-26,,checked against textbook
+109,17,Vocabulary,كَفَرَ,يَكْفُرُ,كُفْرٌ,"to deny, not to believe in, to be an unbeliever","denies, disbelieves","denial, unbelief",,verb,,17-v-27,,checked against textbook
+109,17,Vocabulary,لَبَسَ,يَلْبِسُ,لَبْسٌ,to confound,confounds,"confounding, confusion",,verb,,17-v-28,,checked against textbook
+109,17,Vocabulary,أَسْمَعَ,يُسْمِعُ,إِسْمَاعٌ,to make hear,makes hear,making hear,4,verb,,17-v-29,,checked against textbook
+109,17,Vocabulary,بَشَّرَ,يُبَشَّرُ,تَبْشِيرٌ,"to bring good news/tidings",brings good news,bringing good news,2,verb,,17-v-30,,checked against textbook
 109,17,Vocabulary,تَبَيَّنَ,يَتَبَيَّنُ,تَبَيُّنٌ,"to become clear, be made clear",,,5,verb,,17-v-31,,
-109,17,Vocabulary,أَنْفَقَ,يُنْفِقُ,إِنْفَاقٌ,to spend,,,4,verb,,17-v-32,,
-109,17,Vocabulary,خُسْرَانٌ,,,"loss, ruin [from *khasira* 'to lose']",,,,noun,,17-v-33,,
+109,17,Vocabulary,أَنْفَقَ,يُنْفِقُ,إِنْفَاقٌ,to spend,spends,spending,4,verb,,17-v-32,,
+109,17,Vocabulary,خُسْرَانٌ,,,"loss, ruin",,,,noun,,17-v-33,"[from *khasira* 'to lose']",
 109,17,Vocabulary,حُكْمٌ,,,judgement,,,,noun,,17-v-34,,
 109,17,Vocabulary,ذِكْرَى,,,"remembrance, reminder",,,,noun,,17-v-35,,
 110,17,Vocabulary,مَفَرٌّ,,,refuge,,,,noun,,17-v-36,,
 110,17,Vocabulary,قَارِعَةٌ,,,calamity,,,,noun,,17-v-37,,
 110,17,Vocabulary,مَرَضٌ,,,illness,,,,noun,,17-v-38,,checked against textbook
 110,17,Vocabulary,شِمَالٌ,,,"left, left hand",,,,noun,,17-v-39,,checked against textbook
-110,17,Vocabulary,يَمِينٌ,,أَيْمَانٌ,"right, right hand; oath",,,,noun,,17-v-40,,checked against textbook
-110,17,Vocabulary,قَلْبٌ,,قُلُوبٌ,heart,,,,noun,,17-v-41,,checked against textbook
-110,17,Vocabulary,صُورَةٌ,,صُوَرٌ,form,,,,noun,,17-v-42,,checked against textbook
-110,17,Vocabulary,أَصَمُّ (f.) / صَمَّاءُ,,صُمٌّ,deaf,,,,noun,,17-v-43,,checked against textbook & TODO check gender-word association
+110,17,Vocabulary,يَمِينٌ,,أَيْمَانٌ,"right, right hand; oath",,right hands; oaths,,noun,,17-v-40,,checked against textbook
+110,17,Vocabulary,قَلْبٌ,,قُلُوبٌ,heart,,hearts,,noun,,17-v-41,,checked against textbook
+110,17,Vocabulary,صُورَةٌ,,صُوَرٌ,form,,forms,,noun,,17-v-42,,checked against textbook
+110,17,Vocabulary,أَصَمُّ,,صُمٌّ,deaf,,deaf,,noun,,17-v-43,,checked against textbook
+110,17,Vocabulary,صَمَّاءُ,,,deaf (f.),,,,noun,,17-v-43.2,,checked against textbook
 110,17,Vocabulary,خَالِصٌ,,,pure,,,,noun,,17-v-44,,checked against textbook
 110,17,Vocabulary,بَاطِلٌ,,,false,,,,noun,,17-v-45,,checked against textbook
-118,18,Vocabulary,حَسِبَ,يَحْسَبُ,مَحْسِبَةٌ,"to think, reckon",,,,verb,,18-v-1,,checked against textbook
-118,18,Vocabulary,حَكَمَ,يَحْكُمُ,حُكْمٌ,"to judge, decide",,,,verb,,18-v-2,,checked against textbook
-118,18,Vocabulary,سَكَنَ,يَسْكُنُ,سُكُونٌ,"to dwell, be at rest",,,,verb,,18-v-3,,checked against textbook
-118,18,Vocabulary,طَمِعَ,يَطْمَعُ,طَمَعٌ,to desire,,,,verb,,18-v-4,,checked against textbook
-118,18,Vocabulary,عَجَزَ,يَعْجِزُ,عَجْزٌ,to be unable,,,,verb,,18-v-5,,checked against textbook
-118,18,Vocabulary,نَزَغَ,يَنْزَغُ,نَزْغٌ,"to cause strife, dissension",,,,verb,,18-v-6,,checked against textbook
-118,18,Vocabulary,نَفِدَ,يَنْفَدُ,نَفَادٌ,to be exhausted,,,,verb,,18-v-7,,checked against textbook
-118,18,Vocabulary,حَرَّمَ,يُحَرِّمُ,تَحْرِيمٌ,"to forbid, prohibit",,,2,verb,,18-v-8,,
-118,18,Vocabulary,نَزَّلَ,يُنَزِّلُ,تَنْزِيلٌ,to send down,,,2,verb,,18-v-9,,
-118,18,Vocabulary,أَنْذَرَ,يُنْذِرُ,إِنْذَارٌ,to warn,,,4,verb,,18-v-10,,
-118,18,Vocabulary,تَابَعَ,يُتَابِعُ,مُتَابَعَةٌ,to do allegiance to,,,3,verb,,18-v-11,,
-118,18,Vocabulary,أَدْخَلَ,يُدْخِلُ,إِدْخَالٌ,to cause to enter,,,4,verb,,18-v-12,,
-118,18,Vocabulary,ذَبَحَ,يُذَبِّحُ,ذَبْحٌ,to sacrifice,,,,verb,,18-v-13,,
-118,18,Vocabulary,أَسْخَطَ,يُسْخِطُ,إِسْخَاطٌ,to vex,,,4,verb,,18-v-14,,
-118,18,Vocabulary,أَشْرَكَ,يُشْرِكُ,إِشْرَاكٌ,to ascribe partners to,,,4,verb,,18-v-15,,
-118,18,Vocabulary,تَصَدَّقَ,يَتَصَدَّقُ,تَصَدُّقٌ,to give alms,,,5,verb,,18-v-16,,
+118,18,Vocabulary,حَسِبَ,يَحْسَبُ,مَحْسِبَةٌ,"to think, reckon","thinks, reckons","thinking, reckoning",,verb,,18-v-1,,checked against textbook
+118,18,Vocabulary,حَكَمَ,يَحْكُمُ,حُكْمٌ,"to judge, decide","judges, decides","judging, decision",,verb,,18-v-2,,checked against textbook
+118,18,Vocabulary,سَكَنَ,يَسْكُنُ,سُكُونٌ,"to dwell, be at rest","dwells, is at rest","dwelling, rest",,verb,,18-v-3,,checked against textbook
+118,18,Vocabulary,طَمِعَ,يَطْمَعُ,طَمَعٌ,to desire,desires,desire,,verb,,18-v-4,,checked against textbook
+118,18,Vocabulary,عَجَزَ,يَعْجِزُ,عَجْزٌ,to be unable,is unable,inability,,verb,,18-v-5,,checked against textbook
+118,18,Vocabulary,نَزَغَ,يَنْزَغُ,نَزْغٌ,"to cause strife, dissension","causes strife, dissension","causing strife, dissension",,verb,,18-v-6,,checked against textbook
+118,18,Vocabulary,نَفِدَ,يَنْفَدُ,نَفَادٌ,to be exhausted,is exhausted,exhaustion,,verb,,18-v-7,,checked against textbook
+118,18,Vocabulary,حَرَّمَ,يُحَرِّمُ,تَحْرِيمٌ,"to forbid, prohibit","forbids, prohibits","forbidding, prohibition",2,verb,,18-v-8,,
+118,18,Vocabulary,نَزَّلَ,يُنَزِّلُ,تَنْزِيلٌ,to send down,sends down,sending down,2,verb,,18-v-9,,
+118,18,Vocabulary,أَنْذَرَ,يُنْذِرُ,إِنْذَارٌ,to warn,warns,warning,4,verb,,18-v-10,,
+118,18,Vocabulary,تَابَعَ,يُتَابِعُ,مُتَابَعَةٌ,to do allegiance to,does allegiance to,allegiance,3,verb,,18-v-11,,
+118,18,Vocabulary,أَدْخَلَ,يُدْخِلُ,إِدْخَالٌ,to cause to enter,causes to enter,causing to enter,4,verb,,18-v-12,,
+118,18,Vocabulary,ذَبَحَ,يُذَبِّحُ,ذَبْحٌ,to sacrifice,sacrifices,sacrificing,,verb,,18-v-13,,
+118,18,Vocabulary,أَسْخَطَ,يُسْخِطُ,إِسْخَاطٌ,to vex,vexes,vexing,4,verb,,18-v-14,,
+118,18,Vocabulary,أَشْرَكَ,يُشْرِكُ,إِشْرَاكٌ,to ascribe partners to,ascribes partners to,ascribing partners,4,verb,,18-v-15,,
+118,18,Vocabulary,تَصَدَّقَ,يَتَصَدَّقُ,تَصَدُّقٌ,to give alms,gives alms,giving alms,5,verb,,18-v-16,,
 118,18,Vocabulary,بَقَرَةٌ,,,cow,,,,noun,,18-v-17,,
 119,18,Vocabulary,جَزَاءُ,,,recompense,,,,noun,,18-v-18,,
-119,18,Vocabulary,خَطِيئَةٌ,,خَطِيئَاتٌ / خَطَايَا,sin,,,,noun,,18-v-19,,
+119,18,Vocabulary,خَطِيئَةٌ,,خَطِيئَاتٌ / خَطَايَا,sin,,sins,,noun,,18-v-19,,
 119,18,Vocabulary,عِجْلٌ,,,calf,,,,noun,,18-v-20,,
 119,18,Vocabulary,عَاقِبَةٌ,,,"end, consequence",,,,noun,,18-v-21,,
 119,18,Vocabulary,لَحْمٌ,,,flesh,,,,noun,,18-v-22,,
-119,18,Vocabulary,مَالٌ,,أَمْوَالٌ,property,,,,noun,,18-v-23,,
+119,18,Vocabulary,مَالٌ,,أَمْوَالٌ,property,,properties,,noun,,18-v-23,,
 119,18,Vocabulary,حَنِيذٌ,,,roast,,,,noun,,18-v-24,,
 119,18,Vocabulary,وَسَطٌ,,,middle,,,,noun,,18-v-25,,
 119,18,Vocabulary,غُرَابٌ,,,crow,,,,noun,,18-v-26,,
-124,19,Vocabulary,جَمَعَ,يَجْمَعُ,جَمْعٌ,"to gather, collect",,,,verb,,19-v-1,,
-124,19,Vocabulary,غَفَلَ,يَغْفُلُ,غَفْلَةٌ,"to be heedless, forget",,,,verb,,19-v-2,,checked against textbook
-124,19,Vocabulary,خَادَعَ,يُخَادِعُ,خِدَاعٌ,to try to deceive,,,3,verb,,19-v-3,,
-124,19,Vocabulary,أَحْسَنَ,يُحْسِنُ,إِحْسَانٌ,to do good,,,4,verb,,19-v-4,,
-124,19,Vocabulary,أَفْلَحَ,يُفْلِحُ,إِفْلَاحٌ,to prosper,,,4,verb,,19-v-5,,
-124,19,Vocabulary,أَخْلَصَ,يُخْلِصُ,إِخْلَاصٌ,to be sincere,,,4,verb,,19-v-6,,
+124,19,Vocabulary,جَمَعَ,يَجْمَعُ,جَمْعٌ,"to gather, collect","gathers, collects","gathering, collecting",,verb,,19-v-1,,
+124,19,Vocabulary,غَفَلَ,يَغْفُلُ,غَفْلَةٌ,"to be heedless, forget","is heedless, forgets","heedlessness, forgetfulness",,verb,,19-v-2,,checked against textbook
+124,19,Vocabulary,خَادَعَ,يُخَادِعُ,خِدَاعٌ,to try to deceive,tries to deceive,deceiving,3,verb,,19-v-3,,
+124,19,Vocabulary,أَحْسَنَ,يُحْسِنُ,إِحْسَانٌ,to do good,does good,doing good,4,verb,,19-v-4,,
+124,19,Vocabulary,أَفْلَحَ,يُفْلِحُ,إِفْلَاحٌ,to prosper,prospers,"prospering, success",4,verb,,19-v-5,,
+124,19,Vocabulary,أَخْلَصَ,يُخْلِصُ,إِخْلَاصٌ,to be sincere,is sincere,sincerity,4,verb,,19-v-6,,
 124,19,Vocabulary,تُرَابٌ,,,"earth, dust",,,,noun,,19-v-7,,
-124,19,Vocabulary,زِلْزِلَةٌ,,,earthquake,,,,noun,,19-v-8,,
-124,19,Vocabulary,فَتًى,,,old man,,,,noun,,19-v-9,,
-125,19,Vocabulary,ضَيْفٌ,,,guest; guests,,,,noun,,19-v-10,,
+124,19,Vocabulary,زَلْزَلَةٌ,,,earthquake,,,,noun,,19-v-8,,checked against textbook
+124,19,Vocabulary,شَيْخٌ,,,old man,,,,noun,,19-v-9,,checked against textbook
+125,19,Vocabulary,ضَيْفٌ,,,"guest; guests",,,,noun,,19-v-10,,checked against textbook
 125,19,Vocabulary,عَدْلٌ,,,justice,,,,noun,,19-v-11,,
 125,19,Vocabulary,عُسْرٌ,,,difficulty,,,,noun,,19-v-12,,
 125,19,Vocabulary,غُلَامٌ,,,"boy, son",,,,noun,,19-v-13,,
-125,19,Vocabulary,نَعَمٌ,,أَنْعَامٌ,"animal, beast",,,,noun,,19-v-14,,
+125,19,Vocabulary,نَعَمٌ,,أَنْعَامٌ,"animal, beast",,"animals, beasts",,noun,,19-v-14,,
 125,19,Vocabulary,يُسْرٌ,,,ease,,,,noun,,19-v-15,,
 125,19,Vocabulary,سَقِيمٌ,,,"sick, ill",,,,noun,,19-v-16,,
-125,19,Vocabulary,أَصْفَرُ,,صُفْرٌ,yellow,,,,noun,,19-v-17,,checked against textbook
+125,19,Vocabulary,أَصْفَرُ,,صُفْرٌ,yellow (m.),,yellow,,noun,,19-v-17,,checked against textbook
 125,19,Vocabulary,,,صَفْرَاءُ,(f.) yellow,,,,noun,,19-v-17.2,,checked against textbook
 125,19,Vocabulary,مُنَافِقٌ,,,hypocrite,,,,noun,,19-v-18,,
 125,19,Vocabulary,وَهَّابٌ,,,forgiving,,,,noun,,19-v-19,,
-125,19,Vocabulary,بَشِيرٌ,,,bearer of good news/tidings,,,,noun,,19-v-20,,
-129,20,Vocabulary,حَزِنَ,يَحْزَنُ,حُزْنٌ,to be sad,,,,verb,,20-v-1,,
-129,20,Vocabulary,عَرَفَ,يَعْرِفُ,مَعْرِفَةٌ,"to know, recognize",,,,verb,,20-v-2,,
-129,20,Vocabulary,قَرُبَ,يَقْرُبُ,قُرْبٌ,"to come near, approach",,,,verb,,20-v-3,,
-129,20,Vocabulary,نَقَضَ,يَنْقُضُ,نَقْضٌ,to break one's oath,,,,verb,,20-v-4,,
-129,20,Vocabulary,أَفْسَدَ,يُفْسِدُ,فَسَادٌ,to cause mischief,,,,verb,,20-v-5,,
+125,19,Vocabulary,بَشِيرٌ,,,bearer of good news/tidings,,,,noun,,19-v-20,,checked against textbook
+129,20,Vocabulary,حَزِنَ,يَحْزَنُ,حُزْنٌ,to be sad,is sad,sadness,,verb,,20-v-1,,
+129,20,Vocabulary,عَرَفَ,يَعْرِفُ,مَعْرِفَةٌ,"to know, recognize","knows, recognizes","knowledge, recognition",,verb,,20-v-2,,
+129,20,Vocabulary,قَرُبَ,يَقْرُبُ,قُرْبٌ,"to come near, approach","comes near, approaches","nearness, approach",,verb,,20-v-3,,
+129,20,Vocabulary,نَقَضَ,يَنْقُضُ,نَقْضٌ,to break one’s oath,breaks one’s oath,breaking (an oath),,verb,,20-v-4,,
+129,20,Vocabulary,أَفْسَدَ,يُفْسِدُ,فَسَادٌ,to cause mischief,causes mischief,causing mischief,,verb,,20-v-5,,
 129,20,Vocabulary,حُلُمٌ,,,puberty,,,,noun,,20-v-6,,
-129,20,Vocabulary,سِرٌّ,,أَسْرَارٌ,secret,,,,noun,,20-v-7,,
-130,20,Vocabulary,شَجَرَةٌ,,شَجَرٌ,tree,,,,noun,,20-v-8,,
-130,20,Vocabulary,سَوَاءٌ,,,equal,,,,noun,,20-v-9,,
-130,20,Vocabulary,سَعَةٌ,,,wealth,,,,noun,,20-v-10,,
-136,21,Vocabulary,رَكَضَ,يَرْكُضُ,رَكْضٌ,to run,,,,verb,,21-v-1,,
-136,21,Vocabulary,صَعِدَ,يَصْعَدُ,صُعُودٌ,to ascend,,,,verb,,21-v-2,,
-136,21,Vocabulary,زَيَّنَ,يُزَيِّنُ,تَزْيِينٌ,to cause to seem good,,,2,verb,,21-v-3,,
-136,21,Vocabulary,وَاعَدَ,يُوَاعِدُ,مُوَاعَدَةٌ,to make an agreement with,,,3,verb,,21-v-4,,
-136,21,Vocabulary,عَاهَدَ,يُعَاهِدُ,مُعَاهَدَةٌ,to make a covenant with,,,3,verb,,21-v-5,,
-136,21,Vocabulary,أَسْلَمَ,يُسْلِمُ,إِسْلاَمٌ,to submit,,,4,verb,,21-v-6,,
-136,21,Vocabulary,أَخْطَأَ,يُخْطِئُ,إِخْطَاءً,to make a mistake,,,4,verb,,21-v-7,,
-136,21,Vocabulary,أَغْرَقَ,يُغْرِقُ,إِغْرَاقٌ,to drown,,,4,verb,,21-v-8,,
-136,21,Vocabulary,أَعْرَضَ,يُعْرِضُ,إِعْرَاضٌ,to turn away,,,4,verb,,21-v-9,,
-136,21,Vocabulary,انفَطَرَ,يَنفَطِرُ,انفِطَارٌ,to be split,,,7,verb,,21-v-10,,
-136,21,Vocabulary,أَنقَذَ,يُنقِذُ,إِنقَاذٌ,to save,,,4,verb,,21-v-11,,
+129,20,Vocabulary,سِرٌّ,,أَسْرَارٌ,secret,,secrets,,noun,,20-v-7,,
+130,20,Vocabulary,شَجَرَةٌ,,شَجَرٌ,tree,,trees,,noun,,20-v-8,,
+130,20,Vocabulary,كُفُوٌّ,,,equal,,,,noun,,20-v-9,,checked against textbook
+130,20,Vocabulary,سَعَةٌ,,,wealth,,,,noun,,20-v-10,,checked against textbook
+136,21,Vocabulary,رَكَضَ,يَرْكُضُ,رَكْضٌ,to run,runs,running,,verb,,21-v-1,,
+136,21,Vocabulary,صَعِدَ,يَصْعَدُ,صُعُودٌ,to ascend,ascends,ascending,,verb,,21-v-2,,
+136,21,Vocabulary,زَيَّنَ,يُزَيِّنُ,تَزْيِينٌ,to cause to seem good,causes to seem good,causing to seem good,2,verb,,21-v-3,,
+136,21,Vocabulary,وَاعَدَ,يُوَاعِدُ,مُوَاعَدَةٌ,to make an agreement with,makes an agreement with,making an agreement with,3,verb,,21-v-4,,
+136,21,Vocabulary,عَاهَدَ,يُعَاهِدُ,مُعَاهَدَةٌ,to make a covenant with,makes a covenant with,making a covenant with,3,verb,,21-v-5,,
+136,21,Vocabulary,أَسْلَمَ,يُسْلِمُ,إِسْلاَمٌ,to submit,submits,submitting,4,verb,,21-v-6,,
+136,21,Vocabulary,أَخْطَأَ,يُخْطِئُ,إِخْطَاءً,to make a mistake,makes a mistake,making a mistake,4,verb,,21-v-7,,
+136,21,Vocabulary,أَغْرَقَ,يُغْرِقُ,إِغْرَاقٌ,to drown,drowns,drowning,4,verb,,21-v-8,,
+136,21,Vocabulary,أَعْرَضَ,يُعْرِضُ,إِعْرَاضٌ,to turn away,turns away,turning away,4,verb,,21-v-9,,
+136,21,Vocabulary,انفَطَرَ,يَنفَطِرُ,انفِطَارٌ,to be split,is split,splitting,7,verb,,21-v-10,,
+136,21,Vocabulary,أَنقَذَ,يُنقِذُ,إِنقَاذٌ,to save,saves,saving,4,verb,,21-v-11,,
 136,21,Vocabulary,مَثْوًى,,,lodging,,,,noun,,21-v-12,,
 136,21,Vocabulary,جِنٌّ,,,Jinn,,,,noun,,21-v-13,,
-136,21,Vocabulary,حِزْبٌ,,أَحْزَابٌ,party,,,,noun,,21-v-14,,
+136,21,Vocabulary,حِزْبٌ,,أَحْزَابٌ,party,,parties,,noun,,21-v-14,,
 136,21,Vocabulary,ذُرِّيَّةٌ,,,"seed, offspring, descendants",,,,noun,,21-v-15,,
 136,21,Vocabulary,غَمْرَةٌ,,غَمَرَاتٌ,pang,,,,noun,,21-v-16,,
-136,21,Vocabulary,قَبْرٌ,,قُبُورٌ,grave,,,,noun,,21-v-17,,
+136,21,Vocabulary,قَبْرٌ,,قُبُورٌ,grave,,graves,,noun,,21-v-17,,
 137,21,Vocabulary,الْغَيْبُ,,,the unseen,,,,noun,,21-v-18,,
-137,21,Vocabulary,جَنَاحٌ,,أَجْنِحَةٌ,sin,,,,noun,,21-v-19,,
+137,21,Vocabulary,جُنَاحٌ,,,sin,,,,noun,,21-v-19,,checked against textbook
 137,21,Vocabulary,مِيثَاقٌ,,,"covenant, pledge",,,,noun,,21-v-20,,
-137,21,Vocabulary,قَاعِدٌ,,قُعُودٌ,seated,,,,noun,,21-v-21,,
+137,21,Vocabulary,قَاعِدٌ,,قُعُودٌ,seated,,seated,,noun,,21-v-21,,checked against textbook
 137,21,Vocabulary,مِصْرُ,,,Egypt,,,,noun,,21-v-22,,
 137,21,Vocabulary,بِغَيْرِ,,,without,,,,noun,,21-v-23,,
-141,22,Vocabulary,آثَرَ,يُؤْثِرُ,إِيثَارٌ,to prefer,,,4,verb,,22-v-1,,
-141,22,Vocabulary,أَذِنَ,يَأْذَنُ,إِذْنٌ,"to permit, allow",,,,verb,,22-v-2,,
-141,22,Vocabulary,اسْتَأْذَنَ,يَسْتَأْذِنُ,اسْتِئْذَانٌ,to seek permission,,,10,verb,,22-v-3,,
-141,22,Vocabulary,أَمِنَ,يَأْمَنُ,أَمْنٌ,to be secure; to trust in,,,,verb,,22-v-4,,
-141,22,Vocabulary,آمَنَ,يُؤْمِنُ,إِيمَانٌ,to believe,,,4,verb,,22-v-5,,
-141,22,Vocabulary,آنَسَ,يُؤْنِسُ,إِينَاسٌ,"to see, perceive",,,4,verb,,22-v-6,,
-141,22,Vocabulary,تَسَاءَلَ,يَتَسَاءَلُ,تَسَاؤُلٌ,to ask one another,,,6,verb,,22-v-7,,
-141,22,Vocabulary,قَرَأَ,يَقْرَأُ,قُرْآنٌ,to recite,,,,verb,,22-v-8,,
-141,22,Vocabulary,نَبَّأَ,يُنَبِّئُ,تَنْبِئَةٌ,"to inform, tell",,,2,verb,,22-v-9,,
-141,22,Vocabulary,أَنبَأَ,يُنبِئُ,إِنبَاءٌ,"to inform, tell",,,4,verb,,22-v-10,,
-141,22,Vocabulary,أَنشَأَ,يُنشِئُ,إِنشَاءً,"to raise, create, produce, grow",,,4,verb,,22-v-11,,
-142,22,Vocabulary,بَرِئَ,يَبْرَأُ,بَرْءٌ,to leave,,,,verb,,22-v-12,,
-142,22,Vocabulary,أَقْبَلَ,يُقْبِلُ,إِقْبَالٌ,to advance,,,4,verb,,22-v-13,,
-142,22,Vocabulary,كَما,,,like (conjunction),,,,verb,,22-v-14,,
-142,22,Vocabulary,مِثْلُ,,,like (preposition),,,,verb,,22-v-15,,
-147,23,Vocabulary,حَبِطَ,يَحْبَطُ,حُبُوطٌ,to be useless,,,,verb,,23-v-1,,
-147,23,Vocabulary,سَخَّرَ,يُسَخِّرُ,تَسْخِيرٌ,to subject,,,2,verb,,23-v-2,,
+141,22,Vocabulary,آثَرَ,يُؤْثِرُ,إِيثَارٌ,to prefer,prefers,preferring,4,verb,,22-v-1,,
+141,22,Vocabulary,أَذِنَ,يَأْذَنُ,إِذْنٌ,"to permit, allow","permits, allows","permitting, allowing",,verb,,22-v-2,,
+141,22,Vocabulary,اسْتَأْذَنَ,يَسْتَأْذِنُ,اسْتِئْذَانٌ,to seek permission,seeks permission,seeking permission,10,verb,,22-v-3,,
+141,22,Vocabulary,أَمِنَ,يَأْمَنُ,أَمْنٌ,"to be secure, to trust in","is secure, trusts in","security, trust",,verb,,22-v-4,,
+141,22,Vocabulary,آمَنَ,يُؤْمِنُ,إِيمَانٌ,to believe,believes,belief,4,verb,,22-v-5,,
+141,22,Vocabulary,آنَسَ,يُؤْنِسُ,إِينَاسٌ,"to see, perceive","sees, perceives","seeing, perceiving",4,verb,,22-v-6,,
+141,22,Vocabulary,تَسَاءَلَ,يَتَسَاءَلُ,تَسَاؤُلٌ,to ask one another,asks one another,asking one another,6,verb,,22-v-7,,
+141,22,Vocabulary,قَرَأَ,يَقْرَأُ,قُرْآنٌ,to recite,recites,reciting,,verb,,22-v-8,,
+141,22,Vocabulary,نَبَّأَ,يُنَبِّئُ,تَنْبِئَةٌ,"to inform, tell","informs, tells","informing, telling",2,verb,,22-v-9,,
+141,22,Vocabulary,أَنبَأَ,يُنبِئُ,إِنبَاءٌ,"to inform, tell","informs, tells","informing, telling",4,verb,,22-v-10,,
+141,22,Vocabulary,أَنشَأَ,يُنشِئُ,إِنشَاءً,"to raise, create, produce, grow","raises, creates, produces, grows","raising, creating, producing, growing",4,verb,,22-v-11,,
+142,22,Vocabulary,بَرِئَ,يَبْرَأُ,بَرْءٌ,to leave,leaves,leaving,,verb,,22-v-12,,
+142,22,Vocabulary,أَقْبَلَ,يُقْبِلُ,إِقْبَالٌ,to advance,advances,advancing,4,verb,,22-v-13,,
+142,22,Vocabulary,كَمَا,,,like,,,,conjunction,,22-v-14,,checked against textbook
+142,22,Vocabulary,مِثْلَ,,,like,,,,preposition,,22-v-15,,checked against textbook
+147,23,Vocabulary,حَبِطَ,يَحْبَطُ,حُبُوطٌ,to be useless,is useless,uselessness,,verb,,23-v-1,,
+147,23,Vocabulary,سَخَّرَ,يُسَخِّرُ,تَسْخِيرٌ,to subject,subjects,subjecting,2,verb,,23-v-2,,
 147,23,Vocabulary,مَتَّعَ,يُمَتِّعُ,تَمْتِيعٌ,to let enjoy; make provision for,,,2,verb,,23-v-3,,
-148,23,Vocabulary,أَقْرَضَ,يُقْرِضُ,قَرْضٌ,"to lend, make a loan",,,4,verb,,23-v-4,,
-148,23,Vocabulary,أَنْعَمَ,يُنْعِمُ,إِنْعَامٌ,"to bless, be gracious",,,4,verb,,23-v-5,,
-148,23,Vocabulary,تَفَرَّقَ,يَتَفَرَّقُ,تَفَرُّقٌ,to be divided,,,5,verb,,23-v-6,,
-148,23,Vocabulary,تَبَارَكَ,يَتَبَارَكُ,تَبَارُكٌ,to be blessed,,,6,verb,,23-v-7,,
-148,23,Vocabulary,أَصْلٌ,,أُصُولٌ,root,,,,noun,,23-v-8,,
+148,23,Vocabulary,أَقْرَضَ,يُقْرِضُ,قَرْضٌ,"to lend, make a loan","lends, makes a loan","lending, loaning",4,verb,,23-v-4,,
+148,23,Vocabulary,أَنْعَمَ,يُنْعِمُ,إِنْعَامٌ,"to bless, be gracious","blesses, is gracious","blessing, graciousness",4,verb,,23-v-5,,
+148,23,Vocabulary,تَفَرَّقَ,يَتَفَرَّقُ,تَفَرُّقٌ,to be divided,is divided,division,5,verb,,23-v-6,,
+148,23,Vocabulary,تَبَارَكَ,يَتَبَارَكُ,تَبَارُكٌ,to be blessed,is blessed,blessing,6,verb,,23-v-7,,
+148,23,Vocabulary,أَصْلٌ,,أُصُولٌ,root,,roots,,noun,,23-v-8,,
 148,23,Vocabulary,بَأْسٌ,,,might,,,,noun,,23-v-9,,
 148,23,Vocabulary,تَابُوتٌ,,,ark,,,,noun,,23-v-10,,
-148,23,Vocabulary,حَبٌّ,,حُبُوبٌ,grain,,,,noun,,23-v-11,,
-148,23,Vocabulary,حَجَرٌ,,حِجَارَةٌ,stone,,,,noun,,23-v-12,,
+148,23,Vocabulary,حَبٌّ,,حُبُوبٌ,grain,,grains,,noun,,23-v-11,,
+148,23,Vocabulary,حَجَرٌ,,حِجَارَةٌ,stone,,stones,,noun,,23-v-12,,
 148,23,Vocabulary,حَدِيدٌ,,,iron,,,,noun,,23-v-13,,
-148,23,Vocabulary,حِمَارٌ,,حَمِيرٌ,donkey,,,,noun,,23-v-14,,
+148,23,Vocabulary,حِمَارٌ,,حَمِيرٌ,donkey,,donkeys,,noun,,23-v-14,,
 148,23,Vocabulary,خِصْرٌ,,,green crop,,,,noun,,23-v-15,,
 148,23,Vocabulary,رِجْسٌ,,,abomination,,,,noun,,23-v-16,,
 148,23,Vocabulary,رَيْبٌ,,,doubt,,,,noun,,23-v-17,,
 148,23,Vocabulary,سِفْرٌ,,أَسْفَارٌ,books,,,,noun,,23-v-18,,
 148,23,Vocabulary,سَكِينَةٌ,,,"tranquillity, reassurance",,,,noun,,23-v-19,,
 148,23,Vocabulary,سِيمَا,,,sign,,,,noun,,23-v-20,,
-148,23,Vocabulary,فَتًى,,فِتْيَةٌ,youth,,,,noun,,23-v-21,,
+148,23,Vocabulary,فَتًى,,فِتْيَةٌ,youth,,youths,,noun,,23-v-21,,
 148,23,Vocabulary,وَقُودٌ,,,fuel,,,,noun,,23-v-22,,
-148,23,Vocabulary,يَمٌّ,,يِمَامٌ,fat,,,,noun,,23-v-23,,
-152,24,Vocabulary,يَذَرُ,,,"to let, allow",,,,verb,,24-v-1,,
-152,24,Vocabulary,وَرِثَ,يَرِثُ,إِرْثٌ,to inherit,,,,verb,,24-v-2,,
-152,24,Vocabulary,وَزَرَ,يَزِرُ,وِزْرٌ,to carry a burden,,,,verb,,24-v-3,,
-152,24,Vocabulary,وَسِعَ,يَسَعُ,وُسْعٌ,to be wide; encompass,,,,verb,,24-v-4,,
-152,24,Vocabulary,وَصَفَ,يَصِفُ,وَصْفٌ,to describe,,,,verb,,24-v-5,,
-152,24,Vocabulary,وَصَلَ,يَصِلُ,وُصُولٌ,to arrive,,,,verb,,24-v-6,,
-152,24,Vocabulary,وَضَعَ,يَضَعُ,وَضْعٌ,to put down,,,,verb,,24-v-7,,
-153,24,Vocabulary,وَعَظَ,يَعِظُ,عِظَةٌ / وَعْظٌ,"to exhort, admonish",,,,verb,,24-v-8,,
-153,24,Vocabulary,وَهَبَ,يَهَبُ,هِبَةٌ,to give,,,,verb,,24-v-9,,
-153,24,Vocabulary,اتَّخَذَ,يَتَّخِذُ,اِتِّخَاذٌ,"to take, adopt",,,8,verb,,24-v-10,,
-153,24,Vocabulary,يَئِسَ,يَيْأَسُ,يَأْسٌ,to despair,,,,verb,,24-v-11,,
-153,24,Vocabulary,أَيْقَنَ,يُوقِنُ,إِيقَانٌ,to be certain,,,4,verb,,24-v-12,,
-153,24,Vocabulary,بَطَلَ,يَبْطُلُ,بُطْلٌ,to be worthless,,,,verb,,24-v-13,,
-153,24,Vocabulary,صَنَمٌ,,أَصْنَامٌ,idol,,,,noun,,24-v-14,,
-153,24,Vocabulary,فَرْدٌ,,أَفْرَادٌ,"individual, alone",,,,noun,,24-v-15,,
+148,23,Vocabulary,يَمٌّ,,يِمَامٌ,fat,,fat,,noun,,23-v-23,,
+152,24,Vocabulary,,يَذَرُ,,,"to let, allow",,,verb,,24-v-1,,checked against textbook
+152,24,Vocabulary,وَرِثَ,يَرِثُ,إِرْثٌ,to inherit,inherits,inheritance,,verb,,24-v-2,,
+152,24,Vocabulary,وَزَرَ,يَزِرُ,وِزْرٌ,to carry a burden,carries a burden,burden,,verb,,24-v-3,,
+152,24,Vocabulary,وَسِعَ,يَسَعُ,وُسْعٌ,"to be wide, encompass","is wide, encompasses","width, capacity",,verb,,24-v-4,,
+152,24,Vocabulary,وَصَفَ,يَصِفُ,وَصْفٌ,to describe,describes,description,,verb,,24-v-5,,
+152,24,Vocabulary,وَصَلَ,يَصِلُ,وُصُولٌ,to arrive,arrives,arrival,,verb,,24-v-6,,
+152,24,Vocabulary,وَضَعَ,يَضَعُ,وَضْعٌ,to put down,puts down,putting down,,verb,,24-v-7,,
+153,24,Vocabulary,وَعَظَ,يَعِظُ,عِظَةٌ / وَعْظٌ,"to exhort, admonish","exhorts, admonishes","exhortation, admonition",,verb,,24-v-8,,
+153,24,Vocabulary,وَهَبَ,يَهَبُ,هِبَةٌ,to give,gives,gift,,verb,,24-v-9,,
+153,24,Vocabulary,اتَّخَذَ,يَتَّخِذُ,اِتِّخَاذٌ,"to take, adopt","takes, adopts","taking, adopting",8,verb,,24-v-10,,
+153,24,Vocabulary,يَئِسَ,يَيْأَسُ,يَأْسٌ,to despair,despairs,despair,,verb,,24-v-11,,
+153,24,Vocabulary,أَيْقَنَ,يُوقِنُ,إِيقَانٌ,to be certain,is certain,certainty,4,verb,,24-v-12,,
+153,24,Vocabulary,بَطَلَ,يَبْطُلُ,بُطْلٌ,to be worthless,is worthless,worthlessness,,verb,,24-v-13,,
+153,24,Vocabulary,صَنَمٌ,,أَصْنَامٌ,idol,,idols,,noun,,24-v-14,,
+153,24,Vocabulary,فَرْدٌ,,أَفْرَادٌ,"individual, alone",,"individuals, alone",,noun,,24-v-15,,
 153,24,Vocabulary,وَازِرَةٌ,,,soul bearing a burden,,,,noun,,24-v-16,,
-153,24,Vocabulary,مِيزَانٌ,,مَوَازِينُ,balance,,,,noun,,24-v-17,,
-159,25,Vocabulary,عَمَرَ,يَعْمُرُ,عَمْرٌ,"to build, build up",,,,verb,,25-v-1,,
-159,25,Vocabulary,اسْتَمَعَ,يَسْتَمِعُ,اسْتِمَاعٌ,to listen to,,,8,verb,,25-v-2,,
-159,25,Vocabulary,أُفُقٌ,,آفَاقٌ,horizon,,,,noun,,25-v-3,,
+153,24,Vocabulary,مِيزَانٌ,,مَوَازِينُ,balance,,balances,,noun,,24-v-17,,
+159,25,Vocabulary,عَمَرَ,يَعْمُرُ,عَمْرٌ,"to build, build up","builds, builds up",building up,,verb,,25-v-1,,
+159,25,Vocabulary,اِسْتَمَعَ,يَسْتَمِعُ,اِسْتِمَاعٌ,to listen to,listens to,listening,8,verb,,25-v-2,,checked against textbook
+159,25,Vocabulary,أُفُقٌ,,آفَاقٌ,horizon,,horizons,,noun,,25-v-3,,
 159,25,Vocabulary,بَرٌّ,,أَبْرَارٌ,"pious, god-fearing",,,,noun,,25-v-4,,
 159,25,Vocabulary,بَطْشٌ,,,might,,,,noun,,25-v-5,,
 159,25,Vocabulary,جَدَلٌ,,,contention,,,,noun,,25-v-6,,
 159,25,Vocabulary,خُلْدٌ,,,eternity,,,,noun,,25-v-7,,
-159,25,Vocabulary,رَازِقٌ,,,s.p. provider of sustenance,,,,noun,,25-v-8,,
+159,25,Vocabulary,رَازِقٌ,,,provider of sustenance,,,,noun,,25-v-8,s.p.,
 159,25,Vocabulary,شِقَاقٌ,,,dissension,,,,noun,,25-v-9,,
 159,25,Vocabulary,عَدَدٌ,,,number,,,,noun,,25-v-10,,
 159,25,Vocabulary,عَدَاوَةٌ,,,enmity,,,,noun,,25-v-11,,
@@ -532,335 +534,335 @@ Page Number,Lesson Number,Ex/Voc,Sing. / Perf.,Dual / Imperf.,Plural / Verbal N.
 159,25,Vocabulary,عُرْوَةٌ,,,handle,,,,noun,,25-v-13,,
 159,25,Vocabulary,مُسْتَقَرٌّ,,,abode,,,,noun,,25-v-14,,
 159,25,Vocabulary,قَسْوَةٌ,,,hardness,,,,noun,,25-v-15,,
-159,25,Vocabulary,تَقْوِيمٌ,,,form,,,,noun,,25-v-16,,
+159,25,Vocabulary,تَقْوِيمٌ,,,form,,,,noun,,25-v-16,,checked against textbook
 159,25,Vocabulary,مَقِيلٌ,,,noon resting-place,,,,noun,,25-v-17,,
 159,25,Vocabulary,أَبْقَى,,,more lasting,,,,noun,,25-v-18,,
 160,25,Vocabulary,أَحَقُّ,,,more deserving [from حَقِيقٌ],,,,noun,,25-v-19,,
-160,25,Vocabulary,أَدْنَى,,,"lowest, nearest [from دَانٍ]",,,,noun,,25-v-20,,checked against textbook
-160,25,Vocabulary,دُنْيََا (f.),,,"lowest, nearest [from دَانٍ]",,,,noun,,25-v-21,,checked against textbook
+160,25,Vocabulary,أَدْنَى,,,"lowest, nearest (m.) [from دَانٍ]",,,,noun,,25-v-20,,checked against textbook
+160,25,Vocabulary,دُنْيََا,,,"lowest, nearest (f.) [from دَانٍ]",,,,noun,,25-v-21,,checked against textbook
 160,25,Vocabulary,أَرْذَلُ,,,worst [from رَذِيلٌ],,,,noun,,25-v-22,,
 160,25,Vocabulary,أَزْكَى,,,purer [from زَكِيٌّ],,,,noun,,25-v-23,,
 160,25,Vocabulary,أَسْفَلُ,,,lower [from سَافِلٌ],,,,noun,,25-v-24,,
-160,25,Vocabulary,أَقْصَى,,,"further, furthest",,,,noun,,25-v-25,,checked against textbook
-160,25,Vocabulary,قٌصْوَى (f.),,,"further, furthest",,,,noun,,25-v-26,,checked against textbook
+160,25,Vocabulary,أَقْصَى,,,"further, furthest (m.)",,,,noun,,25-v-25,,checked against textbook
+160,25,Vocabulary,قٌصْوَى,,,"further, furthest (f.)",,,,noun,,25-v-26,,checked against textbook
 160,25,Vocabulary,أَكْرَمُ,,,nobler [from كَرِيمٌ],,,,noun,,25-v-27,,
-160,25,Vocabulary,الْوُثْقَى,,,firmest,,,,noun,,25-v-28,,
+160,25,Vocabulary,الْوُثْقَى,,,firmest,,,,noun,,25-v-28,,checked against textbook
 160,25,Vocabulary,أَتْقَى,,,more pious [from تَقِيٌّ],,,,noun,,25-v-29,,
 160,25,Vocabulary,أَوْلَى,,,nearer,,,,noun,,25-v-30,,
 160,25,Vocabulary,أَوْهَنُ,,,frailest,,,,noun,,25-v-31,,
 160,25,Vocabulary,خَيْرٌ,,,"good, better, best",,,,noun,,25-v-32,,
 160,25,Vocabulary,شَرٌّ,,,"bad, worse, worst",,,,noun,,25-v-33,,
-164,26,Vocabulary,أَحَبَّ,يُحِبُّ,حُبٌّ,to love,,,4,verb,,26-v-1,,
+164,26,Vocabulary,أَحَبَّ,يُحِبُّ,حُبٌّ,to love,loves,love,4,verb,,26-v-1,,
 164,26,Vocabulary,حَاجَّ,يُحَاجُّ,حِجَاج,to argue about (*fī*),,,3,verb,,26-v-2,,
-164,26,Vocabulary,أَحَلَّ,يُحِلُّ,إِحْلَال,"to make lawful, permit",,,4,verb,,26-v-3,,
-164,26,Vocabulary,رَدَّ,يَرُدُّ,رَدّ,"to return, restore",,,,verb,,26-v-4,,
-164,26,Vocabulary,صَدَّ,يَصُدُّ,صَدّ,to block,,,,verb,,26-v-5,,
-164,26,Vocabulary,ضَرَّ,يَضُرُّ,ضَرّ,to harm,,,,verb,,26-v-6,,
-164,26,Vocabulary,اِضْطَرَّ,يَضْطَرُّ,اِضْطِرَار,"to force, compel",,,8,verb,,26-v-7,,
-164,26,Vocabulary,ضَلَّ,يَضِلُّ,ضَلَال,"to stray, err",,,,verb,,26-v-8,,
-164,26,Vocabulary,أَضَلَّ,يُضِلُّ,إِضْلَال,to cause to stray,,,4,verb,,26-v-9,,
-164,26,Vocabulary,ظَنَّ,يَظُنُّ,ظَنّ,to think,,,,verb,,26-v-10,,
-164,26,Vocabulary,عَدَّ,يَعُدُّ,عَدّ,to count,,,,verb,,26-v-11,,
-164,26,Vocabulary,أَعَدَّ,يُعِدُّ,إِعْدَاد,"to prepare, make ready",,,4,verb,,26-v-12,,
-164,26,Vocabulary,قَصَّ,يَقُصُّ,قَصَص,to tell,,,,verb,,26-v-13,,
-164,26,Vocabulary,مَرَّ,يَمُرُّ,مَرّ,to pass,,,,verb,,26-v-14,,
-164,26,Vocabulary,مَسَّ,يَمَسُّ,مَسّ,to touch,,,,verb,,26-v-15,,
-164,26,Vocabulary,نَفَعَ,يَنْفَعُ,نَفْع,to benefit,,,,verb,,26-v-16,,
-165,26,Vocabulary,بَيْع,,,trading,,,,noun,,26-v-17,,
-165,26,Vocabulary,رِبًا,,,usury,,,,noun,,26-v-18,,
+164,26,Vocabulary,أَحَلَّ,يُحِلُّ,إِحْلَال,"to make lawful, permit","makes lawful, permits","making lawful, permitting",4,verb,,26-v-3,,
+164,26,Vocabulary,رَدَّ,يَرُدُّ,رَدّ,"to return, restore","returns, restores","returning, restoring",,verb,,26-v-4,,
+164,26,Vocabulary,صَدَّ,يَصُدُّ,صَدّ,to block,blocks,blocking,,verb,,26-v-5,,
+164,26,Vocabulary,ضَرَّ,يَضُرُّ,ضَرّ,to harm,harms,harm,,verb,,26-v-6,,
+164,26,Vocabulary,اِضْطَرَّ,يَضْطَرُّ,اِضْطِرَار,"to force, compel","forces, compels","forcing, compelling",8,verb,,26-v-7,,
+164,26,Vocabulary,ضَلَّ,يَضِلُّ,ضَلَال,"to stray, err","strays, errs",,,verb,,26-v-8,,
+164,26,Vocabulary,أَضَلَّ,يُضِلُّ,إِضْلَال,to cause to stray,causes to stray,causing to stray,4,verb,,26-v-9,,
+164,26,Vocabulary,ظَنَّ,يَظُنُّ,ظَنّ,to think,thinks,thinking,,verb,,26-v-10,,
+164,26,Vocabulary,عَدَّ,يَعُدُّ,عَدّ,to count,counts,counting,,verb,,26-v-11,,
+164,26,Vocabulary,أَعَدَّ,يُعِدُّ,إِعْدَاد,"to prepare, make ready","prepares, makes ready","preparing, making ready",4,verb,,26-v-12,,
+164,26,Vocabulary,قَصَّ,يَقُصُّ,قَصَص,to tell,tells,telling,,verb,,26-v-13,,
+164,26,Vocabulary,مَرَّ,يَمُرُّ,مَرّ,to pass,passes,passing,,verb,,26-v-14,,
+164,26,Vocabulary,مَسَّ,يَمَسُّ,مَسّ,to touch,touches,touching,,verb,,26-v-15,,
+164,26,Vocabulary,نَفَعَ,يَنْفَعُ,نَفْعٌ,to benefit,benefits,benefit,,verb,,26-v-16,,checked against textbook
+165,26,Vocabulary,بَيْعٌ,,,trading,,,,noun,,26-v-17,,checked against textbook
+165,26,Vocabulary,رِبًا,,,usury,,,,noun,,26-v-18,,checked against textbook
 165,26,Vocabulary,الرِّبَوَا,,,usury (with article),,,,noun,,26-v-19,,
-165,26,Vocabulary,,,أَشْرَار,evil men (pl.),,,,noun,,26-v-20,,
-165,26,Vocabulary,نَبَأٌ,,أَنْبَاء,news,,,,noun,,26-v-21,,
-165,26,Vocabulary,أَلِيم,,,painful,,,,noun,,26-v-22,,
-169,27,Vocabulary,سَجَدَ,يَسْجُدُ,سُجُود,to prostrate oneself,,,,verb,,27-v-1,,
-169,27,Vocabulary,سَحَرَ,يَسْحَرُ,سِحْر,to bewitch,,,,verb,,27-v-2,,
-169,27,Vocabulary,سَقَطَ,يَسْقُطُ,سُقُوط,to fall,,,,verb,,27-v-3,,
-169,27,Vocabulary,عَبَدَ,يَعْبُدُ,عِبَادَة,"to serve, worship",,,,verb,,27-v-4,,
-169,27,Vocabulary,غَفَرَ,يَغْفِرُ,مَغْفِرَة,to forgive,,,,verb,,27-v-5,,
-169,27,Vocabulary,نَزَّلَ,يُنَزِّلُ,تَنْزِيل,to descend,,,5,verb,,27-v-6,,
-169,27,Vocabulary,هَلَكَ,يَهْلِكُ,هَلَاك,to perish,,,,verb,,27-v-7,,
-169,27,Vocabulary,وَضَعَ,يَضَعُ,وَضْع,to give birth to (sentence 21),,,,verb,,27-v-8,,
-169,27,Vocabulary,إِفْك,,,lie,,,,noun,,27-v-9,,
-169,27,Vocabulary,أُنْثَى,,إِنَاث,(f.) female,,,,noun,,27-v-10,,
-170,27,Vocabulary,بَشِير,,,bringer of good tidings,,,,noun,,27-v-11,,
-170,27,Vocabulary,حُجَّة,,,s.p. proof,,,,noun,,27-v-12,,
-170,27,Vocabulary,دَابَّة,,دَوَابُّ,beast,,,,noun,,27-v-13,,
-170,27,Vocabulary,رِزْق,,,sustenance,,,,noun,,27-v-14,,
-170,27,Vocabulary,قَدَر,,,measure,,,,noun,,27-v-15,,
-170,27,Vocabulary,لِسَان,,أَلْسِنَة,tongue,,,,noun,,27-v-16,,
-170,27,Vocabulary,الْمَسِيح,,,the Anointed One,,,,noun,,27-v-17,,
-170,27,Vocabulary,وَرَقَة,,وَرَق,leaf,,,,noun,,27-v-18,,
-170,27,Vocabulary,خَاطِئ,,,s.p. sinner,,,,noun,,27-v-19,,
-177,28,Vocabulary,سَارَ,يَسِيرُ,سَيْر,to journey,,,,verb,,28-v-1,,
-177,28,Vocabulary,خَافَ,يَخَافُ,خَوْف,to fear,,,,verb,,28-v-2,,
-177,28,Vocabulary,جَاءَ,يَجِيءُ,,to come,,,,verb,,28-v-3,,
-177,28,Vocabulary,زَادَ,يَزِيدُ,زِيَادَة,to increase,,,,verb,,28-v-4,,
-177,28,Vocabulary,شَاءَ,يَشَاءُ,,to wish,,,,verb,,28-v-5,,
-177,28,Vocabulary,سَاءَ,يَسُوءُ,سُوء,to be bad,,,,verb,,28-v-6,,
-177,28,Vocabulary,أَرَادَ,يُرِيدُ,إِرَادَة,to want,,,4,verb,,28-v-7,,
-177,28,Vocabulary,أَطَاعَ,يُطِيعُ,إِطَاعَة,to obey,,,4,verb,,28-v-8,,
-177,28,Vocabulary,اِسْتَطَاعَ,يَسْتَطِيعُ,اِسْتِطَاعَة,"to be able (This verb—exceptionally—sometimes drops the *tāʾ* of the 10ᵗʰ form prefix, producing *isṭāʿa, yasṭīʿ*, and *tasṭiʿ*.)",,,10,verb,,28-v-9,,
-177,28,Vocabulary,قَامَ,يَقُومُ,قِيَام,"to stand, rise",,,,verb,,28-v-10,,
-177,28,Vocabulary,أَقَامَ,يُقِيمُ,إِقَامَة / (إِقَام),"to perform, uphold",,,4,verb,,28-v-11,,
-177,28,Vocabulary,مَاتَ,يَمُوتُ,مَوْت,"to die (Though *māta* has a *wāw* as its middle radical, the contracted forms of the Perfect normally have a *kasra: mittu* etc.)",,,,verb,,28-v-12,,
-177,28,Vocabulary,ذَاقَ,يَذُوقُ,ذَوْق,to taste,,,,verb,,28-v-13,,
-178,28,Vocabulary,أَحَاطَ,يُحِيطُ,إِحَاطَة,"to surround, comprehend",,,4,verb,,28-v-14,,
-178,28,Vocabulary,أَصَابَ,يُصِيبُ,إِصَابَة,"to smite, befall",,,4,verb,,28-v-15,,
-178,28,Vocabulary,اِسْتَجَابَ,يَسْتَجِيبُ,جَوَاب,to answer,,,10,verb,,28-v-16,,
-178,28,Vocabulary,أَجَابَ,يُجِيبُ,جَوَاب,to answer,,,4,verb,,28-v-17,,
-178,28,Vocabulary,صَرَفَ,يَصْرِفُ,صَرْف,"to turn, turn away (trans.)",,,,verb,,28-v-18,,
-178,28,Vocabulary,أَبْدَلَ,يُبْدِلُ,إِبْدَال,to give in exchange,,,4,verb,,28-v-19,,
-178,28,Vocabulary,رَيْب,,,cold (noun),,,,verb,,28-v-20,,
-178,28,Vocabulary,بَيِّنَة,,,clear proof,,,,verb,,28-v-21,,
-178,28,Vocabulary,كَيْد,,,"plotting, wiles",,,,verb,,28-v-22,,
-178,28,Vocabulary,وَيْل,,,mischief,,,,verb,,28-v-23,,
-178,28,Vocabulary,وَزْن,,,weight,,,,verb,,28-v-24,,
-178,28,Vocabulary,بِالْأَمْسِ,,,yesterday,,,,verb,,28-v-25,,
-182,29,Vocabulary,سَارَعَ,يُسَارِعُ,سِرَاع,to vie in; race,,,3,verb,,29-v-1,,
-182,29,Vocabulary,أَبْلَغَ,يُبْلِغُ,إِبْلَاغ,to convey,,,4,verb,,29-v-2,,
-182,29,Vocabulary,أَكْثَرَ,يُكْثِرُ,إِكْثَار,"to multiply, make much of",,,4,verb,,29-v-3,,
-182,29,Vocabulary,اِعْتَذَرَ,يَعْتَذِرُ,اِعْتِذَار,to make excuses,,,8,verb,,29-v-4,,
-182,29,Vocabulary,فَطَرَ,يَفْطُرُ,فَطْر,to create,,,,verb,,29-v-5,,
-183,29,Vocabulary,رَهْط,,,kin; person,,,,noun,,29-v-6,,
-183,29,Vocabulary,صِدِّيق,,,truthful,,,,noun,,29-v-7,,
-183,29,Vocabulary,كَلِمَة,,,word,,,,noun,,29-v-8,,
+165,26,Vocabulary,,,أَشْرَار,,,evil men,,noun,,26-v-20,,
+165,26,Vocabulary,نَبَأٌ,,أَنْبَاءٌ,news,,news,,noun,,26-v-21,,
+165,26,Vocabulary,أَلِيمٌ,,,painful,,,,noun,,26-v-22,,checked against textbook
+169,27,Vocabulary,سَجَدَ,يَسْجُدُ,سُجُودٌ,to prostrate oneself,prostrates oneself,prostrating oneself,,verb,,27-v-1,,
+169,27,Vocabulary,سَحَرَ,يَسْحَرُ,سِحْرٌ,to bewitch,bewitches,bewitching,,verb,,27-v-2,,
+169,27,Vocabulary,سَقَطَ,يَسْقُطُ,سُقُوطٌ,to fall,falls,falling,,verb,,27-v-3,,
+169,27,Vocabulary,عَبَدَ,يَعْبُدُ,عِبَادَةٌ,"to serve, worship","serves, worships","serving, worshipping",,verb,,27-v-4,,
+169,27,Vocabulary,غَفَرَ,يَغْفِرُ,مَغْفِرَةٌ,to forgive,forgives,forgiving,,verb,,27-v-5,,
+169,27,Vocabulary,نَزَّلَ,يُنَزِّلُ,تَنْزِيل,to descend,descends,descending,5,verb,,27-v-6,,
+169,27,Vocabulary,هَلَكَ,يَهْلِكُ,هَلَاكٌ,to perish,perishes,perishing,,verb,,27-v-7,,
+169,27,Vocabulary,وَضَعَ,يَضَعُ,وَضْع,to give birth to,gives birth to,giving birth to,,verb,,27-v-8,(See Lesson 27 Exercise 21),
+169,27,Vocabulary,إِفْكٌ,,,lie,,,,noun,,27-v-9,,
+169,27,Vocabulary,أُنْثَى,,إِنَاثٌ,female,,females,,noun,,27-v-10,,
+170,27,Vocabulary,بَشِيرٌ,,,bringer of good tidings,,,,noun,,27-v-11,,
+170,27,Vocabulary,حُجَّة,,,proof,,,,noun,,27-v-12,s.p.,
+170,27,Vocabulary,دَابَّةٌ,,دَوَابٌّ,beast,,beasts,,noun,,27-v-13,,
+170,27,Vocabulary,رِزْقٌ,,,sustenance,,,,noun,,27-v-14,,
+170,27,Vocabulary,قَدَرٌ,,,measure,,,,noun,,27-v-15,,
+170,27,Vocabulary,لِسَانٌ,,أَلْسِنَة,tongue,,,,noun,,27-v-16,,
+170,27,Vocabulary,الْمَسِيحُ,,,the Anointed One,,,,noun,,27-v-17,,
+170,27,Vocabulary,وَرَقَةٌ,,وَرَقٌ,leaf,,leaves,,noun,,27-v-18,,
+170,27,Vocabulary,خَاطِئ,,,sinner,,,,noun,,27-v-19,s.p.,
+177,28,Vocabulary,سَارَ,يَسِيرُ,سَيْرٌ,to journey,journeys,journeying,,verb,,28-v-1,,
+177,28,Vocabulary,خَافَ,يَخَافُ,خَوْفٌ,to fear,fears,fear,,verb,,28-v-2,,
+177,28,Vocabulary,جَاءَ,يَجِيءُ,,to come,comes,coming,,verb,,28-v-3,,
+177,28,Vocabulary,زَادَ,يَزِيدُ,زِيَادَةٌ,to increase,increases,increasing,,verb,,28-v-4,,
+177,28,Vocabulary,شَاءَ,يَشَاءُ,,to wish,wishes,wishing,,verb,,28-v-5,,TODO the arabic for the verbal noun wishing is not in textbook table
+177,28,Vocabulary,سَاءَ,يَسُوءُ,سُوءٌ,to be bad,is bad,badness,,verb,,28-v-6,,checked against textbook
+177,28,Vocabulary,أَرَادَ,يُرِيدُ,إِرَادَةٌ,to want,wants,wanting,4,verb,,28-v-7,,
+177,28,Vocabulary,أَطَاعَ,يُطِيعُ,إِطَاعَةٌ,to obey,obeys,obeying,4,verb,,28-v-8,,
+177,28,Vocabulary,اِسْتَطَاعَ,يَسْتَطِيعُ,اِسْتِطَاعَةٌ,to be able,is able,ability,10,verb,,28-v-9,"(This verb—exceptionally—sometimes drops the *tāʾ* of the 10ᵗʰ form prefix, producing *isṭāʿū, yasṭiʿ*, and *tasṭiʿ*.)",
+177,28,Vocabulary,قَامَ,يَقُومُ,قِيَامٌ,"to stand, rise","stands, rises","standing, rising",,verb,,28-v-10,,
+177,28,Vocabulary,أَقَامَ,يُقِيمُ,(إِقَامَة) / إِقَامٌ,"to perform, uphold","performs, upholds","performing, upholding",4,verb,,28-v-11,,checked against textbook
+177,28,Vocabulary,مَاتَ,يَمُوتُ,مَوْتٌ,to die,dies,dying,,verb,,28-v-12,"(Though *māta* has a *wāw* as its middle radical, the contracted forms of the Perfect normally have a *kasra: mittu* etc.)",
+177,28,Vocabulary,ذَاقَ,يَذُوقُ,ذَوْقٌ,to taste,tastes,tasting,,verb,,28-v-13,,
+178,28,Vocabulary,أَحَاطَ,يُحِيطُ,إِحَاطَةٌ,"to surround, comprehend","surrounds, comprehends","surrounding, comprehending",4,verb,,28-v-14,,
+178,28,Vocabulary,أَصَابَ,يُصِيبُ,إِصَابَةٌ,"to smite, befall","smites, befalls","smiting, befalling",4,verb,,28-v-15,,
+178,28,Vocabulary,اِسْتَجَابَ,يَسْتَجِيبُ,جَوَاب,to answer,answers,answering,10,verb,,28-v-16,,
+178,28,Vocabulary,أَجَابَ,يُجِيبُ,جَوَابٌ,to answer,answers,answer,4,verb,,28-v-17,,
+178,28,Vocabulary,صَرَفَ,يَصْرِفُ,صَرْفٌ,"to turn, turn away","turns, turns away",turning away,,verb,,28-v-18,,
+178,28,Vocabulary,أَبْدَلَ,يُبْدِلُ,إِبْدَالٌ,to give in exchange,gives in exchange,giving in exchange,4,verb,,28-v-19,,
+178,28,Vocabulary,بَرْدٌ,,,cold,,,,noun,,28-v-20,,checked against textbook
+178,28,Vocabulary,بَيِّنَةٌ,,,clear proof,,,,noun,,28-v-21,,TODO kasra to fatha?
+178,28,Vocabulary,كَيْدٌ,,,"plotting, wiles",,,,noun,,28-v-22,,checked against textbook
+178,28,Vocabulary,وَبَالٌ,,,mischief,,,,noun,,28-v-23,,checked against textbook
+178,28,Vocabulary,وَزْنٌ,,weight,,,,,noun,,28-v-24,,checked against textbook
+178,28,Vocabulary,بِالْأَمْسِ,,,yesterday,,,,noun,,28-v-25,,TODO wasla?
+182,29,Vocabulary,سَارَعَ,يُسَارِعُ,سِرَاع,"to vie in, race","vies in, races","vying in, racing",3,verb,,29-v-1,,
+182,29,Vocabulary,أَبْلَغَ,يُبْلِغُ,إِبْلَاغٌ,to convey,conveys,conveying,4,verb,,29-v-2,,
+182,29,Vocabulary,أَكْثَرَ,يُكْثِرُ,إِكْثَارٌ,"to multiply, make much of","multiplies, makes much of","multiplying, making much of",4,verb,,29-v-3,,
+182,29,Vocabulary,اِعْتَذَرَ,يَعْتَذِرُ,اِعْتِذَارٌ,to make excuses,makes excuses,making excuses,8,verb,,29-v-4,,
+182,29,Vocabulary,فَطَرَ,يَفْطُرُ,فَطْر,to create,creates,creating,,verb,,29-v-5,,
+183,29,Vocabulary,رَهْطٌ,,,kin; person,,,,noun,,29-v-6,,
+183,29,Vocabulary,صِدِّيقٌ,,,truthful,,,,noun,,29-v-7,,
+183,29,Vocabulary,كَلِمَةٌ,,,word,,,,noun,,29-v-8,,
 183,29,Vocabulary,لِبَاس,,,clothing; garment,,,,noun,,29-v-9,,
-183,29,Vocabulary,نَمْل,,,ants (collective),,,,noun,,29-v-10,,
-183,29,Vocabulary,رِسَالَة,,,"message, letter",,,,noun,,29-v-11,,
-183,29,Vocabulary,مَائِدَة,,,table,,,,noun,,29-v-12,,
+183,29,Vocabulary,نَمْلٌ,,,ants (collective),,,,noun,,29-v-10,,
+183,29,Vocabulary,رِسَالَةٌ,,,"message, letter",,,,noun,,29-v-11,,
+183,29,Vocabulary,مَائِدَةٌ,,,table,,,,noun,,29-v-12,,
 183,29,Vocabulary,أَبَدًا,,,ever,,,,noun,,29-v-13,,
-191,30,Vocabulary,أَتَى,يَأْتِي,إِتْيَان,to come,,,,verb,,30-v-1,,
-191,30,Vocabulary,آتَى,يُؤْتِي,إِيتَاء,to give,,,4,verb,,30-v-2,,
-191,30,Vocabulary,رَأَى,يَرَى,رَأْي,to see,,,,verb,,30-v-3,,
-191,30,Vocabulary,جَزَى,يَجْزِي,جَزَاء,to requite,,,,verb,,30-v-4,,
-191,30,Vocabulary,دَعَا,يَدْعُو,دُعَاء,"to call, pray",,,,verb,,30-v-5,,
-191,30,Vocabulary,رَجَا,يَرْجُو,رَجَاء,to hope,,,,verb,,30-v-6,,
-191,30,Vocabulary,قَضَى,يَقْضِي,قَضَاء,to determine,,,,verb,,30-v-7,,
-191,30,Vocabulary,مَشَى,يَمْشِي,مَشْي,to walk,,,,verb,,30-v-8,,
-191,30,Vocabulary,هَدَى,يَهْدِي,هَدْي,to guide,,,,verb,,30-v-9,,
-191,30,Vocabulary,بَقِيَ,يَبْقَى,بَقَاء,to remain,,,,verb,,30-v-10,,
-191,30,Vocabulary,خَشِيَ,يَخْشَى,خَشْيَة,to fear,,,,verb,,30-v-11,,
-191,30,Vocabulary,لَقِيَ,يَلْقَى,لِقَاء,to meet,,,,verb,,30-v-12,,
-191,30,Vocabulary,نَسِيَ,يَنْسَى,نَسْي,to forget,,,,verb,,30-v-13,,
-191,30,Vocabulary,سَمَّى,يُسَمِّي,تَسْمِيَة,to name,,,2,verb,,30-v-14,,
-191,30,Vocabulary,صَلَّى,يُصَلِّي,صَلَاة,to pray,,,2,verb,,30-v-15,,
-191,30,Vocabulary,نَادَى,يُنَادِي,نِدَاء,to call out to,,,3,verb,,30-v-16,,
-191,30,Vocabulary,أَلْقَى,يُلْقِي,إِلْقَاء,to throw,,,4,verb,,30-v-17,,
-191,30,Vocabulary,أَعْطَى,يُعْطِي,إِعْطَاء,to give,,,4,verb,,30-v-18,,
-191,30,Vocabulary,أَوْفَى,يُوفِي,إِيفَاء,"to fulfil, give in full",,,4,verb,,30-v-19,,
+191,30,Vocabulary,أَتَى,يَأْتِي,إِتْيَانٌ,to come,comes,coming,,verb,,30-v-1,,
+191,30,Vocabulary,آتَى,يُؤْتِي,إِيتَاءٌ,to give,gives,giving,4,verb,,30-v-2,,
+191,30,Vocabulary,رَأَى,يَرَى,رَأْي,to see,sees,seeing,,verb,,30-v-3,,
+191,30,Vocabulary,جَزَى,يَجْزِي,جَزَاءٌ,to requite,requites,requital,,verb,,30-v-4,,
+191,30,Vocabulary,دَعَا,يَدْعُو,دُعَاءٌ,"to call, pray","calls, prays","calling, praying",,verb,,30-v-5,,
+191,30,Vocabulary,رَجَا,يَرْجُو,رَجَاءٌ,to hope,hopes,hoping,,verb,,30-v-6,,
+191,30,Vocabulary,قَضَى,يَقْضِي,قَضَاءٌ,to determine,determines,determining,,verb,,30-v-7,,
+191,30,Vocabulary,مَشَى,يَمْشِي,مَشْيٌ,to walk,walks,walking,,verb,,30-v-8,,
+191,30,Vocabulary,هَدَى,يَهْدِي,هُدًى,to guide,guides,guidance,,verb,,30-v-9,,
+191,30,Vocabulary,بَقِيَ,يَبْقَى,بَقَاءٌ,to remain,remains,remaining,,verb,,30-v-10,,
+191,30,Vocabulary,خَشِيَ,يَخْشَى,خَشْيَةٌ,to fear,fears,fear,,verb,,30-v-11,,
+191,30,Vocabulary,لَقِيَ,يَلْقَى,لِقَاءٌ,to meet,meets,meeting,,verb,,30-v-12,,
+191,30,Vocabulary,نَسِيَ,يَنْسَى,نَسْي,to forget,forgets,forgetting,,verb,,30-v-13,,
+191,30,Vocabulary,سَمَّى,يُسَمِّي,تَسْمِيَةٌ,to name,names,naming,2,verb,,30-v-14,,
+191,30,Vocabulary,صَلَّى,يُصَلِّي,صَلَاةٌ,to pray,prays,prayers,2,verb,,30-v-15,,
+191,30,Vocabulary,نَادَى,يُنَادِي,نِدَاءٌ,to call out to,calls out to,calling out,3,verb,,30-v-16,,
+191,30,Vocabulary,أَلْقَى,يُلْقِي,إِلْقَاءٌ,to throw,throws,throwing,4,verb,,30-v-17,,
+191,30,Vocabulary,أَعْطَى,يُعْطِي,إِعْطَاءٌ,to give,gives,giving,4,verb,,30-v-18,,
+191,30,Vocabulary,أَوْفَى,يُوفِي,إِيفَاءٌ,"to fulfil, give in full","fulfils, gives in full","fulfilling, giving in full",4,verb,,30-v-19,,
 191,30,Vocabulary,تَوَلَّى,يَتَوَلَّى,تَوَلٍّ,to turn away; to take on oneself,,,5,verb,,30-v-20,,
-192,30,Vocabulary,اِتَّقَى,يَتَّقِي,اِتِّقَاء,"to protect oneself, to be god-fearing",,,8,verb,,30-v-21,,
-192,30,Vocabulary,شَعَرَ,يَشْعُرُ,شُعُور,"to feel, perceive",,,,verb,,30-v-22,,
-192,30,Vocabulary,أَنْجَى,يُنْجِي,إِنْجَاء,to rescue,,,4,verb,,30-v-23,,
-192,30,Vocabulary,طِين,,,clay,,,,noun,,30-v-24,,
-192,30,Vocabulary,رُعْب,,,terror,,,,noun,,30-v-25,,
-192,30,Vocabulary,سُوق,,أَسْوَاق,(f.) market,,,,noun,,30-v-26,,
-192,30,Vocabulary,ثُمَّ,,,then,,,,noun,,30-v-27,,
+192,30,Vocabulary,اِتَّقَى,يَتَّقِي,اِتِّقَاءٌ,"to protect oneself, to be god-fearing","protects oneself, is god-fearing","protecting oneself, god-fearingness",8,verb,,30-v-21,,
+192,30,Vocabulary,شَعَرَ,يَشْعُرُ,شُعُورٌ,"to feel, perceive","feels, perceives","feeling, perceiving",,verb,,30-v-22,,
+192,30,Vocabulary,أَنْجَى,يُنْجِي,إِنْجَاءٌ,to rescue,rescues,rescuing,4,verb,,30-v-23,,
+192,30,Vocabulary,طِينٌ,,,clay,,,,noun,,30-v-24,,
+192,30,Vocabulary,رُعْبٌ,,,terror,,,,noun,,30-v-25,,
+192,30,Vocabulary,سُوق,,أَسْوَاق,market (f.),,,,noun,,30-v-26,,
+192,30,Vocabulary,ثُمَّ,,,then,,,,noun,,30-v-27,,
 192,30,Vocabulary,بَغْتَةً,,,suddenly,,,,noun,,30-v-28,,
-196,31,Vocabulary,أَرَىٰ,يُرِى,,to show,,,4,verb,,31-v-1,,
-196,31,Vocabulary,رَضِىَ,يَرْضَىٰ,رِضْوَانٌ / مَرْضَاةٌ,to be pleased with (+ ʿan),,,,verb,,31-v-2,,
-196,31,Vocabulary,ٱبْتَغَىٰ,يَبْتَغِى,ٱبْتِغَآءً,to seek,,,8,verb,,31-v-3,,
-196,31,Vocabulary,كَفَىٰ,يَكْفِى,كِفَايَةً,to be sufficient,,,,verb,,31-v-4,,
-196,31,Vocabulary,زَوْجٌ,,أَزْوَٰجٌ,spouse,,,,noun,,31-v-5,,
+196,31,Vocabulary,أَرَى,يُرِي,,to show,shows,,4,verb,,31-v-1,,
+196,31,Vocabulary,رَضِيَ,يَرْضَى,رِضْوَانٌ / مَرْضَاةٌ,to be pleased with (+ ʿan),is pleased with (+ ʿan),being pleased with (+ ʿan),,verb,,31-v-2,,checked against textbook
+196,31,Vocabulary,اِبْتَغَى,يَبْتَغِي,اِبْتِغَاءٌ,to seek,seeks,seeking,8,verb,,31-v-3,,
+196,31,Vocabulary,كَفَى,يَكْفِي,كِفَايَةٌ,to be sufficient,is sufficient,sufficiency,,verb,,31-v-4,,
+196,31,Vocabulary,زَوْجٌ,,أَزْوَاجٌ,spouse,,spouses,,noun,,31-v-5,,
 196,31,Vocabulary,صُحُفٌ,,,sheets,,,,noun,,31-v-6,,
-196,31,Vocabulary,كَلْبٌ,,كِلَابٌ,dog,,,,noun,,31-v-7,,
-196,31,Vocabulary,نَجْوَىٰ,,,secret conference,,,,noun,,31-v-8,,
-196,31,Vocabulary,كَفَىٰ بِٱللَّهِ حَسِيبًا,,,Note the construction *kafā bi-llāhi ḥasīban* 'there is sufficiency in God as a reckoner' i.e. 'God is sufficient as a reckoner'. There are further examples in sentences 22 and 23 below.,,,,idiom,,31-v-9,,TODO ‘sentence’ = exercise?
-202,32,Vocabulary,بَدَأَ,يَبْدَأُ,بَدْءٌ,to begin,,,,verb,,32-v-1,,
-202,32,Vocabulary,رَزَقَ,يَرْزُقُ,رِزْقٌ,to give sustenance to,,,,verb,,32-v-2,,
-202,32,Vocabulary,سَرَقَ,يَسْرِقُ,سَرَقٌ,to steal,,,,verb,,32-v-3,,
-202,32,Vocabulary,هَجَرَ,يَهْجُرُ,هَجْرٌ,"to forsake, leave",,,,verb,,32-v-4,,
-202,32,Vocabulary,تَمَتَّعَ,يَتَمَتَّعُ,تَمَتُّعٌ,"to enjoy, enjoy oneself",,,5,verb,,32-v-5,,
+196,31,Vocabulary,كَلْبٌ,,كِلَابٌ,dog,,dogs,,noun,,31-v-7,,
+196,31,Vocabulary,نَجْوَى,,,secret conference,,,,noun,,31-v-8,,
+196,31,Vocabulary,كَفَىٰ بِٱللَّهِ حَسِيبًا,,,Note the construction *kafā bi-llāhi ḥasīban* 'there is sufficiency in God as a reckoner' i.e. 'God is sufficient as a reckoner'. There are further examples in Exercises 22 and 23 below.,,,,idiom,,31-v-9,,
+202,32,Vocabulary,بَدَأَ,يَبْدَأُ,بَدْءٌ,to begin,begins,beginning,,verb,,32-v-1,,
+202,32,Vocabulary,رَزَقَ,يَرْزُقُ,رِزْقٌ,to give sustenance to,gives sustenance to,sustenance,,verb,,32-v-2,,
+202,32,Vocabulary,سَرَقَ,يَسْرِقُ,سَرِقَةٌ,to steal,steals,stealing,,verb,,32-v-3,,
+202,32,Vocabulary,هَجَرَ,يَهْجُرُ,هَجْرٌ,"to forsake, leave","forsakes, leaves","forsaking, leaving",,verb,,32-v-4,,
+202,32,Vocabulary,تَمَتَّعَ,يَتَمَتَّعُ,تَمَتُّعٌ,"to enjoy, enjoy oneself","enjoys, enjoys oneself","enjoying, enjoying oneself",5,verb,,32-v-5,,
 202,32,Vocabulary,سُورَةٌ,,سُوَرٌ,*sura*,,,,noun,,32-v-6,,
 202,32,Vocabulary,قِبْلَةٌ,,,"direction, *qibla*",,,,noun,,32-v-7,,
-202,32,Vocabulary,قُوَّةٌ,,قُوًى,"power, force",,,,noun,,32-v-8,,
+202,32,Vocabulary,قُوَّةٌ,,قُوًى,"power, force",,"powers, forces",,noun,,32-v-8,,
 202,32,Vocabulary,كَيْلٌ,,,measure,,,,noun,,32-v-9,,
 202,32,Vocabulary,آلٌ,,,family,,,,noun,,32-v-10,,
-207,33,Vocabulary,غَضِبَ,يَغْضَبُ,غَضَبٌ,to be angry with (+ ʿalā),,,,verb,,33-v-1,,
-207,33,Vocabulary,وَفَّىٰ,يُوَفِّى,تَوْفِيَةً,"to pay, repay",,,2,verb,,33-v-2,,
-207,33,Vocabulary,تَوَفَّىٰ,يَتَوَفَّىٰ,تَوَفٍّ,to take,,,5,verb,,33-v-3,,
-207,33,Vocabulary,أَوْحَىٰ,يُوحِى,إِيحَآءً,to inspire,,,4,verb,,33-v-4,,
-207,33,Vocabulary,نَفَخَ,يَنفُخُ,نَفْخٌ,to blow,,,,verb,,33-v-5,,
-207,33,Vocabulary,بَلَّغَ,يُبَلِّغُ,تَبْلِيغٌ,to convey,,,2,verb,,33-v-6,,
-207,33,Vocabulary,اِسْتَهْزَأَ,يَسْتَهْزِئُ,اِسْتِهْزَآءٌ,to mock (+ bi-),,,10,verb,,33-v-7,,
-207,33,Vocabulary,بَلَـٰغٌ,,,"message, conveyance",,,,noun,,33-v-8,,
+207,33,Vocabulary,غَضِبَ,يَغْضَبُ,غَضَبٌ,to be angry with,is angry with,being angry with,,verb,,33-v-1,"(+ *ʿalā*)",
+207,33,Vocabulary,وَفَّى,يُوَفِّي,تَوْفِيَةٌ,"to pay, repay","pays, repays","paying, repaying",2,verb,,33-v-2,,
+207,33,Vocabulary,تَوَفَّى,يَتَوَفَّى,تَوَفٍّ,to take,takes,taking,5,verb,,33-v-3,,
+207,33,Vocabulary,أَوْحَى,يُوحِي,إِيحَاءٌ,to inspire,inspires,inspiring,4,verb,,33-v-4,,
+207,33,Vocabulary,نَفَخَ,يَنْفُخُ,نَفْخٌ,to blow,blows,blowing,,verb,,33-v-5,,
+207,33,Vocabulary,بَلَّغَ,يُبَلِّغُ,تَبْلِيغٌ,to convey,conveys,conveying,2,verb,,33-v-6,,
+207,33,Vocabulary,اِسْتَهْزَأَ,يَسْتَهْزِئُ,اِسْتِهْزَاءٌ,to mock,mocks,mocking,10,verb,,33-v-7,"(+ *bi-*)",
+207,33,Vocabulary,بَلَاغٌ,,,"message, conveyance",,,,noun,,33-v-8,,
 207,33,Vocabulary,صُورٌ,,,trumpet,,,,noun,,33-v-9,,
-214,34,Vocabulary,بَسَطَ,يَبْسُطُ,بَسْطٌ,"to spread,extend",,,,verb,,34-v-1,,
-214,34,Vocabulary,خَتَمَ,يَخْتِمُ,خَتْمٌ,to seal,,,,verb,,34-v-2,,
-214,34,Vocabulary,سَبَقَ,يَسْبِقُ,سَبْقٌ,to precede,,,,verb,,34-v-3,,
-214,34,Vocabulary,فَتَنَ,يَفْتِنُ,فِتْنَةٌ,"to tempt, afflict, stir up",,,,verb,,34-v-4,,
-214,34,Vocabulary,فَرَّ,يَفِرُّ,فِرَارٌ,to flee,,,,verb,,34-v-5,,
-214,34,Vocabulary,كَشَفَ,يَكْشِفُ,كَشْفٌ,"to uncover, remove, relieve",,,,verb,,34-v-6,,
-215,34,Vocabulary,وُلِدَ,يُولَدُ,,[passive] to be born,,,,verb,,34-v-7,,
-215,34,Vocabulary,تَبَّ,يَتِبُّ,,"to wither, perish",,,,verb,,34-v-8,,
+214,34,Vocabulary,بَسَطَ,يَبْسُطُ,بَسْطٌ,"to spread, extend","spreads, extends","spreading, extending",,verb,,34-v-1,,
+214,34,Vocabulary,خَتَمَ,يَخْتِمُ,خَتْمٌ,to seal,seals,sealing,,verb,,34-v-2,,
+214,34,Vocabulary,سَبَقَ,يَسْبِقُ,سَبْقٌ,to precede,precedes,preceding,,verb,,34-v-3,,
+214,34,Vocabulary,فَتَنَ,يَفْتِنُ,فِتْنَةٌ,"to tempt, afflict, stir up","tempts, afflicts, stirs up","tempting, afflicting, stirring up",,verb,,34-v-4,,
+214,34,Vocabulary,فَرَّ,يَفِرُّ,فِرَارٌ,to flee,flees,fleeing,,verb,,34-v-5,,
+214,34,Vocabulary,كَشَفَ,يَكْشِفُ,كَشْفٌ,"to uncover, remove, relieve","uncovers, removes, relieves","uncovering, removing, relieving",,verb,,34-v-6,,
+215,34,Vocabulary,وُلِدَ,يُولَدُ,,[passive] to be born,,,,verb,,34-v-7,,checked against textbook
+215,34,Vocabulary,تَبَّ,,,"to wither, perish",,,,verb,,34-v-8,,checked against textbook
 215,34,Vocabulary,بَغَىٰ,يَبْغِى,بَغْىٌ,to outrage; to seek,,,,verb,,34-v-9,,
 215,34,Vocabulary,عَدَا,يَعْدُو,عَدْوٌ,"to transgress, turn away, run",,,,verb,,34-v-10,,
-215,34,Vocabulary,أَصْلَحَ,يُصْلِحُ,إِصْلَـٰحٌ,to put right,,,4,verb,,34-v-11,,
+215,34,Vocabulary,أَصْلَحَ,يُصْلِحُ,إِصْﻼَحٌ,to put right,,,4,verb,,34-v-11,,checked against textbook; TODO add english imp and vnoun
 215,34,Vocabulary,أَعْجَزَ,يُعْجِزُ,إِعْجَازٌ,to frustrate,,,4,verb,,34-v-12,,
 215,34,Vocabulary,اِمْرُؤٌ,,,man,,,,noun,,34-v-13,,
 215,34,Vocabulary,حَكَمٌ,,,arbiter,,,,noun,,34-v-14,,
-215,34,Vocabulary,سَاقٌ,,سُوقٌ,(f.) leg,,,,noun,,34-v-15,,
+215,34,Vocabulary,سَاقٌ,,سُوقٌ,leg (f.),,legs,,noun,,34-v-15,,
 215,34,Vocabulary,عِقَابٌ,,,"punishment, requital",,,,noun,,34-v-16,,
-215,34,Vocabulary,عَمَدٌ,,,"columns, supports",,,,noun,,34-v-17,,
-215,34,Vocabulary,فَمٌ,,أَفْوَٰهٌ,mouth,,,,noun,,34-v-18,,
-215,34,Vocabulary,مَحَالٌ,,,"wrath, anger",,,,noun,,34-v-19,,
-215,34,Vocabulary,هَدْىٌ,,,offering,,,,noun,,34-v-20,,
-215,34,Vocabulary,أَخْدَانٌ,,,companions,,,,noun,,34-v-21,,
+215,34,Vocabulary,عَمَدٌ,,,"columns, supports",,,,noun,,34-v-17,,checked against textbook
+215,34,Vocabulary,فَمٌ,,أَفْوَاهٌ,mouth,,mouths,,noun,,34-v-18,,
+215,34,Vocabulary,مِحَالٌ,,,"wrath, anger",,,,noun,,34-v-19,,
+215,34,Vocabulary,هَدْيٌ,,,offering,,,,noun,,34-v-20,,
+215,34,Vocabulary,,,أَخْدَانٌ,,,companions,,noun,,34-v-21,,
 215,34,Vocabulary,سَرِيعٌ,,,"quick, swift",,,,noun,,34-v-22,,
 215,34,Vocabulary,غَلِيظٌ,,,"thick, rough, hard",,,,noun,,34-v-23,,
 215,34,Vocabulary,مَعْرُوشٌ,,,in trellises,,,,noun,,34-v-24,,
-215,34,Vocabulary,مَلُومٌ,,,"blamed, blameworthy [from امَلَمَلَامَ]",,,,noun,,34-v-25,,
+215,34,Vocabulary,مَلُومٌ,,,"blamed, blameworthy",,,,noun,,34-v-25,"[from امَلَمَلَامَ]",
 215,34,Vocabulary,مَمْنُونٌ,,,"broken, cut",,,,noun,,34-v-26,,
 216,34,Vocabulary,غَيْرُ,,,other than,,,,noun,,34-v-27,,
 216,34,Vocabulary,غَيْرَ,,,without,,,,noun,,34-v-28,,
-223,35,Vocabulary,تَلَا,يَتْلُوا,تِلَاوَةً,to recite,,,,verb,,35-v-1,,
-223,35,Vocabulary,خَرَّ,يَخِرُّ,خَرٌّ,to fall,,,,verb,,35-v-2,,checked against textbook
-223,35,Vocabulary,رَهِبَ,يَرْهَبُ,رَهْبَةً,"to fear, be in awe of",,,,verb,,35-v-3,,
-223,35,Vocabulary,كَادَ,يَكِيدُ,كَيْدًا,"to strive, plot, outwit",,,,verb,,35-v-4,,
-223,35,Vocabulary,مَالَ,يَمِيلُ,مَيْلًا,"to incline, lean, deviate",,,,verb,,35-v-5,,
-223,35,Vocabulary,أَصْبَحَ,يُصْبِحُ,إِصْبَاحًا,to become; be in the morning,,,4,verb,,35-v-6,,
-223,35,Vocabulary,آبَ,يَـُٔوبُ,إِيَابًا,to come back to; repent,,,4,verb,,35-v-7,,
-223,35,Vocabulary,تَرَاضَىٰ,يَتَرَاضَىٰ,تَرَاضٍ,to agree with one another,,,6,verb,,35-v-8,,
-223,35,Vocabulary,إِزْدَادَ,يَزْدَادُ,إِزْدِيَادًا,"to increase, grow",,,8,verb,,35-v-9,,
-223,35,Vocabulary,إِسْتَعَانَ,يَسْتَعِينُ,إِسْتِعَانَةً,to ask for help (+ acc.),,,10,verb,,35-v-10,,
-224,35,Vocabulary,حَنِيفٌ,,حُنَفَآءُ,of pure faith,,,,noun,,35-v-11,,
+223,35,Vocabulary,تَلَا,يَتْلُو,تِلَاوَةٌ,to recite,recites,reciting,,verb,,35-v-1,,
+223,35,Vocabulary,خَرَّ,يَخِرُّ,خَرٌّ,to fall,falls,falling,,verb,,35-v-2,,checked against textbook
+223,35,Vocabulary,رَهِبَ,يَرْهَبُ,رَهْبَةٌ,"to fear, be in awe of","fears, is in awe of","fearing, awe",,verb,,35-v-3,,
+223,35,Vocabulary,كَادَ,يَكِيدُ,كَيْدٌ,"to strive, plot, outwit","strives, plots, outwits","striving, plotting, outwitting",,verb,,35-v-4,,
+223,35,Vocabulary,مَالَ,يَمِيلُ,مَيْلٌ,"to incline, lean, deviate","inclines, leans, deviates","inclining, leaning, deviation",,verb,,35-v-5,,
+223,35,Vocabulary,أَصْبَحَ,يُصْبِحُ,إِصْبَاحٌ,to become; be in the morning,becomes; is in the morning,becoming; being in the morning,4,verb,,35-v-6,,
+223,35,Vocabulary,أَﻧَﺎبَ,يُنِيبُ,إِﻧَﺎﻧَﺔٌ,"to come back, repent","comes back, repents","coming back, repenting",4,verb,,35-v-7,,
+223,35,Vocabulary,تَرَاضَى,يَتَرَاضَى,تَرَاضٍ,to agree with one another,agree with one another,agreeing with one another,6,verb,,35-v-8,,
+223,35,Vocabulary,اِزْدَادَ,يَزْدَادُ,اِزْدِيَادٌ,"to increase, grow","increases, grows","increasing, growing",8,verb,,35-v-9,,
+223,35,Vocabulary,اِسْتَعَانَ,يَسْتَعِينُ,اِسْتِعَانَةٌ,to ask for help,asks for help,asking for help,10,verb,,35-v-10,,
+224,35,Vocabulary,حَنِيفٌ,,حُنَفَاءُ,of pure faith,,of pure faith,,noun,,35-v-11,,
 224,35,Vocabulary,صَيْحَةٌ,,,cry,,,,noun,,35-v-12,,
-224,35,Vocabulary,عِزَّةٌ,,,"might, power",,,,noun,,35-v-13,,
+224,35,Vocabulary,عِزَّةٌ,,,"might, power",,,,noun,,35-v-13,,
 224,35,Vocabulary,مَلْجَأٌ,,,refuge,,,,noun,,35-v-14,,
 224,35,Vocabulary,مَكْرٌ,,,"plot, trickery",,,,noun,,35-v-15,,
-224,35,Vocabulary,مِلَّةٌ,,مِلَلٌ,community,,,,noun,,35-v-16,,
+224,35,Vocabulary,مِلَّةٌ,,مِلَلٌ,community,,communities,,noun,,35-v-16,,
 224,35,Vocabulary,إِمْلَاقٌ,,,poverty,,,,noun,,35-v-17,,
 224,35,Vocabulary,جَمِيعٌ,,,all,,,,noun,,35-v-18,,
 224,35,Vocabulary,جَمٌّ,,,much,,,,noun,,35-v-19,,
 224,35,Vocabulary,دَاخِرٌ,,,"humble, lowly",,,,noun,,35-v-20,,
-224,35,Vocabulary,سَاجِدٌ,,سُجَّدٌ,prostrating oneself,,,,noun,,35-v-21,,
+224,35,Vocabulary,سَاجِدٌ,,سُجَّدٌ,prostrating oneself,,prostrating oneself,,noun,,35-v-21,,
 224,35,Vocabulary,مُغَاضِبٌ,,,angry,,,,noun,,35-v-22,,
-224,35,Vocabulary,لَا,,جَرَمَ,"undoubtedly, certainly",,,,noun,,35-v-23,,
+224,35,Vocabulary,لَا جَرَمَ,,,"undoubtedly, certainly",,,,noun,,35-v-23,,checked against textbook
 224,35,Vocabulary,طَابَ نَفْسًا,,,to be consoled,,,,idiom,,35-v-24,,
 224,35,Vocabulary,قَرَّ عَيْنًا,,,to be pleased,,,,idiom,,35-v-25,,
-236,36,Vocabulary,رَتَعَ,يَرْتَعُ,رَتْعًا,to enjoy oneself,,,,verb,,36-v-1,,
-236,36,Vocabulary,سَعَىٰ,يَسْعَىٰ,سَعْيًا,"to strive, move, run",,,,verb,,36-v-2,,
-236,36,Vocabulary,سَلَبَ,يَسْلُبُ,سَلْبًا,to rob,,,,verb,,36-v-3,,
-236,36,Vocabulary,لَعِبَ,يَلْعَبُ,لَعِبًا,to play,,,,verb,,36-v-4,,
-236,36,Vocabulary,نَهَىٰ,يَنْهَىٰ,نَهْيًا,to forbid,,,,verb,,36-v-5,,
-236,36,Vocabulary,هَزَّ,يَهَزُّ,هَزًّا,to shake,,,,verb,,36-v-6,,
-237,36,Vocabulary,وَجِلَ,يَوْجَلُ,,to be in awe of,,,,verb,,36-v-7,,
-237,36,Vocabulary,كَفَرَ,يُكَفِّرُ,تَكْفِيرًا,"to forgive, redeem",,,2,verb,,36-v-8,,
-237,36,Vocabulary,سَاقَطَ,يُسَاقِطُ,مُسَاقَطَةً,"to cause to fall, bring down",,,3,verb,,36-v-9,,
-237,36,Vocabulary,ضَاعَفَ,يُضَاعِفُ,مُضَاعَفَةً,to multiply,,,3,verb,,36-v-10,,
-237,36,Vocabulary,أَنكَرَ,يُنكِرُ,إِنكَارًا,"to deny, disapprove; not to know",,,4,verb,,36-v-11,,
-237,36,Vocabulary,أَدْرَكَ,يُدْرِكُ,إِدْرَاكًا,to overtake,,,4,verb,,36-v-12,,
-237,36,Vocabulary,أَعَادَ,يُعِيدُ,إِعَادَةً,"to repeat, return (trans.)",,,4,verb,,36-v-13,,
-237,36,Vocabulary,أَسَآءَ,يُسِيئُ,إِسَاءَةً,to do wrong,,,4,verb,,36-v-14,,
-237,36,Vocabulary,تَزَكَّىٰ,يَتَزَكَّىٰ,تَزَكٍّ,to be purified,,,5,verb,,36-v-15,,
-237,36,Vocabulary,إِلْتَقَطَ,يَلْتَقِطُ,إِلْتِقَاطًا,to pick up,,,8,verb,,36-v-16,,
-237,36,Vocabulary,إِسْتَأْخَرَ,يَسْتَأْخِرُ,إِسْتِئْخَارًا,to postpone,,,10,verb,,36-v-17,,
+236,36,Vocabulary,رَتَعَ,يَرْتَعُ,رَتْعٌ,to enjoy oneself,enjoys oneself,enjoying oneself,,verb,,36-v-1,,
+236,36,Vocabulary,سَعَى,يَسْعَى,سَعْيٌ,"to strive, move, run","strives, moves, runs","striving, moving, running",,verb,,36-v-2,,
+236,36,Vocabulary,سَلَبَ,يَسْلُبُ,سَلْبٌ,to rob,robs,robbing,,verb,,36-v-3,,
+236,36,Vocabulary,لَعِبَ,يَلْعَبُ,لَعِبٌ,to play,plays,playing,,verb,,36-v-4,,
+236,36,Vocabulary,نَهَى,يَنْهَى,نَهْيٌ,to forbid,forbids,forbidding,,verb,,36-v-5,,
+236,36,Vocabulary,هَزَّ,يَهُزُّ,هَزٌّ,to shake,shakes,shaking,,verb,,36-v-6,,
+237,36,Vocabulary,وَجِلَ,يُوجَلُ,,to be in awe of,is in awe of,,,verb,,36-v-7,,
+237,36,Vocabulary,كَفَّرَ,يُكَفِّرُ,تَكْفِيرٌ,"to forgive, redeem","forgiving, redeeming",,2,verb,,36-v-8,,
+237,36,Vocabulary,سَاقَطَ,يُسَاقِطُ,مُسَاقَطَةٌ,"to cause to fall, bring down","causes to fall, brings down","causing to fall, bringing down",3,verb,,36-v-9,,
+237,36,Vocabulary,ضَاعَفَ,يُضَاعِفُ,مُضَاعَفَةٌ,to multiply,multiplies,multiplying,3,verb,,36-v-10,,
+237,36,Vocabulary,أَنْكَرَ,يُنْكِرُ,إِنْكَارٌ,"to deny, disapprove; not to know","denies, disapproves; does not know","denying, disapproving; not knowing",4,verb,,36-v-11,,
+237,36,Vocabulary,أَدْرَكَ,يُدْرِكُ,إِدْرَاكٌ,to overtake,overtakes,overtaking,4,verb,,36-v-12,,
+237,36,Vocabulary,أَعَادَ,يُعِيدُ,إِعَادَةٌ,"to repeat, return","repeats, returns","repeating, returning",4,verb,,36-v-13,,
+237,36,Vocabulary,أَسَاءَ,يُسِيئُ,إِسَاءَةٌ,to do wrong,does wrong,doing wrong,4,verb,,36-v-14,,
+237,36,Vocabulary,تَزَكَّى,يَتَزَكَّى,تَزَكٍّ,to be purified,is purified,,5,verb,,36-v-15,,
+237,36,Vocabulary,اِلْتَقَطَ,يَلْتَقِطُ,اِلْتِقَاطٌ,to pick up,picks up,picking up,8,verb,,36-v-16,,
+237,36,Vocabulary,اِسْتَأْخَرَ,يَسْتَأْخِرُ,اِسْتِئْخَارٌ,to postpone,postpones,postponing,10,verb,,36-v-17,,
 237,36,Vocabulary,إِسْتَقْدَمَ,يَسْتَقْدِمُ,إِسْتِقْدَامًا,to bring forward,,,10,verb,,36-v-18,,
-237,36,Vocabulary,إِسْتَنقَذَ,يَسْتَنقِذُ,إِسْتِنقَاذًا,to rescue,,,10,verb,,36-v-19,,
-237,36,Vocabulary,جُبٌّ,,,"pit, well",,,,noun,,36-v-20,,
+237,36,Vocabulary,إِسْتَنْقَذَ,يَسْتَنْقِذُ,اِسْتِنْقَاذٌ,to rescue,,,10,verb,,36-v-19,,
+237,36,Vocabulary,جُبٌّ,,,"pit, well",,,,noun,,36-v-20,,
 237,36,Vocabulary,جِذْعٌ,,,trunk of a palm-tree,,,,noun,,36-v-21,,
 237,36,Vocabulary,مَدْخَلٌ,,,place to enter,,,,noun,,36-v-22,,
 237,36,Vocabulary,ذُبَابٌ,,,fly,,,,noun,,36-v-23,,
-237,36,Vocabulary,ذَقَنٌ,,أَذْقَانٌ,chins,,,,noun,,36-v-24,,
-238,36,Vocabulary,مَرَدٌّ,,,turning back,,,,noun,,36-v-25,,
+237,36,Vocabulary,,,أَذْقَانٌ,,,chins,,noun,,36-v-24,,
+238,36,Vocabulary,مَرَدٌّ,,,turning back,,,,noun,,36-v-25,,
 238,36,Vocabulary,رُطَبٌ,,,"fresh, ripe dates",,,,noun,,36-v-26,,
 238,36,Vocabulary,صَرِيخٌ,,,help,,,,noun,,36-v-27,,
 238,36,Vocabulary,مَغَارَةٌ,,,cave,,,,noun,,36-v-28,,
-238,36,Vocabulary,غَيَـٰبَةٌ,,,s.p. bottom; recess,,,,noun,,36-v-29,,
-238,36,Vocabulary,كُبَارٌ,,كِبَـٰرٌ,enormity,,,,noun,,36-v-30,,
-238,36,Vocabulary,شَطْرٌ,,,towards,,,,noun,,36-v-31,,
-244,37,Vocabulary,عَبَسَ,يَعْبِسُ,,to frown,,,,verb,,37-v-1,,
-244,37,Vocabulary,عَفَا,يَعْفُوا,عَفْوًا,to pardon (+*ʿan*),,,,verb,,37-v-2,,
-244,37,Vocabulary,عَادَ,يَعُودُ,مَعَاذًا,to return; do again,,,,verb,,37-v-3,,
-244,37,Vocabulary,عَاذَ,يَعُوذُ,,to seek refuge with,,,,verb,,37-v-4,,
-244,37,Vocabulary,غَدَا,يَغْدُوا,غُدُوًّا,to be/do in the morning,,,,verb,,37-v-5,,
-244,37,Vocabulary,كَبِرَ,يَكْبَرُ,كِبَر,to grow up,,,,verb,,37-v-6,,
-244,37,Vocabulary,كَرِهَ,يَكْرَهُ,كَرْه,"to be reluctant, hate",,,,verb,,37-v-7,,
-244,37,Vocabulary,مَادَ,يَمِيدُ,,to shake,,,,verb,,37-v-8,,
-244,37,Vocabulary,بَيَّنَ,يُبَيِّنُ,تِبْيَانًا,to make clear,,,2,verb,,37-v-9,,
-244,37,Vocabulary,أَشْرَفَ,يُشْرِفُ,إِشْرَافًا,to be prodigal,,,4,verb,,37-v-10,,
-244,37,Vocabulary,أَمْسَكَ,يُمْسِكُ,إِمْسَاكًا,"to hold fast, withold",,,4,verb,,37-v-11,,
-244,37,Vocabulary,تَفَكَّرَ,يَتَفَكَّرُ,تَفَكُّرًا,"to think, reflect",,,5,verb,,37-v-12,,
-245,37,Vocabulary,تَنَادَىٰ,يَتَنَادَىٰ,تَنَادٍ,to call to one another,,,6,verb,,37-v-13,,
-245,37,Vocabulary,إِيتَلَىٰ,يَأْتَلِى,إِيتِلَاءً,to swear,,,8,verb,,37-v-14,,
-245,37,Vocabulary,إِجْتَنَبَ,يَجْتَنِبُ,إِجْتِنَابًا,to avoid,,,8,verb,,37-v-15,,
-245,37,Vocabulary,حِلَافٌ,,,accustomed to swear,,,,noun,,37-v-16,,
+238,36,Vocabulary,غِيَابَةٌ,,,bottom; recess,,,,noun,,36-v-29,s.p.,
+238,36,Vocabulary,كَبِيرَةٌ,,كَبَائِرُ,enormity,,enormities,,noun,,36-v-30,,
+238,36,Vocabulary,شَطْرَ,,,towards,,,,noun,,36-v-31,,
+244,37,Vocabulary,عَبَسَ,يَعْبُسُ,,to frown,frowns,,,verb,,37-v-1,,TODO no verbal noun in textbook?
+244,37,Vocabulary,عَفَا,يَغْﻔُﻮ,ﻋَﻔْﻮٌ,to pardon (+*ʿan*),pardons,pardoning,,verb,,37-v-2,,
+244,37,Vocabulary,عَادَ,يَعُودُ,مَعَادٌ,to return; do again,returns; does again,returning; doing again,,verb,,37-v-3,,
+244,37,Vocabulary,عَاذَ,يَعُوذُ,,to seek refuge with,seeks refuge with,,,verb,,37-v-4,,TODO no verbal noun in textbook?
+244,37,Vocabulary,غَدَا,يَغْدُو,غُدُوٌّ,to be/do in the morning,is/does in the morning,being/doing in the morning,,verb,,37-v-5,,
+244,37,Vocabulary,كَبِرَ,يَكْبَرُ,كِبَرٌ,to grow up,grows up,growing up,,verb,,37-v-6,,
+244,37,Vocabulary,كَرِهَ,يَكْرَهُ,كَرْهٌ,"to be reluctant, hate","is reluctant, hates","reluctance, hatred",,verb,,37-v-7,,
+244,37,Vocabulary,مَادَ,يَمِيدُ,,to shake,shakes,,,verb,,37-v-8,,TODO no verbal noun in textbook?
+244,37,Vocabulary,بَيَّنَ,يُبَيِّنُ,تِبْيَانٌ,to make clear,makes clear,making clear,2,verb,,37-v-9,,
+244,37,Vocabulary,أَسْرَفَ,يُسْرِفُ,إِسْرَافٌ,to be prodigal,is prodigal,prodigality,4,verb,,37-v-10,,
+244,37,Vocabulary,أَمْسَكَ,يُمْسِكُ,إِمْسَاكٌ,"to hold fast, withhold","holds fast, withholds","holding fast, withholding",4,verb,,37-v-11,,
+244,37,Vocabulary,تَفَكَّرَ,يَتَفَكَّرُ,تَفَكُّرٌ,"to think, reflect","thinks, reflects","thinking, reflecting",5,verb,,37-v-12,,
+245,37,Vocabulary,تَنَادَى,يَتَنَادَى,تَنَادٍ,to call to one another,call to one another,calling to one another,6,verb,,37-v-13,,
+245,37,Vocabulary,ائْتَلَى,يَأْتَلِي,اِيتِلَاءٌ,to swear,swears,swearing,8,verb,,37-v-14,,
+245,37,Vocabulary,اِجْتَنَبَ,يَجْتَنِبُ,اِجْتِنَابٌ,to avoid,avoids,avoiding,8,verb,,37-v-15,,
+245,37,Vocabulary,حَلَّافٌ,,,accustomed to swear,,,,noun,,37-v-16,,
 245,37,Vocabulary,بِدَارٌ,,,"haste, anticipation",,,,noun,,37-v-17,,
 245,37,Vocabulary,حَرْثٌ,,,tillage,,,,noun,,37-v-18,,
-245,37,Vocabulary,رُؤْيَا,,,(f.) dream,,,,noun,,37-v-19,,
-245,37,Vocabulary,رَاسٍ,,رَوَاسٍ,firm mountains,,,,noun,,37-v-20,,
-245,37,Vocabulary,كِنٌّ,,أَكِنَّةٌ,coverings,,,,noun,,37-v-21,,
+245,37,Vocabulary,رُؤْيَا,,,dream (f.),,,,noun,,37-v-19,,
+245,37,Vocabulary,,,رَوَاسٍ,,,firm mountains,,noun,,37-v-20,,checked against textbook
+245,37,Vocabulary,كِنَانٌ,,أَكِنَّةٌ,coverings,,coverings,,noun,,37-v-21,,
 245,37,Vocabulary,نَحْلٌ,,,bees,,,,noun,,37-v-22,,
-245,37,Vocabulary,هَدٌّ,,,"crash, destruction",,,,noun,,37-v-23,,
-245,37,Vocabulary,أَعْمَىٰ,,عُمْىٌ,blind,,,,noun,,37-v-24,,
-245,37,Vocabulary,شَقِىٌّ,,أَشْقِيَآءُ,"unfortunate, wretched",,,,noun,,37-v-25,,
+245,37,Vocabulary,هَدٌّ,,,"crash, destruction",,,,noun,,37-v-23,,
+245,37,Vocabulary,أَعْمَى,,عُمْيٌ,blind,,blind,,noun,,37-v-24,,
+245,37,Vocabulary,شَقِيٌّ,,أَشْقِيَاءُ,"unfortunate, wretched",,"unfortunate, wretched",,noun,,37-v-25,,
 245,37,Vocabulary,مَهِينٌ,,,contemptible,,,,noun,,37-v-26,,
 245,37,Vocabulary,أُولُو ٱلْقُرْبَىٰ,,,relations,,,,idiom,,37-v-27,,
 245,37,Vocabulary,ضَرَبَ ٱلذِّكْرَ صَفْحًا عَنْ,,,to neglect,,,,idiom,,37-v-28,,
-252,38,Vocabulary,فَقِهَ,يَفْقَهُ,فِقْهًا,to understand,,,,verb,,38-v-1,,
-252,38,Vocabulary,فَكِهَ,يَتَفَكَّهُ,تَفَكُّه,to jest,,,5,verb,,38-v-2,,
-252,38,Vocabulary,خَصَفَ,يَخْصِفُ,,to cover oneself,,,,verb,,38-v-3,,
-252,38,Vocabulary,خَطِفَ,يَخْطَفُ,خَطْفًا,to snatch,,,,verb,,38-v-4,,
-252,38,Vocabulary,عَرَجَ,يَعْرُجُ,,to mount,,,,verb,,38-v-5,,
-252,38,Vocabulary,قَلَبَ,يُقَلِّبُ,تَقْلِيبًا,"to turn over, wring",,,2,verb,,38-v-6,,
-252,38,Vocabulary,أَبَانَ,يُبِينُ,إِبَانَةً,to make clear,,,4,verb,,38-v-7,,
-252,38,Vocabulary,أَضَآءَ,يُضِيئُ,إِضَاءَةً,to give light,,,4,verb,,38-v-8,,
-252,38,Vocabulary,تَرَقَّبَ,يَتَرَقَّبُ,تَرَقُّب,to be vigilant,,,5,verb,,38-v-9,,
-252,38,Vocabulary,إِطَّلَعَ,يَطَّلِعُ,إِطِّلَاعًا,to study,,,8,verb,,38-v-10,,
+252,38,Vocabulary,فَقِهَ,يَفْقَهُ,فِقْهٌ,to understand,understands,understanding,,verb,,38-v-1,,
+252,38,Vocabulary,تَفَكَّهَ,يَتَفَكَّهُ,تَفَكُّهٌ,to jest,jests,jesting,5,verb,,38-v-2,,
+252,38,Vocabulary,خَصَفَ,يَخْصِفُ,,to cover oneself,covers oneself,,,verb,,38-v-3,,checked against textbook
+252,38,Vocabulary,خَطِفَ,يَخْطَفُ,خَطْفٌ,to snatch,snatches,snatching,,verb,,38-v-4,,
+252,38,Vocabulary,عَرَجَ,يَعْرُجُ,,to mount,mounts,,,verb,,38-v-5,,checked against textbook
+252,38,Vocabulary,قَلَبَ,يُقَلِّبُ,تَقْلِيبٌ,"to turn over, wring","turns over, wrings","turning over, wringing",2,verb,,38-v-6,,
+252,38,Vocabulary,أَبَانَ,يُبِينُ,إِبَانَةٌ,to make clear,makes clear,making clear,4,verb,,38-v-7,,
+252,38,Vocabulary,أَضَاءَ,يُضِيءُ,إِضَاءَةٌ,to give light,gives light,giving light,4,verb,,38-v-8,,
+252,38,Vocabulary,تَرَقَّبَ,يَتَرَقَّبُ,تَرَقُّبٌ,to be vigilant,is vigilant,vigilance,5,verb,,38-v-9,,
+252,38,Vocabulary,اِطَّلَعَ,يَطَّلِعُ,اِطِّلَاعٌ,to study,studies,studying,8,verb,,38-v-10,,
 252,38,Vocabulary,بَرْقٌ,,,lightning,,,,noun,,38-v-11,,
 252,38,Vocabulary,زَيْتٌ,,,oil,,,,noun,,38-v-12,,
-252,38,Vocabulary,شَكٌّ,,شُكُوكٌ,doubt,,,,noun,,38-v-13,,
-252,38,Vocabulary,كَفٌّ,,أَكُفٌّ,"(f.) palm of the hand, hand",,,,noun,,38-v-14,,
-253,38,Vocabulary,مِرْيَة,,,doubt,,,,noun,,38-v-15,,
-253,38,Vocabulary,حَيّ,,أَحْيَاء,alive,,,,noun,,38-v-16,,
-253,38,Vocabulary,جَاثِم,,,crouching,,,,noun,,38-v-17,,
-253,38,Vocabulary,عَاكِف,,,devoted,,,,noun,,38-v-18,,
-253,38,Vocabulary,نَادِم,,,repentant,,,,noun,,38-v-19,,
-253,38,Vocabulary,مُحْضَر,,,brought forward,,,,noun,,38-v-20,,
-253,38,Vocabulary,مُسْوَدّ,,,black,,,,noun,,38-v-21,,
-261,39,Vocabulary,حَلَفَ,يَحْلِفُ,حَلْف,to swear,,,,verb,,39-v-1,,
-261,39,Vocabulary,رَجَمَ,يَرْجُمُ,رَجْم,to stone,,,,verb,,39-v-2,,
-261,39,Vocabulary,سَجَنَ,يَسْجُنُ,سَجْن,to imprison,,,,verb,,39-v-3,,
-261,39,Vocabulary,سَفَعَ,يَسْفَعُ,سَفْع,to drag,,,,verb,,39-v-4,,
-261,39,Vocabulary,شَهِدَ,يَشْهَدُ,شَهَادَة,to witness,,,,verb,,39-v-5,,
-261,39,Vocabulary,عَجِبَ,يَعْجَبُ,عَجَب,to wonder,,,,verb,,39-v-6,,
-261,39,Vocabulary,غَلَبَ,يَغْلِبُ,غَلَب,to overcome,,,,verb,,39-v-7,,
-261,39,Vocabulary,قَعَدَ,يَقْعُدُ,قُعُود,"to sit, lurk",,,,verb,,39-v-8,,
-261,39,Vocabulary,نَذَرَ,يَنْذُرُ,نَذْر,to vow,,,,verb,,39-v-9,,
-261,39,Vocabulary,غَاظَ,يَغِيظُ,غَيْظ,to enrage,,,,verb,,39-v-10,,
-261,39,Vocabulary,زَكَّى,يُزَكِّي,تَزْكِيَة,"to purify, keep pure",,,2,verb,,39-v-11,,
-261,39,Vocabulary,وَدَّعَ,يُوَدِّعُ,تَوْدِيع,to bid farewell to,,,2,verb,,39-v-12,,
-261,39,Vocabulary,أَقْسَمَ,يُقْسِمُ,إِقْسَام,to swear,,,4,verb,,39-v-13,,
-261,39,Vocabulary,أَنْجَى,يُنْجِي,إِنْجَاء,to save,,,4,verb,,39-v-14,,
-261,39,Vocabulary,أَنْسَى,يُنْسِي,إِنْسَاء,to cause to forget,,,4,verb,,39-v-15,,
-261,39,Vocabulary,اِنْتَقَمَ,يَنْتَقِمُ,اِنْتِقَام,to take revenge on (+ *min*),,,8,verb,,39-v-16,,
-261,39,Vocabulary,اِنْتَهَى,يَنْتَهِي,اِنْتِهَاء,"to cease, desist",,,8,verb,,39-v-17,,
-261,39,Vocabulary,اِسْتَخَفَّ,يَسْتَخِفُّ,اِسْتِخْفَاف,to make unstable,,,10,verb,,39-v-18,,
-262,39,Vocabulary,أَسَف,,,grief,,,,noun,,39-v-19,,
-262,39,Vocabulary,حَسْرَة,,,"sorrow, anguish",,,,noun,,39-v-20,,
-262,39,Vocabulary,صَوْم,,,fast,,,,noun,,39-v-21,,
+252,38,Vocabulary,شَكٌّ,,شُكُوكٌ,doubt,,doubts,,noun,,38-v-13,,
+252,38,Vocabulary,كَفٌّ,,أَكُفٌّ,"palm of the hand, hand (f.)",,,,noun,,38-v-14,,
+253,38,Vocabulary,مِرْيَةٌ,,,doubt,,,,noun,,38-v-15,,
+253,38,Vocabulary,حَيٌّ,,أَحْيَاءُ,alive,,alive,,noun,,38-v-16,,
+253,38,Vocabulary,جَاثِمٌ,,,crouching,,,,noun,,38-v-17,,
+253,38,Vocabulary,عَاكِفٌ,,,devoted,,,,noun,,38-v-18,,
+253,38,Vocabulary,نَادِمٌ,,,repentant,,,,noun,,38-v-19,,
+253,38,Vocabulary,مُحْضَرٌ,,,brought forward,,,,noun,,38-v-20,,
+253,38,Vocabulary,مُسْوَدٌّ,,,black,,,,noun,,38-v-21,,
+261,39,Vocabulary,حَلَفَ,يَحْلِفُ,حَلْفٌ,to swear,swears,swearing,,verb,,39-v-1,,
+261,39,Vocabulary,رَجَمَ,يَرْجُمُ,رَجْمٌ,to stone,stones,stoning,,verb,,39-v-2,,
+261,39,Vocabulary,سَجَنَ,يَسْجُنُ,سَجْنٌ,to imprison,imprisons,imprisoning,,verb,,39-v-3,,
+261,39,Vocabulary,سَفَعَ,يَسْفَعُ,سَفْعٌ,to drag,drags,dragging,,verb,,39-v-4,,
+261,39,Vocabulary,شَهِدَ,يَشْهَدُ,شَهَادَةٌ,to witness,witnesses,witnessing,,verb,,39-v-5,,
+261,39,Vocabulary,عَجِبَ,يَعْجَبُ,عَجَبٌ,to wonder,wonders,wondering,,verb,,39-v-6,,
+261,39,Vocabulary,غَلَبَ,يَغْلِبُ,غَلَبَةٌ,to overcome,overcomes,overcoming,,verb,,39-v-7,,
+261,39,Vocabulary,قَعَدَ,يَقْعُدُ,قُعُودٌ,"to sit, lurk","sits, lurks","sitting, lurking",,verb,,39-v-8,,
+261,39,Vocabulary,نَذَرَ,يَنْذُرُ,نَذْرٌ,to vow,vows,vowing,,verb,,39-v-9,,
+261,39,Vocabulary,غَاظَ,يَغِيظُ,غَيْظٌ,to enrage,enrages,enraging,,verb,,39-v-10,,
+261,39,Vocabulary,زَكَّى,يُزَكِّي,تَزْكِيَةٌ,"to purify, keep pure","purifies, keeps pure","purifying, keeping pure",2,verb,,39-v-11,,
+261,39,Vocabulary,وَدَّعَ,يُوَدِّعُ,تَوْدِيعٌ,to bid farewell to,bids farewell to,bidding farewell,2,verb,,39-v-12,,
+261,39,Vocabulary,أَقْسَمَ,يُقْسِمُ,إِقْسَامٌ,to swear,swears,swearing,4,verb,,39-v-13,,
+261,39,Vocabulary,أَنْجَى,يُنْجِي,إِنْجَاءٌ,to rescue,rescues,rescuing,4,verb,,39-v-14,,
+261,39,Vocabulary,أَنْسَى,يُنْسِي,إِنْسَاءٌ,to cause to forget,causes to forget,causing to forget,4,verb,,39-v-15,,
+261,39,Vocabulary,اِنْتَقَمَ,يَنْتَقِمُ,اِنْتِقَامٌ,"to take revenge on (+ *min*)",takes revenge on,taking revenge,8,verb,,39-v-16,,
+261,39,Vocabulary,اِنْتَهَى,يَنْتَهِي,اِنْتِهَاءٌ,"to cease, desist","ceases, desists","ceasing, desisting",8,verb,,39-v-17,,
+261,39,Vocabulary,اِسْتَخَفَّ,يَسْتَخِفُّ,اِسْتِخْفَافٌ,to make unstable,makes unstable,making unstable,10,verb,,39-v-18,,
+262,39,Vocabulary,أَسَفٌ,,,grief,,,,noun,,39-v-19,,
+262,39,Vocabulary,حَسْرَةٌ,,,"sorrow, anguish",,,,noun,,39-v-20,,
+262,39,Vocabulary,صَوْمٌ,,,fast,,,,noun,,39-v-21,,
 262,39,Vocabulary,ضُحًى,,,forenoon,,,,noun,,39-v-22,,
-262,39,Vocabulary,نَاصِيَة,,نَوَاصٍ,forelock,,,,noun,,39-v-23,,
+262,39,Vocabulary,نَاصِيَةٌ,,نَوَاصٍ,forelock,,forelocks,,noun,,39-v-23,,
 262,39,Vocabulary,أَجْمَعُ,,,all,,,,noun,,39-v-24,,
-262,39,Vocabulary,صَاغِر,,,humbled,,,,noun,,39-v-25,,
-262,39,Vocabulary,قَدِيم,,قُدَمَاءُ,"old, ancient",,,,noun,,39-v-26,,
+262,39,Vocabulary,صَاغِرٌ,,,humbled,,,,noun,,39-v-25,,
+262,39,Vocabulary,قَدِيمٌ,,قُدَمَاءُ,"old, ancient",,,,noun,,39-v-26,,checked against textbook
 262,39,Vocabulary,يَوْمَئِذٍ,,,on that day,,,,noun,,39-v-27,,
-267,40,Vocabulary,صَنَعَ,يَصْنَعُ,صُنْع,"to make, work",,,,verb,,40-v-1,,
-267,40,Vocabulary,نَفَرَ,يَنْفِرُ,نَفْر,to go forth,,,,verb,,40-v-2,,
-267,40,Vocabulary,غَلَّ,يَغُلُّ,غُلُول,to deceive,,,,verb,,40-v-3,,
-267,40,Vocabulary,عَمَرَ,يَعْمُرُ,عُمْرَة,to visit,,,,verb,,40-v-4,,
-267,40,Vocabulary,أَطْلَعَ,يُطْلِعُ,إِطْلَاع,to acquaint,,,4,verb,,40-v-5,,
-267,40,Vocabulary,أَضَاعَ,يُضِيعُ,إِضَاعَة,to cause to be wasted,,,4,verb,,40-v-6,,
-267,40,Vocabulary,آذَى,يُؤْذِي,إِيذَاء,"to hurt, vex",,,4,verb,,40-v-7,,
-267,40,Vocabulary,اِشْتَرَى,يَشْتَرِي,شِرَاء,to buy,,,,verb,,40-v-8,,
+267,40,Vocabulary,صَنَعَ,يَصْنَعُ,صُنْعٌ,"to make, work","makes, works","making, working",,verb,,40-v-1,,
+267,40,Vocabulary,نَفَرَ,يَنْفِرُ,نَفْرٌ,to go forth,goes forth,going forth,,verb,,40-v-2,,
+267,40,Vocabulary,غَلَّ,يَغُلُّ,غُلُولٌ,to deceive,deceives,deceiving,,verb,,40-v-3,,
+267,40,Vocabulary,عَمَرَ,يَعْمُرُ,عُمْرَةٌ,to visit,visits,visiting,,verb,,40-v-4,,
+267,40,Vocabulary,أَطْلَعَ,يُطْلِعُ,إِطْلَاعٌ,to acquaint,acquaints,acquainting,4,verb,,40-v-5,,
+267,40,Vocabulary,أَضَاعَ,يُضِيعُ,إِضَاعَةٌ,to cause to be wasted,causes to be wasted,causing to be wasted,4,verb,,40-v-6,,
+267,40,Vocabulary,آذَى,يُؤْذِي,إِيذَاءٌ,"to hurt, vex","hurts, vexes","hurting, vexing",4,verb,,40-v-7,,
+267,40,Vocabulary,اِشْتَرَى,يَشْتَرِي,شِرَاءٌ,to buy,buys,buying,,verb,,40-v-8,,
 267,40,Vocabulary,مَأْوًى,,,shelter,,,,noun,,40-v-9,,
-267,40,Vocabulary,بَدَل,,,exchange,,,,noun,,40-v-10,,
-267,40,Vocabulary,ثَمَن,,أَثْمَان,"price, gain",,,,noun,,40-v-11,,
-267,40,Vocabulary,خِيَرَة,,,choice,,,,noun,,40-v-12,,
-267,40,Vocabulary,مُرْتَفَق,,,resting-place,,,,noun,,40-v-13,,
-267,40,Vocabulary,مَسْجِد,,مَسَاجِد,"mosque, place of prayer",,,,noun,,40-v-14,,
-267,40,Vocabulary,سُلْطَان,,,"authority, power",,,,noun,,40-v-15,,
-267,40,Vocabulary,شَرَاب,,,drink,,,,noun,,40-v-16,,
-267,40,Vocabulary,مَصِير,,,"course, journey’s end",,,,noun,,40-v-17,,
-267,40,Vocabulary,فُسُوق,,,dissoluteness,,,,noun,,40-v-18,,
-267,40,Vocabulary,وَحْي,,,inspiration,,,,noun,,40-v-19,,
+267,40,Vocabulary,بَدَلٌ,,,exchange,,,,noun,,40-v-10,,
+267,40,Vocabulary,ثَمَنٌ,,أَثْمَانٌ,"price, gain",,"prices, gains",,noun,,40-v-11,,
+267,40,Vocabulary,خِيَرَةٌ,,,choice,,,,noun,,40-v-12,,
+267,40,Vocabulary,مُرْتَفَقٌ,,,resting-place,,,,noun,,40-v-13,,
+267,40,Vocabulary,مَسْجِدٌ,,مَسَاجِدُ,"mosque, place of prayer",,"mosques, places of prayer",,noun,,40-v-14,,checked against textbook
+267,40,Vocabulary,سُلْطَانٌ,,,"authority, power",,,,noun,,40-v-15,,
+267,40,Vocabulary,شَرَابٌ,,,drink,,,,noun,,40-v-16,,
+267,40,Vocabulary,مَصِيرٌ,,,"course, journey’s end",,,,noun,,40-v-17,,
+267,40,Vocabulary,فُسُوقٌ,,,dissoluteness,,,,noun,,40-v-18,,
+267,40,Vocabulary,وَحْيٌ,,,inspiration,,,,noun,,40-v-19,,
