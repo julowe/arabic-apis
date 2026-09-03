@@ -75,6 +75,17 @@ class TestArabicDiacriticsReordering(unittest.TestCase):
         self.assertEqual(v["inverted_token"], "\u0628\u064e\u0651")
         self.assertEqual(v["corrected_token"], "\u0628\u0651\u064e")
 
+    def test_format_diff_character_names(self):
+        # Farra: feh + fatha + reh + fatha + shadda
+        text = "\u0641\u064E\u0631\u064E\u0651"
+        violations = find_violations(text)
+        self.assertEqual(len(violations), 1)
+        diff_output = format_diff(violations[0])
+        self.assertIn("Old: Letter FEH, FATHA, Letter REH, FATHA, SHADDA", diff_output)
+        self.assertIn("New: Letter FEH, FATHA, Letter REH, SHADDA, FATHA", diff_output)
+        self.assertIn("Old: U+0641 U+064E U+0631 U+064E U+0651", diff_output)
+        self.assertIn("New: U+0641 U+064E U+0631 U+0651 U+064E", diff_output)
+
 
 class TestCLIBehavior(unittest.TestCase):
     def test_check_mode_exit_codes(self):

@@ -11,6 +11,7 @@ import argparse
 import os
 import re
 import sys
+import unicodedata
 from pathlib import Path
 
 # Unicode constants
@@ -87,6 +88,22 @@ def find_violations(text: str) -> list[dict]:
     return violations
 
 
+def format_char_name(c: str) -> str:
+    """
+    Returns a clean, readable name for an Arabic character.
+    Examples:
+      'ARABIC LETTER FEH' -> 'Letter FEH'
+      'ARABIC FATHA' -> 'FATHA'
+      'ARABIC SHADDA' -> 'SHADDA'
+    """
+    name = unicodedata.name(c, f"U+{ord(c):04X}")
+    if name.startswith("ARABIC LETTER "):
+        return "Letter " + name[len("ARABIC LETTER "):]
+    elif name.startswith("ARABIC "):
+        return name[len("ARABIC "):]
+    return name
+
+
 def format_diff(violation: dict) -> str:
     """
     Formats a single violation for terminal display.
@@ -95,10 +112,14 @@ def format_diff(violation: dict) -> str:
     token_new = violation["corrected_token"]
     codepoints_old = " ".join(f"U+{ord(c):04X}" for c in token_old)
     codepoints_new = " ".join(f"U+{ord(c):04X}" for c in token_new)
+    names_old = ", ".join(format_char_name(c) for c in token_old)
+    names_new = ", ".join(format_char_name(c) for c in token_new)
     return (
         f"  Line {violation['line_num']}:{violation['col_num']}: {token_old} -> {token_new}\n"
         f"    Old: {codepoints_old}\n"
-        f"    New: {codepoints_new}"
+        f"    Old: {names_old}\n"
+        f"    New: {codepoints_new}\n"
+        f"    New: {names_new}"
     )
 
 
