@@ -1,5 +1,7 @@
 # #!/usr/bin/env python3
 
+# TODO: merge in changes from st-johns/quran repo
+
 import json
 import logging
 import os
@@ -517,13 +519,11 @@ def main():
     #         else:  # 'complete' i.e. read all verses in chapter
     #             print("Chapter {}: complete".format(y["chapter"]))
 
-
     if write_tex_file:
         # open output file to write tex to
         output_fh_tex = open(output_tex_file_path, "w")
 
         tex_write_header(output_fh_tex)
-
 
     pbar_sessions = tqdm(sessions, desc="Processing Session", position=0)
     for session in pbar_sessions:

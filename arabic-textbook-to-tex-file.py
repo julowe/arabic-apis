@@ -7,18 +7,24 @@ import sys
 from pathlib import Path
 
 from dotenv import load_dotenv
-from tqdm import tqdm
 from quran_api import (
     get_access_token as api_get_access_token,
     get_verse as api_get_verse,
 )
 from tex_utils import (
-    tex_escape_text,
     tex_cleanup_text,
     tex_remove_arabic_marks,
 )
-from textbook_data import read_csv as tb_read_csv, read_ods as tb_read_ods, build_json_from_rows
-from textbook_enrich import enrich_with_quran_api, write_json as save_json, read_json as load_json
+from textbook_data import (
+    read_csv as tb_read_csv,
+    read_ods as tb_read_ods,
+    build_json_from_rows,
+)
+from textbook_enrich import (
+    enrich_with_quran_api,
+    write_json as save_json,
+    read_json as load_json,
+)
 
 # # Load environment variables
 # load_dotenv()
@@ -40,19 +46,23 @@ def export_ods_to_csv(ods_file_path, output_csv_path, filter_string=None):
 
     # Filter sheets if filter_string is provided
     if filter_string:
-        filtered_sheets = {name: rows for name, rows in sheets.items() if filter_string in name}
+        filtered_sheets = {
+            name: rows for name, rows in sheets.items() if filter_string in name
+        }
         if not filtered_sheets:
             print(f"Warning: No sheets found matching filter '{filter_string}'")
             print(f"Available sheets: {', '.join(sheets.keys())}")
             sys.exit(1)
         sheets_to_export = filtered_sheets
-        print(f"Exporting {len(filtered_sheets)} sheet(s) matching filter '{filter_string}': {', '.join(filtered_sheets.keys())}")
+        print(
+            f"Exporting {len(filtered_sheets)} sheet(s) matching filter '{filter_string}': {', '.join(filtered_sheets.keys())}"
+        )
     else:
         sheets_to_export = sheets
         print(f"Exporting all {len(sheets)} sheet(s): {', '.join(sheets.keys())}")
 
     # Write to CSV
-    with open(output_csv_path, 'w', encoding='utf-8', newline='') as csvfile:
+    with open(output_csv_path, "w", encoding="utf-8", newline="") as csvfile:
         writer = csv.writer(csvfile)
 
         for sheet_name, rows in sheets_to_export.items():
@@ -77,7 +87,7 @@ def export_ods_to_csv(ods_file_path, output_csv_path, filter_string=None):
 
                 # Write data rows
                 for row in rows:
-                    writer.writerow([row.get(h, '') for h in headers])
+                    writer.writerow([row.get(h, "") for h in headers])
 
             # Add blank row between sheets
             writer.writerow([])
@@ -92,7 +102,10 @@ def get_access_token(url_base, client_id, client_secret):
     )
     return api_get_access_token(url_base, client_id, client_secret)
 
-def get_verse_with_translations(url_base, access_token, client_id, chapter_number, verse_number):
+
+def get_verse_with_translations(
+    url_base, access_token, client_id, chapter_number, verse_number
+):
     """Get verse with Arabic text, transliteration, and English translations using quran_api"""
     # Use the shared API layer and request the same fields/translations as before
     data = api_get_verse(
@@ -106,6 +119,7 @@ def get_verse_with_translations(url_base, access_token, client_id, chapter_numbe
     )
     return data
 
+
 # TODO print arabic/english letters along the outside edge of glossary pages, highlighting letters on that page??
 def write_tex_header(fh):
     """Write LaTeX document header"""
@@ -118,6 +132,7 @@ def write_tex_header(fh):
     linktoc=all,
     linkcolor=Blue4,
 }
+\usepackage[para]{footmisc} % to put footnotes in paragraph vs list/one per line
 \usepackage{longtable}
 \usepackage{booktabs}
 \usepackage{array}
@@ -144,13 +159,22 @@ def write_tex_header(fh):
 \chead{\headmark}   % central header with heading on level 1 (section)
 \ohead{}            % empty header
 %-------- footer
-\ifoot{DRAFT 2025-12-11}   % inner footer with a fixed text
+\ifoot{DRAFT \today}   % inner footer with a fixed text
 \cfoot{\hyperlink{toc}{Link back to: Table of Contents}}   % central footer
 \ofoot{\pagemark}   % outer footer with the page number
 
 
-\title{A Supplementary Source for Jones's Arabic Qur’ān Textbook}
-\author{Generated from textbook data}
+\title{A Supplement for the Exercises in Alan Jones's \emph{Arabic Through the Qur’ān}}
+\author{
+    Generated from collaborative data entry
+    \\
+    and Quran.com's API\thanks{\href{https://quran.com/developers}{quran.com/developers}}
+    \\
+    and a bunch of python scripts\thanks{
+        \href{https://github.com/julowe/arabic-apis?tab=readme-ov-file\#arabic-apis-and-other-data-processing-scripts}{github.com/julowe/arabic-apis}
+    }
+}
+
 
 \begin{document}
 \maketitle
@@ -164,17 +188,18 @@ def write_tex_header(fh):
 """
     fh.write(header)
 
-# TODO handle unicode in roman charset, e.g. ch 3 ex 14
+
+# TODO handle unicode in roman charset, e.g. ch 3 ex 14 - huh?
 def write_exercises_by_chapter(fh, data_json):
     """Write exercises grouped by chapter and sorted by exercise number"""
-    exercises = data_json.get('exercises', [])
+    exercises = data_json.get("exercises", [])
     if not exercises:
         return
 
     # Group exercises by chapter
     chapters = {}
     for exercise in exercises:
-        chapter = exercise.get('exercise_chapter')
+        chapter = exercise.get("exercise_chapter")
         if chapter:
             if chapter not in chapters:
                 chapters[chapter] = []
@@ -182,15 +207,17 @@ def write_exercises_by_chapter(fh, data_json):
 
     # Process each chapter
     for chapter in sorted(chapters.keys()):
-        chapter_exercises = sorted(chapters[chapter], key=lambda x: x.get('exercise_number', 0))
+        chapter_exercises = sorted(
+            chapters[chapter], key=lambda x: x.get("exercise_number", 0)
+        )
 
         fh.write(f"\\addchap{{Chapter {chapter} Exercises}}\n\n")
         fh.write("\\begin{enumerate}\n")
 
         for exercise in chapter_exercises:
             # Write exercise item
-            exercise_text = exercise.get('exercise_text', '')
-            quranic_ref = exercise.get('quranic_reference', '')
+            exercise_text = exercise.get("exercise_text", "")
+            quranic_ref = exercise.get("quranic_reference", "")
 
             # Only write item if there's actual content
             if not exercise_text.strip() and not quranic_ref:
@@ -202,24 +229,37 @@ def write_exercises_by_chapter(fh, data_json):
                 fh.write(f"\\arL{{\n{tex_cleanup_text(exercise_text)}\n}}")
 
             # Add Quran reference with hyperlink
-            if quranic_ref and ':' in quranic_ref:
+            if quranic_ref and ":" in quranic_ref:
                 try:
-                    sura, ayah = quranic_ref.split(':', 1)
+                    sura, ayah = quranic_ref.split(":", 1)
                     sura_int = int(sura)
                     ayah_int = int(ayah)
                     fh.write(f"\n\\textbf{{[{sura_int}:{ayah_int}]}}")
-                    fh.write(f"\n\\href{{https://quran.com/{sura_int}?startingVerse={ayah_int}}}{{Quran.com}}")
-                    fh.write(f"\n\\href{{https://quranwbw.com/morphology?word={sura_int}:{ayah_int}}}{{QuranWBW.com}}\n\n")
+                    fh.write(
+                        f"\n\\href{{https://quran.com/{sura_int}?startingVerse={ayah_int}}}{{Quran.com}}"
+                    )
+                    fh.write(
+                        f"\n\\href{{https://quranwbw.com/morphology?word={sura_int}:{ayah_int}}}{{QuranWBW.com}}\n\n"
+                    )
                 except (ValueError, TypeError):
                     fh.write(f"({quranic_ref})\n\n")
 
             # Write Quranic sources
-            quranic_sources = exercise.get('quranic_sources', [])
+            quranic_sources = exercise.get("quranic_sources", [])
+
+
+            # NOTE: imlaei seems to have the characters closest to our textbook.
+            # Example: textbook ch 1 ex 1 has:
+            # اَلْكِتَابُ ٱلْمُبِينُ
+            # versus imlaei has:
+            # "الر ۚ تِلْكَ آيَاتُ الْكِتَابِ الْمُبِينِ"
+            # versus uthmani has:
+            # " الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ"
 
             # First write imlaei text
             for source in quranic_sources:
-                if source.get('text_type') == 'imlaei':
-                    arabic_text = source.get('text', '')
+                if source.get("text_type") == "imlaei":
+                    arabic_text = source.get("text", "")
                     if arabic_text.strip():
                         fh.write("\\arpar{\n")
                         fh.write(tex_remove_arabic_marks(arabic_text))
@@ -231,35 +271,45 @@ def write_exercises_by_chapter(fh, data_json):
             print_transliteration = False
 
             # Then write all translations
-            translation_string = f""
+            translation_string = ""
             for source in quranic_sources:
-                if source.get('text_type') == 'translation':
-                    translation_text = source.get('text', '')
-                    resource_name = source.get('translation_resource_name', '')
+                if source.get("text_type") == "translation":
+                    translation_text = source.get("text", "")
+                    resource_name = source.get("translation_resource_name", "")
                     if translation_text.strip():
                         if resource_name == "Transliteration":
                             if print_transliteration:
-                                translation_string = f"\\textit{{{resource_name}}}: {tex_cleanup_text(translation_text)}\n\n" + translation_string
+                                translation_string = (
+                                    f"\\textit{{{resource_name}}}: {tex_cleanup_text(translation_text)}\n\n"
+                                    + translation_string
+                                )
                         else:
                             # fh.write(f"\\textit{{{resource_name}}}: {tex_cleanup_text(translation_text)}\n\n")
                             if resource_name == print_context:
-                                context_string = f"\\textbf{{Context:}} "
+                                context_string = "\\textbf{Context:} "
                                 for context_line in exercise["context_lines"]:
-                                    if "quranic_sources" in context_line: # FIXME this is a hack for mistaken 0 index entries
+                                    if (
+                                        "quranic_sources" in context_line
+                                    ):  # FIXME this is a hack for mistaken 0 index entries
                                         for line in context_line["quranic_sources"]:
                                             if "translation_resource_name" in line:
-                                                if line["translation_resource_name"] == print_context:
-                                                    context_string += f"\\textbf{{[{str(context_line["ayah"])}]:}} {tex_cleanup_text(line['text'])} "
+                                                if (
+                                                    line["translation_resource_name"]
+                                                    == print_context
+                                                ):
+                                                    context_string += f"\\textbf{{[{str(context_line['ayah'])}]:}} {tex_cleanup_text(line['text'])} "
 
-                                translation_string += f"\\textit{{{resource_name}}}: {context_string}\n\n"
+                                translation_string += (
+                                    f"\\textit{{{resource_name}}}: {context_string}\n\n"
+                                )
                             else:
                                 translation_string += f"\\textit{{{resource_name}}}: {tex_cleanup_text(translation_text)}\n\n"
 
             if translation_string:
                 fh.write(f"{translation_string}")
 
-
         fh.write("\\end{enumerate}\n\n")
+
 
 def write_glossary_arabic_sorted(fh, vocabulary):
     """Write vocabulary glossary sorted by Arabic characters"""
@@ -276,34 +326,40 @@ def write_glossary_arabic_sorted(fh, vocabulary):
     # Group by Arabic sort letter
     grouped = {}
     for entry in vocabulary:
-        sort_letter = entry.get('arabic_sort_letter', '')
+        sort_letter = entry.get("arabic_sort_letter", "")
         # Skip entries with invalid or empty sort letters (non-Arabic characters)
-        if not sort_letter or sort_letter in ['(', ')', ' ', ''] or len(sort_letter) == 0:
+        if (
+            not sort_letter
+            or sort_letter in ["(", ")", " ", ""]
+            or len(sort_letter) == 0
+        ):
             # Try to extract first Arabic letter from the word itself
-            arabic_words = entry.get('arabic_words', {})
-            part_of_speech = entry.get('part_of_speech', '')
-            if part_of_speech == 'verb':
-                word = arabic_words.get('imperfect', '') or arabic_words.get('perfect', '')
+            arabic_words = entry.get("arabic_words", {})
+            part_of_speech = entry.get("part_of_speech", "")
+            if part_of_speech == "verb":
+                word = arabic_words.get("imperfect", "") or arabic_words.get(
+                    "perfect", ""
+                )
             else:
-                word = arabic_words.get('singular', '')
+                word = arabic_words.get("singular", "")
 
             # Extract first Arabic character from word
             if word:
                 # Remove prefix markers like "(f.)"
                 clean_word = word
-                if clean_word.startswith('('):
+                if clean_word.startswith("("):
                     # Find closing paren and skip it
-                    close_paren = clean_word.find(')')
+                    close_paren = clean_word.find(")")
                     if close_paren > 0:
-                        clean_word = clean_word[close_paren + 1:].strip()
+                        clean_word = clean_word[close_paren + 1 :].strip()
 
                 # Get first Arabic character
                 for char in clean_word:
-                    if '\u0600' <= char <= '\u06FF':  # Arabic Unicode range
+                    if "\u0600" <= char <= "\u06ff":  # Arabic Unicode range
                         sort_letter = char
                         break
 
-            if not sort_letter or sort_letter in ['(', ')', ' ', '']:
+            if not sort_letter or sort_letter in ["(", ")", " ", ""]:
                 continue
 
         if sort_letter not in grouped:
@@ -318,7 +374,39 @@ def write_glossary_arabic_sorted(fh, vocabulary):
     write_glossary_table_start(fh)
 
     # Define Arabic alphabetical order
-    arabic_order = ['ا', 'إ', 'آ', 'أ', 'ب', 'ت', 'ث', 'ج', 'ح', 'خ', 'د', 'ذ', 'ر', 'ز', 'س', 'ش', 'ص', 'ض', 'ط', 'ظ', 'ع', 'غ', 'ف', 'ق', 'ك', 'ل', 'م', 'ن', 'ه', 'و', 'ي']
+    arabic_order = [
+        "ا",
+        "إ",
+        "آ",
+        "أ",
+        "ب",
+        "ت",
+        "ث",
+        "ج",
+        "ح",
+        "خ",
+        "د",
+        "ذ",
+        "ر",
+        "ز",
+        "س",
+        "ش",
+        "ص",
+        "ض",
+        "ط",
+        "ظ",
+        "ع",
+        "غ",
+        "ف",
+        "ق",
+        "ك",
+        "ل",
+        "م",
+        "ن",
+        "ه",
+        "و",
+        "ي",
+    ]
 
     # Sort letters by Arabic alphabetical order
     sorted_letters = []
@@ -334,7 +422,7 @@ def write_glossary_arabic_sorted(fh, vocabulary):
     # Write entries grouped by letter
     for letter in sorted_letters:
         if letter in grouped and len(grouped[letter]) > 0:
-            write_glossary_header(fh,letter, "arabic")
+            write_glossary_header(fh, letter, "arabic")
             # # Huge header row spanning all columns, no vertical lines
             # fh.write(f"\\multicolumn{{5}}{{c}}{{}} \\\\\n")
             # fh.write(f"\\multicolumn{{5}}{{c}}{{\\Huge \\textbf{{--- \\ar{{{letter}}} ---}}}} \\\\\n")
@@ -350,20 +438,28 @@ def write_glossary_arabic_sorted(fh, vocabulary):
 def write_glossary_table_start(fh):
     fh.write("\\renewcommand{\\arraystretch}{1.3} % Default value: 1\n")
     fh.write("\\begin{longtable}{p{2.75cm}p{2.75cm}p{2.75cm}p{5.25cm}p{0.5cm}}\n")
-    fh.write("\\textbf{Sing./Perf.} & \\textbf{Dual/Imperf.} & \\textbf{Pl./Verbal N.} & \\textbf{English} & \\textbf{Ch \\#} \\\\\n")
+    fh.write(
+        "\\textbf{Sing./Perf.} & \\textbf{Dual/Imperf.} & \\textbf{Pl./Verbal N.} & \\textbf{English} & \\textbf{Ch \\#} \\\\\n"
+    )
     fh.write("\\hline\n")
     fh.write("\\endhead\n")
 
+
 def write_glossary_header(fh, header_letter, language):
     # Huge header row spanning all columns, no vertical lines
-    fh.write(f"\\multicolumn{{5}}{{c}}{{}} \\\\\n")
-    if language == 'arabic':
-        fh.write(f"\\multicolumn{{5}}{{c}}{{\\Huge \\textbf{{--- \\ar{{{header_letter}}} ---}}}} \\\\\n")
+    fh.write("\\multicolumn{5}{c}{} \\\\\n")
+    if language == "arabic":
+        fh.write(
+            f"\\multicolumn{{5}}{{c}}{{\\Huge \\textbf{{--- \\ar{{{header_letter}}} ---}}}} \\\\\n"
+        )
     else:
-        fh.write(f"\\multicolumn{{5}}{{c}}{{\\Huge \\textbf{{--- {header_letter} ---}}}} \\\\\n")
+        fh.write(
+            f"\\multicolumn{{5}}{{c}}{{\\Huge \\textbf{{--- {header_letter} ---}}}} \\\\\n"
+        )
 
-    fh.write(f"\\multicolumn{{5}}{{c}}{{}} \\\\\n")
+    fh.write("\\multicolumn{5}{c}{} \\\\\n")
     # fh.write("\\hline\n")
+
 
 def write_glossary_english_sorted(fh, vocabulary):
     """Write vocabulary glossary sorted by English definitions"""
@@ -375,7 +471,7 @@ def write_glossary_english_sorted(fh, vocabulary):
     # Create entries for each definition
     all_entries = []
     for entry in vocabulary:
-        definitions = entry.get('definitions', [])
+        definitions = entry.get("definitions", [])
         if definitions:
             for definition in definitions:
                 all_entries.append((entry, definition))
@@ -387,15 +483,23 @@ def write_glossary_english_sorted(fh, vocabulary):
     grouped = {}
     for entry, definition in all_entries:
         if definition:
-            sort_letter = definition.get('english_sort_letter', '').upper()
-            sort_start = definition.get('english_sort_start_index', 0)
-            english_def = definition.get('english_definition', '')
-            sort_key = english_def[sort_start:] if sort_start < len(english_def) else english_def
+            sort_letter = definition.get("english_sort_letter", "").upper()
+            sort_start = definition.get("english_sort_start_index", 0)
+            english_def = definition.get("english_definition", "")
+            sort_key = (
+                english_def[sort_start:]
+                if sort_start < len(english_def)
+                else english_def
+            )
         else:
-            english_meanings = entry.get('english_meanings', '')
-            sort_letter = entry.get('english_meanings_sort_letter', '').upper()
-            sort_start = entry.get('english_meanings_sort_start_index', 0)
-            sort_key = english_meanings[sort_start:] if sort_start < len(english_meanings) else english_meanings
+            english_meanings = entry.get("english_meanings", "")
+            sort_letter = entry.get("english_meanings_sort_letter", "").upper()
+            sort_start = entry.get("english_meanings_sort_start_index", 0)
+            sort_key = (
+                english_meanings[sort_start:]
+                if sort_start < len(english_meanings)
+                else english_meanings
+            )
 
         if sort_letter:
             if sort_letter not in grouped:
@@ -421,41 +525,43 @@ def write_glossary_english_sorted(fh, vocabulary):
 
     fh.write("\\end{longtable}\n\n")
 
+
 def get_arabic_sort_key(entry):
     """Get sorting key for Arabic vocabulary entry"""
-    arabic_words = entry.get('arabic_words', {})
-    sort_start = entry.get('arabic_sort_start_index', 0)
+    arabic_words = entry.get("arabic_words", {})
+    sort_start = entry.get("arabic_sort_start_index", 0)
 
     # Get the word to sort by based on part of speech
-    part_of_speech = entry.get('part_of_speech', '')
-    if part_of_speech == 'verb':
-        sort_word = arabic_words.get('imperfect', '')
+    part_of_speech = entry.get("part_of_speech", "")
+    if part_of_speech == "verb":
+        sort_word = arabic_words.get("imperfect", "")
     else:
-        sort_word = arabic_words.get('singular', '')
+        sort_word = arabic_words.get("singular", "")
 
     # Return substring for sorting
     if sort_start < len(sort_word):
         return sort_word[sort_start:]
     return sort_word
 
+
 def write_vocabulary_row(fh, entry, specific_definition=None):
     """Write a single vocabulary row to the longtable"""
-    arabic_words = entry.get('arabic_words', {})
-    part_of_speech = entry.get('part_of_speech', '')
-    chapter_vocab = entry.get('chapter_vocab', '')
+    arabic_words = entry.get("arabic_words", {})
+    part_of_speech = entry.get("part_of_speech", "")
+    chapter_vocab = entry.get("chapter_vocab", "")
 
     # Determine column values based on part of speech
-    if part_of_speech == 'verb':
-        col1 = arabic_words.get('perfect', '')
-        col2 = arabic_words.get('imperfect', '')
-        col3 = arabic_words.get('verbal-noun', '')
+    if part_of_speech == "verb":
+        col1 = arabic_words.get("perfect", "")
+        col2 = arabic_words.get("imperfect", "")
+        col3 = arabic_words.get("verbal-noun", "")
         verb_form = ""
         if "verb_form" in entry:
-            verb_form = entry.get('verb_form','')
+            verb_form = entry.get("verb_form", "")
     else:  # noun
-        col1 = arabic_words.get('singular', '')
-        col2 = arabic_words.get('dual', '')
-        col3 = arabic_words.get('plural', '')
+        col1 = arabic_words.get("singular", "")
+        col2 = arabic_words.get("dual", "")
+        col3 = arabic_words.get("plural", "")
 
     # Format Arabic text
     col1_tex = f"\\arL{{{tex_cleanup_text(col1)}}}" if col1.strip() else ""
@@ -464,29 +570,34 @@ def write_vocabulary_row(fh, entry, specific_definition=None):
 
     # English column
     if specific_definition:
-        english_text = specific_definition.get('english_definition', '')
+        english_text = specific_definition.get("english_definition", "")
         english_escaped = tex_cleanup_text(english_text)
 
         # TODO: footnotes look bad. instead maybe just use the `english_meanings` value for all and people can figure it out?
         # Add footnote for multiple definitions
-        definitions = entry.get('definitions', [])
+        definitions = entry.get("definitions", [])
         if len(definitions) > 1:
-            other_defs = [d.get('english_definition', '') for d in definitions
-                         if d != specific_definition and d.get('english_definition', '')]
+            other_defs = [
+                d.get("english_definition", "")
+                for d in definitions
+                if d != specific_definition and d.get("english_definition", "")
+            ]
             if other_defs:
-                see_also = ', '.join(other_defs)
+                see_also = ", ".join(other_defs)
                 see_also_escaped = tex_cleanup_text(see_also)
                 # Build footnote manually to avoid double-escaping
-                english_tex = english_escaped + "\\footnote{see also: " + see_also_escaped + "}"
+                english_tex = (
+                    english_escaped + "\\footnote{see also: " + see_also_escaped + "}"
+                )
             else:
                 english_tex = english_escaped
         else:
             english_tex = english_escaped
     else:
-        english_tex = tex_cleanup_text(entry.get('english_meanings', ''))
+        english_tex = tex_cleanup_text(entry.get("english_meanings", ""))
 
     # Get verb form if verb and has it
-    if part_of_speech == 'verb' and verb_form:
+    if part_of_speech == "verb" and verb_form:
         english_tex += f" ({tex_cleanup_text(verb_form)})"
 
     # FIXME [COMBINE] sometimes english definition has arabic letters, go through and find them and \arL them. maybe \arl ?
@@ -494,25 +605,55 @@ def write_vocabulary_row(fh, entry, specific_definition=None):
 
     chapter_tex = str(chapter_vocab) if chapter_vocab else ""
 
-    fh.write(f"{col1_tex} & {col2_tex} & {col3_tex} & {english_tex} & {chapter_tex} \\\\\n")
+    fh.write(
+        f"{col1_tex} & {col2_tex} & {col3_tex} & {english_tex} & {chapter_tex} \\\\\n"
+    )
     # fh.write("\\hline\n")
 
 
 def main():
-    parser = argparse.ArgumentParser(description='Convert Arabic textbook data to LaTeX')
-    parser.add_argument('input_file', nargs='?', help='Input CSV or ODS file (ignored if --json-input is used)')
-    parser.add_argument('-o', '--output', help='Output TEX file', default='arabic-textbook.tex')
-    parser.add_argument('--no-api', action='store_true', help='Skip Quran API calls')
-    parser.add_argument('--json-input', help='Existing JSON file to render (bypass ingestion and API)')
-    parser.add_argument('-v', '--verbose', action='store_true', help='Verbose output')
-    parser.add_argument('--output-csv', action='store_true', help='Export ODS to CSV and exit (requires input_file to be an ODS file)')
-    parser.add_argument('--filter-sheetnames', type=str, help='Filter ODS sheets by name (only sheets containing this string will be exported)')
+    parser = argparse.ArgumentParser(
+        description="Convert Arabic textbook data to LaTeX"
+    )
+    parser.add_argument(
+        "input_file",
+        nargs="?",
+        help="Input CSV or ODS file (ignored if --json-input is used)",
+    )
+    parser.add_argument(
+        "-o", "--output", help="Output TEX file", default="arabic-textbook.tex"
+    )
+    parser.add_argument("--no-api", action="store_true", help="Skip Quran API calls")
+    parser.add_argument(
+        "--json-input", help="Existing JSON file to render (bypass ingestion and API)"
+    )
+    parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
+    parser.add_argument(
+        "--output-csv",
+        action="store_true",
+        help="Export ODS to CSV and exit (requires input_file to be an ODS file)",
+    )
+    parser.add_argument(
+        "--filter-sheetnames",
+        type=str,
+        help="Filter ODS sheets by name (only sheets containing this string will be exported)",
+    )
+    parser.add_argument(
+        "--exercises-only",
+        type=str,
+        help="Only export exercises",
+    )
+    parser.add_argument(
+        "--glossary-only",
+        type=str,
+        help="Only export glossary",
+    )
 
     args = parser.parse_args()
 
     # Setup logging
     log_level = logging.DEBUG if args.verbose else logging.WARNING
-    logging.basicConfig(level=log_level, format='%(levelname)s: %(message)s')
+    logging.basicConfig(level=log_level, format="%(levelname)s: %(message)s")
 
     # Handle CSV export mode
     if args.output_csv:
@@ -525,12 +666,14 @@ def main():
             print(f"Error: Input file {input_path} does not exist")
             sys.exit(1)
 
-        if input_path.suffix.lower() != '.ods':
-            print(f"Error: --output-csv requires an ODS input file, got {input_path.suffix}")
+        if input_path.suffix.lower() != ".ods":
+            print(
+                f"Error: --output-csv requires an ODS input file, got {input_path.suffix}"
+            )
             sys.exit(1)
 
         # Generate output CSV filename
-        output_csv = input_path.with_suffix('.csv')
+        output_csv = input_path.with_suffix(".csv")
 
         # Export and exit
         export_ods_to_csv(input_path, output_csv, args.filter_sheetnames)
@@ -592,7 +735,7 @@ def main():
         enriched_json = data_json  # Do not call API when using existing JSON
     else:
         # Ingest CSV/ODS then build JSON then enrich via Quran API
-        if input_path.suffix.lower() == '.ods':
+        if input_path.suffix.lower() == ".ods":
             # sheets = tb_read_ods(str(input_path))
             # TODO print message to terminal? but logging info vs print vs...?
             sheets = tb_read_ods(input_path)
@@ -611,7 +754,9 @@ def main():
         if not args.no_api:
             # Load env and endpoints (already above)
             if not (client_id and url_api_base):
-                logging.warning("Missing API configuration; proceeding without enrichment")
+                logging.warning(
+                    "Missing API configuration; proceeding without enrichment"
+                )
                 enriched_json = data_json
             else:
                 enriched_json = enrich_with_quran_api(
@@ -626,7 +771,7 @@ def main():
 
         # Save JSON next to TeX output
         out_tex_path = Path(args.output)
-        out_json_path = out_tex_path.with_suffix('.json')
+        out_json_path = out_tex_path.with_suffix(".json")
         try:
             save_json(out_json_path, enriched_json)
             logging.info(f"Saved JSON to {out_json_path}")
@@ -634,12 +779,12 @@ def main():
             logging.error(f"Failed to save JSON: {e}")
 
     # Write TeX file from JSON data
-    with open(args.output, 'w', encoding='utf-8') as fh:
+    with open(args.output, "w", encoding="utf-8") as fh:
         write_tex_header(fh)
 
         # Write lesson title if available
-        lesson = enriched_json.get('lesson', {})
-        if lesson.get('name'):
+        lesson = enriched_json.get("lesson", {})
+        if lesson.get("name"):
             fh.write(f"\\section{{{tex_cleanup_text(str(lesson['name']))}}}\n\n")
             # TODO huh what is this?
 
@@ -652,19 +797,26 @@ def main():
         # %Epilogue
         # \chapter
         # {Epilogue}
-        #\appendix
+        # \appendix
         # \chapter{Glossary - Arabic Alphabetical Order}
 
         # Write vocabulary glossaries
-        vocabulary = enriched_json.get('vocabulary', [])
+        vocabulary = enriched_json.get("vocabulary", [])
         if vocabulary:
             write_glossary_arabic_sorted(fh, vocabulary)
             write_glossary_english_sorted(fh, vocabulary)
 
         fh.write("\\end{document}\n")
 
-
     print(f"LaTeX file written to: {args.output}")
+
 
 if __name__ == "__main__":
     main()
+
+# TODO: make clickable links on outside of each glossay page to jump to that letter
+# TODO: add word by word somehow - corpus manual scrape?
+# TODO: remove or get diff arabic text without quranic recitation markss
+
+# FIXME: missing chars e.g. ch 1 exercise 8:  l-‘a īmu al-qur’ānu  [15:87]
+# FIXME: remove extra quran marks " الٓر ۚ تِلْكَ ءَايَـٰتُ ٱلْكِتَـٰبِ ٱلْمُبِينِ" right after the first word
