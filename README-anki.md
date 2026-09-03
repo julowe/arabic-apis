@@ -57,6 +57,26 @@ Once you have installed Anki and downloaded the
      - ✅ **Include scheduling information**
      - ✅ **Include deck presets**
 
+### Updating an existing deck
+
+If you previously imported an earlier version of this deck and have downloaded a newer `.apkg` file from this repository:
+
+1. **Import the updated file**:
+   - In Anki Desktop, go to **File \> Import...** (or press `Ctrl+I` / `Cmd+I`).
+   - Locate and select the newly downloaded `.apkg` file.
+   - In the import options window that appears:
+     - Check the **Existing notes** setting and make sure it is set to **Update** (do **not** choose "Do not overwrite" or "Ignore"). This ensures any typo fixes, added definitions, or corrections are applied to your notes while **preserving your review history and scheduling progress**.
+   - Click **Import**.
+
+2. **Remove obsolete or empty cards (Tools \> Empty Cards)**:
+   - When a note is updated (for example, if a mistaken plural form or duplicate was corrected/removed in the source .csv file), Anki updates the note's text, but it **does not automatically delete already-created cards** to ensure it never accidentally erases your review data.
+   - This leaves the old card with a blank front (an "empty card").
+   - To clean these up safely without losing any study progress:
+     1. In the main Anki Desktop window, go to the top menu and select **Tools \> Empty Cards...**.
+     2. Anki will scan your collection and show a list of any cards whose front side is now blank.
+     3. Click **Delete Cards**.
+   - All your review history, due dates, and study intervals on all other cards will remain completely safe and intact.
+
 ## How to Rate Cards During Reviews
 
 When studying, Anki will show you the 'front' of the card, which has the
